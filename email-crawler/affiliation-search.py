@@ -1,4 +1,5 @@
 import sys
+import os
 import pandas as pd
 from bs4 import BeautifulSoup
 import requests, json
@@ -158,9 +159,106 @@ def run_full_search():
     return
 
 
+def csv_search_person(person):
+    """
+    Inputs: The full name of a person all in one string
+    Returns: The name of the affiliation, if one was found, nothing otherwise.
+    Comments: Interprets the string literally, looking for an exact match of the author name in the name field.
+    Return rate: ~12%
+    """
+    # Get the first letter of the person's first name
+    first_letter = person.split()[0][0].lower()
+    
+    # Path to the directory containing CSV files
+    directory = os.path.join(os.getcwd(), "names")
+    
+    # Path to the CSV file
+    csv_file_path = os.path.join(directory, f"csrankings-{first_letter}.csv")
+    
+    # Check if the CSV file exists
+    if not os.path.exists(csv_file_path):
+        if(CSV_DEBUG):
+            print(f"CSV file for '{person}' not found.")
+        return
+    
+    # Read the CSV file and search for the person's affiliation
+    with open(csv_file_path, newline='', encoding='utf-8') as csvfile:
+        reader = csv.reader(csvfile)
+        for row in reader:
+            if row[0].strip() == person:
+                return row[1].strip()  # Assuming the affiliation is in the second column
+    #print(f"Affiliation not found for '{person}'.")
+    return 0
+
+def csv_search_person_v2(person):
+    """
+    Inputs: The full name of a person all in one string
+    Returns: The name of the affiliation, if one was found, nothing otherwise.
+    Comments: This uses some interpretive string matching, so the names are broken up and matched one-by-one. Periods are capable of extending out to the rest of a single word/name, but only that single word/name.
+    Return rate: ~26%
+    """
+    # Split the full name into components (first name, middle name, last name)
+    names = person.split()
+    
+    # Path to the directory containing CSV files
+    directory = os.path.join(os.getcwd(), "names")
+    
+    # Initialize affiliation variable to None
+    affiliation = None
+    
+    # Construct regular expressions for each name component
+    name_patterns = [re.compile(r"\b" + re.escape(name) + r"\b", re.IGNORECASE) for name in names]
+    
+    # Path to the CSV file
+    csv_file_path = os.path.join(directory, f"csrankings-{names[0][0].lower()}.csv")
+    
+    # Check if the CSV file exists
+    if not os.path.exists(csv_file_path):
+        if(CSV_DEBUG):
+            print(f"CSV file for '{person}' not found.")
+        return
+    
+    # Read the CSV file and search for the person's affiliation
+    with open(csv_file_path, newline='', encoding='utf-8') as csvfile:
+        reader = csv.reader(csvfile)
+        for row in reader:
+            # Check if all name components match using regular expressions
+            if all(pattern.search(row[0]) for pattern in name_patterns):
+                if(CSV_DEBUG):
+                    print(f"Match found with {row[0].lower()}")
+                affiliation = row[1].strip()  # Assuming the affiliation is in the second column
+                break
+    
+    if affiliation:
+        return affiliation
+    else:
+        if(CSV_DEBUG):
+            print(f"Affiliation not found for '{person}'.")
+        return 0
+
 def csv_search(papers):
+    successes = []
+    count = 0
+    for p in papers:
+        if(CSV_DEBUG):
+            print(f"\nPaper: {p.title} | Authors: {p.authors}")
+        
+        for person in p.authors:
+            if(CSV_CAREFUL_SELECT):
+                aff = csv_search_person(person)
+            else:
+                aff = csv_search_person_v2(person)
+            if(aff is not 0):
+                successes.append((person, aff))
+            count += 1;
+            #print("orca1\n")
+            #print(f"Aff: {}")
+    if(CSV_DEBUG):
+        print(f"Total successes: {len(successes)} | Total tries: {count} | Success rate: {len(successes) * 100 / count}")
+    else:
+        print(f"CSV success rate: {len(successes) * 100 / count}")
     # Elliot
-    return
+    return successes
 
 
 def find_doi(paper):
