@@ -5,15 +5,19 @@ import requests, json
 import csv
 import re
 import time
+from crossref.restful import Journals, Works
 
 university_scoring = {}
 
 FILE_NAME = "survey-response/responses_edited_4_30.csv"
 
+
 class Paper:
     def __init__(self, title, authors):
         self.title = title
         self.authors = authors
+
+
 def get_csv_data():
     df = pd.read_csv(FILE_NAME)
     df['Papers'] = df.apply(extract_papers, axis=1)
@@ -51,7 +55,10 @@ def extract_papers(row):
             papers.append({'Title': paper_title, 'Authors': authors})
     return papers
 
+
 """Searches for the affiliations found within a paper in ACM HTML"""
+
+
 def get_paper_info(paper_url):
     affiliations_list = []
     affiliations_double_list = []
@@ -74,7 +81,6 @@ def get_paper_info(paper_url):
             if index % 2 == 0:
                 affiliations_list.append(sublist)
 
-
         # Return the authors and their affiliations
         return affiliations_list
     else:
@@ -84,6 +90,8 @@ def get_paper_info(paper_url):
 
 
 """Searches for the URL of a Paper and returns a URL if successful search in ACM Library"""
+
+
 def search_paper(title):
     # Make a search request to the ACM Digital Library
     search_url = f"https://dl.acm.org/action/doSearch?AllField={title}"
@@ -111,6 +119,8 @@ def search_paper(title):
 
 
 """Returns a list of authors as well as the number of authors in ACM HTML"""
+
+
 def get_author_data(paper_url):
     # Make an HTTP GET request to the ACM Digital Library
     response = requests.get(paper_url)
@@ -129,6 +139,7 @@ def get_author_data(paper_url):
 
         return author_list, len(author_list)
 
+
 def run_full_search():
     """
     1. Search Through CS Rankings CSV files
@@ -137,7 +148,13 @@ def run_full_search():
     4. LLM Search
     """
     papers = get_csv_data()
-    print(acm_search(papers))
+    num_authors = 0
+    for paper in papers:
+        num_authors += len(paper.authors)
+    doi_search_results = doi_search(papers)
+    print(f"DOI Search: Found {len(doi_search_results)} out {num_authors} affiliations")
+    
+    # print(acm_search(papers))
     return
 
 
@@ -146,9 +163,42 @@ def csv_search(papers):
     return
 
 
+def find_doi(paper):
+    works = Works()
+    query = f"title:{paper.title}"
+    for author in paper.authors:
+        query += f" AND author:{author}"
+    results = works.query(query)
+    for result in results:
+        print(result.get('DOI'))
+        return result.get('DOI')
+
+    # return doi_list
+
+
+def get_author_affiliation_doi(doi):
+    works = Works()
+    try:
+        paper = works.doi(doi)
+        authors = paper.get('author', [])
+        print(authors)
+        affiliations = []
+        for author in authors:
+            if 'affiliation' in author:
+                affiliations.extend(author['affiliation'])
+        return affiliations
+    except Exception as e:
+        print(f"Could not fetch data for {doi}")
+        return []
+
+
 def doi_search(papers):
     # Torin
-    return
+    affil_list = []
+    for paper in papers:
+        affil_list.append(get_author_affiliation_doi(find_doi(paper)))
+
+    return affil_list
 
 
 def acm_search(papers):
@@ -161,7 +211,7 @@ def acm_search(papers):
     session.headers.update(headers)
     for paper in papers:
         paper_url = search_paper(paper.title)
-        #paper_url = 'https://dl.acm.org/doi/10.1145/3434393'
+        # paper_url = 'https://dl.acm.org/doi/10.1145/3434393'
         if paper_url:
             print("Found paper URL:", paper_url)
             time.sleep(1)
@@ -188,7 +238,7 @@ def acm_search(papers):
             else:
                 print("Failed to fetch paper:", response.status_code)
 
-    sorted_university_scoring = sorted(university_scoring.items(), key=lambda x:x[1], reverse=True)
+    sorted_university_scoring = sorted(university_scoring.items(), key=lambda x: x[1], reverse=True)
     university_scores = dict(sorted_university_scoring)
     return university_scores
 
