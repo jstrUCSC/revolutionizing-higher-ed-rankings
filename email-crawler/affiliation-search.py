@@ -11,6 +11,8 @@ from crossref.restful import Journals, Works
 university_scoring = {}
 
 FILE_NAME = "survey-response/responses_edited_4_30.csv"
+CSV_DEBUG = False
+CSV_CAREFUL_SELECT = False
 
 
 class Paper:
