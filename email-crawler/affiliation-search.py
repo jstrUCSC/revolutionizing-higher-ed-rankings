@@ -16,9 +16,10 @@ CSV_CAREFUL_SELECT = False
 
 
 class Paper:
-    def __init__(self, title, authors):
+    def __init__(self, title, authors, fromCategory):
         self.title = title
         self.authors = authors
+        self.fromCategory = fromCategory
 
 
 """
@@ -50,12 +51,14 @@ def get_csv_data():
                 name = name.strip()
                 if name:
                     cleaned_names.append(name)
-            papers_array.append(Paper(paper['Title'], cleaned_names))
+            papers_array.append(Paper(paper['Title'], cleaned_names, paper['fromCategory']))
         print()
 
     for paper in papers_array:
         print(f"Title: {paper.title}")
         print(f"Authors: {paper.authors}")
+        print(f"fromCategory: {paper.fromCategory}")
+        print()
     return papers_array
 
 
@@ -66,7 +69,7 @@ def extract_papers(row):
         if isinstance(paper_info, str):
             paper_title = paper_info.split(';')[0]
             authors = paper_info.split(';')[1:]
-            papers.append({'Title': paper_title, 'Authors': authors})
+            papers.append({'Title': paper_title, 'Authors': authors, 'fromCategory': row.iloc[2]})
     return papers
 
 
@@ -171,7 +174,7 @@ def csv_search(paper):
             aff = csv_search_person(person)
         else:
             aff = csv_search_person_v2(person)
-        if aff is not 0:
+        if aff != 0:
             found = True
             num_authors = len(paper.authors)
             points_per_affiliation = 1 / num_authors
