@@ -63,21 +63,19 @@ function toggleAllCheckboxes() {
     var allChecked = true;
     var checkboxes = document.querySelectorAll('#filterTable input[type="checkbox"]');
 
-    checkboxes.forEach(function (checkbox) {
+    checkboxes.forEach(function (checkbox) {    // Not all boxes checked
         if (!checkbox.checked) {
             allChecked = false;
         }
     });
 
-    checkboxes.forEach(function (checkbox) {
+    checkboxes.forEach(function (checkbox) {    
         checkbox.checked = !allChecked;
     });
 
-    // Optionally update the button text
     var toggleButton = document.getElementById('toggleAll');
     toggleButton.textContent = allChecked ? 'Select All' : 'Deselect All';
 
-    // Optionally call displayRankings to refresh the view
     displayRankings();
 }
 
