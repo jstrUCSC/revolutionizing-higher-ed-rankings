@@ -32,6 +32,31 @@ tr:hover {
     background-color: #dddddd;
 }
 
+.toggle-button {
+    background-color: #5fd5ff; 
+    border: none; 
+    color: white; 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block;
+    font-size: 16px; 
+    margin: 10px 2px; 
+    cursor: pointer; 
+    border-radius: 4px; 
+    transition-duration: 0.4s; 
+}
+
+.toggle-button:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid #5fd5ff; 
+ }
+
+.button-container {
+    text-align: center;
+    margin-bottom: 2px; 
+}
 
 
 
