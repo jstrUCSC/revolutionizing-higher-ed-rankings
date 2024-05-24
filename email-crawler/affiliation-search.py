@@ -8,7 +8,7 @@ import re
 import time
 from crossref.restful import Journals, Works
 
-university_scoring = {}
+university_scoring = []
 
 FILE_NAME = "survey-response/responses_edited_4_30.csv"
 CSV_DEBUG = False
@@ -16,10 +16,24 @@ CSV_CAREFUL_SELECT = False
 
 
 class Paper:
-    def __init__(self, title, authors):
+    def __init__(self, title, authors, fromCategory):
         self.title = title
         self.authors = authors
+        self.fromCategory = fromCategory
 
+class University:
+    def __init__(self, name, ratings):
+        self.name = name
+        self.ratings = ratings
+        
+        
+def find_or_create_university(university_scoring, name):
+    for university in university_scoring:
+        if university.name == name:
+            return university
+    new_university = University(name, [])
+    university_scoring.append(new_university)
+    return new_university
 
 """
  ______   _______  _______    _______  ______    _______  _______ 
@@ -50,12 +64,14 @@ def get_csv_data():
                 name = name.strip()
                 if name:
                     cleaned_names.append(name)
-            papers_array.append(Paper(paper['Title'], cleaned_names))
+            papers_array.append(Paper(paper['Title'], cleaned_names, paper['fromCategory']))
         print()
 
     for paper in papers_array:
         print(f"Title: {paper.title}")
         print(f"Authors: {paper.authors}")
+        print(f"fromCategory: {paper.fromCategory}")
+        print()
     return papers_array
 
 
@@ -66,7 +82,7 @@ def extract_papers(row):
         if isinstance(paper_info, str):
             paper_title = paper_info.split(';')[0]
             authors = paper_info.split(';')[1:]
-            papers.append({'Title': paper_title, 'Authors': authors})
+            papers.append({'Title': paper_title, 'Authors': authors, 'fromCategory': row.iloc[2]})
     return papers
 
 
@@ -161,27 +177,31 @@ def csv_search_person_v2(person):
 
 
 def csv_search(paper):
-
-
-    if (CSV_DEBUG):
+    if CSV_DEBUG:
         print(f"\nPaper: {paper.title} | Authors: {paper.authors}")
     found = False
     for person in paper.authors:
-        if (CSV_CAREFUL_SELECT):
+        if CSV_CAREFUL_SELECT:
             aff = csv_search_person(person)
         else:
             aff = csv_search_person_v2(person)
-        if aff is not 0:
+        if aff != 0:
             found = True
             num_authors = len(paper.authors)
             points_per_affiliation = 1 / num_authors
-            print("CSV: Adding " + str(points_per_affiliation) + " points to " + str(aff))
-            if aff in university_scoring:
-                # If the university is already in the dictionary, increment the point value
-                university_scoring[aff] += points_per_affiliation
-            else:
-                # If the university is not in the dictionary, add it with its point value
-                university_scoring[aff] = points_per_affiliation
+            print(f"CSV: Adding {points_per_affiliation} points to {aff}")
+            uni_obj = find_or_create_university(university_scoring, aff)
+            category_score = (paper.fromCategory, points_per_affiliation)
+            
+            # Check if the category is already in the ratings
+            found_category = False
+            for i, (category, score) in enumerate(uni_obj.ratings):
+                if category == paper.fromCategory:
+                    uni_obj.ratings[i] = (category, score + points_per_affiliation)
+                    found_category = True
+                    break
+            if not found_category:
+                uni_obj.ratings.append(category_score)
         else:
             found = False
 
@@ -228,6 +248,26 @@ def get_author_affiliation_doi(doi):
         return []
 
 
+def doi_search_new(paper):
+    affiliations = [{"name": "University A"}, {"name": "University B"}]
+    if len(affiliations) == 0:
+        return False
+    points_per_affiliation = 1 / len(affiliations)
+    pattern = r'^([^,]+)'
+    for university in affiliations:
+        university_name = re.match(pattern, university['name']).group(1)
+        uni_obj = find_or_create_university(university_scoring, university_name)
+        category_score = (paper.fromCategory, points_per_affiliation)  # Fix attribute name
+        found_category = False
+        for i, (category, score) in enumerate(uni_obj.ratings):
+            if category == paper.fromCategory:  # Fix attribute name
+                uni_obj.ratings[i] = (category, score + points_per_affiliation)
+                found_category = True
+                break
+        if not found_category:
+            uni_obj.ratings.append(category_score)
+    return True
+
 def doi_search(paper):
     # Torin
     affiliations = get_author_affiliation_doi(find_doi(paper))
@@ -237,13 +277,21 @@ def doi_search(paper):
     points_per_affiliation = 1 / len(affiliations)
     pattern = r'^([^,]+)'
     for university in affiliations:
-        print("DOI: Adding " + str(points_per_affiliation) + " points to " + str(re.match(pattern, university['name']).group(1)))
-        if re.match(pattern, university['name']).group(1) in university_scoring:
-            # If the university is already in the dictionary, increment the point value
-            university_scoring[re.match(pattern, university['name']).group(1)] += points_per_affiliation
-        else:
-            # If the university is not in the dictionary, add it with its point value
-            university_scoring[re.match(pattern, university['name']).group(1)] = points_per_affiliation
+        university_name = re.match(pattern, university['name']).group(1)
+        print(f"DOI: Adding {points_per_affiliation} points to {university_name}")
+        uni_obj = find_or_create_university(university_scoring, university_name)
+        category_score = (paper.fromCategory, points_per_affiliation)
+        
+        # Check if the category is already in the ratings
+        found = False
+        for i, (category, score) in enumerate(uni_obj.ratings):
+            if category == paper.fromCategory:
+                uni_obj.ratings[i] = (category, score + points_per_affiliation)
+                found = True
+                break
+        if not found:
+            uni_obj.ratings.append(category_score)
+    
     return True
 
 
@@ -341,50 +389,47 @@ def get_author_data(paper_url):
 
 
 def acm_search(paper):
-    # Aaron
     session = requests.Session()
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)'
-                      ' Chrome/58.0.3029.110 Safari/537.3'
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
+                      'Chrome/58.0.3029.110 Safari/537.3'
     }
     session.headers.update(headers)
     found = False
     paper_url = search_paper(paper.title)
-    # paper_url = 'https://dl.acm.org/doi/10.1145/3434393'
     if paper_url:
         print("ACM: Found paper URL:", paper_url)
         time.sleep(1)
         response = session.get(paper_url)
         if response.status_code == 200:
-            # affiliations = get_paper_info(paper_url)
             affiliations = None
             try:
                 affiliations = get_paper_info(response.text)
             except Exception as e:
-                print("ACM: Failed to fetch paper")
+                print("ACM: Failed to fetch paper:", e)
 
             if affiliations:
-                #print("Affiliations:", affiliations)
                 author_data = get_author_data(response.text)
-                # author_data = get_author_data(paper_url)
-                # affiliations = get_paper_info(paper_url)
                 if author_data[1] == len(affiliations):
                     found = True
                     num_authors = author_data[1]
                     points_per_affiliation = 1 / num_authors
                     for university in affiliations:
-                        print("ACM: Adding " + str(points_per_affiliation) + " points to " + str(university))
-                        if university in university_scoring:
-                            # If the university is already in the dictionary, increment the point value
-                            university_scoring[university] += points_per_affiliation
-                        else:
-                            # If the university is not in the dictionary, add it with its point value
-                            university_scoring[university] = points_per_affiliation
+                        print(f"ACM: Adding {points_per_affiliation} points to {university}")
+                        uni_obj = find_or_create_university(university_scoring, university)
+                        category_score = (paper.fromCategory, points_per_affiliation)
+                        
+                        found_category = False
+                        for i, (category, score) in enumerate(uni_obj.ratings):
+                            if category == paper.fromCategory:
+                                uni_obj.ratings[i] = (category, score + points_per_affiliation)
+                                found_category = True
+                                break
+                        if not found_category:
+                            uni_obj.ratings.append(category_score)
         else:
             print("Failed to fetch paper:", response.status_code)
 
-    sorted_university_scoring = sorted(university_scoring.items(), key=lambda x: x[1], reverse=True)
-    university_scores = dict(sorted_university_scoring)
     return found
 
 
@@ -398,18 +443,20 @@ def acm_search(paper):
 |___|    |_______||_______||_______|  |_______||_______||__| |__||___|  |_||_______||__| |__|
 """
 
-def save_dict_to_csv(dictionary, filename):
+def save_dict_to_csv_old(dictionary, filename):
     with open(filename, 'w', newline='') as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=dictionary.keys())
         writer.writeheader()
         writer.writerow(dictionary)
+        
+def save_dict_to_csv(data, filename, fieldnames):
+    with open(filename, 'w', newline='') as csvfile:
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        writer.writeheader()
+        for row in data:
+            writer.writerow(row)
+            
 def run_full_search():
-    """
-    1. Search Through CS Rankings CSV files
-    2. DOI search
-    3. ACM Search
-    4. LLM Search
-    """
     papers = get_csv_data()
     num_authors = 0
     num_successes = 0
@@ -426,11 +473,29 @@ def run_full_search():
         else:
             num_successes += 1
 
-    print(f"FULL: Found afffil for {num_successes} papers out of {len(papers)}")
-    save_dict_to_csv(university_scoring, 'u_scores.csv')
-    # print(f"DOI Search: Found {len(doi_search_results)} out {num_authors} affiliations")
+    print(f"FULL: Found affil for {num_successes} papers out of {len(papers)}")
 
-    # print(acm_search(papers))
+    # Gather all unique categories
+    all_categories = set()
+    for university in university_scoring:
+        print(f"Uni name: {university.name}")
+        for category, score in university.ratings:
+            all_categories.add(category)
+    
+    
+    # Define fieldnames dynamically
+    fieldnames = ["Index", "University"] + sorted(all_categories)
+    print(f"Fieldnames:{fieldnames}")
+
+    # Convert university_scoring to the desired CSV format
+    csv_data = []
+    for idx, university in enumerate(university_scoring, start=1):
+        row = {"Index": idx, "University": university.name}
+        for category, score in university.ratings:
+            row[category] = score
+        csv_data.append(row)
+
+    save_dict_to_csv(csv_data, 'u_scores.csv', fieldnames)
     return
 
 

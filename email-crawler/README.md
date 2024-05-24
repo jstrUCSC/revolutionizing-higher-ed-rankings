@@ -3,4 +3,7 @@
 <h2>Purpose</h2>
 Gathers the names and associated emails for professors in the CSV.
 <h2>Details and Usage</h2>
+<h3>Gathering emails</h3>
 The CSV must a) be in the folder `/names`, b) have the name "csrankings-" + letter + ".csv" and c) have the form: name, affiliation, homepage, and scholarid; this is the format that it is stored in by CSRankings. To run for a specific CSV one can either modify the lettering in the main function and run it with `python web-crawler2.py` or run the code with an added command line argument, like `python web-crawler2.py a` where "a" can be replaced by whichever letter you would like to run it on. As the program is running, keep an eye on it; if the "Conducting Google Search on Request" number reaches 1000, stop immediately and do not run it for an hour to avoid being flagged as a bot by Google. The program will output a CSV with two associated columns "name" and "email" in the `/emails` folder.
+<h3>Sorting and allocating responses</h3>
+Install the python dependencies in the requirements.txt file. Then run affiliation-search.py to search a) the local CSV, b) DOI, and c) ASM for affiliations for papers in the survey-response/responses_edited_4_30.csv (the filename is just a global variable, you can change it if you need to). This outputs to a file called u_scores.csv. If there are blank entries in this file, you should run csvFormattingAdapter.bash, and this will fill all the blank entries with 0. Then, you should be able to put the file into folder with the website!
