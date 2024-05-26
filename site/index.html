@@ -15,24 +15,42 @@
         <h3><a href="https://github.com/Torin-Perkins/revolutionizing-higher-ed-rankings">GitHub Repository</a></h3>
     </header>
     <main >
-            <div class="content">
-                <font face="Arial" size="0.1">
-                    <div class="button-container">
-                        <button id="toggleAll" class="toggle-button" onclick="toggleAllCheckboxes()">Select All</button>
-                    </div>
-                    <table id="filterTable">
+
+        <table id="tableContainer">
+            <tr>
+                <th>
+                    <font face="Arial" size="0.1">
+                        <div class="button-container">
+                            <button id="toggleAll" class="toggle-button" onclick="toggleAllCheckboxes()">Select All</button>
+                        </div>
+                        <table id="filterTable">
+                            <thead>
+                                <tr>
+                                    <th style="text-align: center"> Filter by Area</th>
+                                    <th style="width:15%"> </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </font>
+                </th>
+                <th>
+                    <table id="rankingTable">
                         <thead>
                             <tr>
-                                <th style="text-align: center"> Filter by Area</th>
-                                <th style="width:15%"> </th>
+                                <th>Rank</th>
+                                <th>Name</th>
+                                <th>Publication Score</th>
                             </tr>
                         </thead>
                         <tbody>
-                    </tbody>
-            </table>
-        </div>
-        </div>
-                
+                            <!-- Add more rows as needed -->
+                        </tbody>
+                </table>
+                </th>
+            </tr>
+        </table>
         <!--<aside class="filter-container"> -->
             
 </main>
