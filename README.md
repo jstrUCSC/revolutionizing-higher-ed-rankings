@@ -1,4 +1,4 @@
-# revolutionizing-higher-ed-rankings
+# Revolutionizing Higher Ed Rankings
 Revolutionizing Higher Ed Rankings is a project started by students and faculty at Oregon State University with the goal of creating a new ranking system for Computer Science programs. While there are currently many different options for looking at Computer Science Rankings, our team feels that there has been a shift to value quantity over quality with publications in the past few years. The goal of Revolutionizing Higher Ed Rankings is to create a ranking system that weights the value of a publication rather than just scoring the publication for its existence. 
 
 # Our Methodology
