@@ -1,161 +1,142 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    text-align: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+}
 
+th, td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 12px;
+}
 
 th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-    font-weight: bold;
-}
-
-td {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-    font-weight: normal
-}
-
-th {
-    background-color: #f2f2f2;
+  background-color: #f2f2f2;
+  color: #333;
 }
 
 tr:nth-child(even) {
-    background-color: #f2f2f2;
+  background-color: #f7f7f7;
 }
 
 tr:hover {
-    background-color: #dddddd;
+  background-color: #e0e0e0;
 }
 
 .toggle-button {
-    background-color: #5fd5ff; 
-    border: none; 
-    color: white; 
-    padding: 10px 20px; 
-    text-align: center; 
-    text-decoration: none; 
-    display: inline-block;
-    font-size: 16px; 
-    margin: 10px 2px; 
-    cursor: pointer; 
-    border-radius: 4px; 
-    transition-duration: 0.4s; 
+  background-color: #4CAF50; 
+  border: none; 
+  color: white; 
+  padding: 10px 20px; 
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block;
+  font-size: 16px; 
+  margin: 10px 2px; 
+  cursor: pointer; 
+  border-radius: 4px; 
+  transition-duration: 0.4s; 
 }
 
 .toggle-button:hover {
-    background-color: white;
-    color: black;
-    border: 2px solid #5fd5ff; 
- }
+  background-color: white;
+  color: #4CAF50;
+  border: 2px solid #4CAF50; 
+}
 
 .button-container {
-    text-align: center;
-    margin-bottom: 2px; 
+  text-align: center;
+  margin-bottom: 20px; 
 }
-
-
-
-
-/* from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_switch */
 
 .switch {
-    position: relative;
-    display: inline-block;
-    width: 30px;
-    height: 17px;
-  }
-  
-  .switch input { 
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 13px;
-    width: 13px;
-    left: 2px;
-    bottom: 2px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  input:checked + .slider {
-    background-color: #2196F3;
-  }
-  
-  input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
-  }
-  
-  input:checked + .slider:before {
-    -webkit-transform: translateX(13px);
-    -ms-transform: translateX(13px);
-    transform: translateX(13px);
-  }
-  
-  /* Rounded sliders */
-  .slider.round {
-    border-radius: 17px;
-  }
-  
-  .slider.round:before {
-    border-radius: 50%;
-  }
-
-
-
-
-.content{
-    position: relative;
-    padding: 0.5%;
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 20px;
 }
 
-.filter-container{
-    background-color: rgb(233, 230, 230);
-    width: 200px;
-    padding: 5px;
-    padding-left: 10px;
-    position: relative;
-    
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(14px);
+}
+
+.content {
+  position: relative;
+  padding: 1%;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+.filter-container {
+  background-color: #eeeeee;
+  width: 250px;
+  padding: 10px;
+  margin: 20px auto;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .table-container {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Divide container into two equal columns */
-  gap: 10px; /* Adjust gap between columns */
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px;
+  margin: 20px auto;
 }
 
-#filterTable {
+#filterTable, #rankingTable {
   width: 100%;
+  margin-bottom: 20px;
 }
 
-#rankingTable{
-  width: 350%;
-}
-
-#tableContainer table, tr, th{
+#tableContainer table, tr, th {
   box-shadow: none;
   border: 0;
-  border-color: transparent;
 }
