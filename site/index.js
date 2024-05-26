@@ -203,8 +203,8 @@ function displayRankings() {
         categories.forEach(categoryName => {
             var selected = document.getElementById(categoryName).checked;
             if (selected === true) {
-                totalScore = totalScore + parseInt(university[categoryName]);
-                
+                //totalScore = totalScore + parseInt(university[categoryName]);
+                totalScore += getScore(university.University, categoryName);
             }
         });
         const universityData = {University:university.University, score:totalScore};
