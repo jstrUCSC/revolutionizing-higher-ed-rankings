@@ -8,45 +8,83 @@
     <title>Your Website</title>
 </head>
 <body>
-    <header>
+    <header class="main-header">
         <h1>Revolutionizing Higher Ed Rankings</h1>
         <h2>Improved Scale for Ranking CS Schools</h2>
-        <h3><a href="https://github.com/Torin-Perkins/revolutionizing-higher-ed-rankings">GitHub Repository</a></h3>
-        <h3>Rankings are measured through impact that the school's publications have made to the field of computer science. Each impactful publication gets assigned one point. The one point gets divided and assigned to universities according to the authors affiliations.</h3>
+        <h4><a href="https://github.com/Torin-Perkins/revolutionizing-higher-ed-rankings">GitHub Repository</a></h3>
+        <h4>Rankings are measured through impact that the school's publications have made to the field of computer science. Each impactful publication gets assigned one point. The one point gets divided and assigned to universities according to the authors affiliations.</h3>
     </header>
     <main >
             <div class="content">
-                <font face="Arial" size="0.1">
-                    <div class="button-container">
-                        <button id="toggleAll" class="toggle-button" onclick="toggleAllCheckboxes()">Select All</button>
+                <div class="filter-container">
+                    <!-- add area filter -->
+                    <h3 class="align-left">
+                        ○ Filter by Area
+                    </h3>
+                    <select id="regionFilter" class="filter-select">
+                        <option value="all">All Regions</option>
+                        <option value="North America">Africa</option>
+                        <option value="Asia">Asia</option>
+                        <option value="North America">Australasia</option>
+                        <option value="Europe">Europe</option>
+                        <option value="North America">North America</option>
+                        <option value="North America">South America</option>
+                    </select>
+
+                    <div class="divider"></div>
+
+                    <div class="field-container">
+                    <h3 class="align-left">
+                        ○ Filter by Field
+                    </h3>
+                    <font face="Arial" size="0.1">
+                        
+                        <div class="button-container">
+                            <button id="toggleAll" class="toggle-button" onclick="toggleAllCheckboxes()">Select All</button>
+                        </div>
                     </div>
-                    <table id="filterTable">
-                        <thead>
-                            <tr>
-                                <th style="text-align: center"> Filter by Area</th>
-                                <th style="width:15%"> </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        </tbody>
-                    </table>
-                </font>
+                        <table id="filterTable">
+                            <thead>
+                                <!-- <tr>
+                                    <th style="text-align: center"> Filter by Field</th>
+                                    <th style="width:15%"> </th>
+                                </tr> -->
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </font>
+                </div>
+                
+
                 <div class="table-container">
                 <table id="rankingTable">
                     <thead>
                         <tr>
                             <th>Rank</th>
-                            <th>Name</th>
+                            <th>Institution</th>
                             <th>Publication Score</th>
+                            <th>Faculty</th>
                         </tr>
                     </thead>
                     <tbody>
-                       
+                        
                         <!-- Add more rows as needed -->
                     </tbody>
             </table>
+            <!-- <div class="pdf-upload-button" id="uploadButton">
+            <span id="plus">+</span>
+        </div> -->
+        <!-- <div class="pdf-upload-modal" id="uploadModal">
+            <div class="modal-content">
+                <span class="close-button" id="closeButton">&times;</span>
+                <h3>Upload Paper</h3>
+                <input type="file" id="pdfUpload" accept=".pdf">
+                <button id="submitUpload">Upload</button>
+            </div>
+        </div> -->
         </div>
-        </div>
+        
                 
         <!--<aside class="filter-container"> -->
             
