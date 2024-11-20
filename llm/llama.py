@@ -1,7 +1,7 @@
 # Use llama3-8b
 from PyPDF2 import PdfReader            # pdf to text
 from transformers import AutoTokenizer, AutoModelForCausalLM
-from langchain_community.llms import HuggingFacePipeline
+# from langchain_community.llms import HuggingFacePipeline
 from langchain.prompts import PromptTemplate
 import torch
 
@@ -31,7 +31,7 @@ def analyze_text(model, tokenizer, text, device="cuda", max_length=4096):
 
 # Jist test
 def main():
-    pdf_path = "/Users/lianghui/Downloads/revolutionizing-higher-ed-rankings/llm/117.pdf"       # test pdf paper
+    pdf_path = "117.pdf"       # test pdf paper
     print("Reading PDF...")
     pdf_text = read_pdf(pdf_path)
 
