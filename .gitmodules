@@ -1,0 +1,3 @@
+[submodule "CSrankings"]
+	path = CSrankings
+	url = https://github.com/emeryberger/CSrankings.git
