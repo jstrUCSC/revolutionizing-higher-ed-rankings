@@ -52,7 +52,7 @@ def save_to_csv(papers, filename):
 
 # Fetch and save papers
 def main():
-    query = "CVPR 2024"                 # Replace with other conference: need to check with Fuxin
+    query = "ICML 2024"                 # Replace with other conference: need to check with Fuxin
     all_papers = []
     start = 0
     max_results = 1000
