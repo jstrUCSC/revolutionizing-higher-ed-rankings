@@ -7,7 +7,8 @@ from typing import List, Tuple
 from PyPDF2 import PdfReader
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
-def load_llama_model(model_name="meta-llama/Meta-Llama-3-8B", device="cuda"):
+def load_llama_model(model_name="meta-llama/Meta-Llama-3-70B", device="cuda"):
+# def load_llama_model(model_name="meta-llama/Meta-Llama-3-8B", device="cuda"):
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     model = AutoModelForCausalLM.from_pretrained(model_name, torch_dtype=torch.float16).to(device)
 
