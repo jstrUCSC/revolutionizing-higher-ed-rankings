@@ -32,7 +32,7 @@ async function loadCSV(filePath) {
  * @returns {Promise<void>}
  */
 async function initialize() {
-    data = await loadCSV('u_scores_filled.csv');
+    data = await loadCSV('/nfs/stak/users/munam/hpc-share/revolutionizing-higher-ed-rankings/universities_ranked.csv');
 
     // Extract categories dynamically
     if (data.length > 0) {
