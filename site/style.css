@@ -254,3 +254,22 @@ input:checked + .slider:before {
   margin: 15px 0;
   border: none;
 }
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination-container button {
+  margin: 0 10px;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#pageIndicator {
+  font-size: 16px;
+  font-weight: bold;
+}
