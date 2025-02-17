@@ -2,15 +2,38 @@ import os
 import re
 import csv
 import torch
+import torch.distributed as dist
 import argparse
 from typing import List, Tuple
 from PyPDF2 import PdfReader
 from transformers import AutoTokenizer, AutoModelForCausalLM
+from torch.nn.parallel import DistributedDataParallel as DDP
 
-def load_llama_model(model_name="meta-llama/Meta-Llama-3-70B", device="cuda"):
+# def setup_distributed():
+#     dist.init_process_group("nccl")
+#     torch.cuda.set_device(dist.get_rank())
+
+# def load_llama_model(model_name="meta-llama/Meta-Llama-3-70B", device="cuda"):
 # def load_llama_model(model_name="meta-llama/Meta-Llama-3-8B", device="cuda"):
-    tokenizer = AutoTokenizer.from_pretrained(model_name)
-    model = AutoModelForCausalLM.from_pretrained(model_name, torch_dtype=torch.float16).to(device)
+    # tokenizer = AutoTokenizer.from_pretrained(model_name)
+    # model = AutoModelForCausalLM.from_pretrained(model_name, torch_dtype=torch.float16).to(device)
+def load_model(model_name="deepseek-ai/DeepSeek-R1-Distill-Qwen-14B", device="cuda"):
+    # setup_distributed()
+
+    tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
+
+    model = AutoModelForCausalLM.from_pretrained(
+        model_name, 
+        torch_dtype=torch.bfloat16,
+        trust_remote_code=True
+    )
+
+    # **这里改成 DataParallel**
+    if torch.cuda.device_count() > 1:
+        print(f"Using {torch.cuda.device_count()} GPUs with DataParallel")
+        model = torch.nn.DataParallel(model)  
+
+    model.to(device)  
 
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
@@ -43,7 +66,6 @@ def extract_references(content: str) -> str:
     ref_start = None
 
     keywords = [r"References"]
-
     for i, line in enumerate(lines):
         if any(re.search(kw, line, re.IGNORECASE) for kw in keywords):
             ref_start = i
@@ -90,25 +112,33 @@ def summarize_content(
     model, 
     tokenizer, 
     content: str, 
-    max_new_tokens=300, 
+    max_new_tokens=500, 
     device="cuda"
 ) -> str:
-    prompt = (
-        "Please provide a concise summary of the following paper text for subsequent analysis:\n\n"
-        f"{content}\n\nSummary:"
-    )
+    # prompt = (
+    #     "Please provide a concise summary of the following paper text for subsequent analysis:\n\n"
+    #     f"{content}\n\nSummary:"
+    # )
+    messages = [{
+        "role": "user",
+        "content": f"Please provide a concise summary of the following paper text for subsequent analysis:\n\n{content}\n\nSummary:"
+    }]
 
-    inputs = tokenizer(
-        prompt, 
-        return_tensors="pt", 
-        truncation=True, 
-        max_length=2048, 
-        padding=True
+    # inputs = tokenizer(
+        # prompt, 
+    input_ids = tokenizer.apply_chat_template(
+        messages,
+        add_generation_prompt=True,
+        return_tensors="pt",
+        truncation=True,
+        max_length=2048
+        #panding=true
     ).to(device)
     
-    outputs = model.generate(
-        inputs["input_ids"],
-        attention_mask=inputs["attention_mask"],
+    outputs = model.module.generate(
+        # inputs["input_ids"],
+        # attention_mask=inputs["attention_mask"],
+        input_ids,
         max_new_tokens=max_new_tokens,
         temperature=0.7,
         top_p=0.9,
@@ -116,10 +146,11 @@ def summarize_content(
         pad_token_id=tokenizer.pad_token_id
     )
 
-    summary = tokenizer.decode(outputs[0], skip_special_tokens=True)
-
-    summary = re.sub(r'^(Summary[:：]?)', '', summary, flags=re.IGNORECASE).strip()
-    return summary
+    summary = tokenizer.decode(outputs[0][input_ids.shape[1]:], skip_special_tokens=True)
+    
+    # summary = re.sub(r'^(Summary[:：]?)', '', summary, flags=re.IGNORECASE).strip()
+    # return summary
+    return summary.strip()
 
 
 def select_and_rank_references(
@@ -136,55 +167,59 @@ def select_and_rank_references(
 
     references_text = "\n".join([f"[{i+1}] {ref}" for i, ref in enumerate(references)])
     
-    prompt = (
-        "The following is the main content of a research paper and its list of references. "
-        "Please analyze the importance of each reference based on the main content, "
-        "select the five most important references, and rank them in order of importance. "
-        "Output the selected references strictly in the following format with no additional text:\n\n"
-        "Main content:\n"
-        f"{main_content}\n\n"
-        "References list:\n"
-        f"{references_text}\n\n"
-        "Rank:\n"
-    )
+    # prompt = (
+    #     "The following is the main content of a research paper and its list of references. "
+    #     "Please analyze the importance of each reference based on the main content, "
+    #     "select the five most important references, and rank them in order of importance. "
+    #     "Output the selected references strictly in the following format with no additional text:\n\n"
+    #     "Main content:\n"
+    #     f"{main_content}\n\n"
+    #     "References list:\n"
+    #     f"{references_text}\n\n"
+    #     "Rank:\n"
+    # )
+    messages = [{
+        "role": "user",
+        "content": (
+            "The following is the main content of a research paper and its list of references. "
+            "Please analyze the importance of each reference based on the main content, "
+            "select the five most important references, and rank them in order of importance. "
+            "Output the selected references strictly in the following format with no additional text:\n\n"
+            f"Main content:\n{main_content}\n\n"
+            f"References list:\n{references_text}"
+        )
+    }]
 
-    inputs = tokenizer(
-        prompt, 
-        return_tensors="pt", 
-        truncation=True, 
-        max_length=2048, 
-        padding=True
+    input_ids = tokenizer.apply_chat_template(
+        messages,
+        add_generation_prompt=True,
+        return_tensors="pt",
+        truncation=True,
+        max_length=2048
     ).to(device)
     
-    outputs = model.generate(
-        inputs["input_ids"],
-        attention_mask=inputs["attention_mask"],
-        max_new_tokens=1000,
-        # temperature=0.8,
-        # top_p=0.8,
-        repetition_penalty=1.2,
-        pad_token_id=tokenizer.pad_token_id,
-        num_return_sequences=1,
-        do_sample=False
+    outputs = model.module.generate(
+        input_ids,
+        max_new_tokens=500,
+        temperature=0.3,     
+        top_p=0.9,           
+        repetition_penalty=1.1,
+        pad_token_id=tokenizer.pad_token_id
     )
 
-    response = tokenizer.decode(outputs[0], skip_special_tokens=True)
+    response = tokenizer.decode(outputs[0][input_ids.shape[1]:], skip_special_tokens=True)
     print("LLM Raw Response:\n", response, "\n")
 
     selected_refs = []
     for line in response.splitlines():
         line = line.strip()
-        # "[1] Reference" or "(1) Reference" or "1. Reference" ? 
-        match = re.match(r"[\(\[]?(\d+)[\)\]]?[\.]?\s+(.*)", line)
-        if match:
+        match = re.match(r"^\s*[\[\(]?(\d+)[\]\)]?[\.\s]*(.*)", line)
+        if match and len(selected_refs) < 5:
             index = int(match.group(1))
             if 1 <= index <= len(references):
-                ref_text = references[index-1]
-                selected_refs.append((index, ref_text))
-            if len(selected_refs) == 5:  
-                break
-
-    return selected_refs
+                selected_refs.append((index, references[index-1]))
+    
+    return selected_refs[:5]
 
 
 def save_to_csv(selected_refs: List[Tuple[int, str]], output_file="selected_references.csv"):
@@ -198,46 +233,43 @@ def save_to_csv(selected_refs: List[Tuple[int, str]], output_file="selected_refe
 def main():
     device = "cuda" if torch.cuda.is_available() else "cpu"
     pdf_path = "2212.06872v5.pdf"
+    
     print(f"Reading PDF: {pdf_path}")
     content = read_pdf(pdf_path)
-
     if not content.strip():
         print("PDF content is empty.")
         return
 
     title = get_paper_title(content)
-    print(f"Paper Title (heuristic): {title}")
+    print(f"Paper Title: {title}")
 
     main_content = extract_main_content(content)
-
     references_text = extract_references(content)
+    
     if not references_text.strip():
         print("No valid references found.")
         return
 
     references = parse_references(references_text)
     print(f"Total {len(references)} references found.")
+    
     if len(references) < 5:
-        print("References are fewer than 5, skipping ranking.")
+        print("Insufficient references for ranking.")
         return
 
-    print("Loading llama-3-8b...")
-    tokenizer, model = load_llama_model(device=device)
+    print("Loading DeepSeek-R1-Distill-Qwen-14B model...")
+    tokenizer, model = load_model(device=device)
     
-    print("Selecting and ranking the five most important references using LLM...")
-    selected_refs = select_and_rank_references(model, tokenizer, main_content, references, device=device)
-
-    if len(selected_refs) < 5:
-        print("Failed to select five references.")
+    print("Ranking references...")
+    selected_refs = select_and_rank_references(model, tokenizer, main_content, references, device)
+    
+    if len(selected_refs) == 5:
+        save_to_csv(selected_refs)
+        print("\nTop 5 References:")
+        for rank, (idx, ref) in enumerate(selected_refs, 1):
+            print(f"{rank}. [Ref{idx}] {ref[:150]}...")
     else:
-        print("Successfully selected five references.")
-        save_to_csv(selected_refs, output_file="selected_references.csv")
-        print(f"Results saved to 'selected_references'.\n")
-
-        print("Top 5 References:")
-        for rank, (index, ref) in enumerate(selected_refs, start=1):
-            print(f"{rank}. [Index={index}] {ref}")
-
+        print("Failed to select 5 references")
 
 if __name__ == "__main__":
     # """
@@ -253,3 +285,5 @@ if __name__ == "__main__":
     
     # main(args.pdf_path, args.output_file)
     main()
+
+
