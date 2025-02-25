@@ -3,7 +3,8 @@ import glob
 
 def extract_authors_universities():
     #Combine all paper CSVs that we currently have, we can add more later. 
-    papers_files = glob.glob("./CVPR_*.csv") + glob.glob("./ICML_*.csv") + glob.glob("./NeurIPS_*.csv")
+    papers_files = glob.glob("./CVPR_*.csv") + glob.glob("./ICML_*.csv") + glob.glob("./NeurIPS_*.csv") + glob.glob("./Conferences/IJCAI_*.csv") + glob.glob("./Conferences/KDD_*.csv")
+    papers_list = [pd.read_csv(file) for file in papers_files]
     papers_list = [pd.read_csv(file) for file in papers_files]
     papers = pd.concat(papers_list, ignore_index=True)
 
