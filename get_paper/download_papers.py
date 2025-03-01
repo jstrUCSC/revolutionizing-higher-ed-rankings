@@ -12,15 +12,13 @@ from bs4 import BeautifulSoup
     - Files are not checked if they exist
 
 """
-
-
-
-
 # Downloads all publications from all conferences within the conferences folder.
+# * Each publication is downloaded into a folder with the name of the conference
+#   CSV it is a from, without "_papers.csv"
 def download_all():
     conferences = os.listdir(os.getcwd() + "/Conferences")
     for file_name in conferences:
-        publication_path = os.getcwd() + "/Publications/" + file_name[:-11]
+        publication_path = os.getcwd() + "/Publications/" + file_name[:-11] # Remove "_papers.csv"
         if not os.path.exists(publication_path):
             os.makedirs(publication_path)
     
@@ -59,7 +57,7 @@ def download_paper(url, conference):
                "https://proceedings.mlr.press", "https://proceedings.neurips.cc",
                "https://openaccess.thecvf.com", "https://doi.org", "arxiv.org"]
     if domains[5] in url or domains[6] in url:
-               return # Cannot handle DOI or Arxiv links at this point in time
+               return # Cannot handle DOI or Arxiv links
     html = urllib.request.urlopen(url).read().decode("utf8")
     soup = BeautifulSoup(html, "html.parser")
     links = soup.find_all('a')
@@ -100,6 +98,9 @@ def download_paper(url, conference):
                 download_link = domains[6] + link.get("href")
                 name = soup.find_all("h1")[1].string
 
+    # Set the name of the PDF to the name of the publication (with some format changes)
+    # * Some extra "replace" cases may be necessary for special characters later, these were
+    #   the only ones I ran into
     name = name.replace(" ", "_").replace(",", "").replace(":","").replace("$\\alpha$", "alpha")
     local_path = conference_folder + name + ".pdf"
     print(download_link)
@@ -111,14 +112,12 @@ def download_paper(url, conference):
         print("Could not download")
         return 0
    
-
-
 def main():
     publication_path = os.getcwd() + "/Publications"
     if not os.path.exists(publication_path):
         os.makedirs(publication_path)
-    download_all()
-    #download_conference("NeurIPS_2023_papers.csv")
+    download_conference("NeurIPS_2023_papers.csv")
+    #download_all()
 
 if __name__ == "__main__":
     main()
