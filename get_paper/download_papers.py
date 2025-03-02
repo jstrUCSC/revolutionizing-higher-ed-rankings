@@ -10,18 +10,14 @@ from bs4 import BeautifulSoup
 
     - It will take over 10 hours
     - Files are not checked if they exist
-
+    
 """
 # Downloads all publications from all conferences within the conferences folder.
 # * Each publication is downloaded into a folder with the name of the conference
 #   CSV it is a from, without "_papers.csv"
+# NOTE: Directory management only tested on a Windows machine
 def download_all():
     conferences = os.listdir(os.getcwd() + "/Conferences")
-    for file_name in conferences:
-        publication_path = os.getcwd() + "/Publications/" + file_name[:-11] # Remove "_papers.csv"
-        if not os.path.exists(publication_path):
-            os.makedirs(publication_path)
-    
     for file_name in conferences:
        download_conference(file_name)
     return
@@ -61,7 +57,7 @@ def download_paper(url, conference):
     html = urllib.request.urlopen(url).read().decode("utf8")
     soup = BeautifulSoup(html, "html.parser")
     links = soup.find_all('a')
-    conference_folder = "Publications/" + conference[:-11] + "/"
+    conference_folder = "Publications/" + conference[:-11] + "/" # Remove "_papers.csv" suffix
     download_link = ""
     name = ""
     #print(url)
@@ -93,11 +89,6 @@ def download_paper(url, conference):
                 else:
                     name = soup.find(id="papertitle").string
 
-        elif domains[6] in url: #arxiv.org (INCOMPLETE)
-            if link.string == "View PDF":
-                download_link = domains[6] + link.get("href")
-                name = soup.find_all("h1")[1].string
-
     # Set the name of the PDF to the name of the publication (with some format changes)
     # * Some extra "replace" cases may be necessary for special characters later, these were
     #   the only ones I ran into
@@ -114,8 +105,16 @@ def download_paper(url, conference):
    
 def main():
     publication_path = os.getcwd() + "/Publications"
+    conferences_path = os.listdir(os.getcwd() + "/Conferences")
+                    
     if not os.path.exists(publication_path):
         os.makedirs(publication_path)
+    
+    for file_name in conferences_path:
+        publication_path = os.getcwd() + "/Publications/" + file_name[:-11] # Remove "_papers.csv" suffix
+        if not os.path.exists(publication_path):
+            os.makedirs(publication_path)
+                             
     download_conference("NeurIPS_2023_papers.csv")
     #download_all()
 
