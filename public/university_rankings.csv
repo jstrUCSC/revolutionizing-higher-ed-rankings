@@ -70,14 +70,14 @@ Index,University,Artificial intelligence,Computer systems and networks,Cybersecu
 69,Renmin University of China,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
 70,Pennsylvania State University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
 71,Xi'an Jiaotong University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
-72,Massachusetts Institute of Technology,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+72,Massachusetts Institute of Technology,0,0,0,0,0,0,1,0,0,0,0,0,0,0,North America
 73,Concordia University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
 74,University of Athens,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
 75,Rochester Institute of Technology,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
 76,Brigham Young University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
 77,Universidad de Chile,0,0,0,0,0,0,0,0,0,0,0,0,0,0,southamerica
 78,Binghamton University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
-79,Carnegie Mellon University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+79,Carnegie Mellon University,0,0,0,0,0,0,0,0,0,0,0,0,0,1,North America
 80,Plaksha University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
 81,Jadavpur University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
 82,Monash University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,australasia
@@ -108,11 +108,11 @@ Index,University,Artificial intelligence,Computer systems and networks,Cybersecu
 107,Brock University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
 108,IUST,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
 109,Lebanese American University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
-110,New York University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+110,New York University,0,0,0,0,0,0,1,0,0,0,0,0,0,0,North America
 111,University of Warwick,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
 112,West Virginia University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
 113,TU Munich,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
-114,Univ. of California - Berkeley,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+114,Univ. of California - Berkeley,0,0,0,0,0,0,1,0,0,0,0,0,0,0,North America
 115,CUNY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
 116,Ecole Normale Superieure de Lyon,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
 117,University of Sussex,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
@@ -272,7 +272,7 @@ Index,University,Artificial intelligence,Computer systems and networks,Cybersecu
 271,University of Aberdeen,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
 272,Massey University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,australasia
 273,Birkbeck University of London,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
-274,University of Oxford,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+274,University of Oxford,0,0,0,0,0,0,1,0,0,0,0,0,0,0,europe
 275,Middle East Technical University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
 276,University of Louisville,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
 277,Illinois Institute of Technology,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
@@ -398,7 +398,7 @@ Index,University,Artificial intelligence,Computer systems and networks,Cybersecu
 397,Vanderbilt University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
 398,Weizmann Institute of Science,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
 399,University of Arkansas,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
-400,Princeton University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+400,Princeton University,0,0,0,0,0,0,0,0,0,0,0,0,0,1,North America
 401,Özyeğin University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
 402,Paderborn University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
 403,California Institute of Technology,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
@@ -436,7 +436,7 @@ Index,University,Artificial intelligence,Computer systems and networks,Cybersecu
 435,Polytechnic University of Catalonia,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
 436,Sungkyunkwan University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
 437,Hanyang University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
-438,Beihang University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+438,Beihang University,0,0,0,0,0,0,0,0,0,0,0,0,0,1,asia
 439,UNC - Charlotte,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
 440,RMIT University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,australasia
 441,Indiana State University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
