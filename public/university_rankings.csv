@@ -1,0 +1,662 @@
+Index,University,Artificial intelligence,Computer systems and networks,Cybersecurity,Databases and data mining,Digital Libraries,Human computer interaction,Machine Learning,Medical Image Computing,Natural Language Processing,Parallel Computing,Program Analysis,Programming Languages,Programming languages and verification,Vision and graphics,Continent
+1,Aberystwyth University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+2,University of Waterloo,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+3,IISc Bangalore,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+4,Auburn University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+5,Dalhousie University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+6,University of Michigan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+7,IIT Hyderabad,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+8,Tata Inst. of Fundamental Research,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+9,IIT Madras,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+10,University of Edinburgh,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+11,Queen's University Belfast,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+12,University of Nebraska,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+13,University of Sydney,0,0,0,0,0,0,0,0,0,0,0,0,0,0,australasia
+14,Virginia Tech,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+15,Shanghai Jiao Tong University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+16,SUTD,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+17,Technion,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+18,ISI Kolkata,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+19,Northwestern University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+20,Western Sydney University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,australasia
+21,Georgia Institute of Technology,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+22,Harvard University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+23,University of Queensland,0,0,0,0,0,0,0,0,0,0,0,0,0,0,australasia
+24,CRIStAL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+25,Tel Aviv University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+26,University of Saskatchewan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+27,University College London,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+28,University of Montreal,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+29,Istanbul Technical University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+30,Univ. of California - San Diego,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+31,University of Pisa,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+32,Université Laval,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+33,University of Jordan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+34,Towson University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+35,Brunel University London,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+36,King Abdulaziz University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+37,UNSW,0,0,0,0,0,0,0,0,0,0,0,0,0,0,australasia
+38,Qatar Computing Research Institute,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+39,KAIST,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+40,Univ. of California - Riverside,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+41,University of Sheffield,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+42,Hebrew University of Jerusalem,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+43,Rutgers University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+44,Florida International University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+45,Univ. of Maryland - Baltimore County,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+46,North Carolina State University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+47,Chulalongkorn University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+48,Texas Tech University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+49,UFMS,0,0,0,0,0,0,0,0,0,0,0,0,0,0,southamerica
+50,Rice University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+51,USTC,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+52,Chinese Academy of Sciences,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+53,University of Copenhagen,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+54,Johns Hopkins University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+55,Boston University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+56,Kyungpook National University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+57,Arizona State University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+58,University at Buffalo,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+59,Univ. of California - Irvine,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+60,Univ. of Illinois at Urbana-Champaign,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+61,Boston College,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+62,POSTECH,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+63,Tongji University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+64,Missouri S&T,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+65,City University of Hong Kong,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+66,University of Cincinnati,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+67,UESTC,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+68,University of Southern Mississippi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+69,Renmin University of China,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+70,Pennsylvania State University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+71,Xi'an Jiaotong University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+72,Massachusetts Institute of Technology,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+73,Concordia University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+74,University of Athens,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+75,Rochester Institute of Technology,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+76,Brigham Young University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+77,Universidad de Chile,0,0,0,0,0,0,0,0,0,0,0,0,0,0,southamerica
+78,Binghamton University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+79,Carnegie Mellon University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+80,Plaksha University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+81,Jadavpur University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+82,Monash University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,australasia
+83,University of Toronto,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+84,IIT Bombay,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+85,Xidian University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+86,University of Bristol,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+87,Univ. of California - Los Angeles,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+88,Tokyo Institute of Technology,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+89,Keio University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+90,Kyoto University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+91,University of Tokyo,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+92,University of Maryland - College Park,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+93,Drexel University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+94,Université du Québec à Montréal,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+95,NJIT,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+96,Imperial College London,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+97,IIT Ropar,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+98,IIT Indore,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+99,Wayne State University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+100,National Institute of Technology Silchar,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+101,Michigan State University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+102,DAIICT,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+103,IIIT Hyderabad,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+104,University of Massachusetts Amherst,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+105,IMDEA Networks Institute,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+106,University of Central Florida,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+107,Brock University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+108,IUST,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+109,Lebanese American University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+110,New York University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+111,University of Warwick,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+112,West Virginia University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+113,TU Munich,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+114,Univ. of California - Berkeley,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+115,CUNY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+116,Ecole Normale Superieure de Lyon,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+117,University of Sussex,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+118,King's College London,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+119,TU Eindhoven,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+120,University of New Brunswick,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+121,City University of London,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+122,University of Leeds,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+123,University of Texas - El Paso,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+124,University of Illinois at Chicago,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+125,IT University of Copenhagen,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+126,University of North Carolina,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+127,York University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+128,University of Nottingham,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+129,University of Siegen,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+130,Uppsala University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+131,Utrecht University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+132,UFPR,0,0,0,0,0,0,0,0,0,0,0,0,0,0,southamerica
+133,Università della Svizzera italiana,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+134,EPFL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+135,Cornell University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+136,Texas A&M University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+137,De La Salle University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+138,University of Calgary,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+139,University of Kentucky,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+140,Colorado State University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+141,McGill University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+142,Clemson University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+143,Washington University in St. Louis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+144,Indiana University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+145,University of Alberta,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+146,Bar-Ilan University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+147,Georgetown University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+148,TTI Chicago,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+149,TU Delft,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+150,LUMS,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+151,University of Tartu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+152,IIT Delhi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+153,University of Delhi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+154,EURECOM,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+155,BITS Pilani,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+156,University of Southampton,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+157,Western University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+158,Hacettepe University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+159,NTUA,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+160,University of Nicosia,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+161,McMaster University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+162,University of Cambridge,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+163,IIIT Bangalore,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+164,Ohio State University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+165,IIT Gandhinagar,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+166,BITS Pilani-Goa,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+167,University of Texas at Dallas,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+168,TU Darmstadt,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+169,Cardiff University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+170,IIT Goa,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+171,Victoria University of Wellington,0,0,0,0,0,0,0,0,0,0,0,0,0,0,australasia
+172,University of Victoria,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+173,University of Manitoba,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+174,University of York,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+175,Naval Postgraduate School,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+176,University of Guelph,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+177,Colorado School of Mines,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+178,University of Strathclyde,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+179,Worcester Polytechnic Institute,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+180,University College Dublin,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+181,Open University UK,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+182,University at Albany - SUNY,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+183,Duke University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+184,University of Bath,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+185,University of Ottawa,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+186,University of Delaware,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+187,KU Leuven,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+188,Radboud University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+189,VU Amsterdam,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+190,Federal University of Rio Grande,0,0,0,0,0,0,0,0,0,0,0,0,0,0,southamerica
+191,Univ. of California - Davis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+192,UNICAMP,0,0,0,0,0,0,0,0,0,0,0,0,0,0,southamerica
+193,UFRJ,0,0,0,0,0,0,0,0,0,0,0,0,0,0,southamerica
+194,UFPE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,southamerica
+195,University of Pittsburgh,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+196,National Tsing Hua University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+197,University of Southern California,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+198,Sun Yat-sen University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+199,Stony Brook University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+200,Izmir Institute of Technology,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+201,University of Auckland,0,0,0,0,0,0,0,0,0,0,0,0,0,0,australasia
+202,University of Canterbury,0,0,0,0,0,0,0,0,0,0,0,0,0,0,australasia
+203,University of Malta,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+204,HKUST,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+205,UFMG,0,0,0,0,0,0,0,0,0,0,0,0,0,0,southamerica
+206,PUC-RS,0,0,0,0,0,0,0,0,0,0,0,0,0,0,southamerica
+207,IPM,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+208,Ariel University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+209,PTIT,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+210,University of Stuttgart,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+211,University of British Columbia,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+212,University of Louisiana - Lafayette,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+213,Brandeis University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+214,ETH Zurich,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+215,Nanyang Technological University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+216,University of Vermont,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+217,University of Chicago,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+218,IST Austria,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+219,University of Minnesota,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+220,Lancaster University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+221,Heriot-Watt University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+222,Tulane University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+223,University of Texas at Arlington,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+224,Loughborough University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+225,Utah State University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+226,University of Waikato,0,0,0,0,0,0,0,0,0,0,0,0,0,0,australasia
+227,Australian National University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,australasia
+228,Queen Mary University of London,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+229,University of Adelaide,0,0,0,0,0,0,0,0,0,0,0,0,0,0,australasia
+230,SUFE,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+231,Stanford University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+232,Graz University of Technology,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+233,Simon Fraser University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+234,University of Essex,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+235,Hasso Plattner Institute,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+236,CISPA Helmholtz Center,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+237,University of Tübingen,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+238,University of Technology Sydney,0,0,0,0,0,0,0,0,0,0,0,0,0,0,australasia
+239,Maastricht University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+240,University of Trento,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+241,DTU,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+242,Sapienza University of Rome,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+243,Politecnico di Milano,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+244,Carleton University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+245,Aalborg University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+246,University of Birmingham,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+247,University of Luxembourg,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+248,Ecole Normale Superieure de Cachan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+249,University of Exeter,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+250,TU Kaiserslautern,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+251,University of Kansas,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+252,University of Duisburg-Essen,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+253,University of Lübeck,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+254,University of Tennessee,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+255,University of Bremen,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+256,Humboldt University of Berlin,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+257,Universidad de los Andes,0,0,0,0,0,0,0,0,0,0,0,0,0,0,southamerica
+258,University of Buenos Aires,0,0,0,0,0,0,0,0,0,0,0,0,0,0,southamerica
+259,Universidad Nacional de Córdoba,0,0,0,0,0,0,0,0,0,0,0,0,0,0,southamerica
+260,Royal Holloway University of London,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+261,University of Padova,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+262,AUEB,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+263,VNIT Nagpur,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+264,University of Groningen,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+265,University of Göttingen,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+266,University of Regensburg,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+267,University of Potsdam,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+268,Aarhus University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+269,University of A Coruña,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+270,Cleveland State University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+271,University of Aberdeen,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+272,Massey University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,australasia
+273,Birkbeck University of London,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+274,University of Oxford,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+275,Middle East Technical University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+276,University of Louisville,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+277,Illinois Institute of Technology,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+278,IIT Dharwad,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+279,Stevens Institute of Technology,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+280,IMDEA Software Institute,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+281,Leiden University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+282,University of Piraeus,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+283,Chalmers/GU,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+284,Queensland University of Technology,0,0,0,0,0,0,0,0,0,0,0,0,0,0,australasia
+285,University of Helsinki,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+286,University of Houston,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+287,Univ. of California - Santa Cruz,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+288,University of Salzburg,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+289,University of Colorado Boulder,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+290,Goldsmiths University of London,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+291,Old Dominion University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+292,University of Crete,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+293,University of Ioannina,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+294,University of Glasgow,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+295,Brown University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+296,Oakland University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+297,IIT Kharagpur,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+298,University of Osnabrück,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+299,Goethe University Frankfurt,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+300,Ruhr-University Bochum,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+301,University of Vienna,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+302,University of Bayreuth,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+303,Michigan Technological University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+304,Trinity College Dublin,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+305,USP,0,0,0,0,0,0,0,0,0,0,0,0,0,0,southamerica
+306,ShanghaiTech University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+307,Fudan University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+308,Central South University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+309,University of South Florida,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+310,Sichuan University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+311,University of Georgia,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+312,Purdue University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+313,Macquarie University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,australasia
+314,Zhejiang University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+315,University of Melbourne,0,0,0,0,0,0,0,0,0,0,0,0,0,0,australasia
+316,Portland State University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+317,University of Washington,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+318,KMUTNB,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+319,Augusta University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+320,University of Surrey,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+321,Yale University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+322,IIT Kanpur,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+323,University of Notre Dame,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+324,Yıldız Technical University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+325,NYU Abu Dhabi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+326,University of Rhode Island,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+327,University of Hawaii at Manoa,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+328,Washington State University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+329,PUC-RIO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,southamerica
+330,University of Haifa,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+331,Oklahoma State University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+332,Seoul National University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+333,Qatar University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+334,University of Malaya,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+335,George Mason University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+336,University of Bonn,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+337,University of Warsaw,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+338,University of Hamburg,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+339,University of Leipzig,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+340,University of Trier,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+341,National Institute of Informatics,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+342,DePaul University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+343,University of Pennsylvania,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+344,Tufts University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+345,University of Manchester,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+346,Durham University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+347,Universidade de Lisboa,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+348,Universidade NOVA de Lisboa,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+349,University of Massachusetts Boston,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+350,TU Wien,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+351,National University of Singapore,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+352,University of Regina,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+353,Ben-Gurion University of the Negev,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+354,Hunan University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+355,University of Otago,0,0,0,0,0,0,0,0,0,0,0,0,0,0,australasia
+356,Peking University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+357,Pontificia Universidad Catolica de Chile,0,0,0,0,0,0,0,0,0,0,0,0,0,0,southamerica
+358,JUST,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+359,Nova Southeastern University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+360,BUPT,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+361,IIT Jammu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+362,SUSTech,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+363,University of North Texas,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+364,Chongqing University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+365,Claremont Graduate University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+366,University of South Carolina,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+367,Temple University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+368,Tianjin University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+369,Iowa State University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+370,Georgia State University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+371,Nanjing University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+372,Wuhan University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+373,College of William and Mary,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+374,Singapore Management University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+375,Tsinghua University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+376,Hong Kong Baptist University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+377,Harbin Institute of Technology,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+378,Xiamen University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+379,Yangzhou University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+380,The University of Alabama,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+381,Shenzhen University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+382,Univ. of California - Merced,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+383,University of Virginia,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+384,CUHK (SZ),0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+385,Université Paris Dauphine,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+386,NWPU,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+387,University of Liverpool,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+388,University of Nevada,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+389,Boise State University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+390,MUST,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+391,UCCS,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+392,Northeastern University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+393,IUPUI,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+394,Rensselaer Polytechnic Institute,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+395,Beijing Jiaotong University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+396,Dartmouth College,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+397,Vanderbilt University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+398,Weizmann Institute of Science,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+399,University of Arkansas,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+400,Princeton University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+401,Özyeğin University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+402,Paderborn University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+403,California Institute of Technology,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+404,IIT Jodhpur,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+405,NAIST,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+406,Osaka University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+407,University of Tsukuba,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+408,Chinese University of Hong Kong,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+409,National Cheng Kung University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+410,University of Florida,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+411,Kent State University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+412,Columbia University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+413,Westlake University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+414,National Taiwan University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+415,National Chiao Tung University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+416,University of Missouri,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+417,University of Oklahoma,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+418,University of Hong Kong,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+419,University of Macau,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+420,University of Missouri - Kansas City,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+421,University of Massachusetts Lowell,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+422,University of Wisconsin - Madison,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+423,University of Utah,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+424,University of Texas at Austin,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+425,Ontario Tech University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+426,Queen’s University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+427,UNC - Greensboro,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+428,Case Western Reserve University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+429,University of Oregon,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+430,Max Planck Society,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+431,The Hong Kong Polytechnic University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+432,Emory University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+433,NTNU,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+434,Yonsei University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+435,Polytechnic University of Catalonia,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+436,Sungkyunkwan University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+437,Hanyang University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+438,Beihang University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+439,UNC - Charlotte,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+440,RMIT University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,australasia
+441,Indiana State University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+442,Griffith University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,australasia
+443,University of Nevada Las Vegas,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+444,Waseda University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+445,MBZUAI,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+446,The Catholic University of Korea,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+447,UNIST,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+448,Univ. of California - Santa Barbara,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+449,Soochow University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+450,HUST,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+451,Lehigh University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+452,University of Connecticut,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+453,Middlesex University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+454,Shandong University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+455,Memorial University of Newfoundland,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+456,Koç University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+457,University of Massachusetts Dartmouth,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+458,Oregon State University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+459,East China Normal University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+460,Florida Atlantic University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+461,University of Rochester,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+462,University of Alabama - Birmingham,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+463,University of Nebraska - Omaha,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+464,University of Windsor,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+465,UFF,0,0,0,0,0,0,0,0,0,0,0,0,0,0,southamerica
+466,Florida State University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+467,Syracuse University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+468,Université libre de Bruxelles,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+469,Sabancı University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+470,Ecole Normale Superieure,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+471,Texas State University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+472,University of Memphis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+473,University of Idaho,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+474,Northwest University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+475,University of Münster,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+476,University of Texas at San Antonio,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+477,University of New Mexico,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+478,KAUST,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+479,George Washington University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+480,OHSU,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+481,University of Iowa,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+482,TU Berlin,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+483,University of Miami,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+484,University of St Andrews,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+485,TOBB ETÜ,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+486,Tampere University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+487,IIIT Delhi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+488,Friedrich Schiller University Jena,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+489,University of Kent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+490,University of Kiel,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+491,University of Rostock,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+492,University of Passau,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+493,JKU Linz,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+494,University of Konstanz,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+495,University of Oldenburg,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+496,University of Kassel,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+497,University of Erlangen–Nuremberg,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+498,Bundeswehr University Munich,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+499,Université Jean Monnet,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+500,Delhi University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+501,Ravenshaw University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+502,GSSI,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+503,Charles University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+504,Czech Technical University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+505,USP-ICMC,0,0,0,0,0,0,0,0,0,0,0,0,0,0,southamerica
+506,University of Murcia,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+507,University of Bern,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+508,RWTH Aachen University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+509,Bilkent University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+510,Galatasaray University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+511,University of Twente,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+512,BUET,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+513,Royal Military College of Canada,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+514,CMI,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+515,IGDTUW,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+516,IPI PAN,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+517,National Institute of Technology Warangal,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+518,HSE University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+519,Aalto University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+520,University of Amsterdam,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+521,University of Wroclaw,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+522,CWI,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+523,KTH Royal Institute of Technology,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+524,THWS,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+525,University of Bergen,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+526,Mississippi State University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+527,University of New Orleans,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+528,Sharif University of Technology,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+529,University of Tulsa,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+530,Louisiana State University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+531,Masdar Institute,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+532,University of Basel,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+533,New York Tech,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+534,Toronto Metropolitan University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+535,KIIT Bhubaneswar,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+536,Saarland University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+537,University of Ulm,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+538,University of Peradeniya,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+539,NISER,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+540,IIT Roorkee,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+541,Université de Sherbrooke,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+542,UFRGS,0,0,0,0,0,0,0,0,0,0,0,0,0,0,southamerica
+543,University of Würzburg,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+544,University of Salerno,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+545,UFU,0,0,0,0,0,0,0,0,0,0,0,0,0,0,southamerica
+546,Northern Arizona University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+547,University of L'Aquila,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+548,Florida Institute of Technology,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+549,Scuola Superiore Sant'Anna,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+550,ETS Montreal,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+551,University of Catania,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+552,TU Braunschweig,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+553,LMU Munich,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+554,Universidade Federal de Viçosa,0,0,0,0,0,0,0,0,0,0,0,0,0,0,southamerica
+555,Bocconi University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+556,University of New Hampshire,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+557,University of Wuppertal,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+558,University of Koblenz-Landau,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+559,Universidade de Brasília,0,0,0,0,0,0,0,0,0,0,0,0,0,0,southamerica
+560,Lund University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+561,Mälardalen University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+562,University of Sannio,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+563,University of Hannover,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+564,Freie Universitaet Berlin,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+565,Tilburg University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+566,American University of Beirut,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+567,University of Fribourg,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+568,TU Dortmund,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+569,University of Denver,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+570,University of Arkansas - Little Rock,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+571,Polytechnique Montreal,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+572,Kempelen Institute - KInIT,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+573,University of Western Australia,0,0,0,0,0,0,0,0,0,0,0,0,0,0,australasia
+574,Air Force Institute of Technology,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+575,Bielefeld University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+576,University of Wollongong,0,0,0,0,0,0,0,0,0,0,0,0,0,0,australasia
+577,TU Dresden,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+578,University of Michigan-Dearborn,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+579,Universidad de Zaragoza,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+580,Simula UiB,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+581,TU Ilmenau,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+582,Brno University of Technology,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+583,TU Chemnitz,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+584,University of Klagenfurt,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+585,University of Zurich,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+586,Malmö University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+587,University of Düsseldorf,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+588,Ecole Normale Superieure de Rennes,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+589,Karlsruhe Institute of Technology,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+590,Baylor University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+591,Kansas State University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+592,TeIAS,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+593,Montana State University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+594,University of Innsbruck,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+595,University of Mannheim,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+596,Hamburg University of Technology,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+597,University of Halle-Wittenberg,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+598,University of Freiburg,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+599,IMSc,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+600,Ohio University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+601,University of Cape Town,0,0,0,0,0,0,0,0,0,0,0,0,0,0,africa
+602,University of Magdeburg,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+603,University of Arizona,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+604,University of Dundee,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+605,Heidelberg University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+606,Saint Louis University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+607,Southern Methodist University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+608,Brandenburg University of Technology,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+609,University of Bamberg,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+610,Louisiana Tech University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+611,Cyprus University of Technology,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+612,University of Mainz,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+613,Masaryk University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+614,Universidad Rey Juan Carlos,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+615,University of Alabama - Huntsville,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+616,University of Szeged,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+617,Virginia Commonwealth University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+618,University of Colorado - Denver,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+619,New Mexico State University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+620,American University in Cairo,0,0,0,0,0,0,0,0,0,0,0,0,0,0,africa
+621,TU Clausthal,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+622,University of Antwerp,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+623,South Asian University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+624,University of Wisconsin - Milwaukee,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+625,NYU Shanghai,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+626,Wichita State University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+627,Boğaziçi University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+628,University of Maine,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+629,University of Augsburg,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+630,University of Hildesheim,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+631,Babeș-Bolyai University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+632,Western Michigan University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+633,Kyung Hee University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+634,New Mexico Tech,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+635,Stellenbosch University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,africa
+636,Texas A&M at Qatar,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+637,Korea University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+638,Maynooth University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+639,IIT (BHU) Varanasi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+640,TU Freiberg,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+641,IIT Guwahati,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+642,SIU Carbondale,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+643,Jacobs University Bremen,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+644,IIT Bhilai,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+645,IIT Tirupati,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+646,North Dakota State University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+647,IIT Palakkad,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+648,Missouri University of Technology,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+649,University of Wyoming,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+650,Bauhaus University Weimar,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+651,University of Mississippi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+652,IIT Patna,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+653,LIU Post,0,0,0,0,0,0,0,0,0,0,0,0,0,0,North America
+654,University of Newcastle,0,0,0,0,0,0,0,0,0,0,0,0,0,0,australasia
+655,IIT Mandi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+656,Shiv Nadar University,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+657,VISTEC,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia
+658,University of Marburg,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+659,University of Molise,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+660,University of Cologne,0,0,0,0,0,0,0,0,0,0,0,0,0,0,europe
+661,IIT Bhubaneswar,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asia

@@ -41,7 +41,7 @@ final_data["Index"] = range(1, len(final_data) + 1)  # Assign ranks automaticall
 
 # Fill all research-related fields with 0
 for col in columns[2:]:  
-    final_data[col] = [random.randint(1, 10) for _ in range(len(final_data))]
+    final_data[col] = [0 for _ in range(len(final_data))]
 
 # Save the resulting DataFrame to a new CSV
 final_data.to_csv(output_file, index=False)
