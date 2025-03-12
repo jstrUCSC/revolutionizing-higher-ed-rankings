@@ -1,17 +1,12 @@
 import csv
 import os
+import sys
 import urllib.request
 import time
 # pip install beautifulsoup4
 # an html5 reader
-from bs4 import BeautifulSoup 
+from bs4 import BeautifulSoup
 
-""" DO NOT DOWNLOAD ALL PUBLICATIONS WHEN TESTING
-
-    - It will take over 10 hours
-    - Files are not checked if they exist
-    
-"""
 # Downloads all publications from all conferences within the conferences folder.
 # * Each publication is downloaded into a folder with the name of the conference
 #   CSV it is a from, without "_papers.csv"
@@ -95,15 +90,23 @@ def download_paper(url, conference):
     name = name.replace(" ", "_").replace(",", "").replace(":","").replace("$\\alpha$", "alpha")
     local_path = conference_folder + name + ".pdf"
     print(download_link)
-    stored_loc = urllib.request.urlretrieve(download_link, local_path)
-    if(stored_loc):
-        print("Success")
-        return 1
+    # Do not redownload if a paper already exists
+    if os.path.exists(local_path):
+        print("Paper already downloaded")
     else:
-        print("Could not download")
-        return 0
-   
+        stored_loc = urllib.request.urlretrieve(download_link, local_path)
+        if(stored_loc):
+            print("Success")
+        else:
+            print("Could not download")
+
+# Program must be run in the following manner:
+# python download_papers.py conference_name.csv
+# - include .csv extension
+# - error will be thrown if argument is missing or
+#   a valid name is not provided.
 def main():
+    print("Extracting papers from " + sys.argv[1])
     publication_path = os.getcwd() + "/Publications"
     conferences_path = os.listdir(os.getcwd() + "/Conferences")
                     
@@ -115,7 +118,7 @@ def main():
         if not os.path.exists(publication_path):
             os.makedirs(publication_path)
                              
-    download_conference("NeurIPS_2023_papers.csv")
+    download_conference(sys.argv[1])
     #download_all()
 
 if __name__ == "__main__":
