@@ -53,9 +53,10 @@ def process_csv(input_csv, output_csv):
             reader = csv.reader(f)
             for row in reader:
                 if len(row) == 2:
-                    existing_entries.add(tuple(row))
+                    existing_entries.add(row[0])
     except FileNotFoundError:
         pass
+    print(f"Existing entries loaded: {existing_entries}")
 
     results = []  # Store results before writing
 
@@ -64,16 +65,19 @@ def process_csv(input_csv, output_csv):
 
         for row in reader:
             paper_title = row.get("Paper Title", "").strip()
-            abbreviated_authors = [a.strip() for a in row.get("Authors", "").strip("[]").split(",") if a.strip()]
-
-            if not paper_title or not abbreviated_authors:
+            authors = row.get("Authors", "").strip()
+            if "." in authors:
+                author_list = [a.strip() for a in row.get("Authors", "").split(",") if a.strip()]
+            else:
+                for a in authors.split(","):
+                    results.append([a.strip(), paper_title])
                 continue
 
             print(f"Processing: {paper_title}")
-            full_authors, fetched_title = fetch_dblp_authors_and_title(paper_title, abbreviated_authors)
+            full_authors, fetched_title = fetch_dblp_authors_and_title(paper_title, author_list)
             
             if fetched_title:
-
+                print(fetched_title)
                 for name in full_authors:
                     if name not in existing_entries:
                         results.append([name, fetched_title])

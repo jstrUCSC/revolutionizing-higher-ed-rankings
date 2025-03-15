@@ -1,17 +1,23 @@
-Full Name,Paper Title,Score
-Julius Adebayo,Sanity Checks for Saliency Maps.,1
-Justin Gilmer,Sanity Checks for Saliency Maps.,1
-Michael Muelly,Sanity Checks for Saliency Maps.,1
-Ian J. Goodfellow,Sanity Checks for Saliency Maps.,1
-Moritz Hardt,Sanity Checks for Saliency Maps.,1
-Been Kim,Sanity Checks for Saliency Maps.,1
-Jia Deng,ImageNet: A large-scale hierarchical image database.,1
-Wei Dong,ImageNet: A large-scale hierarchical image database.,1
-Richard Socher,ImageNet: A large-scale hierarchical image database.,1
-Li-Jia Li,ImageNet: A large-scale hierarchical image database.,1
-Kai Li,ImageNet: A large-scale hierarchical image database.,1
-Li Fei-Fei,ImageNet: A large-scale hierarchical image database.,1
-Karen Simonyan,Very Deep Convolutional Networks for Large-Scale Image Recognition.,1
-Andrew Zisserman,Very Deep Convolutional Networks for Large-Scale Image Recognition.,1
-Matthew D. Zeiler,Visualizing and Understanding Convolutional Networks.,1
-Rob Fergus,Visualizing and Understanding Convolutional Networks.,1
+Full Name,Paper Title
+Julius Adebayo,Sanity checks for saliency maps
+Justin Gilmer,Sanity checks for saliency maps
+Michael Muelly,Sanity checks for saliency maps
+Ian Good-fellow,Sanity checks for saliency maps
+Moritz Hardt,Sanity checks for saliency maps
+Been Kim,Sanity checks for saliency maps
+Sebastian Bach,On pixel-wise explanations for non-linear classifier decisions by layer-wise relevance propagation
+Alexander Binder,On pixel-wise explanations for non-linear classifier decisions by layer-wise relevance propagation
+Gregoire Montavon,On pixel-wise explanations for non-linear classifier decisions by layer-wise relevance propagation
+Frederick Klauschen,On pixel-wise explanations for non-linear classifier decisions by layer-wise relevance propagation
+Klaus Robert Muller,On pixel-wise explanations for non-linear classifier decisions by layer-wise relevance propagation
+Wojciech Samek,On pixel-wise explanations for non-linear classifier decisions by layer-wise relevance propagation
+Jia Deng,ImageNet: A large-scale hierarchical image database.
+Wei Dong,ImageNet: A large-scale hierarchical image database.
+Richard Socher,ImageNet: A large-scale hierarchical image database.
+Li-Jia Li,ImageNet: A large-scale hierarchical image database.
+Kai Li,ImageNet: A large-scale hierarchical image database.
+Li Fei-Fei,ImageNet: A large-scale hierarchical image database.
+Karen Simonyan,Very Deep Convolutional Networks for Large-Scale Image Recognition
+Andrew Zisserman,Very Deep Convolutional Networks for Large-Scale Image Recognition
+Matthew D. Zeiler,Visualizing and Understanding Convolutional Networks.
+Rob Fergus,Visualizing and Understanding Convolutional Networks.

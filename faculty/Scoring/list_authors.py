@@ -18,7 +18,6 @@ def extract_authors(reference):
     if 'and' in reference and ',' not in reference:
         authors = [author.strip() for author in reference.split('and')]
         authors[-1] = authors[-1][:-1]  # Remove the period from the last author entry
-        print(authors)
         return authors
     
     # Otherwise, split based on commas first
@@ -67,7 +66,7 @@ def write_author_paper_data(publication_data, output_file):
             
             # Write authors as a list and paper title
             if authors:
-                writer.writerow([authors, paper_title])
+                writer.writerow([", ".join(authors), paper_title])
 
 def main():
     input_file_path = '../../llm/selected_references.csv'  # Adjust to your file path
