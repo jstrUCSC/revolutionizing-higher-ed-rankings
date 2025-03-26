@@ -36,8 +36,6 @@ def fetch_dblp_authors_and_title(title, abbreviated_authors):
         # Check if at least one abbreviated author appears in the full author list
         for abbrev_author in abbreviated_authors:
             if any(abbrev_author.split()[-1].strip("'") in full_name for full_name in full_authors):
-                # print(f"Matched Paper: {fetched_title}")
-                # print(f"Authors: {full_authors[:-2]}")
                 return full_authors[:-2], fetched_title  # Return the correct author list and the paper title
 
     print(f"No exact match found for: {title}")
@@ -93,5 +91,9 @@ def process_csv(input_csv, output_csv):
 
     print("Processing complete. Results saved.")
 
-# Run the script
-process_csv(INPUT_CSV, OUTPUT_CSV)
+def main():
+    """Main function to execute the CSV processing."""
+    process_csv(INPUT_CSV, OUTPUT_CSV)
+
+if __name__ == "__main__":
+    main()
