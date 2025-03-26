@@ -1,23 +1,23 @@
 Full Name,Paper Title
-Julius Adebayo,Sanity checks for saliency maps
-Justin Gilmer,Sanity checks for saliency maps
-Michael Muelly,Sanity checks for saliency maps
-Ian Good-fellow,Sanity checks for saliency maps
-Moritz Hardt,Sanity checks for saliency maps
-Been Kim,Sanity checks for saliency maps
-Sebastian Bach,On pixel-wise explanations for non-linear classifier decisions by layer-wise relevance propagation
-Alexander Binder,On pixel-wise explanations for non-linear classifier decisions by layer-wise relevance propagation
-Gregoire Montavon,On pixel-wise explanations for non-linear classifier decisions by layer-wise relevance propagation
-Frederick Klauschen,On pixel-wise explanations for non-linear classifier decisions by layer-wise relevance propagation
-Klaus Robert Muller,On pixel-wise explanations for non-linear classifier decisions by layer-wise relevance propagation
-Wojciech Samek,On pixel-wise explanations for non-linear classifier decisions by layer-wise relevance propagation
-Jia Deng,ImageNet: A large-scale hierarchical image database.
-Wei Dong,ImageNet: A large-scale hierarchical image database.
-Richard Socher,ImageNet: A large-scale hierarchical image database.
-Li-Jia Li,ImageNet: A large-scale hierarchical image database.
-Kai Li,ImageNet: A large-scale hierarchical image database.
-Li Fei-Fei,ImageNet: A large-scale hierarchical image database.
-Karen Simonyan,Very Deep Convolutional Networks for Large-Scale Image Recognition
-Andrew Zisserman,Very Deep Convolutional Networks for Large-Scale Image Recognition
-Matthew D. Zeiler,Visualizing and Understanding Convolutional Networks.
-Rob Fergus,Visualizing and Understanding Convolutional Networks.
+Julius Adebayo,0.16666666666666666
+Justin Gilmer,0.16666666666666666
+Michael Muelly,0.16666666666666666
+Ian Good-fellow,0.16666666666666666
+Moritz Hardt,0.16666666666666666
+Been Kim,0.16666666666666666
+Sebastian Bach,0.16666666666666666
+Alexander Binder,0.16666666666666666
+Gregoire Montavon,0.16666666666666666
+Frederick Klauschen,0.16666666666666666
+Klaus Robert Muller,0.16666666666666666
+Wojciech Samek,0.16666666666666666
+Jia Deng,0.16666666666666666
+Wei Dong,0.16666666666666666
+Richard Socher,0.16666666666666666
+Li-Jia Li,0.16666666666666666
+Kai Li,0.16666666666666666
+Li Fei-Fei,0.16666666666666666
+Karen Simonyan,0.5
+Andrew Zisserman,0.5
+Matthew D. Zeiler,0.5
+Rob Fergus,0.5

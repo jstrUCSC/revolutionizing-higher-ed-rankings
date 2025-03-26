@@ -31,12 +31,12 @@ def fetch_dblp_authors_and_title(title, abbreviated_authors):
         
         # Extract authors from the search result
         author_spans = result.find_all("span", itemprop="name")
-        full_authors = [span.get_text().strip() for span in author_spans]
+        full_authors = [span.get_text().strip() for span in author_spans][:-2] # Exclude the title and conference
 
         # Check if at least one abbreviated author appears in the full author list
         for abbrev_author in abbreviated_authors:
             if any(abbrev_author.split()[-1].strip("'") in full_name for full_name in full_authors):
-                return full_authors[:-2], fetched_title  # Return the correct author list and the paper title
+                return full_authors, fetched_title  # Return the correct author list and the paper title
 
     print(f"No exact match found for: {title}")
     return [], None
@@ -64,24 +64,25 @@ def process_csv(input_csv, output_csv):
         for row in reader:
             paper_title = row.get("Paper Title", "").strip()
             authors = row.get("Authors", "").strip()
+            author_list = [a.strip() for a in authors.split(",") if a.strip()]
             if "." in authors:
-                author_list = [a.strip() for a in row.get("Authors", "").split(",") if a.strip()]
+                print(f"Processing: {paper_title}")
+                full_authors, fetched_title = fetch_dblp_authors_and_title(paper_title, author_list)
+                
+                if fetched_title:
+                    print(fetched_title)
+                    for name in full_authors:
+                        if name not in existing_entries:
+                            results.append([name, 1/len(full_authors)])
+                            existing_entries.add(name)
+
+                time.sleep(1)  # To avoid hitting DBLP too frequently
             else:
                 for a in authors.split(","):
-                    results.append([a.strip(), paper_title])
+                    results.append([a.strip(), 1 / len(author_list)])
                 continue
 
-            print(f"Processing: {paper_title}")
-            full_authors, fetched_title = fetch_dblp_authors_and_title(paper_title, author_list)
             
-            if fetched_title:
-                print(fetched_title)
-                for name in full_authors:
-                    if name not in existing_entries:
-                        results.append([name, fetched_title])
-                        existing_entries.add(name)
-
-            time.sleep(1)  # To avoid hitting DBLP too frequently
 
     # Write to output CSV (overwrite to ensure clean output)
     with open(output_csv, "w", newline="", encoding="utf-8") as f:
