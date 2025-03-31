@@ -43,7 +43,6 @@ email-crawler/.idea/
 # ========================
 poetry.lock
 Pipfile.lock
-requirements.txt
 
 # ========================
 # Build and Distribution
