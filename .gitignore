@@ -1,10 +1,80 @@
+# ========================
+# OS-Specific Files
+# ========================
+.DS_Store
+Thumbs.db
 
-email-crawler/.idea/email-crawler.iml
-email-crawler/.idea/inspectionProfiles/profiles_settings.xml
-email-crawler/.idea/inspectionProfiles/Project_Default.xml
-email-crawler/.idea/misc.xml
-email-crawler/.idea/modules.xml
-email-crawler/.idea/vcs.xml
-utils/data
-get_paper/Publications/
+# ========================
+# Python Virtual Environment
+# ========================
+.venv/
+*.venv
+env/
+venv/
+
+# ========================
+# Python Bytecode and Cache
+# ========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ========================
+# Logs and Debug Files
+# ========================
+logs/
+*.log
+
+# ========================
+# IDE and Editor Files
+# ========================
+.vscode/
+.idea/
+*.iml
+*.swp
+*.swo
+
+# Ignore specific PyCharm project files
+email-crawler/.idea/
+
+# ========================
+# Dependency Files
+# ========================
+poetry.lock
+Pipfile.lock
+requirements.txt
+
+# ========================
+# Build and Distribution
+# ========================
+dist/
+build/
+*.egg-info/
+*.egg
+
+# ========================
+# Jupyter Notebooks
+# ========================
+.ipynb_checkpoints/
+
+# ========================
+# Environment Variables and Secrets
+# ========================
+.env
+*.secrets
+
+# ========================
+# Database and Data Files
+# ========================
+*.sqlite3
+*.db
+*.csv
+*.tsv
+*.json
+utils/data/
+
+# ========================
+# Archives and Compressed Files
+# ========================
 *.gz
