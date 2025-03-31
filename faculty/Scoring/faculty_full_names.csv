@@ -1,17 +1,23 @@
-Full Name,Paper Title,Score
-Julius Adebayo,Sanity Checks for Saliency Maps.,1
-Justin Gilmer,Sanity Checks for Saliency Maps.,1
-Michael Muelly,Sanity Checks for Saliency Maps.,1
-Ian J. Goodfellow,Sanity Checks for Saliency Maps.,1
-Moritz Hardt,Sanity Checks for Saliency Maps.,1
-Been Kim,Sanity Checks for Saliency Maps.,1
-Jia Deng,ImageNet: A large-scale hierarchical image database.,1
-Wei Dong,ImageNet: A large-scale hierarchical image database.,1
-Richard Socher,ImageNet: A large-scale hierarchical image database.,1
-Li-Jia Li,ImageNet: A large-scale hierarchical image database.,1
-Kai Li,ImageNet: A large-scale hierarchical image database.,1
-Li Fei-Fei,ImageNet: A large-scale hierarchical image database.,1
-Karen Simonyan,Very Deep Convolutional Networks for Large-Scale Image Recognition.,1
-Andrew Zisserman,Very Deep Convolutional Networks for Large-Scale Image Recognition.,1
-Matthew D. Zeiler,Visualizing and Understanding Convolutional Networks.,1
-Rob Fergus,Visualizing and Understanding Convolutional Networks.,1
+Full Name,Paper Title
+Julius Adebayo,0.16666666666666666
+Justin Gilmer,0.16666666666666666
+Michael Muelly,0.16666666666666666
+Ian Good-fellow,0.16666666666666666
+Moritz Hardt,0.16666666666666666
+Been Kim,0.16666666666666666
+Sebastian Bach,0.16666666666666666
+Alexander Binder,0.16666666666666666
+Gregoire Montavon,0.16666666666666666
+Frederick Klauschen,0.16666666666666666
+Klaus Robert Muller,0.16666666666666666
+Wojciech Samek,0.16666666666666666
+Jia Deng,0.16666666666666666
+Wei Dong,0.16666666666666666
+Richard Socher,0.16666666666666666
+Li-Jia Li,0.16666666666666666
+Kai Li,0.16666666666666666
+Li Fei-Fei,0.16666666666666666
+Karen Simonyan,0.5
+Andrew Zisserman,0.5
+Matthew D. Zeiler,0.5
+Rob Fergus,0.5
