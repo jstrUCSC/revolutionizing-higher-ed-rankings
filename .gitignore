@@ -64,7 +64,7 @@ build/
 *.secrets
 
 # ========================
-# Database and Data Files
+# Database Data Files and Papers
 # ========================
 *.sqlite3
 *.db
@@ -72,6 +72,7 @@ build/
 *.tsv
 *.json
 utils/data/
+get_paper/Publications/
 
 # ========================
 # Archives and Compressed Files
