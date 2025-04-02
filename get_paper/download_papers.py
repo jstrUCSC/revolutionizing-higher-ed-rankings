@@ -1,8 +1,11 @@
 import csv
 import os
 import sys
-import urllib.request
 import time
+import urllib.request
+
+# pip install requests
+import requests
 # pip install beautifulsoup4
 # an html5 reader
 from bs4 import BeautifulSoup
@@ -36,12 +39,12 @@ def download_conference(file_name):
     
 
 # Downloads a paper from the url parameter.
-# Assumes that the link provided is not a direct link to the pdf (which is
-# the case with the current publication CSVs).
+# Assumes that the link provided is not a direct link to the pdf, and that a
+# direct link to the PDF is present on the page.
 # arxiv.org and doi.org not supported.
 def download_paper(url, conference):
     if not ".html" in url:
-        print("Invalid URL (DOI or ARXIV?)")
+        print("Invalid URL")
         return -4
     success = 0
     domains = ["http://papers.nips.cc", "http://proceedings.mlr.press",
@@ -49,6 +52,10 @@ def download_paper(url, conference):
                "https://openaccess.thecvf.com", "https://doi.org", "arxiv.org"]
     if domains[5] in url or domains[6] in url:
                return # Cannot handle DOI or Arxiv links
+    r = requests.get(url)
+    if r.status_code == 404:
+        print("Error 404: Link unavailable or otherwise inaccessible")
+        return -1
     html = urllib.request.urlopen(url).read().decode("utf8")
     soup = BeautifulSoup(html, "html.parser")
     links = soup.find_all('a')
@@ -87,7 +94,8 @@ def download_paper(url, conference):
     # Set the name of the PDF to the name of the publication (with some format changes)
     # * Some extra "replace" cases may be necessary for special characters later, these were
     #   the only ones I ran into
-    name = name.replace(" ", "_").replace(",", "").replace(":","").replace("$\\alpha$", "alpha")
+    # TODO: regex
+    name = name.replace(" ", "_").replace(",", "").replace(":","").replace("?","").replace("$\\alpha$", "alpha")
     local_path = conference_folder + name + ".pdf"
     print(download_link)
     # Do not redownload if a paper already exists
