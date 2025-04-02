@@ -14,20 +14,25 @@ def fetch_dblp_authors_and_title(title, abbreviated_authors):
     
     if response.status_code != 200:
         print(f"Failed to fetch DBLP data for: {title}")
-        return [], None
+        return []
 
     print(f"Fetched DBLP data for: {title}")
     soup = BeautifulSoup(response.text, "html.parser")  # Use 'html.parser' for simplicity
     
-    # Find all search results
+    # Find all title search results
     results = soup.find_all("cite", class_="data tts-content")
 
     for result in results:
-        # Extract title (this is optional if you want to verify the exact paper)
-        title_element = result.find("span", class_="title")
-        if not title_element:
-            continue
-        fetched_title = title_element.get_text().strip()
+
+
+        # MAY BE UNNECESSARY; NEED TO TEST WHEN BACK ON WIFI.
+        # SHOULDN'T NEED EXACT PAPER TITILE
+
+        # Extract title for verifying exact paper
+        # title_element = result.find("span", class_="title")
+        # if not title_element:
+        #     continue
+        # fetched_title = title_element.get_text().strip()
         
         # Extract authors from the search result
         author_spans = result.find_all("span", itemprop="name")
@@ -36,7 +41,7 @@ def fetch_dblp_authors_and_title(title, abbreviated_authors):
         # Check if at least one abbreviated author appears in the full author list
         for abbrev_author in abbreviated_authors:
             if any(abbrev_author.split()[-1].strip("'") in full_name for full_name in full_authors):
-                return full_authors, fetched_title  # Return the correct author list and the paper title
+                return full_authors  # Return the correct author list and the paper title
 
     print(f"No exact match found for: {title}")
     return [], None
@@ -67,14 +72,16 @@ def process_csv(input_csv, output_csv):
             author_list = [a.strip() for a in authors.split(",") if a.strip()]
             if "." in authors:
                 print(f"Processing: {paper_title}")
-                full_authors, fetched_title = fetch_dblp_authors_and_title(paper_title, author_list)
+                full_authors = fetch_dblp_authors_and_title(paper_title, author_list)
                 
-                if fetched_title:
-                    print(fetched_title)
-                    for name in full_authors:
-                        if name not in existing_entries:
-                            results.append([name, 1/len(full_authors)])
-                            existing_entries.add(name)
+                # Also likely unnecessary
+                # Shouldn't need title anymore
+                #if fetched_title:
+                    #print(fetched_title)
+                for name in full_authors:
+                    if name not in existing_entries:
+                        results.append([name, 1/len(full_authors)])
+                        existing_entries.add(name)
 
                 time.sleep(1)  # To avoid hitting DBLP too frequently
             else:
