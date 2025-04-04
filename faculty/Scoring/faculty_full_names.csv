@@ -1,23 +1,67 @@
-Full Name,Paper Title
-Julius Adebayo,0.16666666666666666
-Justin Gilmer,0.16666666666666666
-Michael Muelly,0.16666666666666666
-Ian Good-fellow,0.16666666666666666
-Moritz Hardt,0.16666666666666666
-Been Kim,0.16666666666666666
-Sebastian Bach,0.16666666666666666
-Alexander Binder,0.16666666666666666
-Gregoire Montavon,0.16666666666666666
-Frederick Klauschen,0.16666666666666666
-Klaus Robert Muller,0.16666666666666666
-Wojciech Samek,0.16666666666666666
-Jia Deng,0.16666666666666666
-Wei Dong,0.16666666666666666
-Richard Socher,0.16666666666666666
-Li-Jia Li,0.16666666666666666
-Kai Li,0.16666666666666666
-Li Fei-Fei,0.16666666666666666
-Karen Simonyan,0.5
-Andrew Zisserman,0.5
-Matthew D. Zeiler,0.5
-Rob Fergus,0.5
+Reference Name,Original Name,Edge Weight
+Julius Adebayo,Li Fuxin,0.16666666666666666
+Justin Gilmer,Li Fuxin,0.16666666666666666
+Michael Muelly,Li Fuxin,0.16666666666666666
+Ian Good-fellow,Li Fuxin,0.16666666666666666
+Moritz Hardt,Li Fuxin,0.16666666666666666
+Been Kim,Li Fuxin,0.16666666666666666
+Sebastian Bach,Li Fuxin,0.16666666666666666
+Alexander Binder,Li Fuxin,0.16666666666666666
+Gregoire Montavon,Li Fuxin,0.16666666666666666
+Frederick Klauschen,Li Fuxin,0.16666666666666666
+Klaus Robert Muller,Li Fuxin,0.16666666666666666
+Wojciech Samek,Li Fuxin,0.16666666666666666
+Jia Deng,Li Fuxin,0.16666666666666666
+Wei Dong,Li Fuxin,0.16666666666666666
+Richard Socher,Li Fuxin,0.16666666666666666
+Li-Jia Li,Li Fuxin,0.16666666666666666
+Kai Li,Li Fuxin,0.16666666666666666
+Li Fei-Fei,Li Fuxin,0.16666666666666666
+Karen Simonyan,Li Fuxin,0.5
+Andrew Zisserman,Li Fuxin,0.5
+Matthew D. Zeiler,Li Fuxin,0.5
+Rob Fergus,Li Fuxin,0.5
+Julius Adebayo,Saeed Khorram,0.16666666666666666
+Justin Gilmer,Saeed Khorram,0.16666666666666666
+Michael Muelly,Saeed Khorram,0.16666666666666666
+Ian Good-fellow,Saeed Khorram,0.16666666666666666
+Moritz Hardt,Saeed Khorram,0.16666666666666666
+Been Kim,Saeed Khorram,0.16666666666666666
+Sebastian Bach,Saeed Khorram,0.16666666666666666
+Alexander Binder,Saeed Khorram,0.16666666666666666
+Gregoire Montavon,Saeed Khorram,0.16666666666666666
+Frederick Klauschen,Saeed Khorram,0.16666666666666666
+Klaus Robert Muller,Saeed Khorram,0.16666666666666666
+Wojciech Samek,Saeed Khorram,0.16666666666666666
+Jia Deng,Saeed Khorram,0.16666666666666666
+Wei Dong,Saeed Khorram,0.16666666666666666
+Richard Socher,Saeed Khorram,0.16666666666666666
+Li-Jia Li,Saeed Khorram,0.16666666666666666
+Kai Li,Saeed Khorram,0.16666666666666666
+Li Fei-Fei,Saeed Khorram,0.16666666666666666
+Karen Simonyan,Saeed Khorram,0.5
+Andrew Zisserman,Saeed Khorram,0.5
+Matthew D. Zeiler,Saeed Khorram,0.5
+Rob Fergus,Saeed Khorram,0.5
+Julius Adebayo,Mingqi Jiang,0.16666666666666666
+Justin Gilmer,Mingqi Jiang,0.16666666666666666
+Michael Muelly,Mingqi Jiang,0.16666666666666666
+Ian Good-fellow,Mingqi Jiang,0.16666666666666666
+Moritz Hardt,Mingqi Jiang,0.16666666666666666
+Been Kim,Mingqi Jiang,0.16666666666666666
+Sebastian Bach,Mingqi Jiang,0.16666666666666666
+Alexander Binder,Mingqi Jiang,0.16666666666666666
+Gregoire Montavon,Mingqi Jiang,0.16666666666666666
+Frederick Klauschen,Mingqi Jiang,0.16666666666666666
+Klaus Robert Muller,Mingqi Jiang,0.16666666666666666
+Wojciech Samek,Mingqi Jiang,0.16666666666666666
+Jia Deng,Mingqi Jiang,0.16666666666666666
+Wei Dong,Mingqi Jiang,0.16666666666666666
+Richard Socher,Mingqi Jiang,0.16666666666666666
+Li-Jia Li,Mingqi Jiang,0.16666666666666666
+Kai Li,Mingqi Jiang,0.16666666666666666
+Li Fei-Fei,Mingqi Jiang,0.16666666666666666
+Karen Simonyan,Mingqi Jiang,0.5
+Andrew Zisserman,Mingqi Jiang,0.5
+Matthew D. Zeiler,Mingqi Jiang,0.5
+Rob Fergus,Mingqi Jiang,0.5
