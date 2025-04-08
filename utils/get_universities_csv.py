@@ -28,7 +28,7 @@ combined_data.drop_duplicates(subset=["affiliation"], inplace=True)
 columns = [
     "Index","University","Artificial Intelligence & Machine Learning",
     "Data Science & Data Mining","Computer Vision & Image Processing",
-    "Natural Language Processing","Systems and Networking","Databases,Security and Privacy",
+    "Natural Language Processing","Systems and Networking","Databases","Security and Privacy",
     "Human Computer Interaction","Theoretical Computer Science","Software Engineering",
     "Computer Graphics & Virtual Reality","Quantum Computing","Interdisciplinary Fields"
 ]

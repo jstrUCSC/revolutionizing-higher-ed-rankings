@@ -1,10 +1,10 @@
 import pandas as pd
 
 # Load the university rankings CSV
-university_df = pd.read_csv("/nfs/stak/users/munam/hpc-share/revolutionizing-higher-ed-rankings/public/universities_ranked.csv")
+university_df = pd.read_csv("/Users/mainoahmuna/Downloads/projects/revolutionizing-higher-ed-rankings/public/universities_ranked.csv")
 
 # Load the institution mapping CSV
-country_df = pd.read_csv("/nfs/stak/users/munam/hpc-share/revolutionizing-higher-ed-rankings/public/country-info.csv")
+country_df = pd.read_csv("/Users/mainoahmuna/Downloads/projects/revolutionizing-higher-ed-rankings/public/country-info.csv")
 
 # Rename 'region' to 'Continent' for clarity
 country_df = country_df.rename(columns={"region": "Continent"})
