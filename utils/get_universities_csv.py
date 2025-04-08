@@ -3,8 +3,8 @@ import os
 import random
 
 # Path to the directory containing the CSV files
-input_directory = "utils/data"  # Replace with your folder path
-output_file = "./site/universities_ranked.csv"  # Output CSV file
+input_directory = "./data"  # Replace with your folder path
+output_file = "./universities_ranked.csv"  # Output CSV file
 
 # Initialize an empty DataFrame for the combined data
 combined_data = pd.DataFrame()
@@ -26,10 +26,11 @@ combined_data.drop_duplicates(subset=["affiliation"], inplace=True)
 
 # Add the new columns to match the desired format
 columns = [
-    "Index", "University", "Artificial intelligence", "Computer systems and networks", "Cybersecurity",
-    "Databases and data mining", "Digital Libraries", "Human computer interaction", "Machine Learning",
-    "Medical Image Computing", "Natural Language Processing", "Parallel Computing", "Program Analysis",
-    "Programming Languages", "Programming languages and verification", "Vision and graphics"
+    "Index","University","Artificial Intelligence & Machine Learning",
+    "Data Science & Data Mining","Computer Vision & Image Processing",
+    "Natural Language Processing","Systems and Networking","Databases,Security and Privacy",
+    "Human Computer Interaction","Theoretical Computer Science","Software Engineering",
+    "Computer Graphics & Virtual Reality","Quantum Computing","Interdisciplinary Fields"
 ]
 
 # Create an empty DataFrame with the final structure
