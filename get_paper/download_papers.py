@@ -1,5 +1,6 @@
 import csv
 import os
+import re
 import sys
 import time
 import urllib.request
@@ -91,11 +92,19 @@ def download_paper(url, conference):
                 else:
                     name = soup.find(id="papertitle").string
 
-    # Set the name of the PDF to the name of the publication (with some format changes)
-    # * Some extra "replace" cases may be necessary for special characters later, these were
-    #   the only ones I ran into
-    # TODO: regex
-    name = name.replace(" ", "_").replace(",", "").replace(":","").replace("?","").replace("$\\alpha$", "alpha")
+    # Set the name of the PDF to the name of the publication
+    # Certain characters replaced or removed for a clean filename
+    x = re.search(r"^[a-zA-Z0-9_\-\(\)]*$", name)
+    if not x:
+        name = re.sub(r'\\', '', name)
+        name = re.sub(r'[^a-zA-Z0-9\-\.\:\(\)]', '_', name)
+        name = re.sub(r'[:.]','', name)
+        first = re.search(r'^[a-zA-Z0-9]*$', name[0])
+        #Repeatedly remove first character if it ends up not being alphanumeric (quick fix)
+        while(not first):
+            name = name[1:]
+            first = re.search(r'^[a-zA-Z0-9]*$', name[0])
+    print(name)
     local_path = conference_folder + name + ".pdf"
     print(download_link)
     # Do not redownload if a paper already exists
