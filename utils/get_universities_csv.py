@@ -4,7 +4,7 @@ import random
 
 # Path to the directory containing the CSV files
 input_directory = "./data"  # Replace with your folder path
-output_file = "./universities_ranked.csv"  # Output CSV file
+output_file = "/Users/mainoahmuna/Downloads/projects/revolutionizing-higher-ed-rankings/public/university_rankings.csv"  # Output CSV file
 
 # Initialize an empty DataFrame for the combined data
 combined_data = pd.DataFrame()
