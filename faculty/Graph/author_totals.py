@@ -6,14 +6,12 @@ def calculate_author_scores(graph_path, output_file="author_scores.csv"):
     # Load the graph from the gpickle file
     with open(graph_path, 'rb') as f:
         G = pickle.load(f)
-    
-    # Dictionary to store author research scores
-    author_scores = {}
+        author_scores = {}
     
     # For each node (author) in the graph
     for author in G.nodes():
         total_score = 0
-        
+
         # Get all edges connected to this author
         for neighbor in G.predecessors(author):
             # Add the weight of this edge to the total score

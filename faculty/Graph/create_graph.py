@@ -26,7 +26,7 @@ with open(csv_file_path, 'r') as csvfile:
 
         # Add or update the edge with the weight
         if G.has_edge(original_author, reference_author):
-            G[original_author][reference_author]['weight'] += weight
+            G[original_author][reference_author]['weight'] += weight # divide by number of authors
         else:
             G.add_edge(original_author, reference_author, weight=weight)
 
