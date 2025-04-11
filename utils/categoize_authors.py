@@ -206,12 +206,12 @@ def update_university_rankings(faculty_data, university_rankings_file, output_fi
 
 if __name__ == "__main__":
     # Define file paths
-    faculty_file = '/Users/mainoahmuna/Downloads/projects/revolutionizing-higher-ed-rankings/faculty/Scoring/faculty_full_names.csv'
-    author_file = '/Users/mainoahmuna/Downloads/projects/revolutionizing-higher-ed-rankings/get_paper/author_universities_output.csv'
-    paper_file = '/Users/mainoahmuna/Downloads/projects/revolutionizing-higher-ed-rankings/faculty/Scoring/author_paper_data.csv'
-    conference_folder = '/Users/mainoahmuna/Downloads/projects/revolutionizing-higher-ed-rankings/get_paper/Conferences'
-    university_rankings_file = '/Users/mainoahmuna/Downloads/projects/revolutionizing-higher-ed-rankings/public/university_rankings.csv'
-    output_file = '/Users/mainoahmuna/Downloads/projects/revolutionizing-higher-ed-rankings/public/university_rankings.csv'
+    faculty_file = '~/faculty/Scoring/faculty_full_names.csv'
+    author_file = '~/get_paper/author_universities_output.csv'
+    paper_file = '~/faculty/Scoring/author_paper_data.csv'
+    conference_folder = '~/ge_paper/Conferences'
+    university_rankings_file = '~/universit_rankings.csv'
+    output_file = '~/public/university_rankings.csv'
 
     # Check if the conference folder exists
     if not os.path.exists(conference_folder):
