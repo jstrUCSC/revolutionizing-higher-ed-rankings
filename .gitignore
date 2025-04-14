@@ -69,7 +69,6 @@ build/
 # ========================
 *.sqlite3
 *.db
-*.csv
 *.tsv
 *.json
 utils/data/
