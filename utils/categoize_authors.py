@@ -209,8 +209,8 @@ if __name__ == "__main__":
     faculty_file = '~/faculty/Scoring/faculty_full_names.csv'
     author_file = '~/get_paper/author_universities_output.csv'
     paper_file = '~/faculty/Scoring/author_paper_data.csv'
-    conference_folder = '~/ge_paper/Conferences'
-    university_rankings_file = '~/universit_rankings.csv'
+    conference_folder = '~/get_paper/Conferences'
+    university_rankings_file = '~/public/university_rankings.csv'
     output_file = '~/public/university_rankings.csv'
 
     # Check if the conference folder exists
