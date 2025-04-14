@@ -3,8 +3,8 @@ import os
 import random
 
 # Path to the directory containing the CSV files
-input_directory = "utils/data"  # Replace with your folder path
-output_file = "./site/universities_ranked.csv"  # Output CSV file
+input_directory = "./data"  # Replace with your folder path
+output_file = "/Users/mainoahmuna/Downloads/projects/revolutionizing-higher-ed-rankings/public/university_rankings.csv"  # Output CSV file
 
 # Initialize an empty DataFrame for the combined data
 combined_data = pd.DataFrame()
@@ -26,10 +26,11 @@ combined_data.drop_duplicates(subset=["affiliation"], inplace=True)
 
 # Add the new columns to match the desired format
 columns = [
-    "Index", "University", "Artificial intelligence", "Computer systems and networks", "Cybersecurity",
-    "Databases and data mining", "Digital Libraries", "Human computer interaction", "Machine Learning",
-    "Medical Image Computing", "Natural Language Processing", "Parallel Computing", "Program Analysis",
-    "Programming Languages", "Programming languages and verification", "Vision and graphics"
+    "Index","University","Artificial Intelligence & Machine Learning",
+    "Data Science & Data Mining","Computer Vision & Image Processing",
+    "Natural Language Processing","Systems and Networking","Databases","Security and Privacy",
+    "Human Computer Interaction","Theoretical Computer Science","Software Engineering",
+    "Computer Graphics & Virtual Reality","Quantum Computing","Interdisciplinary Fields"
 ]
 
 # Create an empty DataFrame with the final structure
@@ -41,7 +42,7 @@ final_data["Index"] = range(1, len(final_data) + 1)  # Assign ranks automaticall
 
 # Fill all research-related fields with 0
 for col in columns[2:]:  
-    final_data[col] = [random.randint(1, 10) for _ in range(len(final_data))]
+    final_data[col] = [0 for _ in range(len(final_data))]
 
 # Save the resulting DataFrame to a new CSV
 final_data.to_csv(output_file, index=False)
