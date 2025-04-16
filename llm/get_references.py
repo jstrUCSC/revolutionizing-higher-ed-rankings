@@ -463,7 +463,7 @@ def save_top5_to_csv(selected_refs: List[Tuple[int, str]], csv_path="references_
 def main():
     device = "cuda" if torch.cuda.is_available() else "cpu"
     # pdf_path = "2312.02126v3.pdf"
-    pdf_path = "Attention_is_all_you_need.pdf"
+    pdf_path = "../get_paper/Publications/CVPR_2020/AI_City_Challenge_2020_-_Computer_Vision_for_Smart_Transportation_Applications.pdf"
     # pdf_path = "308.pdf"
     tokenizer, model = load_model(device=device)
 
