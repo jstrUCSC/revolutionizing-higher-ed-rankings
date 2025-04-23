@@ -1,24 +1,19 @@
 import os
 import re
 import csv
-import json
 import torch
 import argparse
 from typing import List, Tuple
 from PyPDF2 import PdfReader
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
+
 def load_model(model_name="deepseek-ai/DeepSeek-R1-Distill-Llama-8B", device="cuda"):
     tokenizer = AutoTokenizer.from_pretrained(model_name)
-    model = AutoModelForCausalLM.from_pretrained(
-        model_name, 
-        torch_dtype=torch.float16,
-    ).to(device)
-
+    model = AutoModelForCausalLM.from_pretrained(model_name, torch_dtype=torch.float16).to(device)
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
         tokenizer.pad_token_id = tokenizer.eos_token_id
-
     return tokenizer, model
 
 def read_pdf(file_path: str) -> str:
@@ -37,9 +32,7 @@ def get_paper_title(content: str) -> str:
             return line.strip()
     return "Untitled"
 
-#############################
-# Format detection and segmentation
-
+#####
 def detect_reference_format(references_text: str) -> str:
     """
     bracketed: [1] ...
@@ -161,6 +154,7 @@ def parse_noindex_references(references_text: str) -> list:
     if len(references) <= 1:
         # fallback
         references = heuristic_line_split_references(references_text)
+
     return references
 
 def parse_references(references_text: str) -> list:
@@ -188,9 +182,14 @@ def parse_references(references_text: str) -> list:
         clean_refs.append(r)
 
     final_refs = [r for r in clean_refs if len(r) > 5]
-    return final_refs
+    # final_refs = []
+    # for idx, ref in enumerate(clean_refs):
+    #     if len(ref) > 5:
+    #         numbered_ref = f"[{idx+1}] {ref}"
+    #         final_refs.append(numbered_ref)
 
-####################
+    return final_refs
+#####
 
 def extract_references(content: str) -> str:
     references = ""
@@ -235,7 +234,6 @@ def extract_main_content(content: str) -> str:
     main_content = ""
     lines = content.splitlines()
     ref_start = None
-    # keywords = [r"Abstract", r"Introduction"]
     keywords = [r"References"]
     for i, line in enumerate(lines):
         if any(re.search(kw, line, re.IGNORECASE) for kw in keywords):
@@ -245,6 +243,7 @@ def extract_main_content(content: str) -> str:
         main_content = "\n".join(lines[:ref_start])
     else:
         main_content = content
+    
     return main_content
 
 def summarize_content(model, tokenizer, content: str, device="cuda", max_new_tokens=300) -> str:
@@ -292,248 +291,251 @@ def summarize_content(model, tokenizer, content: str, device="cuda", max_new_tok
     summary = tokenizer.decode(generated, skip_special_tokens=True).strip()
     return summary
 
-#####################3
-# top 5
-def parse_selected_references(response_text):
-
-    # Look for the section after "Selected References:"
-    if "Selected References:" in response_text:
-        selected_section = response_text.split("Selected References:")[1].strip()
-        # Parse the references with their rank preserved
-        selected_refs = []
-        for line in selected_section.splitlines():
-            if line.strip():
-                # Look for reference number in different formats
-                match = re.search(r'(?:\[(\d+)\]|\((\d+)\)|\b(\d+)\. |\b(\d+)\))', line)
-                if match:
-                    for group in match.groups():
-                        if group and group.isdigit():
-                            index = int(group)
-                            if index > 0:  # Valid reference index
-                                selected_refs.append(index)
-                                break
-        return selected_refs  # Return selected refs
-    return []
-
-def pick_top_5_references(model, tokenizer, summary: str, references: list, device="cuda"):
-
-    refs_joined = "\n\n".join([f"[{idx+1}]: {ref}" for idx, ref in enumerate(references)])
-    print("JOINED REFERENCES:", refs_joined)
+def select_and_rank_references(
+    model, 
+    tokenizer, 
+    main_content: str, 
+    references: List[str], 
+    device="cuda"
+) -> List[Tuple[int, str]]:
+    max_main_content_length = 2000
+    if len(main_content) > max_main_content_length:
+        main_content = summarize_content(model, tokenizer, main_content, device=device)
+        print(f"Content is too long, using summarized main content:\n{main_content[:500]}...\n")
     
-    system_prompt = (
-        "You are an academic assistant. You have the paper's summary and the reference list. "
-        "Please identify which 5 references appear to have the greatest contribution "
-        "to the paper based on the summary, main arguments, or any context you can infer."
+    references_text = "\n".join([f"[{i+1}] {ref}" for i, ref in enumerate(references)])
+    
+    prompt = (
+        "The following is the main content of a research paper and its list of references. "
+        "Please analyze the importance of each reference based on the main content, "
+        "select the five most important references, and rank them in order of importance. "
+        "First, think through which references are most fundamental to understanding this paper. "
+        "For each of your top 5 selected references, include the reference number in brackets [X] "
+        "as it appears in the references list, followed by a brief explanation of its importance. "
+        "Then conclude with a simple numbered list of just the 5 references in order of importance, "
+        "using the format: 1. [X] where X is the reference number.\n\n"
+        "Main content:\n"
+        f"{main_content}\n\n"
+        "References list:\n"
+        f"{references_text}\n\n"
+        "Analysis of the most important references:"
     )
-
-#######################3 one reference a time -> five times
-
-    user_prompt = (
-        f"Paper Summary:\n{summary}\n\n"
-        f"Reference List:\n{refs_joined}\n\n"
-        "Please analyze ALL references carefully. Select the FIVE most IMPORTANT different references "
-        "based on their contribution to the paper's core ideas, not just the first ones in the list. "
-        "Consider which references inform the key methodologies, concepts, and findings in the paper. "
-        "Output the selected references strictly in the following format with no additional text:\n\n"
-        "Selected References:\n"
-        "[X] Reference text\n"
-        "[Y] Reference text\n"
-        "...\n"
-        "Where X, Y, etc. are the original reference numbers."
-    )
-        # "Please analyze the importance of each reference based on the summary, "
-        # "select the five most important different references. "
-        # "Output the selected references strictly in the following format with no additional text:\n\n"
-        # "Selected References:\n"
-        # "[1] Reference 1\n"
-        # "[2] Reference 2\n"
-        # "...\n"
-    # )
-
-    messages = [
-        {"role": "system", "content": system_prompt},
-        {"role": "user",   "content": user_prompt},
-    ]
-
-    input_ids = tokenizer.apply_chat_template(
-        messages,
-        add_generation_prompt=True,
-        return_tensors="pt",
-        truncation=True,
-        max_length=2048,
+    
+    inputs = tokenizer(
+        prompt, 
+        return_tensors="pt", 
+        truncation=True, 
+        max_length=2048, 
         padding=True
     ).to(device)
-
-    gen_model = model.module if hasattr(model, 'module') else model
-
-    outputs = gen_model.generate(
-        input_ids,
-        max_new_tokens=1000,
-        do_sample=False,
-        # temperature=0.3,
+    
+    outputs = model.generate(
+        inputs["input_ids"],
+        attention_mask=inputs["attention_mask"],
+        max_new_tokens=1500, 
+        # temperature=0.3,      
         # top_p=0.9,
-        repetition_penalty=1.1,
-        pad_token_id=tokenizer.pad_token_id
+        repetition_penalty=1.2,
+        pad_token_id=tokenizer.pad_token_id,
+        num_return_sequences=1,
+        do_sample=False        
     )
-
-    # generated = outputs[0][input_ids.shape[1]:]
-    # top5_output = tokenizer.decode(generated, skip_special_tokens=True).strip()
-    # return top5_output
-
-    response = tokenizer.decode(outputs[0], skip_special_tokens=True).strip()
-
-    selected_indices = parse_selected_references(response)
-
-    seen = set()
-    unique_indices = []
-    for idx in selected_indices:
-        if idx not in seen and idx <= len(references):
-            seen.add(idx)
-            unique_indices.append(idx)
-            if len(unique_indices) >= 5:
-                break
-
-    # If we don't have 5 references yet, try a fallback regex approach
-    if len(unique_indices) < 5:
-        print("Warning: Couldn't find enough references in the structured format, using fallback extraction...")
-        # Regex pattern to capture numbers in [num], (num), num., num)
-        pattern = r'(?:\[(\d+)\]|\((\d+)\)|\b(\d+)\. |\b(\d+)\))'
-        matches = re.findall(pattern, response)
-        for match in matches:
-            for group in match:
-                if group and group.isdigit():
-                    index = int(group)
-                    if 1 <= index <= len(references) and index not in seen:
-                        seen.add(index)
-                        unique_indices.append(index)
-                        if len(unique_indices) >= 5:
-                            break
-            if len(unique_indices) >= 5:
-                break
-
-    if len(unique_indices) < 5:
-        print("Warning: Still not enough references found, selecting first available references...")
-        for i in range(1, min(len(references) + 1, 6)):
-            if i not in seen:
-                unique_indices.append(i)
-                if len(unique_indices) >= 5:
+    
+    response = tokenizer.decode(outputs[0], skip_special_tokens=True)
+    print("LLM Raw Response:\n", response, "\n")
+    
+    selected_refs = []
+    
+    rank_pattern = r"(?:Rank|Top|#)\s*(\d+)[:\.]?\s*\[(\d+)\]"
+    rank_matches = re.findall(rank_pattern, response)
+    
+    if rank_matches:
+        rank_refs = sorted([(int(rank), int(idx)) for rank, idx in rank_matches])
+        for _, ref_idx in rank_refs:
+            if 1 <= ref_idx <= len(references):
+                ref_text = references[ref_idx-1]
+                selected_refs.append((ref_idx, ref_text))
+    
+    if len(selected_refs) < 5:
+        list_pattern = r"(?:^|\n)\s*(\d+)\.?\s*\[(\d+)\]"
+        list_matches = re.findall(list_pattern, response)
+        for _, ref_idx_str in list_matches:
+            ref_idx = int(ref_idx_str)
+            if 1 <= ref_idx <= len(references):
+                already_added = False
+                for existing_idx, _ in selected_refs:
+                    if existing_idx == ref_idx:
+                        already_added = True
+                        break
+                
+                if not already_added:
+                    ref_text = references[ref_idx-1]
+                    selected_refs.append((ref_idx, ref_text))
+                
+                if len(selected_refs) >= 5:
                     break
     
-    # Map indices to reference texts
-    selected_refs = []
-    for idx in unique_indices[:5]:  # Limit to first 5
-        selected_refs.append((idx, references[idx-1]))
-
-    # # Extract all possible reference indices from the response
-    # selected_indices = []
-    # # Regex pattern to capture numbers in [num], (num), num., num)
-    # pattern = r'(?:\[(\d+)\]|\((\d+)\)|\b(\d+)\. |\b(\d+)\))'
-    # matches = re.findall(pattern, response)
-    # for match in matches:
-    #     for group in match:
-    #         if group.isdigit():
-    #             index = int(group)
-    #             if 1 <= index <= len(references):
-    #                 selected_indices.append(index)
+    if len(selected_refs) < 5:
     
-    # # Deduplicate while preserving order
-    # seen = set()
-    # selected_indices = [idx for idx in selected_indices if not (idx in seen or seen.add(idx))]
+        ref_pattern = r"\[(\d+)\]"
+        ref_matches = re.findall(ref_pattern, response)
+        
+        unique_refs = []
+        for ref_idx_str in ref_matches:
+            ref_idx = int(ref_idx_str)
+            if ref_idx not in [idx for idx, _ in selected_refs] and 1 <= ref_idx <= len(references):
+                unique_refs.append(ref_idx)
+                if len(unique_refs) + len(selected_refs) >= 5:
+                    break
+        
+        for ref_idx in unique_refs:
+            if 1 <= ref_idx <= len(references):
+                ref_text = references[ref_idx-1]
+                selected_refs.append((ref_idx, ref_text))
     
-    # # Take the first 5 unique indices
-    # top5_indices = selected_indices[:5]
+    if len(selected_refs) < 5:
+        print("Filling missing references with sequential ones...")
+        for i in range(len(references)):
+            ref_idx = i + 1
+            if ref_idx not in [idx for idx, _ in selected_refs] and ref_idx <= len(references):
+                ref_text = references[ref_idx-1]
+                selected_refs.append((ref_idx, ref_text))
+                if len(selected_refs) >= 5:
+                    break
     
-    # # Map indices to reference texts
-    # selected_refs = []
-    # for idx in top5_indices:
-    #     selected_refs.append((idx, references[idx-1]))
-    
-    return selected_refs
-
-def save_top5_to_csv(selected_refs: List[Tuple[int, str]], csv_path="references_top5.csv"):
-    with open(csv_path, mode="w", newline="", encoding="utf-8") as file:
-        writer = csv.writer(file)
-        writer.writerow(["Rank", "Original Index", "Reference"])
-        for rank, (index, ref) in enumerate(selected_refs, start=1):
-            writer.writerow([rank, index, ref])
-
-
-
+    return selected_refs[:5] 
 
 def main():
     device = "cuda" if torch.cuda.is_available() else "cpu"
-    # pdf_path = "2312.02126v3.pdf"
-    pdf_path = "../get_paper/Publications/CVPR_2020/NTIRE_2020_Challenge_on_Image_and_Video_Deblurring.pdf"
-    # pdf_path = "308.pdf"
-    tokenizer, model = load_model(device=device)
-
+    pdf_path = "2212.06872v5.pdf"
+    print(f"Reading PDF: {pdf_path}")
     content = read_pdf(pdf_path)
-
+    if not content.strip():
+        print("PDF content is empty.")
+        return
     title = get_paper_title(content)
-
+    print(f"Paper Title (heuristic): {title}")
     main_content = extract_main_content(content)
-
     references_text = extract_references(content)
-
-    # summary = summarize_content(model, tokenizer, main_content, device=device, max_new_tokens=300)
-    chunk_size = 2000
-
-    paragraphs = []
-    for i in range(0, len(main_content), chunk_size):
-        paragraphs.append(main_content[i:i+chunk_size])
-
-    # summarize_content => partial_summaries
-    partial_summaries = []
-    for chunk in paragraphs:
-        partial_summaries.append(summarize_content(model, tokenizer, chunk))
-
-    # partial_summaries => summarize_content 
-    joined_partial = "\n".join(partial_summaries)
-    final_summary = summarize_content(model, tokenizer, joined_partial, max_new_tokens=2000)
-    print("\nFinal summary:", final_summary)
-
+    if not references_text.strip():
+        print("No valid references found.")
+        return
+    
     references = parse_references(references_text)
-    # print("\nParsed References (total {}):".format(len(references)))
-    # for ref in references:
-    #     print("-", ref)
-
-    # print("\n\n\ncontent:\n", content)
-
-    print("\n\n\ntitle\n", title)
-
-    # print("\n\n\nmain_content\n", main_content)
-
-    # print(f"\n\n\nGot summary\n: {summary[:300]}...\n")
-
-    print("\n\n\nreferences_text\n", references_text)
-
-    print("\n\n\nreferences\n", references)
-
-    # if len(references) > 5:
-    #     raw_top5_str = pick_top_5_references(model, tokenizer, final_summary, references, device=device)
-    #     print("\nTop 5 references (raw LLM output):\n", raw_top5_str)
-
-    #     lines = raw_top5_str.strip().splitlines()
-    #     top5_list = []
-
-    #     top5_list = top5_list[:5]
-    #     save_top5_to_csv(top5_list, csv_path="references_top5.csv")
-    #     print("\nTop 5 references saved to references_top5.csv.")
-    # else:
-    #     print("\nNot enough references to pick top 5.")
-    selected_refs = pick_top_5_references(model, tokenizer, final_summary, references, device=device)
+    print(f"Total {len(references)} references found.")
+    if len(references) < 5:
+        print("References are fewer than 5, skipping ranking.")
+        return
+    
+    print("Loading DeepSeek model...")
+    tokenizer, model = load_model(device=device)
+    
+    print("Selecting and ranking the five most important references using LLM...")
+    selected_refs = select_and_rank_references(model, tokenizer, main_content, references, device=device)
     if len(selected_refs) < 5:
         print("Failed to select five references.")
     else:
         print("Successfully selected five references.")
-        save_top5_to_csv(selected_refs, csv_path="selected_references.csv")
+        save_to_csv(selected_refs, output_file="selected_references.csv")
         print(f"Results saved to 'selected_references'.\n")
         print("Top 5 References:")
+        
         for rank, (index, ref) in enumerate(selected_refs, start=1):
-            print(f"{rank}. [Index={index}] {ref}")
+            ref_single_line = re.sub(r'\s+', ' ', ref).strip()
+            print(f"{rank}. [Index={index}] {ref_single_line}")
+
+def count_authors(reference: str) -> int:
+    ref_text = re.sub(r'^\[\d+\]\s+', '', reference)
+    title_indicators = [
+        r'\.\s+[A-Z]', 
+        r'\.\s+In\s+', 
+        r'\.\s+arXiv', 
+        r'\.\s*[A-Z][a-z]+\s+[oO]f', 
+    ]
+    
+    authors_section = ref_text
+    for indicator in title_indicators:
+        match = re.search(indicator, ref_text)
+        if match:
+            authors_section = ref_text[:match.start()]
+            break
+    
+    if len(authors_section) > 150:
+        period_match = re.search(r'\.', ref_text)
+        if period_match and period_match.start() < 150:
+            authors_section = ref_text[:period_match.start()]
+    
+    and_match = re.search(r'\s+and\s+', authors_section)
+    if and_match:
+       
+        before_and = authors_section[:and_match.start()]
+        comma_count = before_and.count(',')
+        return comma_count + 1 
+    
+    comma_count = authors_section.count(',')
+    if comma_count > 0:
+        return comma_count + 1  
+    
+    author_pattern = r'[A-Z][a-z]+(?:\s+[A-Z][\.\s])+[A-Z][a-z]+'
+    authors = re.findall(author_pattern, authors_section)
+    if authors:
+        return len(authors)
+    
+    return 2
 
 
+def save_to_csv(selected_refs: List[Tuple[int, str]], output_file="selected_references.csv"):
+    with open(output_file, mode="w", newline="", encoding="utf-8") as file:
+        writer = csv.writer(file)
+        writer.writerow(["Rank", "Reference", "Author Count"])
+        for rank, (index, ref) in enumerate(selected_refs, start=1):
+            ref_single_line = re.sub(r'\s+', ' ', ref).strip()
+            author_count = count_authors(ref_single_line)
+            writer.writerow([rank, ref_single_line, author_count])
+            # writer.writerow([rank, ref])
+
+def main():
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    pdf_path = "2312.02126v3.pdf"
+    print(f"Reading PDF: {pdf_path}")
+    content = read_pdf(pdf_path)
+    if not content.strip():
+        print("PDF content is empty.")
+        return
+    title = get_paper_title(content)
+    print(f"Paper Title (heuristic): {title}")
+    main_content = extract_main_content(content)
+    references_text = extract_references(content)
+    if not references_text.strip():
+        print("No valid references found.")
+        return
+    
+    references = parse_references(references_text)
+    print(f"Total {len(references)} references found.")
+    if len(references) < 5:
+        print("References are fewer than 5, skipping ranking.")
+        return
+    
+    print("Loading DeepSeek model...")
+    tokenizer, model = load_model(device=device)
+
+    print("Selecting and ranking the five most important references using LLM...")
+    selected_refs = select_and_rank_references(model, tokenizer, main_content, references, device=device)
+    if len(selected_refs) < 5:
+        print("Failed to select five references.")
+    else:
+        print("Successfully selected five references.")
+        save_to_csv(selected_refs, output_file="selected_references.csv")
+        print(f"Results saved to 'selected_references'.\n")
+        print("Top 5 References:")
+        
+        for rank, (index, ref) in enumerate(selected_refs, start=1):
+    
+            ref_single_line = re.sub(r'\s+', ' ', ref).strip()
+            author_count = count_authors(ref_single_line)
+            print(f"{rank}. [Index={index}] {ref_single_line} (Authors: {author_count})")
+
+            
 if __name__ == "__main__":
+    
     main()
-
-
