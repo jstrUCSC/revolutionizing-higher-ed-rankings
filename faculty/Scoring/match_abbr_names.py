@@ -80,7 +80,7 @@ def process_csv(input_csv, output_csv):
                     #print(fetched_title)
                 for name in full_authors:
                     if name not in existing_entries:
-                        results.append([name, 1/len(full_authors)])
+                        results.append([name, 1 / len(full_authors)])
                         existing_entries.add(name)
 
                 time.sleep(1)  # To avoid hitting DBLP too frequently
