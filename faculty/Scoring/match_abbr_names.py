@@ -1,56 +1,42 @@
+import json
 import csv
 import requests
 from bs4 import BeautifulSoup
 import time
 import urllib.parse
 
-INPUT_CSV = "author_paper_data.csv"
+INPUT_JSON = "../../llm/extracted_references.json"
 OUTPUT_CSV = "faculty_full_names.csv"
 
 def fetch_dblp_authors_and_title(title, abbreviated_authors):
     """Fetch full author names and paper title from DBLP using the given paper title and verify with author names."""
     search_url = f"https://dblp.org/search?q={urllib.parse.quote(title)}"
     response = requests.get(search_url)
-    
+
     if response.status_code != 200:
         print(f"Failed to fetch DBLP data for: {title}")
         return []
 
     print(f"Fetched DBLP data for: {title}")
-    soup = BeautifulSoup(response.text, "html.parser")  # Use 'html.parser' for simplicity
-    
-    # Find all title search results
+    soup = BeautifulSoup(response.text, "html.parser")
+
     results = soup.find_all("cite", class_="data tts-content")
 
     for result in results:
-
-
-        # MAY BE UNNECESSARY; NEED TO TEST WHEN BACK ON WIFI.
-        # SHOULDN'T NEED EXACT PAPER TITILE
-
-        # Extract title for verifying exact paper
-        # title_element = result.find("span", class_="title")
-        # if not title_element:
-        #     continue
-        # fetched_title = title_element.get_text().strip()
-        
-        # Extract authors from the search result
         author_spans = result.find_all("span", itemprop="name")
-        full_authors = [span.get_text().strip() for span in author_spans][:-2] # Exclude the title and conference
+        full_authors = [span.get_text().strip() for span in author_spans][:-2]  # Skip title and venue
 
-        # Check if at least one abbreviated author appears in the full author list
         for abbrev_author in abbreviated_authors:
             if any(abbrev_author.split()[-1].strip("'") in full_name for full_name in full_authors):
-                return full_authors  # Return the correct author list and the paper title
+                return full_authors
 
     print(f"No exact match found for: {title}")
-    return [], None
+    return []
 
-def process_csv(input_csv, output_csv):
-    """Read the input CSV, fetch author names, match them, and save to an output CSV."""
-    existing_entries = set()  # Use a set to avoid duplicates
+def process_json(input_json, output_csv):
+    existing_entries = set()
     
-    # Read existing output CSV to prevent duplicate entries
+    # Read existing output to prevent duplicates
     try:
         with open(output_csv, newline="", encoding="utf-8") as f:
             reader = csv.reader(f)
@@ -61,47 +47,48 @@ def process_csv(input_csv, output_csv):
         pass
     print(f"Existing entries loaded: {existing_entries}")
 
-    results = []  # Store results before writing
+    results = []
 
-    with open(input_csv, newline="", encoding="utf-8") as f:
-        reader = csv.DictReader(f)
+    with open(input_json, "r", encoding="utf-8") as f:
+        papers = json.load(f)
 
-        for row in reader:
-            paper_title = row.get("Paper Title", "").strip()
-            authors = row.get("Authors", "").strip()
-            author_list = [a.strip() for a in authors.split(",") if a.strip()]
-            if "." in authors:
-                print(f"Processing: {paper_title}")
-                full_authors = fetch_dblp_authors_and_title(paper_title, author_list)
-                
-                # Also likely unnecessary
-                # Shouldn't need title anymore
-                #if fetched_title:
-                    #print(fetched_title)
-                for name in full_authors:
-                    if name not in existing_entries:
-                        results.append([name, 1 / len(full_authors)])
-                        existing_entries.add(name)
+        for paper in papers:
+            title = paper.get("title", "").strip()
+            authors = paper.get("authors", [])
+            original_authors = paper.get("original_authors", [])
 
-                time.sleep(1)  # To avoid hitting DBLP too frequently
-            else:
-                for a in authors.split(","):
-                    results.append([a.strip(), 1 / len(author_list)])
+            if not title or not authors or not original_authors:
                 continue
 
-            
+            # Check if abbreviated (presence of ".")
+            if any("." in a for a in authors):
+                print(f"Processing: {title}")
+                full_names = fetch_dblp_authors_and_title(title, authors)
+                if full_names:
+                    for name in full_names:
+                        if name not in existing_entries:
+                            results.append([name, 1 / (len(original_authors) * len(authors))])
+                            existing_entries.add(name)
+                else:
+                    print(f"Could not find full names for: {title}")
+                time.sleep(1)
+            else:
+                for a in authors:
+                    name = a.strip()
+                    if name and name not in existing_entries:
+                        results.append([name, 1 / (len(original_authors) * len(authors))])
+                        existing_entries.add(name)
 
-    # Write to output CSV (overwrite to ensure clean output)
+    # Write results
     with open(output_csv, "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
-        writer.writerow(["Full Name", "Paper Title"])  # Header
+        writer.writerow(["Full Name", "Normalized Score"])
         writer.writerows(results)
 
     print("Processing complete. Results saved.")
 
 def main():
-    """Main function to execute the CSV processing."""
-    process_csv(INPUT_CSV, OUTPUT_CSV)
+    process_json(INPUT_JSON, OUTPUT_CSV)
 
 if __name__ == "__main__":
     main()
