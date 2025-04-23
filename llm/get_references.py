@@ -463,7 +463,7 @@ def save_top5_to_csv(selected_refs: List[Tuple[int, str]], csv_path="references_
 def main():
     device = "cuda" if torch.cuda.is_available() else "cpu"
     # pdf_path = "2312.02126v3.pdf"
-    pdf_path = "../get_paper/Publications/CVPR_2020/AI_City_Challenge_2020_-_Computer_Vision_for_Smart_Transportation_Applications.pdf"
+    pdf_path = "../get_paper/Publications/CVPR_2020/NTIRE_2020_Challenge_on_Image_and_Video_Deblurring.pdf"
     # pdf_path = "308.pdf"
     tokenizer, model = load_model(device=device)
 
@@ -526,7 +526,7 @@ def main():
         print("Failed to select five references.")
     else:
         print("Successfully selected five references.")
-        save_top5_to_csv(selected_refs, csv_path="top5_references.csv")
+        save_top5_to_csv(selected_refs, csv_path="selected_references.csv")
         print(f"Results saved to 'selected_references'.\n")
         print("Top 5 References:")
         for rank, (index, ref) in enumerate(selected_refs, start=1):
