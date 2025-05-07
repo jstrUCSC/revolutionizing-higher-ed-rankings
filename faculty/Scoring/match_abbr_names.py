@@ -9,7 +9,7 @@ INPUT_JSON = "../../llm/extracted_references.json"
 OUTPUT_CSV = "faculty_full_names.csv"
 
 def fetch_dblp_authors_and_title(title, abbreviated_authors):
-    """Fetch full author names and paper title from DBLP using the given paper title and verify with author names."""
+    """Fetch disambiguated full author names from DBLP using the given paper title."""
     search_url = f"https://dblp.org/search?q={urllib.parse.quote(title)}"
     response = requests.get(search_url)
 
@@ -24,7 +24,12 @@ def fetch_dblp_authors_and_title(title, abbreviated_authors):
 
     for result in results:
         author_spans = result.find_all("span", itemprop="name")
-        full_authors = [span.get_text().strip() for span in author_spans][:-2]  # Skip title and venue
+        full_authors = [
+            span.get("title", span.get_text().strip()).strip()
+            for span in author_spans[:-2] # Exclude paper title and conference
+        ]
+
+        print(f"Full authors found: {full_authors}")
 
         for abbrev_author in abbreviated_authors:
             if any(abbrev_author.split()[-1].strip("'") in full_name for full_name in full_authors):
@@ -32,6 +37,8 @@ def fetch_dblp_authors_and_title(title, abbreviated_authors):
 
     print(f"No exact match found for: {title}")
     return []
+
+
 
 def process_json(input_json, output_csv):
     existing_entries = set()
