@@ -33,10 +33,14 @@ def parse_dblp_response(data):
                     authors = [author.get("text", "Unknown") for author in authors_data]
                 else:
                     authors = ["Unknown"]
-
+                
+                # Count number of authors
+                author_count = len(authors)
+                
                 papers.append({
                     "Title": info.get("title", "N/A"),
                     "Authors": ", ".join(authors),
+                    "Author_Count": author_count,  # Added author count
                     "Venue": info.get("venue", "N/A"),
                     "Year": info.get("year", "N/A"),
                     "URL": info.get("ee", "N/A"),
@@ -49,10 +53,9 @@ def save_to_csv(papers, filename):
     df.to_csv(filename, index=False, encoding="utf-8")
     print(f"Saved {len(papers)} papers to {filename}")
 
-
 # Fetch and save papers
 def main():
-    query = "ICML 2024"                 # Replace with other conference: need to check with Fuxin
+    query = "CVPR 2024"                 # Replace with other conference: need to check with Fuxin
     all_papers = []
     start = 0
     max_results = 1000
@@ -74,7 +77,7 @@ def main():
         else:
             print("Error fetching papers.")
             break
-
+        
     if all_papers:
         filename = f"{query.replace(' ', '_')}_papers.csv"
         save_to_csv(all_papers, filename)
