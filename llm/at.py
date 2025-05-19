@@ -154,7 +154,7 @@ def main():
     # for i in range(torch.cuda.device_count()):
     #     print(f"GPU {i}: {torch.cuda.get_device_name(i)}")
     
-    input_csv = "top5_references.csv"  
+    input_csv = "selected_references.csv"  
     output_json = "extracted_references.json"
     
     process_csv(input_csv, output_json)
