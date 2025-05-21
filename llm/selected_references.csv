@@ -1,6 +1,6 @@
 Rank,Reference,Author Count
-1,"Jonathan T. Barron and Jitendra Malik. Shape, illumination, and reflectance from shading. TPAMI , 2015. 2, 6",2
-2,"Chloe LeGendre, Wan-Chun Ma, Graham Fyffe, John Flynn, Laurent Charbonnel, Jay Busch, and Paul Debevec. Deep- light: Learning illumination for unconstrained mobile mixed reality. CVPR , 2019. 2",7
-3,"Sai Bangaru, Michael Gharbi, Tzu-Mao Li, Fujun Luan, Kalyan Sunkavalli, Milos Hasan, Sai Bi, Zexiang Xu, Gilbert Bernstein, and Fredo Durand. Differentiable rendering of neural SDFs through reparameterization. SIGGRAPH Asia , 2022. 2",10
-4,"Manel Baradad, Vickie Ye, Adam B. Yedidia, Fr ´edo Durand, William T. Freeman, Gregory W. Wornell, and Antonio Tor- ralba. Inferring light fields from shadows. CVPR , 2018. 3, 4",3
-5,"Sai Bi, Zexiang Xu, Pratul P. Srinivasan, Ben Mildenhall, Kalyan Sunkavalli, Milos Hasan, Yannick Hold-Geoffroy, David Kriegman, and Ravi Ramamoorthi. Neural reflectance fields for appearance acquisition. arXiv , 2020. 2",3
+1,"Vincent Arsigny, Olivier Commowick, Xavier Pennec, and Nicholas Ayache. A log-euclidean framework for statistics on diffeomorphisms. In MICCAI, 2006. 2",4
+2,"John Ashburner. A fast diffeomorphic image registration al- gorithm. NeuroImage, 38(1), 2007. 2",2
+3,"John Ashburner and Karl J. Friston. Nonlinear spatial nor- malization using basis functions. Human Brain Mapping, 7(4), 1999. 2",1
+4,"Brian B. Avants, Nicholas J. Tustison, Michael Stauffer, Gang Song, Baohua Wu, and James C. Gee. The insighttoolkit image registration framework. Frontiers in Neuroin- formatics, 8, 2014. 1",2
+5,"Guha Balakrishnan, Amy Zhao, Mert R. Sabuncu, John Gut- tag, and Adrian V . Dalca. An unsupervised learning modelfor deformable medical image registration. In CVPR, 2018. 1,2",3
