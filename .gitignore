@@ -73,7 +73,7 @@ build/
 *.tsv
 *.json
 utils/data/
-
+*.pdf
 # ========================
 # Archives and Compressed Files
 # ========================
