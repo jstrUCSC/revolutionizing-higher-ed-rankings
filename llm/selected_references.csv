@@ -1,6 +1,6 @@
 Rank,Reference,Author Count
-1,"David G Lowe. Distinctive image features from scale- invariant keypoints. IJCV , 60(2):91–110, 2004. 1,6",1
-2,"Krystian Mikolajczyk and Cordelia Schmid. A performance evaluation of local descriptors. TPAMI , 27(10):1615–1630, 2005. 5",1
-3,"Johannes Lutz Sch ¨onberger and Jan-Michael Frahm. Structure-from-motion revisited. In CVPR , 2016. 1",1
-4,"Richard Sinkhorn and Paul Knopp. Concerning nonnegative matrices and doubly stochastic matrices. PJM , 21(2):343– 348, 1967. 1,2",1
-5,"Ignacio Rocco, Mircea Cimpoi, Relja Arandjelovi ´c, Akihiko Torii, Tomas Pajdla, and Josef Sivic. Neighbourhood con- sensus networks. In NeurIPS , 2018. 1,2,3,4,5,6,7",6
+1,"Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. Deep residual learning for image recognition. In Proceed- ings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR) , June 2016. 6",4
+2,"Franc ¸ois Chollet. Xception: Deep learning with depthwise separable convolutions. In Proceedings of the IEEE Confer- ence on Computer Vision and Pattern Recognition (CVPR) , pages 1251–1258, 2017. 4",2
+3,"Bee Lim, Sanghyun Son, Heewon Kim, Seungjun Nah, and Kyoung Mu Lee. Enhanced deep residual networks for sin- gle image super-resolution. In Proceedings of the IEEE Con- ference on Computer Vision and Pattern Recognition Work- shops (CVPRw) , July 2017. 2",5
+4,"Yulun Zhang, Kunpeng Li, Kai Li, Lichen Wang, Bineng Zhong, and Yun Fu. Image super-resolution using very deep residual channel attention networks. In Proceedings of the European Conference on Computer Vision (ECCV) , pages 286–301, 2018. 2,4,6",6
+5,"Rosanne Liu, Joel Lehman, Piero Molino, Felipe Petroski Such, Eric Frank, Alex Sergeev, and Jason Yosinski. An intriguing failing of convolutional neural networks and the coordconv solution, 2018. 6",7
