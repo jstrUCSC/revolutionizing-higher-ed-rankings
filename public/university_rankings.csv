@@ -86,12 +86,12 @@ Index,University,Artificial Intelligence & Machine Learning,Data Science & Data 
 85,Augusta University,0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
 86,University of New Mexico,0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
 87,Texas A&M University,0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
-88,MBZUAI,0,0,0.2499999999999999,0,0,0,0,0,0,0,0,0,0,asia
+88,MBZUAI,0,0,0.2574074074074073,0,0,0,0,0,0,0,0,0,0,asia
 89,Cornell University,0,0,0.0333333333333333,0,0,0,0,0,0,0,0,0,0,North America
 90,University of Central Florida,0,0,0.0714285714285714,0,0,0,0,0,0,0,0,0,0,North America
 91,UFPE,0,0,0.0,0,0,0,0,0,0,0,0,0,0,southamerica
 92,Univ. of California - Santa Cruz,0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
-93,KIIT Bhubaneswar,0,0,0.0,0,0,0,0,0,0,0,0,0,0,asia
+93,KIIT Bhubaneswar,0,0,0.0054347826086956,0,0,0,0,0,0,0,0,0,0,asia
 94,IIT Kharagpur,0,0,0.0,0,0,0,0,0,0,0,0,0,0,asia
 95,Florida Atlantic University,0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
 96,National University of Singapore,0,0,0.1979166666666666,0,0,0,0,0,0,0,0,0,0,asia
@@ -103,9 +103,9 @@ Index,University,Artificial Intelligence & Machine Learning,Data Science & Data 
 102,IIT Gandhinagar,0,0,0.0,0,0,0,0,0,0,0,0,0,0,asia
 103,University of Minnesota,0,0,0.0277777777777777,0,0,0,0,0,0,0,0,0,0,North America
 104,Vanderbilt University,0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
-105,Johns Hopkins University,0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
+105,Johns Hopkins University,0,0,0.0646464646464645,0,0,0,0,0,0,0,0,0,0,North America
 106,Tel Aviv University,0,0,0.0,0,0,0,0,0,0,0,0,0,0,europe
-107,BITS Pilani,0,0,0.0,0,0,0,0,0,0,0,0,0,0,asia
+107,BITS Pilani,0,0,0.0054347826086956,0,0,0,0,0,0,0,0,0,0,asia
 108,IIIT Hyderabad,0,0,0.0,0,0,0,0,0,0,0,0,0,0,asia
 109,Tata Inst. of Fundamental Research,0,0,0.0,0,0,0,0,0,0,0,0,0,0,asia
 110,IIT Indore,0,0,0.0,0,0,0,0,0,0,0,0,0,0,asia
@@ -134,7 +134,7 @@ Index,University,Artificial Intelligence & Machine Learning,Data Science & Data 
 133,KU Leuven,0,0,0.0,0,0,0,0,0,0,0,0,0,0,europe
 134,Univ. of Maryland - Baltimore County,0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
 135,Univ. of Illinois at Urbana-Champaign,0,0,0.0833333333333333,0,0,0,0,0,0,0,0,0,0,North America
-136,Massachusetts Institute of Technology,0,0,0.6185714285714282,0,0,0,0,0,0,0,0,0,0,North America
+136,Massachusetts Institute of Technology,0,0,0.6852380952380949,0,0,0,0,0,0,0,0,0,0,North America
 137,University of Amsterdam,0,0,0.0,0,0,0,0,0,0,0,0,0,0,europe
 138,Dartmouth College,0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
 139,Arizona State University,0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
@@ -181,7 +181,7 @@ Index,University,Artificial Intelligence & Machine Learning,Data Science & Data 
 180,University of York,0,0,0.0,0,0,0,0,0,0,0,0,0,0,europe
 181,University of Surrey,0,0,0.1666666666666666,0,0,0,0,0,0,0,0,0,0,europe
 182,Freie Universitaet Berlin,0,0,0.0,0,0,0,0,0,0,0,0,0,0,europe
-183,ETH Zurich,0,0,0.1504761904761904,0,0,0,0,0,0,0,0,0,0,europe
+183,ETH Zurich,0,0,0.2615873015873015,0,0,0,0,0,0,0,0,0,0,europe
 184,University of Melbourne,0,0,0.0,0,0,0,0,0,0,0,0,0,0,australasia
 185,McGill University,0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
 186,Open University UK,0,0,0.0,0,0,0,0,0,0,0,0,0,0,europe
@@ -194,7 +194,7 @@ Index,University,Artificial Intelligence & Machine Learning,Data Science & Data 
 193,Federal University of Rio Grande,0,0,0.0,0,0,0,0,0,0,0,0,0,0,southamerica
 194,Ecole Normale Superieure de Lyon,0,0,0.0,0,0,0,0,0,0,0,0,0,0,europe
 195,CRIStAL,0,0,0.0,0,0,0,0,0,0,0,0,0,0,europe
-196,University at Buffalo,0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
+196,University at Buffalo,0,0,0.009090909090909,0,0,0,0,0,0,0,0,0,0,North America
 197,University of A Coruña,0,0,0.0,0,0,0,0,0,0,0,0,0,0,europe
 198,University of Virginia,0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
 199,College of William and Mary,0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
@@ -210,7 +210,7 @@ Index,University,Artificial Intelligence & Machine Learning,Data Science & Data 
 209,University of Buenos Aires,0,0,0.0,0,0,0,0,0,0,0,0,0,0,southamerica
 210,Singapore Management University,0,0,0.0416666666666666,0,0,0,0,0,0,0,0,0,0,asia
 211,Australian National University,0,0,0.0333333333333333,0,0,0,0,0,0,0,0,0,0,australasia
-212,Ben-Gurion University of the Negev,0,0,0.0,0,0,0,0,0,0,0,0,0,0,europe
+212,Ben-Gurion University of the Negev,0,0,0.0038461538461538,0,0,0,0,0,0,0,0,0,0,europe
 213,University of Windsor,0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
 214,Queen's University Belfast,0,0,0.0,0,0,0,0,0,0,0,0,0,0,europe
 215,University of Bergen,0,0,0.0,0,0,0,0,0,0,0,0,0,0,europe
@@ -232,7 +232,7 @@ Index,University,Artificial Intelligence & Machine Learning,Data Science & Data 
 231,The University of Alabama,0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
 232,Universidad de Chile,0,0,0.0,0,0,0,0,0,0,0,0,0,0,southamerica
 233,University of Southern California,0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
-234,York University,0,0,0.0526190476190476,0,0,0,0,0,0,0,0,0,0,North America
+234,York University,0,0,0.06016041877744,0,0,0,0,0,0,0,0,0,0,North America
 235,EPFL,0,0,0.25,0,0,0,0,0,0,0,0,0,0,europe
 236,Beihang University,0,0,0.0,0,0,0,0,0,0,0,0,0,0,asia
 237,Louisiana State University,0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
@@ -242,10 +242,10 @@ Index,University,Artificial Intelligence & Machine Learning,Data Science & Data 
 241,IIT Kanpur,0,0,0.0,0,0,0,0,0,0,0,0,0,0,asia
 242,Western Michigan University,0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
 243,Victoria University of Wellington,0,0,0.0,0,0,0,0,0,0,0,0,0,0,australasia
-244,The Hong Kong Polytechnic University,0,0,0.0,0,0,0,0,0,0,0,0,0,0,asia
+244,The Hong Kong Polytechnic University,0,0,0.0037037037037037,0,0,0,0,0,0,0,0,0,0,asia
 245,IIT Tirupati,0,0,0.0,0,0,0,0,0,0,0,0,0,0,asia
 246,University of North Texas,0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
-247,University of Western Australia,0,0,0.0,0,0,0,0,0,0,0,0,0,0,australasia
+247,University of Western Australia,0,0,0.1666666666666666,0,0,0,0,0,0,0,0,0,0,australasia
 248,University of Nevada Las Vegas,0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
 249,Rice University,0,0,0.04,0,0,0,0,0,0,0,0,0,0,North America
 250,Ruhr-University Bochum,0,0,0.0,0,0,0,0,0,0,0,0,0,0,europe
@@ -325,7 +325,7 @@ Index,University,Artificial Intelligence & Machine Learning,Data Science & Data 
 324,Northern Arizona University,0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
 325,Universidade NOVA de Lisboa,0,0,0.0,0,0,0,0,0,0,0,0,0,0,europe
 326,Rensselaer Polytechnic Institute,0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
-327,Hebrew University of Jerusalem,0,0,0.0666666666666666,0,0,0,0,0,0,0,0,0,0,europe
+327,Hebrew University of Jerusalem,0,0,0.0858974358974358,0,0,0,0,0,0,0,0,0,0,europe
 328,University of Victoria,0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
 329,Georgia State University,0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
 330,University of Magdeburg,0,0,0.0,0,0,0,0,0,0,0,0,0,0,europe
@@ -350,7 +350,7 @@ Index,University,Artificial Intelligence & Machine Learning,Data Science & Data 
 349,Hamburg University of Technology,0,0,0.0,0,0,0,0,0,0,0,0,0,0,europe
 350,University of North Carolina,0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
 351,Charles University,0,0,0.0,0,0,0,0,0,0,0,0,0,0,europe
-352,University of Würzburg,0,0,0.0383333333333332,0,0,0,0,0,0,0,0,0,0,europe
+352,University of Würzburg,0,0,0.1656050149528407,0,0,0,0,0,0,0,0,0,0,europe
 353,University of Waterloo,0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
 354,Columbia University,0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
 355,Durham University,0,0,0.0,0,0,0,0,0,0,0,0,0,0,europe
@@ -438,7 +438,7 @@ Index,University,Artificial Intelligence & Machine Learning,Data Science & Data 
 437,Kyungpook National University,0,0,0.0,0,0,0,0,0,0,0,0,0,0,asia
 438,University of Texas - El Paso,0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
 439,Aalborg University,0,0,0.0,0,0,0,0,0,0,0,0,0,0,europe
-440,University of Texas at Dallas,0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
+440,University of Texas at Dallas,0,0,0.0043478260869565,0,0,0,0,0,0,0,0,0,0,North America
 441,UFPR,0,0,0.0,0,0,0,0,0,0,0,0,0,0,southamerica
 442,ShanghaiTech University,0,0,0.2880687830687829,0,0,0,0,0,0,0,0,0,0,asia
 443,Universidad de los Andes,0,0,0.0,0,0,0,0,0,0,0,0,0,0,southamerica
@@ -531,7 +531,7 @@ Index,University,Artificial Intelligence & Machine Learning,Data Science & Data 
 530,Université Laval,0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
 531,University of Basel,0,0,0.0,0,0,0,0,0,0,0,0,0,0,europe
 532,Ohio University,0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
-533,TTI Chicago,0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
+533,TTI Chicago,0,0,0.0037037037037037,0,0,0,0,0,0,0,0,0,0,North America
 534,University of Trier,0,0,0.0,0,0,0,0,0,0,0,0,0,0,europe
 535,Paderborn University,0,0,0.0,0,0,0,0,0,0,0,0,0,0,europe
 536,University of Idaho,0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
@@ -540,14 +540,14 @@ Index,University,Artificial Intelligence & Machine Learning,Data Science & Data 
 539,University of Malaya,0,0,0.0,0,0,0,0,0,0,0,0,0,0,asia
 540,NYU Abu Dhabi,0,0,0.0,0,0,0,0,0,0,0,0,0,0,asia
 541,National Institute of Technology Warangal,0,0,0.0,0,0,0,0,0,0,0,0,0,0,asia
-542,Chinese Academy of Sciences,0,0,0.15,0,0,0,0,0,0,0,0,0,0,asia
-543,UESTC,0,0,0.0,0,0,0,0,0,0,0,0,0,0,asia
+542,Chinese Academy of Sciences,0,0,0.1916666666666666,0,0,0,0,0,0,0,0,0,0,asia
+543,UESTC,0,0,0.0052910052910052,0,0,0,0,0,0,0,0,0,0,asia
 544,IIT Roorkee,0,0,0.0,0,0,0,0,0,0,0,0,0,0,asia
-545,Shanghai Jiao Tong University,0,0,0.0476190476190476,0,0,0,0,0,0,0,0,0,0,asia
+545,Shanghai Jiao Tong University,0,0,0.0530538302277432,0,0,0,0,0,0,0,0,0,0,asia
 546,National Chiao Tung University,0,0,0.0,0,0,0,0,0,0,0,0,0,0,asia
-547,Zhejiang University,0,0,0.0178571428571428,0,0,0,0,0,0,0,0,0,0,asia
+547,Zhejiang University,0,0,0.0253985140155352,0,0,0,0,0,0,0,0,0,0,asia
 548,Nanjing University,0,0,0.0,0,0,0,0,0,0,0,0,0,0,asia
-549,Harbin Institute of Technology,0,0,0.03125,0,0,0,0,0,0,0,0,0,0,asia
+549,Harbin Institute of Technology,0,0,0.0387913711583924,0,0,0,0,0,0,0,0,0,0,asia
 550,CUHK (SZ),0,0,0.0,0,0,0,0,0,0,0,0,0,0,asia
 551,Maynooth University,0,0,0.0,0,0,0,0,0,0,0,0,0,0,europe
 552,Bielefeld University,0,0,0.0,0,0,0,0,0,0,0,0,0,0,europe
@@ -565,7 +565,7 @@ Index,University,Artificial Intelligence & Machine Learning,Data Science & Data 
 564,Université libre de Bruxelles,0,0,0.0,0,0,0,0,0,0,0,0,0,0,europe
 565,Stellenbosch University,0,0,0.0,0,0,0,0,0,0,0,0,0,0,africa
 566,University of Regensburg,0,0,0.0,0,0,0,0,0,0,0,0,0,0,europe
-567,Seoul National University,0,0,0.0,0,0,0,0,0,0,0,0,0,0,asia
+567,Seoul National University,0,0,0.0095238095238095,0,0,0,0,0,0,0,0,0,0,asia
 568,TU Freiberg,0,0,0.0,0,0,0,0,0,0,0,0,0,0,europe
 569,University of Bayreuth,0,0,0.0,0,0,0,0,0,0,0,0,0,0,europe
 570,Universidad Nacional de Córdoba,0,0,0.0,0,0,0,0,0,0,0,0,0,0,southamerica
@@ -588,7 +588,7 @@ Index,University,Artificial Intelligence & Machine Learning,Data Science & Data 
 587,University of Ulm,0,0,0.0,0,0,0,0,0,0,0,0,0,0,europe
 588,University of Osnabrück,0,0,0.0,0,0,0,0,0,0,0,0,0,0,europe
 589,University of Tulsa,0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
-590,Xiamen University,0,0,0.0238095238095238,0,0,0,0,0,0,0,0,0,0,asia
+590,Xiamen University,0,0,0.0292443064182194,0,0,0,0,0,0,0,0,0,0,asia
 591,University of Regina,0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
 592,HUST,0,0,0.0,0,0,0,0,0,0,0,0,0,0,asia
 593,University of Colorado - Denver,0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
