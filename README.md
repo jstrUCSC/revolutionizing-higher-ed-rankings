@@ -74,7 +74,7 @@ Our system is a **microservice-based pipeline** with the following core componen
 
 ### Our Platform
 
-> **Explore the site:** [Our Site](https://ubiquitous-semifreddo-8c7dd9.netlify.app/)
+> **Explore the site:** [Our Site](https://lianghui818.github.io/revolutionizing-higher-ed-rankings/public)
 
 Users can explore ranked university programs with filters and insights that go beyond traditional metrics.
 
