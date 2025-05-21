@@ -1,6 +1,6 @@
 Rank,Reference,Author Count
-1,"Vincent Arsigny, Olivier Commowick, Xavier Pennec, and Nicholas Ayache. A log-euclidean framework for statistics on diffeomorphisms. In MICCAI, 2006. 2",4
-2,"John Ashburner. A fast diffeomorphic image registration al- gorithm. NeuroImage, 38(1), 2007. 2",2
-3,"John Ashburner and Karl J. Friston. Nonlinear spatial nor- malization using basis functions. Human Brain Mapping, 7(4), 1999. 2",1
-4,"Brian B. Avants, Nicholas J. Tustison, Michael Stauffer, Gang Song, Baohua Wu, and James C. Gee. The insighttoolkit image registration framework. Frontiers in Neuroin- formatics, 8, 2014. 1",2
-5,"Guha Balakrishnan, Amy Zhao, Mert R. Sabuncu, John Gut- tag, and Adrian V . Dalca. An unsupervised learning modelfor deformable medical image registration. In CVPR, 2018. 1,2",3
+1,"David G Lowe. Distinctive image features from scale- invariant keypoints. IJCV , 60(2):91–110, 2004. 1,6",1
+2,"Krystian Mikolajczyk and Cordelia Schmid. A performance evaluation of local descriptors. TPAMI , 27(10):1615–1630, 2005. 5",1
+3,"Johannes Lutz Sch ¨onberger and Jan-Michael Frahm. Structure-from-motion revisited. In CVPR , 2016. 1",1
+4,"Richard Sinkhorn and Paul Knopp. Concerning nonnegative matrices and doubly stochastic matrices. PJM , 21(2):343– 348, 1967. 1,2",1
+5,"Ignacio Rocco, Mircea Cimpoi, Relja Arandjelovi ´c, Akihiko Torii, Tomas Pajdla, and Josef Sivic. Neighbourhood con- sensus networks. In NeurIPS , 2018. 1,2,3,4,5,6,7",6
