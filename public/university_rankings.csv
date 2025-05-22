@@ -44,16 +44,16 @@ Index,University,Artificial Intelligence & Machine Learning,Data Science & Data 
 43,Northeastern University,0.0,0,0.0833333333333333,0,0,0,0,0,0,0,0,0,0,North America
 44,University of Helsinki,0.0277777777777777,0,0.0,0,0,0,0,0,0,0,0,0,0,europe
 45,Chalmers/GU,0.0,0,0.0,0,0,0,0,0,0,0,0,0,0,europe
-46,New York University,0.1145833333333332,0,0.05,0,0,0,0,0,0,0,0,0,0,North America
+46,New York University,0.1502976190476189,0,0.05,0,0,0,0,0,0,0,0,0,0,North America
 47,Washington University in St. Louis,0.0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
 48,University of Montreal,0.0598214285714285,0,0.1666666666666666,0,0,0,0,0,0,0,0,0,0,North America
 49,University of Colorado Boulder,0.0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
 50,University of Notre Dame,0.0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
-51,University of Chicago,0.0625,0,0.025,0,0,0,0,0,0,0,0,0,0,North America
-52,University of Pennsylvania,0.0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
+51,University of Chicago,0.1101190476190476,0,0.025,0,0,0,0,0,0,0,0,0,0,North America
+52,University of Pennsylvania,0.0416666666666666,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
 53,Yale University,0.0,0,0.05,0,0,0,0,0,0,0,0,0,0,North America
 54,Queensland University of Technology,0.0,0,0.0,0,0,0,0,0,0,0,0,0,0,australasia
-55,Univ. of California - San Diego,0.1666666666666666,0,0.2185185185185183,0,0,0,0,0,0,0,0,0,0,North America
+55,Univ. of California - San Diego,0.1952380952380951,0,0.2185185185185183,0,0,0,0,0,0,0,0,0,0,North America
 56,Stanford University,0.0875992063492062,0,0.3934523809523809,0,0,0,0,0,0,0,0,0,0,North America
 57,University of Rochester,0.0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
 58,University of Iowa,0.0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
@@ -135,7 +135,7 @@ Index,University,Artificial Intelligence & Machine Learning,Data Science & Data 
 134,Univ. of Maryland - Baltimore County,0.0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
 135,Univ. of Illinois at Urbana-Champaign,0.0,0,0.0833333333333333,0,0,0,0,0,0,0,0,0,0,North America
 136,Massachusetts Institute of Technology,0.0,0,0.6852380952380949,0,0,0,0,0,0,0,0,0,0,North America
-137,University of Amsterdam,0.0,0,0.0,0,0,0,0,0,0,0,0,0,0,europe
+137,University of Amsterdam,0.1,0,0.0,0,0,0,0,0,0,0,0,0,0,europe
 138,Dartmouth College,0.0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
 139,Arizona State University,0.0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
 140,CISPA Helmholtz Center,0.0,0,0.0,0,0,0,0,0,0,0,0,0,0,europe
@@ -161,7 +161,7 @@ Index,University,Artificial Intelligence & Machine Learning,Data Science & Data 
 160,Royal Holloway University of London,0.0,0,0.0,0,0,0,0,0,0,0,0,0,0,europe
 161,Univ. of California - Irvine,0.0238095238095238,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
 162,University of Utah,0.0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
-163,Univ. of California - Berkeley,0.0,0,0.9657936507936502,0,0,0,0,0,0,0,0,0,0,North America
+163,Univ. of California - Berkeley,0.075,0,0.9657936507936502,0,0,0,0,0,0,0,0,0,0,North America
 164,University of Sheffield,0.0,0,0.0,0,0,0,0,0,0,0,0,0,0,europe
 165,SUTD,0.0,0,0.0,0,0,0,0,0,0,0,0,0,0,asia
 166,IIT Mandi,0.0,0,0.0,0,0,0,0,0,0,0,0,0,0,asia
@@ -257,7 +257,7 @@ Index,University,Artificial Intelligence & Machine Learning,Data Science & Data 
 256,University of Tsukuba,0.0,0,0.0,0,0,0,0,0,0,0,0,0,0,asia
 257,Auburn University,0.0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
 258,Ontario Tech University,0.0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
-259,Brown University,0.0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
+259,Brown University,0.0178571428571428,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
 260,University of Toronto,0.0,0,0.0833333333333332,0,0,0,0,0,0,0,0,0,0,North America
 261,Rochester Institute of Technology,0.0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
 262,University of Michigan,0.0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
@@ -283,7 +283,7 @@ Index,University,Artificial Intelligence & Machine Learning,Data Science & Data 
 282,IMDEA Networks Institute,0.0,0,0.0,0,0,0,0,0,0,0,0,0,0,europe
 283,University of Waikato,0.0,0,0.0,0,0,0,0,0,0,0,0,0,0,australasia
 284,HKUST,0.015625,0,0.05,0,0,0,0,0,0,0,0,0,0,asia
-285,Ecole Normale Superieure,0.0,0,0.0,0,0,0,0,0,0,0,0,0,0,europe
+285,Ecole Normale Superieure,0.0833333333333332,0,0.0,0,0,0,0,0,0,0,0,0,0,europe
 286,Sabancı University,0.0,0,0.0,0,0,0,0,0,0,0,0,0,0,europe
 287,University of Houston,0.0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
 288,Yonsei University,0.04,0,0.0,0,0,0,0,0,0,0,0,0,0,asia
@@ -348,7 +348,7 @@ Index,University,Artificial Intelligence & Machine Learning,Data Science & Data 
 347,University of Göttingen,0.0,0,0.0,0,0,0,0,0,0,0,0,0,0,europe
 348,TU Dresden,0.0,0,0.0,0,0,0,0,0,0,0,0,0,0,europe
 349,Hamburg University of Technology,0.0,0,0.0,0,0,0,0,0,0,0,0,0,0,europe
-350,University of North Carolina,0.0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
+350,University of North Carolina,0.0625,0,0.0,0,0,0,0,0,0,0,0,0,0,North America
 351,Charles University,0.0,0,0.0,0,0,0,0,0,0,0,0,0,0,europe
 352,University of Würzburg,0.0,0,0.1656050149528407,0,0,0,0,0,0,0,0,0,0,europe
 353,University of Waterloo,0.0,0,0.0,0,0,0,0,0,0,0,0,0,0,North America

@@ -1,6 +1,6 @@
 Rank,Reference,Author Count
-1,"Xiang Cheng, Niladri S Chatterji, Yasin Abbasi-Yadkori, Peter L Bartlett, and Michael I Jordan. Sharp convergence rates for langevin dynamics in the nonconvex setting. arXiv preprint arXiv:1805.01648 , 2018.",5
-2,"Arnak S Dalalyan and Avetik G Karagulyan. User-friendly guarantees for the langevin monte carlo with inaccurate gradient. arXiv preprint arXiv:1710.00095 , 2017.",1
-3,"Xuechen Li, Yi Wu, Lester Mackey, and Murat A Erdogdu. Stochastic runge-kutta accelerates langevin monte carlo and beyond. Advances in neural information processing systems , 32, 2019.",4
-4,"Alain Durmus and Eric Moulines. Nonasymptotic convergence analysis for the unadjusted langevin algorithm. The Annals of Applied Probability , 27(3):1551–1587, 2017.",1
-5,"Kwangjun Ahn and Sinho Chewi. Efﬁcient constrained sampling via the mirror-langevin algorithm. Advances in Neural Information Processing Systems , 34:28405–28418, 2021.",1
+1,"Mukund Sundararajan, Ankur Taly, and Qiqi Yan. Axiomatic attribution for deep networks. In Proceedings of the International Conference on Machine Learning (ICML) , 2017.",3
+2,"Thomas Fel, Melanie Ducoffe, David Vigouroux, Remi Cadene, Mikael Capelle, Claire Nicodeme, and Thomas Serre. Don’t lie to me! robust and efﬁcient explainability with veriﬁed perturbation analysis. Workshop on Formal Veriﬁcation of Machine Learning, Proceedings of the International Conference on Machine Learning (ICML) , 2022.",7
+3,"Peter Hase and Mohit Bansal. Evaluating explainable ai: Which algorithmic explanations help users predict model behavior? Proceedings of the Annual Meeting of the Association for Computational Linguistics (ACL) , 2020.",1
+4,"James Genone and Tania Lombrozo. Concept possession, experimental semantics, and hybrid theories of reference. Philosophical Psychology , 25(5):717–742, 2012.",1
+5,"Julien Mairal, Francis Bach, Jean Ponce, et al. Sparse modeling for image and vision processing. Founda- tions and Trends® in Computer Graphics and Vision , 8(2-3):85–283, 2014.",4
