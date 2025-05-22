@@ -53,7 +53,7 @@ Our system is a **microservice-based pipeline** with the following core componen
 ### 🗓️ Project Timeline
 
 **Fall Term**
-- Country Filter (UI)  
+- Continent Filter (UI)  
 - UI Redesign  
 - LLM Research & Evaluation  
 - LLM Integration Plan  
@@ -82,7 +82,7 @@ Users can explore ranked university programs with filters and insights that go b
 ### Features
 
 - University Rankings by Quality of Research  
-- Country-Based Filters  
+- Continent-Based Filters  
 - Author Browsing  
 - Transparent Scoring Breakdown  
 
@@ -94,7 +94,7 @@ Users can explore ranked university programs with filters and insights that go b
 Navigate to our hosted site to browse rankings.
 
 **Apply Filters**  
-Use the country or research domain filter to narrow results.
+Use the continent or research domain filter to narrow results.
 
 **Inspect Rankings**  
 Click on universities to view contributing authors and their scores.
