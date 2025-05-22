@@ -1,6 +1,6 @@
 Rank,Reference,Author Count
-1,"Enrico Giudice, Jack Kuipers, and Giusi Moffa. The dual PC algorithm and the role of Gaussianity for structure learning of Bayesian networks. International Journal of Approximate Reasoning , 161:108975, 2023.",3
-2,"Quentin F. Gronau, Alexandra Sarafoglou, Dora Matzke, Alexander Ly, Udo Boehm, Maarten Marsman, David S. Leslie, Jonathan J. Forster, Eric-Jan Wagenmakers, and Helen Steingroever. A tutorial on bridge sampling. Journal of Mathematical Psychology , 81:80–97, 2017.",2
-3,"Neville Kitson, Anthony Constantinou, Guo Zhigao, Yang Liu, and Kiattikun Chobtham. A survey of Bayesian network structure learning. Artiﬁcial Intelligence Review , 56:1–94, 2023.",5
-4,"Peter Spirtes, Clark Glymour, and Richard Scheines. Causation, prediction, and search . Springer New York, 1993.",3
-5,"Stan Development Team. RStan: the R interface to Stan, R package version 2.21.8, 2023. URL https://mc-stan.org/ .",2
+1,"Xiang Cheng, Niladri S Chatterji, Yasin Abbasi-Yadkori, Peter L Bartlett, and Michael I Jordan. Sharp convergence rates for langevin dynamics in the nonconvex setting. arXiv preprint arXiv:1805.01648 , 2018.",5
+2,"Arnak S Dalalyan and Avetik G Karagulyan. User-friendly guarantees for the langevin monte carlo with inaccurate gradient. arXiv preprint arXiv:1710.00095 , 2017.",1
+3,"Xuechen Li, Yi Wu, Lester Mackey, and Murat A Erdogdu. Stochastic runge-kutta accelerates langevin monte carlo and beyond. Advances in neural information processing systems , 32, 2019.",4
+4,"Alain Durmus and Eric Moulines. Nonasymptotic convergence analysis for the unadjusted langevin algorithm. The Annals of Applied Probability , 27(3):1551–1587, 2017.",1
+5,"Kwangjun Ahn and Sinho Chewi. Efﬁcient constrained sampling via the mirror-langevin algorithm. Advances in Neural Information Processing Systems , 34:28405–28418, 2021.",1
