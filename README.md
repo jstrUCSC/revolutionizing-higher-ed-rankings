@@ -155,7 +155,7 @@ A: Yes! Please open an issue or pull request on our [GitHub repository](https://
 ## Project Resources
 
 - [GitHub Repository](https://github.com/Lianghui818/revolutionizing-higher-ed-rankings)
-- [Documentation Page](https://github.com/Lianghui818/revolutionizing-higher-ed-rankings/blob/main/README.md)
+- [Devolper Documentation Directory](https://github.com/Lianghui818/revolutionizing-higher-ed-rankings/tree/main/docs)
 
 ---
 
