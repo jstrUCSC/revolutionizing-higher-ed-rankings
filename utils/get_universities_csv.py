@@ -36,11 +36,9 @@ columns = [
 # Create an empty DataFrame with the final structure
 final_data = pd.DataFrame(columns=columns)
 
-# Populate the "University" column and other columns
+# Init scores
 final_data["University"] = combined_data["affiliation"]
 final_data["Index"] = range(1, len(final_data) + 1)  # Assign ranks automatically (1, 2, 3...)
-
-# Fill all research-related fields with 0
 for col in columns[2:]:  
     final_data[col] = [0 for _ in range(len(final_data))]
 
