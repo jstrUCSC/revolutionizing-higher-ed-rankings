@@ -496,7 +496,7 @@ def save_to_csv(selected_refs: List[Tuple[int, str]], output_file="selected_refe
 
 def main():
     device = "cuda" if torch.cuda.is_available() else "cpu"
-    pdf_path = "../get_paper/Publications/NeurIPS_2023/A_Holistic_Approach_to_Unifying_Automatic_Concept_Extraction_and_Concept_Importance_Estimation.pdf"
+    pdf_path = "../get_paper/Publications/NeurIPS_2023/A_polar_prediction_model_for_learning_to_represent_visual_transformations.pdf"
     print(f"Reading PDF: {pdf_path}")
     content = read_pdf(pdf_path)
     if not content.strip():
