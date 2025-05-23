@@ -73,7 +73,8 @@ build/
 *.tsv
 *.json
 utils/data/
-*.pdf
+get_paper/Publications
+
 # ========================
 # Archives and Compressed Files
 # ========================
