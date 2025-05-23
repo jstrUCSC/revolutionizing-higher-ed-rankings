@@ -405,44 +405,44 @@ def select_and_rank_references(
     
     return selected_refs[:5] 
 
-def main():
-    device = "cuda" if torch.cuda.is_available() else "cpu"
-    pdf_path = "2212.06872v5.pdf"
-    print(f"Reading PDF: {pdf_path}")
-    content = read_pdf(pdf_path)
-    if not content.strip():
-        print("PDF content is empty.")
-        return
-    title = get_paper_title(content)
-    print(f"Paper Title (heuristic): {title}")
-    main_content = extract_main_content(content)
-    references_text = extract_references(content)
-    if not references_text.strip():
-        print("No valid references found.")
-        return
+# def main():
+#     device = "cuda" if torch.cuda.is_available() else "cpu"
+#     pdf_path = "2212.06872v5.pdf"
+#     print(f"Reading PDF: {pdf_path}")
+#     content = read_pdf(pdf_path)
+#     if not content.strip():
+#         print("PDF content is empty.")
+#         return
+#     title = get_paper_title(content)
+#     print(f"Paper Title (heuristic): {title}")
+#     main_content = extract_main_content(content)
+#     references_text = extract_references(content)
+#     if not references_text.strip():
+#         print("No valid references found.")
+#         return
     
-    references = parse_references(references_text)
-    print(f"Total {len(references)} references found.")
-    if len(references) < 5:
-        print("References are fewer than 5, skipping ranking.")
-        return
+#     references = parse_references(references_text)
+#     print(f"Total {len(references)} references found.")
+#     if len(references) < 5:
+#         print("References are fewer than 5, skipping ranking.")
+#         return
     
-    print("Loading DeepSeek model...")
-    tokenizer, model = load_model(device=device)
+#     print("Loading DeepSeek model...")
+#     tokenizer, model = load_model(device=device)
     
-    print("Selecting and ranking the five most important references using LLM...")
-    selected_refs = select_and_rank_references(model, tokenizer, main_content, references, device=device)
-    if len(selected_refs) < 5:
-        print("Failed to select five references.")
-    else:
-        print("Successfully selected five references.")
-        save_to_csv(selected_refs, output_file="selected_references.csv")
-        print(f"Results saved to 'selected_references'.\n")
-        print("Top 5 References:")
+#     print("Selecting and ranking the five most important references using LLM...")
+#     selected_refs = select_and_rank_references(model, tokenizer, main_content, references, device=device)
+#     if len(selected_refs) < 5:
+#         print("Failed to select five references.")
+#     else:
+#         print("Successfully selected five references.")
+#         save_to_csv(selected_refs, output_file="selected_references.csv")
+#         print(f"Results saved to 'selected_references'.\n")
+#         print("Top 5 References:")
         
-        for rank, (index, ref) in enumerate(selected_refs, start=1):
-            ref_single_line = re.sub(r'\s+', ' ', ref).strip()
-            print(f"{rank}. [Index={index}] {ref_single_line}")
+#         for rank, (index, ref) in enumerate(selected_refs, start=1):
+#             ref_single_line = re.sub(r'\s+', ' ', ref).strip()
+#             print(f"{rank}. [Index={index}] {ref_single_line}")
 
 def count_authors(reference: str) -> int:
     ref_text = re.sub(r'^\[\d+\]\s+', '', reference)
@@ -496,7 +496,7 @@ def save_to_csv(selected_refs: List[Tuple[int, str]], output_file="selected_refe
 
 def main():
     device = "cuda" if torch.cuda.is_available() else "cpu"
-    pdf_path = "2312.02126v3.pdf"
+    pdf_path = "../get_paper/Publications/NeurIPS_2023/A_polar_prediction_model_for_learning_to_represent_visual_transformations.pdf"
     print(f"Reading PDF: {pdf_path}")
     content = read_pdf(pdf_path)
     if not content.strip():

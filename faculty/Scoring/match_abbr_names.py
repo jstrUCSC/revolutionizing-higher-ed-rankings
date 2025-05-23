@@ -62,7 +62,7 @@ def process_json(input_json, output_csv):
         for paper in papers:
             title = paper.get("title", "").strip()
             authors = paper.get("authors", [])
-            original_authors = paper.get("original_authors", [])
+            original_authors = ["Pierre-Étienne H. Fiquet", "Eero P. Simoncelli"]
 
             if not title or not authors or not original_authors:
                 continue

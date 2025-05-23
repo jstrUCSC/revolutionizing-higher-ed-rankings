@@ -2,7 +2,7 @@ import pandas as pd
 from pathlib import Path
 
 # ----------------------------- CONFIG -----------------------------
-CURRENT_CONFERENCE = "CVPR"
+CURRENT_CONFERENCE = "NeurIPS"
 CONFERENCE_CATEGORIES = {
     'AAAI': 'Artificial Intelligence & Machine Learning', 'IJCAI': 'Artificial Intelligence & Machine Learning',
     'NeurIPS': 'Artificial Intelligence & Machine Learning', 'ICML': 'Artificial Intelligence & Machine Learning',

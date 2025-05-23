@@ -1,6 +1,6 @@
 Rank,Reference,Author Count
-1,"Jonathan T. Barron and Jitendra Malik. Shape, illumination, and reflectance from shading. TPAMI , 2015. 2, 6",2
-2,"Chloe LeGendre, Wan-Chun Ma, Graham Fyffe, John Flynn, Laurent Charbonnel, Jay Busch, and Paul Debevec. Deep- light: Learning illumination for unconstrained mobile mixed reality. CVPR , 2019. 2",7
-3,"Sai Bangaru, Michael Gharbi, Tzu-Mao Li, Fujun Luan, Kalyan Sunkavalli, Milos Hasan, Sai Bi, Zexiang Xu, Gilbert Bernstein, and Fredo Durand. Differentiable rendering of neural SDFs through reparameterization. SIGGRAPH Asia , 2022. 2",10
-4,"Manel Baradad, Vickie Ye, Adam B. Yedidia, Fr ´edo Durand, William T. Freeman, Gregory W. Wornell, and Antonio Tor- ralba. Inferring light fields from shadows. CVPR , 2018. 3, 4",3
-5,"Sai Bi, Zexiang Xu, Pratul P. Srinivasan, Ben Mildenhall, Kalyan Sunkavalli, Milos Hasan, Yannick Hold-Geoffroy, David Kriegman, and Ravi Ramamoorthi. Neural reflectance fields for appearance acquisition. arXiv , 2020. 2",3
+1,"Laurenz Wiskott and Terrence J Sejnowski. Slow feature analysis: Unsupervised learning of invariances. Neural computation , 2002. 1",1
+2,"David J Fleet and Allan D Jepson. Computation of component image velocity from local phase information. International journal of computer vision , 1990. 4",1
+3,"Edward H Adelson and James R Bergen. Spatiotemporal energy models for the perception of motion. Josa a , 1985. 8",1
+4,"Alexander Genkin, David Lipshutz, Siavash Golkar, Tiberiu Tesileanu, and Dmitri Chklovskii. Biological learning of irreducible representations of commuting transformations. Advances in Neural Information Processing Systems , 2022. 8",5
+5,"Peter Földiák. Learning invariance from transformation sequences. Neural Computation , 1991. 1",2
