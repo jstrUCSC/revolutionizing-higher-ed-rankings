@@ -9,6 +9,10 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 
 
 def load_model(model_name="deepseek-ai/DeepSeek-R1-Distill-Llama-8B", device="cuda"):
+    """
+    Load the tokenizer and model from HuggingFace transformers, set pad token if missing,
+    and move the model to the specified device (GPU/CPU).
+    """
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     model = AutoModelForCausalLM.from_pretrained(model_name, torch_dtype=torch.float16).to(device)
     if tokenizer.pad_token is None:
@@ -17,6 +21,10 @@ def load_model(model_name="deepseek-ai/DeepSeek-R1-Distill-Llama-8B", device="cu
     return tokenizer, model
 
 def read_pdf(file_path: str) -> str:
+    """
+    Extract all text content from a PDF file using PyPDF2.
+    Concatenate text from each page with newline separation.
+    """
     reader = PdfReader(file_path)
     text = ""
     for page in reader.pages:
@@ -26,6 +34,10 @@ def read_pdf(file_path: str) -> str:
     return text
 
 def get_paper_title(content: str) -> str:
+    """
+    Heuristic to extract paper title by returning the first non-empty line.
+    Returns "Untitled" if no such line found.
+    """
     lines = content.splitlines()
     for line in lines:
         if line.strip():
@@ -35,10 +47,12 @@ def get_paper_title(content: str) -> str:
 #####
 def detect_reference_format(references_text: str) -> str:
     """
-    bracketed: [1] ...
-    parenthesized: (1) ...
-    numberdot: 1. ... or 1) ...
-    no index
+    Detect the reference list numbering style:
+    - bracketed: [1] ...
+    - parenthesized: (1) ...
+    - numberdot: 1. or 1) ...
+    - none: no clear numbering detected
+    Returns the detected format as a string.
     """
     lines = references_text.splitlines()
     
@@ -68,8 +82,9 @@ def detect_reference_format(references_text: str) -> str:
         return "none"
 
 def parse_bracketed_references(references_text: str) -> list:
-    """
-    [1], [2]
+     """
+    Parse references that are numbered in bracketed style [1], [2], ...
+    Splits on each new bracketed reference line.
     """
     raw_refs = re.split(r'(?=^\[\d+\])', references_text, flags=re.MULTILINE)
     references = []
@@ -81,7 +96,8 @@ def parse_bracketed_references(references_text: str) -> list:
 
 def parse_parenthesized_references(references_text: str) -> list:
     """
-    (1), (2) 
+    Parse references numbered in parenthesized style (1), (2), ...
+    Splits on each new parenthesized reference line.
     """
     raw_refs = re.split(r'(?=^\(\d+\))', references_text, flags=re.MULTILINE)
     references = []
@@ -93,7 +109,8 @@ def parse_parenthesized_references(references_text: str) -> list:
 
 def parse_numberdot_references(references_text: str) -> list:
     """
-    1. or 1)
+    Parse references numbered as 1. or 1) style.
+    Splits on each new numbered reference line.
     """
     raw_refs = re.split(r'(?=^\d+(\.|\))\s)', references_text, flags=re.MULTILINE)
     references = []
@@ -104,6 +121,11 @@ def parse_numberdot_references(references_text: str) -> list:
     return references
 
 def heuristic_line_split_references(references_text: str) -> list:
+    """
+    Heuristic to split references if no clear numbering.
+    Assumes a new reference line starts with uppercase letter or digit.
+    Accumulates lines until a new reference line is detected.
+    """
     lines = references_text.strip().splitlines()
     references = []
     current_ref_lines = []
@@ -134,7 +156,9 @@ def heuristic_line_split_references(references_text: str) -> list:
 
 def parse_noindex_references(references_text: str) -> list:
     """
-    no index
+    Parse references with no explicit numbering.
+    Uses regex pattern to split based on paragraphs that look like references.
+    Falls back to heuristic line splitting if only one reference found.
     """
     pattern = r"\.\s*\n\s*\n+(?=[A-Z][a-zA-Z-]+ [A-Z]|[A-Z]\. [A-Z][a-zA-Z-]+)"
 
@@ -158,7 +182,15 @@ def parse_noindex_references(references_text: str) -> list:
     return references
 
 def parse_references(references_text: str) -> list:
-    # remove "References"
+    """
+    Main function to parse the references text block:
+    - Remove a leading "References" line if present.
+    - Detect numbering format.
+    - Use appropriate parser for the format.
+    - Clean numbering tokens from each reference.
+    - Filter out short references.
+    Returns a list of cleaned references.
+    """
     lines = references_text.strip().split("\n", 1)
     if len(lines) > 1:
         if re.match(r'(?i)^\s*references\s*$', lines[0]):
@@ -192,6 +224,11 @@ def parse_references(references_text: str) -> list:
 #####
 
 def extract_references(content: str) -> str:
+    """
+    Extract the 'References' section from the whole paper text.
+    Looks for a line containing 'References', then captures lines until a stopping keyword.
+    Returns the references text block.
+    """
     references = ""
     lines = content.splitlines()
     ref_start = None
@@ -231,6 +268,10 @@ def extract_references(content: str) -> str:
     return references
 
 def extract_main_content(content: str) -> str:
+    """
+    Extract main content by removing the references section.
+    Returns everything before the references section starts.
+    """
     main_content = ""
     lines = content.splitlines()
     ref_start = None
@@ -247,6 +288,11 @@ def extract_main_content(content: str) -> str:
     return main_content
 
 def summarize_content(model, tokenizer, content: str, device="cuda", max_new_tokens=300) -> str:
+    """
+    Use the language model to generate a multi-paragraph summary of the main content.
+    Uses system and user prompts to instruct the model.
+    Returns the generated summary string.
+    """
 
     system_prompt = (
         "You are a helpful assistant for academic summarization. "
@@ -298,6 +344,9 @@ def select_and_rank_references(
     references: List[str], 
     device="cuda"
 ) -> List[Tuple[int, str]]:
+    """
+    Selects and ranks the top 5 references.
+    """
     max_main_content_length = 2000
     if len(main_content) > max_main_content_length:
         main_content = summarize_content(model, tokenizer, main_content, device=device)
@@ -405,46 +454,10 @@ def select_and_rank_references(
     
     return selected_refs[:5] 
 
-# def main():
-#     device = "cuda" if torch.cuda.is_available() else "cpu"
-#     pdf_path = "2212.06872v5.pdf"
-#     print(f"Reading PDF: {pdf_path}")
-#     content = read_pdf(pdf_path)
-#     if not content.strip():
-#         print("PDF content is empty.")
-#         return
-#     title = get_paper_title(content)
-#     print(f"Paper Title (heuristic): {title}")
-#     main_content = extract_main_content(content)
-#     references_text = extract_references(content)
-#     if not references_text.strip():
-#         print("No valid references found.")
-#         return
-    
-#     references = parse_references(references_text)
-#     print(f"Total {len(references)} references found.")
-#     if len(references) < 5:
-#         print("References are fewer than 5, skipping ranking.")
-#         return
-    
-#     print("Loading DeepSeek model...")
-#     tokenizer, model = load_model(device=device)
-    
-#     print("Selecting and ranking the five most important references using LLM...")
-#     selected_refs = select_and_rank_references(model, tokenizer, main_content, references, device=device)
-#     if len(selected_refs) < 5:
-#         print("Failed to select five references.")
-#     else:
-#         print("Successfully selected five references.")
-#         save_to_csv(selected_refs, output_file="selected_references.csv")
-#         print(f"Results saved to 'selected_references'.\n")
-#         print("Top 5 References:")
-        
-#         for rank, (index, ref) in enumerate(selected_refs, start=1):
-#             ref_single_line = re.sub(r'\s+', ' ', ref).strip()
-#             print(f"{rank}. [Index={index}] {ref_single_line}")
-
 def count_authors(reference: str) -> int:
+    """
+    Count the number of authors
+    """
     ref_text = re.sub(r'^\[\d+\]\s+', '', reference)
     title_indicators = [
         r'\.\s+[A-Z]', 
@@ -485,6 +498,12 @@ def count_authors(reference: str) -> int:
 
 
 def save_to_csv(selected_refs: List[Tuple[int, str]], output_file="selected_references.csv"):
+    """
+    Save paper data to a CSV file.
+    Data is a list of tuples: (title, summary, references_string).
+    Writes CSV header row if file does not exist.
+    Appends new rows otherwise.
+    """
     with open(output_file, mode="w", newline="", encoding="utf-8") as file:
         writer = csv.writer(file)
         writer.writerow(["Rank", "Reference", "Author Count"])
@@ -495,6 +514,15 @@ def save_to_csv(selected_refs: List[Tuple[int, str]], output_file="selected_refe
             # writer.writerow([rank, ref])
 
 def main():
+    """
+    Main processing pipeline:
+    - Load model and tokenizer
+    - Extract text from PDF
+    - Extract paper title
+    - Extract references section and parse references
+    - Extract main content and generate summary using model
+    - Save title, summary, and references to CSV
+    """
     device = "cuda" if torch.cuda.is_available() else "cpu"
     pdf_path = "../get_paper/Publications/NeurIPS_2023/A_polar_prediction_model_for_learning_to_represent_visual_transformations.pdf"
     print(f"Reading PDF: {pdf_path}")
