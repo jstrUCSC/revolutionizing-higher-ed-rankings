@@ -19,7 +19,7 @@
 
 ## LLM
 
-- We use the **DeepSeek LLM (7B Instruct)** from Hugging Face to extract the **top 5 academic references** from each publication abstract.
+- We use the **DeepSeek LLM (8B Instruct)** from Hugging Face to extract the **top 5 academic references** from each publication abstract.
 - This logic is implemented in `llm/get_references.py` using the `transformers` library.
 - The retrieved references are used to assess academic influence and contribute to university scoring.
 
