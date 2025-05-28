@@ -25,27 +25,15 @@ python -m venv venv
 source venv/bin/activate  # or venv\Scripts\activate on Windows
 pip install -r requirements.txt
 ```
-3. **Run micro-service scripts manually to update CSV:**
+3. **Run python script to run llm and update csv's:**
 ```bash
-# llm scripts
-cd llm
-python get_references.py
-python at.py
-
-# scoring/graphing scripts
-cd faculty/Scoring
-python match_abbr_names.py
-cd faculty/Graph
-python create_graph.py
-
-# update csvs
-# once all papers and authors have been matched
 cd utils
-
-# Update which conference papers you are running before running categorize authors.
-python categorize_authors.py
+python run_all.py <Conference Directory>
+# ie. python run_all.py CVPR_2020
 ```
-4. **Test frontend locally:**
+Might take 2-3 days to run depending on amount of pdfs in directory
+
+3. **Test frontend locally:**
 ```bash
 cd public
 python -m http.server 8000
