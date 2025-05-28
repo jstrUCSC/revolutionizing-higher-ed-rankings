@@ -8,6 +8,26 @@
 - **Client-Side Logic:** The frontend dynamically fetches CSV data to render rankings, visualizations, and institution relationships without a backend server or database.
 ---
 
+## Project Structure
+
+```
+.
+├── llm/
+│   ├── get_references.py
+│   ├── at.py
+├── faculty/
+│   ├── match_abbr_names.py
+├── utils/
+|   └── data/
+|        └── (CSRankings data used to populate CSVs)
+│   └── run_all.py
+│   └── categorize_authors.py
+├── public/
+│   └── (HTML/CSS/JS files)
+└── README.md
+```
+---
+
 ### Workflow
 
 1.	Run backend scripts to process raw publication data and generate updated scores and rankings.
