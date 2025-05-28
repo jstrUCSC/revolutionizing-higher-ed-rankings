@@ -6,7 +6,7 @@
 
 - Git
 
-- Text editor (VS Code recommended)
+- Text editor 
 
 
 ## Installation Steps
@@ -16,7 +16,7 @@
 
 ```bash
 git clone https://github.com/Lianghui818/revolutionizing-higher-ed-rankings.git
-cd your-repo
+cd revolutionizing-higher-ed-rankings
 ```
 2. **(Optional) Setup Python virtual environment and install requirements:**
 
@@ -27,19 +27,22 @@ pip install -r requirements.txt
 ```
 3. **Run micro-service scripts manually to update CSV:**
 ```bash
-#llm scripts
+# llm scripts
 cd llm
 python get_references.py
 python at.py
 
-#scoring/graphing scripts
+# scoring/graphing scripts
 cd faculty/Scoring
 python match_abbr_names.py
 cd faculty/Graph
 python create_graph.py
 
-#update csvs
+# update csvs
+# once all papers and authors have been matched
 cd utils
+
+# Update which conference papers you are running before running categorize authors.
 python categorize_authors.py
 ```
 4. **Test frontend locally:**

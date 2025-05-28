@@ -87,7 +87,10 @@ def download_paper(url, conference):
                     download_link = domains[4] + link.get("href")[5:] # Remove ../.. beginning
                 else:    
                     download_link = domains[4] + link.get("href")[8:] # Remove ../../.. beginning
-                if soup.find(id="papertitle").string[0] == '\n':
+                if not soup.find(id="papertitle").string: # Fixes non-subscriptable error for now
+                    print("Issue with scanning for papertitle")
+                    return -2
+                if(soup.find(id="papertitle").string[0] == '\n'):
                     name = soup.find(id="papertitle").string[1:]
                 else:
                     name = soup.find(id="papertitle").string
