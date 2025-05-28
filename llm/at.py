@@ -7,7 +7,10 @@ from tqdm import tqdm
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
 def setup_model(model_name="deepseek-ai/DeepSeek-R1-Distill-Llama-8B", device_map="auto"):
-
+    """
+    Load the tokenizer and model from Hugging Face Hub.
+    Uses half precision (float16) and automatic device mapping (e.g., GPU if available).
+    """
     print(f"Loading model: {model_name}")
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     model = AutoModelForCausalLM.from_pretrained(
@@ -18,7 +21,10 @@ def setup_model(model_name="deepseek-ai/DeepSeek-R1-Distill-Llama-8B", device_ma
     return tokenizer, model
 
 def create_extraction_prompt(reference):
-
+    """
+    Create a prompt string asking the model to extract authors and title from a citation.
+    The prompt instructs the model to output a JSON with two fields: authors (list) and title (string).
+    """
     return f"""Extract the authors and title from this reference citation.
 Reference: {reference}
 
@@ -29,7 +35,12 @@ Format your answer strictly as a valid JSON with two fields:
 """
 
 def extract_json_from_response(response):
-
+    """
+    Attempt to extract a JSON object with "authors" and "title" fields from the model's response.
+    Uses regex to find JSON-like substrings and attempts to parse them.
+    Falls back to simpler regex extraction or line scanning if needed.
+    Returns a dict with extracted data or a failure flag.
+    """
     json_pattern = r'\{(?:[^{}]|(?:\{(?:[^{}]|(?:\{[^{}]*\}))*\}))*\}'
     matches = re.finditer(json_pattern, response)
     
@@ -74,7 +85,11 @@ def extract_json_from_response(response):
     return {"authors": "", "title": "", "extraction_failed": True}
 
 def process_csv(csv_file, output_file):
-  
+    """
+    Process a CSV file with reference citations.
+    For each citation, generate a prompt and run the model to extract authors and title.
+    Save incremental results to a partial JSON file, and final results to the output file.
+    """
     tokenizer, model = setup_model()
 
     try:
@@ -149,6 +164,12 @@ def process_csv(csv_file, output_file):
     print(f"Done. Result has been saved to {output_file}")
 
 def main():
+    """
+    Main entry point of the script.
+    Optionally prints GPU info (commented out).
+    Sets input CSV and output JSON filenames.
+    Calls the processing function.
+    """
     # check gpus
     # print(f"available gpu: {torch.cuda.device_count()}")
     # for i in range(torch.cuda.device_count()):

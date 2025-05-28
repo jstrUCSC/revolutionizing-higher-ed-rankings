@@ -4,7 +4,7 @@ import random
 
 # Path to the directory containing the CSV files
 input_directory = "./data"  # Replace with your folder path
-output_file = "/Users/mainoahmuna/Downloads/projects/revolutionizing-higher-ed-rankings/public/university_rankings.csv"  # Output CSV file
+output_file = "../public/university_rankings.csv"  # Output CSV file
 
 # Initialize an empty DataFrame for the combined data
 combined_data = pd.DataFrame()
@@ -36,11 +36,9 @@ columns = [
 # Create an empty DataFrame with the final structure
 final_data = pd.DataFrame(columns=columns)
 
-# Populate the "University" column and other columns
+# Init scores
 final_data["University"] = combined_data["affiliation"]
 final_data["Index"] = range(1, len(final_data) + 1)  # Assign ranks automatically (1, 2, 3...)
-
-# Fill all research-related fields with 0
 for col in columns[2:]:  
     final_data[col] = [0 for _ in range(len(final_data))]
 

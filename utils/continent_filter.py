@@ -1,10 +1,8 @@
 import pandas as pd
 
-# Load the university rankings CSV
-university_df = pd.read_csv("/Users/mainoahmuna/Downloads/projects/revolutionizing-higher-ed-rankings/public/university_rankings.csv")
-
-# Load the institution mapping CSV
-country_df = pd.read_csv("/Users/mainoahmuna/Downloads/projects/revolutionizing-higher-ed-rankings/public/country-info.csv")
+# Load the university rankings CSV and countries
+university_df = pd.read_csv("../public/university_rankings.csv")
+country_df = pd.read_csv("../public/country-info.csv")
 
 # Rename 'region' to 'Continent' for clarity
 country_df = country_df.rename(columns={"region": "Continent"})
@@ -21,7 +19,6 @@ updated_df["Continent"].fillna("North America", inplace=True)
 # Drop the extra 'institution' column after merging
 updated_df.drop(columns=["institution"], inplace=True)
 
-# Save updated CSV
-updated_df.to_csv("/Users/mainoahmuna/Downloads/projects/revolutionizing-higher-ed-rankings/public/university_rankings.csv", index=False)
+updated_df.to_csv("../public/university_rankings.csv", index=False)
 
 print("Updated CSV saved as 'updated_university_rankings.csv'.")

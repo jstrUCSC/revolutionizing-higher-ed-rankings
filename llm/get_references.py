@@ -7,6 +7,8 @@ from typing import List, Tuple
 from PyPDF2 import PdfReader
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
+# Predefined publication path
+PUBLICATION_PATH = "../get_paper/Publications/"
 
 def load_model(model_name="deepseek-ai/DeepSeek-R1-Distill-Llama-8B", device="cuda"):
     tokenizer = AutoTokenizer.from_pretrained(model_name)
@@ -32,14 +34,7 @@ def get_paper_title(content: str) -> str:
             return line.strip()
     return "Untitled"
 
-#####
 def detect_reference_format(references_text: str) -> str:
-    """
-    bracketed: [1] ...
-    parenthesized: (1) ...
-    numberdot: 1. ... or 1) ...
-    no index
-    """
     lines = references_text.splitlines()
     
     bracketed_count = 0
@@ -48,13 +43,10 @@ def detect_reference_format(references_text: str) -> str:
     
     for line in lines:
         line_stripped = line.strip()
-        # [1]
         if re.match(r'^\[\d+\]\s', line_stripped):
             bracketed_count += 1
-        # (1)
         elif re.match(r'^\(\d+\)\s', line_stripped):
             parenthesized_count += 1
-        # 1. or 1)
         elif re.match(r'^\d+(\.|\))\s', line_stripped):
             numberdot_count += 1
 
@@ -68,9 +60,6 @@ def detect_reference_format(references_text: str) -> str:
         return "none"
 
 def parse_bracketed_references(references_text: str) -> list:
-    """
-    [1], [2]
-    """
     raw_refs = re.split(r'(?=^\[\d+\])', references_text, flags=re.MULTILINE)
     references = []
     for ref_chunk in raw_refs:
@@ -80,9 +69,6 @@ def parse_bracketed_references(references_text: str) -> list:
     return references
 
 def parse_parenthesized_references(references_text: str) -> list:
-    """
-    (1), (2) 
-    """
     raw_refs = re.split(r'(?=^\(\d+\))', references_text, flags=re.MULTILINE)
     references = []
     for ref_chunk in raw_refs:
@@ -92,9 +78,6 @@ def parse_parenthesized_references(references_text: str) -> list:
     return references
 
 def parse_numberdot_references(references_text: str) -> list:
-    """
-    1. or 1)
-    """
     raw_refs = re.split(r'(?=^\d+(\.|\))\s)', references_text, flags=re.MULTILINE)
     references = []
     for ref_chunk in raw_refs:
@@ -116,7 +99,7 @@ def heuristic_line_split_references(references_text: str) -> list:
     for line in lines:
         line_stripped = line.strip()
         if not line_stripped:
-            continue  # Skip blank line
+            continue
 
         if current_ref_lines and is_new_reference_line(line_stripped):
             full_ref = " ".join(current_ref_lines).strip()
@@ -133,13 +116,7 @@ def heuristic_line_split_references(references_text: str) -> list:
     return references
 
 def parse_noindex_references(references_text: str) -> list:
-    """
-    no index
-    """
     pattern = r"\.\s*\n\s*\n+(?=[A-Z][a-zA-Z-]+ [A-Z]|[A-Z]\. [A-Z][a-zA-Z-]+)"
-
-    # raw_refs = re.split(r'\.\s*\n\s*\n+', references_text.strip())
-    # raw_refs = [ref.strip() + '.' for ref in raw_refs if ref.strip()]
     raw_refs = re.split(pattern, references_text.strip())
     raw_refs = [ref.strip() for ref in raw_refs if ref.strip()]
 
@@ -152,13 +129,11 @@ def parse_noindex_references(references_text: str) -> list:
             references.append(one_ref)
 
     if len(references) <= 1:
-        # fallback
         references = heuristic_line_split_references(references_text)
 
     return references
 
 def parse_references(references_text: str) -> list:
-    # remove "References"
     lines = references_text.strip().split("\n", 1)
     if len(lines) > 1:
         if re.match(r'(?i)^\s*references\s*$', lines[0]):
@@ -177,19 +152,11 @@ def parse_references(references_text: str) -> list:
     clean_refs = []
     for ref in references:
         r = ref.strip()
-        # remove "[1]", "(1)", "1.", "1)" ...
         r = re.sub(r'^(?:\[\d+\]|\(\d+\)|\d+\.|\d+\))\s*', '', r)
         clean_refs.append(r)
 
     final_refs = [r for r in clean_refs if len(r) > 5]
-    # final_refs = []
-    # for idx, ref in enumerate(clean_refs):
-    #     if len(ref) > 5:
-    #         numbered_ref = f"[{idx+1}] {ref}"
-    #         final_refs.append(numbered_ref)
-
     return final_refs
-#####
 
 def extract_references(content: str) -> str:
     references = ""
@@ -202,7 +169,6 @@ def extract_references(content: str) -> str:
             break
 
     if ref_start is None:
-        print("No References section found in the text.")
         return ""
 
     possible_stops = [r'\bAppendix\b', 
@@ -213,8 +179,6 @@ def extract_references(content: str) -> str:
                       r'\bSUPPLEMENTARY\b',
                       r'\bAttention Visualizations\b',
                       r'\bA NOTATIONS\b']
-                    #   r'^[A-Z]\.\s', 
-                    #   r'^[A-Z]\s']
     
     ref_end = len(lines)
     for j in range(ref_start+1, len(lines)):
@@ -227,7 +191,6 @@ def extract_references(content: str) -> str:
     
     references_lines = lines[ref_start:ref_end]
     references = "\n".join(references_lines)
-
     return references
 
 def extract_main_content(content: str) -> str:
@@ -243,11 +206,9 @@ def extract_main_content(content: str) -> str:
         main_content = "\n".join(lines[:ref_start])
     else:
         main_content = content
-    
     return main_content
 
 def summarize_content(model, tokenizer, content: str, device="cuda", max_new_tokens=300) -> str:
-
     system_prompt = (
         "You are a helpful assistant for academic summarization. "
         "Do not restate the entire text; provide a concise summary."
@@ -274,7 +235,6 @@ def summarize_content(model, tokenizer, content: str, device="cuda", max_new_tok
         padding=True
     ).to(device)
 
-    # if DataParallel: use model.module to generate
     gen_model = model.module if hasattr(model, 'module') else model
 
     outputs = gen_model.generate(
@@ -301,7 +261,6 @@ def select_and_rank_references(
     max_main_content_length = 2000
     if len(main_content) > max_main_content_length:
         main_content = summarize_content(model, tokenizer, main_content, device=device)
-        print(f"Content is too long, using summarized main content:\n{main_content[:500]}...\n")
     
     references_text = "\n".join([f"[{i+1}] {ref}" for i, ref in enumerate(references)])
     
@@ -333,8 +292,6 @@ def select_and_rank_references(
         inputs["input_ids"],
         attention_mask=inputs["attention_mask"],
         max_new_tokens=1500, 
-        # temperature=0.3,      
-        # top_p=0.9,
         repetition_penalty=1.2,
         pad_token_id=tokenizer.pad_token_id,
         num_return_sequences=1,
@@ -342,7 +299,6 @@ def select_and_rank_references(
     )
     
     response = tokenizer.decode(outputs[0], skip_special_tokens=True)
-    print("LLM Raw Response:\n", response, "\n")
     
     selected_refs = []
     
@@ -376,7 +332,6 @@ def select_and_rank_references(
                     break
     
     if len(selected_refs) < 5:
-    
         ref_pattern = r"\[(\d+)\]"
         ref_matches = re.findall(ref_pattern, response)
         
@@ -394,7 +349,6 @@ def select_and_rank_references(
                 selected_refs.append((ref_idx, ref_text))
     
     if len(selected_refs) < 5:
-        print("Filling missing references with sequential ones...")
         for i in range(len(references)):
             ref_idx = i + 1
             if ref_idx not in [idx for idx, _ in selected_refs] and ref_idx <= len(references):
@@ -404,45 +358,6 @@ def select_and_rank_references(
                     break
     
     return selected_refs[:5] 
-
-# def main():
-#     device = "cuda" if torch.cuda.is_available() else "cpu"
-#     pdf_path = "2212.06872v5.pdf"
-#     print(f"Reading PDF: {pdf_path}")
-#     content = read_pdf(pdf_path)
-#     if not content.strip():
-#         print("PDF content is empty.")
-#         return
-#     title = get_paper_title(content)
-#     print(f"Paper Title (heuristic): {title}")
-#     main_content = extract_main_content(content)
-#     references_text = extract_references(content)
-#     if not references_text.strip():
-#         print("No valid references found.")
-#         return
-    
-#     references = parse_references(references_text)
-#     print(f"Total {len(references)} references found.")
-#     if len(references) < 5:
-#         print("References are fewer than 5, skipping ranking.")
-#         return
-    
-#     print("Loading DeepSeek model...")
-#     tokenizer, model = load_model(device=device)
-    
-#     print("Selecting and ranking the five most important references using LLM...")
-#     selected_refs = select_and_rank_references(model, tokenizer, main_content, references, device=device)
-#     if len(selected_refs) < 5:
-#         print("Failed to select five references.")
-#     else:
-#         print("Successfully selected five references.")
-#         save_to_csv(selected_refs, output_file="selected_references.csv")
-#         print(f"Results saved to 'selected_references'.\n")
-#         print("Top 5 References:")
-        
-#         for rank, (index, ref) in enumerate(selected_refs, start=1):
-#             ref_single_line = re.sub(r'\s+', ' ', ref).strip()
-#             print(f"{rank}. [Index={index}] {ref_single_line}")
 
 def count_authors(reference: str) -> int:
     ref_text = re.sub(r'^\[\d+\]\s+', '', reference)
@@ -467,7 +382,6 @@ def count_authors(reference: str) -> int:
     
     and_match = re.search(r'\s+and\s+', authors_section)
     if and_match:
-       
         before_and = authors_section[:and_match.start()]
         comma_count = before_and.count(',')
         return comma_count + 1 
@@ -483,59 +397,91 @@ def count_authors(reference: str) -> int:
     
     return 2
 
-
-def save_to_csv(selected_refs: List[Tuple[int, str]], output_file="selected_references.csv"):
-    with open(output_file, mode="w", newline="", encoding="utf-8") as file:
+def save_to_csv(paper_title, filename, conference_dir, selected_refs, output_file="selected_references.csv"):
+    with open(output_file, mode="a", newline="", encoding="utf-8") as file:
         writer = csv.writer(file)
-        writer.writerow(["Rank", "Reference", "Author Count"])
+        if file.tell() == 0:
+            writer.writerow(["Paper Title", "Conference Directory", "Rank", "Reference", "Author Count"])
         for rank, (index, ref) in enumerate(selected_refs, start=1):
             ref_single_line = re.sub(r'\s+', ' ', ref).strip()
             author_count = count_authors(ref_single_line)
-            writer.writerow([rank, ref_single_line, author_count])
-            # writer.writerow([rank, ref])
+            writer.writerow([paper_title, conference_dir, rank, ref_single_line, author_count])
 
-def main():
-    device = "cuda" if torch.cuda.is_available() else "cpu"
-    pdf_path = "../get_paper/Publications/NeurIPS_2023/A_polar_prediction_model_for_learning_to_represent_visual_transformations.pdf"
-    print(f"Reading PDF: {pdf_path}")
+def process_pdf(pdf_path, conference_dir, model, tokenizer, device, output_csv):
+    filename = os.path.basename(pdf_path)
+    print(f"\nProcessing: {filename}")
+    
     content = read_pdf(pdf_path)
     if not content.strip():
-        print("PDF content is empty.")
+        print("PDF content is empty. Skipping.")
         return
+    
     title = get_paper_title(content)
-    print(f"Paper Title (heuristic): {title}")
-    main_content = extract_main_content(content)
+    print(f"Paper Title: {title}")
+    
     references_text = extract_references(content)
     if not references_text.strip():
-        print("No valid references found.")
+        print("No valid references found. Skipping.")
         return
     
     references = parse_references(references_text)
     print(f"Total {len(references)} references found.")
+    
     if len(references) < 5:
-        print("References are fewer than 5, skipping ranking.")
+        print("References are fewer than 5. Skipping ranking.")
         return
     
-    print("Loading DeepSeek model...")
-    tokenizer, model = load_model(device=device)
-
-    print("Selecting and ranking the five most important references using LLM...")
+    main_content = extract_main_content(content)
     selected_refs = select_and_rank_references(model, tokenizer, main_content, references, device=device)
+    
     if len(selected_refs) < 5:
         print("Failed to select five references.")
     else:
-        print("Successfully selected five references.")
-        save_to_csv(selected_refs, output_file="selected_references.csv")
-        print(f"Results saved to 'selected_references'.\n")
-        print("Top 5 References:")
-        
+        save_to_csv(title, filename, conference_dir, selected_refs, output_file=output_csv)
+        print(f"Top 5 references saved to {output_csv}")
+        print("Top References:")
         for rank, (index, ref) in enumerate(selected_refs, start=1):
-    
-            ref_single_line = re.sub(r'\s+', ' ', ref).strip()
-            author_count = count_authors(ref_single_line)
-            print(f"{rank}. [Index={index}] {ref_single_line} (Authors: {author_count})")
+            print(f"{rank}. {ref[:100]}...")
 
-            
-if __name__ == "__main__":
+def main():
+    parser = argparse.ArgumentParser(description='Process conference PDFs to extract top references.')
+    parser.add_argument('conference_dir', type=str, help='Conference directory name inside Publications/')
+    args = parser.parse_args()
     
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    print(f"Using device: {device}")
+    
+    # Build full path to conference directory
+    conference_path = os.path.join(PUBLICATION_PATH, args.conference_dir)
+    if not os.path.exists(conference_path):
+        print(f"Error: Directory '{conference_path}' does not exist.")
+        return
+    if not os.path.isdir(conference_path):
+        print(f"Error: '{conference_path}' is not a directory.")
+        return
+    
+    # Load model once
+    tokenizer, model = load_model(device=device)
+    
+    output_csv = "selected_references.csv"
+    pdf_files = [os.path.join(conference_path, f) for f in os.listdir(conference_path) 
+                if f.lower().endswith('.pdf')]
+    
+    print(f"\nFound {len(pdf_files)} PDF files in {conference_path}")
+    
+    # Initialize CSV with header if new file
+    if not os.path.exists(output_csv):
+        with open(output_csv, 'w', newline='', encoding='utf-8') as f:
+            writer = csv.writer(f)
+            writer.writerow(["Paper Title", "Filename", "Conference Directory", "Rank", "Reference", "Author Count"])
+    
+    for pdf_path in pdf_files:
+        try:
+            process_pdf(pdf_path, args.conference_dir, model, tokenizer, device, output_csv)
+        except Exception as e:
+            print(f"Error processing {os.path.basename(pdf_path)}: {str(e)}")
+    
+    print("\nProcessing completed. Results saved to", output_csv)
+
+if __name__ == "__main__":
     main()

@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 import time
 import urllib.parse
 
-INPUT_JSON = "../../llm/extracted_references.json"
+INPUT_JSON = "../../utils/extracted_references.json"
 OUTPUT_CSV = "faculty_full_names.csv"
 
 def fetch_dblp_authors_and_title(title, abbreviated_authors):
@@ -62,7 +62,7 @@ def process_json(input_json, output_csv):
         for paper in papers:
             title = paper.get("title", "").strip()
             authors = paper.get("authors", [])
-            original_authors = ["Pierre-Étienne H. Fiquet", "Eero P. Simoncelli"]
+            original_authors = authors
 
             if not title or not authors or not original_authors:
                 continue
