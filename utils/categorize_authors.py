@@ -2,7 +2,7 @@ import pandas as pd
 from pathlib import Path
 
 # ----------------------------- CONFIG -----------------------------
-CURRENT_CONFERENCE = "NeurIPS"
+CURRENT_CONFERENCE = "CVPR"
 CONFERENCE_CATEGORIES = {
     'AAAI': 'Artificial Intelligence & Machine Learning', 'IJCAI': 'Artificial Intelligence & Machine Learning',
     'NeurIPS': 'Artificial Intelligence & Machine Learning', 'ICML': 'Artificial Intelligence & Machine Learning',
@@ -80,7 +80,7 @@ def update_university_rankings(faculty_df, rankings_file, output_file):
 
 if __name__ == "__main__":
     # Paths
-    faculty_file = Path("../faculty/Scoring/faculty_full_names.csv")
+    faculty_file = Path("faculty_full_names.csv")
     author_file = Path("../get_paper/author_universities_output.csv")
     rankings_file = Path("../public/university_rankings.csv")
     output_file = rankings_file  # Overwrite
