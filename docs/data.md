@@ -1,7 +1,7 @@
 ## Data
 
-- PDFs are downloaded and stored in `/publications` folder.
-- Other CSVs are labeled for easy access
+- PDFs are downloaded and stored in `/publications` folder under their specific conference and year.
+  - ie. CVPR 2020 papers are stored in `/publications/CVPR_2020`.
 
 ### CSV Structure
 
@@ -10,7 +10,7 @@
 - `/data/author_university_output.csv` — Stores authors and their affiliate universities.
 - `/public/country-info.csv`  — Stores the university and their respective continent. 
 
-Each file follows a standardized format and is regularly updated by the backend scripts after LLM processing.
+university_rankings.csv is updated automatically when the backend scrip is run. All the other .csv files are utilized to store metadata. 
 
 ### Data Pipeline
 
