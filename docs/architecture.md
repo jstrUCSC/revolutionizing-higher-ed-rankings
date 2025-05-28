@@ -22,6 +22,8 @@
 |        └── create_graph.py
 |        └── author_scores.csv
 |        └── author_total.py
+├── get_paper
+|   └── download_papers.py
 ├── utils/
 |   └── data/
 |        └── (CSRankings data used to populate CSVs)
