@@ -29,10 +29,11 @@
 
 - Python scripts in `/llm`, `/faculty`, `/utils`.
 - Key scripts:
+  - `at.py`: converts llm response to json for parsing
   - `get_references.py`: Calls LLM, extracts references.
   - `match_abbr_names.py`: Computes scores for each author that was referenced.
   - `categorize_authors.py`: Utility functions for CSV operations to match authors to universities then update rankings.
-- Run scripts manually; no live backend server.
+- Run programs all together utilizing backend script in `utils\run_all.py`.
 
 ---
 
