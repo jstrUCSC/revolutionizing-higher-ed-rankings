@@ -15,8 +15,13 @@
 ├── llm/
 │   ├── get_references.py
 │   ├── at.py
-├── faculty/
-│   ├── match_abbr_names.py
+├── faculty
+|   └── /Scoring
+│         └── match_abbr_names.py
+|   └── /Graph
+|        └── create_graph.py
+|        └── author_scores.csv
+|        └── author_total.py
 ├── utils/
 |   └── data/
 |        └── (CSRankings data used to populate CSVs)
