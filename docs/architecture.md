@@ -30,6 +30,7 @@
 ├── public/
 │   └── (HTML/CSS/JS files)
 └── README.md
+└── requirement.txt
 ```
 ---
 
