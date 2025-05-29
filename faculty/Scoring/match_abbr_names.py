@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 import time
 import urllib.parse
 
-INPUT_JSON = "../../utils/extracted_references.json"
+INPUT_JSON = "extracted_references.json"
 OUTPUT_CSV = "faculty_full_names.csv"
 
 def fetch_dblp_authors_and_title(title, abbreviated_authors):
