@@ -3,12 +3,29 @@ import re
 import csv
 import torch
 import argparse
+import shutil  # Added for file moving
 from typing import List, Tuple
 from PyPDF2 import PdfReader
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
 # Predefined publication path
 PUBLICATION_PATH = "../get_paper/Publications/"
+
+def move_to_completed(pdf_path, conference_dir):
+    """Move a processed PDF file to the 'completed' directory"""
+    # Create completed directory structure
+    base_dir = os.path.dirname(pdf_path)
+    completed_dir = os.path.join(base_dir, "completed")
+    
+    # Create completed directory if it doesn't exist
+    os.makedirs(completed_dir, exist_ok=True)
+    
+    # Move the file
+    try:
+        shutil.move(pdf_path, completed_dir)
+        print(f"Moved {os.path.basename(pdf_path)} to completed directory")
+    except Exception as e:
+        print(f"Error moving file: {e}")
 
 def load_model(model_name="deepseek-ai/DeepSeek-R1-Distill-Llama-8B", device="cuda"):
     tokenizer = AutoTokenizer.from_pretrained(model_name)
@@ -401,11 +418,11 @@ def save_to_csv(paper_title, filename, conference_dir, selected_refs, output_fil
     with open(output_file, mode="a", newline="", encoding="utf-8") as file:
         writer = csv.writer(file)
         if file.tell() == 0:
-            writer.writerow(["Paper Title", "Conference Directory", "Rank", "Reference", "Author Count"])
+            writer.writerow(["Rank", "Reference", "Author Count"])
         for rank, (index, ref) in enumerate(selected_refs, start=1):
             ref_single_line = re.sub(r'\s+', ' ', ref).strip()
             author_count = count_authors(ref_single_line)
-            writer.writerow([paper_title, conference_dir, rank, ref_single_line, author_count])
+            writer.writerow([rank, ref_single_line, author_count])
 
 def process_pdf(pdf_path, conference_dir, model, tokenizer, device, output_csv):
     filename = os.path.basename(pdf_path)
@@ -442,6 +459,9 @@ def process_pdf(pdf_path, conference_dir, model, tokenizer, device, output_csv):
         print("Top References:")
         for rank, (index, ref) in enumerate(selected_refs, start=1):
             print(f"{rank}. {ref[:100]}...")
+    
+    # Move file to completed directory after processing (even if partially successful)
+    move_to_completed(pdf_path, conference_dir)
 
 def main():
     parser = argparse.ArgumentParser(description='Process conference PDFs to extract top references.')
@@ -463,7 +483,7 @@ def main():
     # Load model once
     tokenizer, model = load_model(device=device)
     
-    output_csv = "selected_references.csv"
+    output_csv = "selected_references_" + args.conference_dir + ".csv"
     pdf_files = [os.path.join(conference_path, f) for f in os.listdir(conference_path) 
                 if f.lower().endswith('.pdf')]
     
@@ -473,13 +493,19 @@ def main():
     if not os.path.exists(output_csv):
         with open(output_csv, 'w', newline='', encoding='utf-8') as f:
             writer = csv.writer(f)
-            writer.writerow(["Paper Title", "Filename", "Conference Directory", "Rank", "Reference", "Author Count"])
+            writer.writerow(["Rank", "Reference", "Author Count"])
+    
+    # Create completed directory in advance
+    completed_dir = os.path.join(conference_path, "completed")
+    os.makedirs(completed_dir, exist_ok=True)
     
     for pdf_path in pdf_files:
         try:
             process_pdf(pdf_path, args.conference_dir, model, tokenizer, device, output_csv)
         except Exception as e:
             print(f"Error processing {os.path.basename(pdf_path)}: {str(e)}")
+            # Attempt to move even if error occurred
+            move_to_completed(pdf_path, args.conference_dir)
     
     print("\nProcessing completed. Results saved to", output_csv)
 
