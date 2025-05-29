@@ -3,10 +3,6 @@
 ## Tasks
 
 - Extend the existing automated paper downloading system to include additional conferences beyond the current set.
-- Automate the subsequent workflow including:
-  - Running LLM-based content scoring on all downloaded papers.
-  - Creating graphs from the processed data.
-- Remove the need to manually run each script by automating the entire pipeline.
 
 ## Goals
 

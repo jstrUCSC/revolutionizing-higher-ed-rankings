@@ -1,26 +1,45 @@
-## Data
+## Data Organization
 
-- PDFs are downloaded and stored in `/publications` folder.
-- Other CSVs are labeled for easy access
+### PDF Storage
 
-### CSV Structure
+- Research papers (PDFs) are stored in the `/publications` directory, organized by **conference name and year**.
+- Example:
+  ```
+  /Publications/CVPR_2020/
+  /Publications/NeurIPS_2020/
+  ```
 
-- `/faculty/Scoring/faculty_full_name.csv` — Contains authors and their cumulative scores from processed publications.
-- `/public/university_rankings.csv` — Contains scores assigned to each institution.
-- `/data/author_university_output.csv` — Stores authors and their affiliate universities.
-- `/public/country-info.csv`  — Stores the university and their respective continent. 
+---
 
-Each file follows a standardized format and is regularly updated by the backend scripts after LLM processing.
+### CSV File Structure
 
-### Data Pipeline
+| File Path | Description |
+|-----------|-------------|
+| `/faculty/Scoring/faculty_full_name.csv` | Contains each faculty member’s name and their **cumulative contribution score** derived from referenced papers. |
+| `/public/university_rankings.csv` | Stores institution-level scores, **automatically updated** when `run_all.py` is executed. |
+| `/data/author_university_output.csv` | Maps **individual authors to their affiliated universities**, used during the scoring phase. |
+| `/public/country-info.csv` | Maps each university to its respective **country and continent**, used for regional breakdowns. |
 
-1. **Paper Collection:** PDFs are gathered manually or through scraping tools.
-2. **Metadata Extraction:** Data is sourced from the CSRANKINGS github repository.
-3. **LLM Analysis:** Top 5 references are pulled from each paper using an LLM model.
-4. **Scoring:** Contributions are weighted and distributed across authors and institutions.
-5. **Storage:** All results are written back to the corresponding CSV files.
+> Only `university_rankings.csv` is automatically regenerated; others serve as static or semi-static metadata sources.
 
-### Notes
+---
 
-- Files are version-controlled with Git to track changes.
-- CSVs support easy review/editing with spreadsheet tools.
+## Data Pipeline
+
+1. **Paper Collection**  
+   - PDFs are manually downloaded or retrieved using `get_paper/download_papers.py` (e.g., conference websites, Semantic Scholar).
+
+2. **Metadata Extraction**  
+   - Paper metadata (title, authors, conference, year) is extracted from the [CSRankings GitHub repository](https://github.com/emeryberger/CSrankings).
+   - Additional parsing ensures compatibility with scoring logic (e.g., normalization of author names).
+
+3. **LLM Analysis**  
+   - Abstracts are passed to a **DeepSeek 8B Instruct** model via Hugging Face.
+   - `get_references.py` extracts the **top 5 academic references** per paper.
+
+4. **Scoring**  
+   - Contributions are **weighted per reference** and distributed across identified authors and their institutions.
+   - Implemented in `match_abbr_names.py` and `categorize_authors.py`.
+
+5. **Data Storage**  
+   - All processed outputs are written to structured CSVs in `/faculty/Scoring/` and `/public/`.

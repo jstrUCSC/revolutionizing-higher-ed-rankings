@@ -2,52 +2,60 @@
 
 ## Prerequisites
 
-- Python 3.10+
+Make sure you have the following installed on your machine:
 
-- Git
-
-- Text editor 
-
+- **Python 3.10+**
+- **Git**
+- **A text editor or IDE** (e.g., VS Code, PyCharm, etc.)
 
 ## Installation Steps
 
-
-1. **Clone the repository**
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/Lianghui818/revolutionizing-higher-ed-rankings.git
 cd revolutionizing-higher-ed-rankings
 ```
-2. **(Optional) Setup Python virtual environment and install requirements:**
 
+### 2. (Optional but recommended) Setup python virtual environment
 ```bash
 python -m venv venv
-source venv/bin/activate  # or venv\Scripts\activate on Windows
+source venv/bin/activate
+```
+### 3. Install python dependencies
+```bash
 pip install -r requirements.txt
 ```
-3. **Run micro-service scripts manually to update CSV:**
+### 4. Download papers 
 ```bash
-# llm scripts
-cd llm
-python get_references.py
-python at.py
+cd get_papers
+python download_papers.py <Conference Paper CSV>
 
-# scoring/graphing scripts
-cd faculty/Scoring
-python match_abbr_names.py
-cd faculty/Graph
-python create_graph.py
-
-# update csvs
-# once all papers and authors have been matched
-cd utils
-
-# Update which conference papers you are running before running categorize authors.
-python categorize_authors.py
+# Example:
+python download_papers.py CVPR_2020_papers.csv
 ```
-4. **Test frontend locally:**
+
+Papers that are downloaded will be strored in the `Publications/` divided by conference and year.
+
+### 5. Run backend script to run papers through LLM and update CSVs
 ```bash
-cd public
+cd utils
+python run_all.py <Conference Paper directory>
+
+# Example:
+python run_all.py CVPR_2020
+```
+
+**Note:** Make sure to change this line of code in `utils/categorize_authors.py` depending on which conference papers are being ran. 
+```python
+CURRENT_CONFERENCE = "CVPR"
+```
+
+### 6. Test frontend locally
+Serve the public folder using Python’s built-in HTTP server:
+```bash
+cd ../public
 python -m http.server 8000
 ```
-Then open [http://localhost:8000](http://localhost:8000) in your browser.
+Then open your browser and navigate to:
+http://localhost:8000
