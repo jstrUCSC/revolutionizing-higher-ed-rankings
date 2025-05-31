@@ -62,19 +62,40 @@ def assign_conference_and_university(faculty_file, author_file):
     return pd.DataFrame(matched_rows)
 
 def update_university_rankings(faculty_df, rankings_file, output_file):
-    """Increment university-category scores based on matched faculty only."""
+    # Load rankings CSV
     rankings_df = pd.read_csv(rankings_file)
 
+    # Identify the columns used for scoring (exclude Index, University, and Continent)
+    category_columns = [col for col in rankings_df.columns if col not in ["Index", "University", "Continent"]]
+
+    # Ensure all category columns are numeric and fill NaNs with 0
+    rankings_df[category_columns] = rankings_df[category_columns].apply(pd.to_numeric, errors="coerce").fillna(0)
+
+    # Iterate through faculty dataframe to update scores
     for _, row in faculty_df.iterrows():
         university = row["University"]
         categories = row["Categories"]
-        score = row.get("Normalized Score", 1)  # Default to 1 if not present
+        
+        # Ensure score is treated as float
+        try:
+            score = float(row.get("Normalized Score", 1))
+        except ValueError:
+            score = 1  # Fallback if parsing fails
 
+        # Update scores for each category
         for category in categories.split(", "):
-            if category in rankings_df.columns:
-                rankings_df.loc[rankings_df["University"] == university, category] += score
+            if category in category_columns:
+                mask = rankings_df["University"] == university
+                if mask.any():
+                    rankings_df.loc[mask, category] += score
+                else:
+                    print(f"[WARNING] University '{university}' not found in rankings file.")
+            else:
+                print(f"[WARNING] Category '{category}' not in rankings columns.")
 
+    # Save the updated rankings
     rankings_df.to_csv(output_file, index=False)
+    print(f"[INFO] Rankings successfully updated and saved to {output_file}")
 
 # ----------------------------- MAIN -----------------------------
 
