@@ -4,6 +4,10 @@ import requests
 from bs4 import BeautifulSoup
 import time
 import urllib.parse
+import os
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
+import random
 
 INPUT_JSON = "extracted_references.json"
 OUTPUT_CSV = "faculty_full_names.csv"
@@ -11,10 +15,27 @@ OUTPUT_CSV = "faculty_full_names.csv"
 def fetch_dblp_authors_and_title(title, abbreviated_authors):
     """Fetch disambiguated full author names from DBLP using the given paper title."""
     search_url = f"https://dblp.org/search?q={urllib.parse.quote(title)}"
-    response = requests.get(search_url)
+
+    # Setup retry session
+    session = requests.Session()
+    retry = Retry(
+        total=5,
+        backoff_factor=10,  # Waits: 10s, 20s, 40s...
+        status_forcelist=[429, 500, 502, 503, 504],
+        allowed_methods=["GET"]
+    )
+    adapter = HTTPAdapter(max_retries=retry)
+    session.mount("http://", adapter)
+    session.mount("https://", adapter)
+
+    try:
+        response = session.get(search_url)
+    except requests.exceptions.RequestException as e:
+        print(f"Request failed for title '{title}': {e}")
+        return []
 
     if response.status_code != 200:
-        print(f"Failed to fetch DBLP data for: {title}")
+        print(f"Failed to fetch DBLP data for: {title} (status {response.status_code})")
         return []
 
     print(f"Fetched DBLP data for: {title}")
@@ -26,7 +47,7 @@ def fetch_dblp_authors_and_title(title, abbreviated_authors):
         author_spans = result.find_all("span", itemprop="name")
         full_authors = [
             span.get("title", span.get_text().strip()).strip()
-            for span in author_spans[:-2] # Exclude paper title and conference
+            for span in author_spans[:-2]
         ]
 
         print(f"Full authors found: {full_authors}")
@@ -38,11 +59,10 @@ def fetch_dblp_authors_and_title(title, abbreviated_authors):
     print(f"No exact match found for: {title}")
     return []
 
-
-
 def process_json(input_json, output_csv):
     existing_entries = set()
-    
+    write_header = not os.path.exists(output_csv)
+
     # Read existing output to prevent duplicates
     try:
         with open(output_csv, newline="", encoding="utf-8") as f:
@@ -54,43 +74,45 @@ def process_json(input_json, output_csv):
         pass
     print(f"Existing entries loaded: {existing_entries}")
 
-    results = []
+    with open(output_csv, "a", newline="", encoding="utf-8") as f_out:
+        writer = csv.writer(f_out)
+        if write_header:
+            writer.writerow(["Full Name", "Normalized Score"])
 
-    with open(input_json, "r", encoding="utf-8") as f:
-        papers = json.load(f)
+        with open(input_json, "r", encoding="utf-8") as f:
+            papers = json.load(f)
+            total_papers = len(papers)
 
-        for paper in papers:
-            title = paper.get("title", "").strip()
-            authors = paper.get("authors", [])
-            original_authors = authors
+            for idx, paper in enumerate(papers, 1):
+                print(f"\n[Progress] Processing paper {idx}/{total_papers}")
 
-            if not title or not authors or not original_authors:
-                continue
+                title = paper.get("title", "").strip()
+                authors = paper.get("authors", [])
+                original_authors = authors
 
-            # Check if abbreviated (presence of ".")
-            if any("." in a for a in authors):
-                print(f"Processing: {title}")
-                full_names = fetch_dblp_authors_and_title(title, authors)
-                if full_names:
-                    for name in full_names:
-                        if name not in existing_entries:
-                            results.append([name, 1 / (len(original_authors) * len(authors))])
-                            existing_entries.add(name)
+                if not title or not authors or not original_authors:
+                    continue
+
+                # Check if abbreviated (presence of ".")
+                if any("." in a for a in authors):
+                    print(f"Processing (abbreviated): {title}")
+                    full_names = fetch_dblp_authors_and_title(title, authors)
+                    if full_names:
+                        for name in full_names:
+                            if name not in existing_entries:
+                                writer.writerow([name, 1 / (len(original_authors) * len(authors))])
+                                existing_entries.add(name)
+                    else:
+                        print(f"Could not find full names for: {title}")
+                    time.sleep(random.uniform(15, 30))
                 else:
-                    print(f"Could not find full names for: {title}")
-                time.sleep(1)
-            else:
-                for a in authors:
-                    name = a.strip()
-                    if name and name not in existing_entries:
-                        results.append([name, 1 / (len(original_authors) * len(authors))])
-                        existing_entries.add(name)
-
-    # Write results
-    with open(output_csv, "w", newline="", encoding="utf-8") as f:
-        writer = csv.writer(f)
-        writer.writerow(["Full Name", "Normalized Score"])
-        writer.writerows(results)
+                    for a in authors:
+                        name = a.strip()
+                        if name and name not in existing_entries:
+                            writer.writerow([name, 1 / (len(original_authors) * len(authors))])
+                            existing_entries.add(name)
+                        else:
+                            print(f"Skipping duplicate: {name}")
 
     print("Processing complete. Results saved.")
 
