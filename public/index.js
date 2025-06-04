@@ -21,7 +21,8 @@ async function loadCSV(filePath) {
 }
 
 async function initialize() {
-    data = await loadCSV('university_rankings.csv');
+    // data = await loadCSV('university_rankings.csv');
+    data = await loadCSV('cv_rankings.csv');
 
     // Extract categories dynamically
     if (data.length > 0) {
