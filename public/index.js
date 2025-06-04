@@ -160,9 +160,5 @@ function toggleAllCheckboxes() {
 }
 
 // Initialize the application at the end of the script
-// initialize();
-initialize().then(()=>{
-    console.log('CSV rows:', data.length);
-    console.table(data.slice(0,3));
-  });
+initialize();
 
