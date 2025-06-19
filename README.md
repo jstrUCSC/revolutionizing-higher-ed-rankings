@@ -6,13 +6,13 @@
 - Baorong Luo – Frontend  
 - Karl Mellinger – LLM / Graph Algorithm  
 - Mainoah Muna – Backend  
-- Lianghui Wang – LLM  
+- Lianghui Wang – LLM / Frontend
 
 ---
 
 ## Project Values
 
-Current academic ranking systems, such as CS Rankings, focus heavily on publication count and reputation. This often incentivizes quantity over impactful work. Our project introduces a **new CS PhD university ranking system** that prioritizes **publication quality** using **LLMs** and **graph-based influence scoring**.  
+Current academic ranking systems, such as CS Rankings, focus heavily on publication count and reputation. This often incentivizes quantity over impactful work. Our project introduces a **new CS university ranking system** that prioritizes **publication quality** using **LLMs** and **graph-based influence scoring**.  
 
 **Key Values:**  
 - Fair and transparent ranking  
