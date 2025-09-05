@@ -22,7 +22,7 @@ async function loadCSV(filePath) {
 
 async function initialize() {
     // data = await loadCSV('university_rankings.csv');
-    data = await loadCSV('cv_update.csv');
+    data = await loadCSV('3cv_f.csv');
 
     // Extract categories dynamically
     if (data.length > 0) {
@@ -161,4 +161,5 @@ function toggleAllCheckboxes() {
 
 // Initialize the application at the end of the script
 initialize();
+
 
