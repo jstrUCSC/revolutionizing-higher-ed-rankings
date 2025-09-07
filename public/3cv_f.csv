@@ -4,7 +4,7 @@ Index,University,Artificial Intelligence & Machine Learning,Data Science & Data 
 3,University of Maryland - College Park,0.0,0.0,70.71374269005852,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,North America
 4,Weizmann Institute of Science,0.0,0.0,101.55357142857144,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Asia
 5,Princeton University,0.0,0.0,94.01814574314578,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,North America
-6,University of Western Australia,0.0,0.0,21.49126984126984,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Oceania
+6,University of Western Australia,0.0,0.0,21.49126984126984,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Australasia
 7,Johns Hopkins University,0.0,0.0,62.478643578643606,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,North America
 8,Trinity College Dublin,0.0,0.0,3.4166666666666665,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Europe
 9,University of Magdeburg,0.0,0.0,9.392857142857142,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Europe
@@ -28,7 +28,7 @@ Index,University,Artificial Intelligence & Machine Learning,Data Science & Data 
 27,University of Michigan,0.0,0.0,45.20454545454549,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,North America
 28,Chinese University of Hong Kong,0.0,0.0,96.93949077238553,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Asia
 29,KAUST,0.0,0.0,203.73221500721493,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Asia
-30,University of Waikato,0.0,0.0,1.2,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Oceania
+30,University of Waikato,0.0,0.0,1.2,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Australasia
 31,Cornell University,0.0,0.0,58.06522366522366,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,North America
 32,TU Dresden,0.0,0.0,15.245238095238092,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Europe
 33,LMU Munich,0.0,0.0,12.202380952380953,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Europe
@@ -66,10 +66,10 @@ Index,University,Artificial Intelligence & Machine Learning,Data Science & Data 
 65,Sichuan University,0.0,0.0,4.057575757575757,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Asia
 66,University of Bristol,0.0,0.0,13.146572871572872,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Europe
 67,University of Pennsylvania,0.0,0.0,75.69667212268023,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,North America
-68,UNSW,0.0,0.0,6.270634920634921,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Oceania
+68,UNSW,0.0,0.0,6.270634920634921,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Australasia
 69,Rochester Institute of Technology,0.0,0.0,5.242857142857144,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,North America
-70,Australian National University,0.0,0.0,80.45873015873019,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Oceania
-71,University of Melbourne,0.0,0.0,25.485714285714284,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Oceania
+70,Australian National University,0.0,0.0,80.45873015873019,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Australasia
+71,University of Melbourne,0.0,0.0,25.485714285714284,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Australasia
 72,Imperial College London,0.0,0.0,72.5195526695527,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Europe
 73,USTC,0.0,0.0,5.079365079365078,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Asia
 74,Concordia University,0.0,0.0,12.694047619047618,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,North America
@@ -124,7 +124,7 @@ Index,University,Artificial Intelligence & Machine Learning,Data Science & Data 
 123,Duke University,0.0,0.0,21.778510378510376,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,North America
 124,Oregon State University,0.0,0.0,31.36608187134503,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,North America
 125,Sun Yat-sen University,0.0,0.0,53.1119047619048,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Asia
-126,University of Adelaide,0.0,0.0,73.48874458874464,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Oceania
+126,University of Adelaide,0.0,0.0,73.48874458874464,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Australasia
 127,Univ. of California - Santa Cruz,0.0,0.0,12.438131313131308,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,North America
 128,University of Modena and Reggio Emilia,0.0,0.0,43.63015873015872,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Europe
 129,TU Berlin,0.0,0.0,27.280808080808075,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Europe
@@ -168,7 +168,7 @@ Index,University,Artificial Intelligence & Machine Learning,Data Science & Data 
 167,OHSU,0.0,0.0,2.071428571428571,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,North America
 168,Cardiff University,0.0,0.0,96.856684981685,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Europe
 169,University of Tokyo,0.0,0.0,48.762373737373785,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Asia
-170,Griffith University,0.0,0.0,1.0357142857142856,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Oceania
+170,Griffith University,0.0,0.0,1.0357142857142856,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Australasia
 171,Keio University,0.0,0.0,3.1666666666666665,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Asia
 172,Dartmouth College,0.0,0.0,16.876785714285713,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,North America
 173,National Institute of Informatics,0.0,0.0,23.40357142857143,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Asia
@@ -211,14 +211,14 @@ Index,University,Artificial Intelligence & Machine Learning,Data Science & Data 
 210,IIT Madras,0.0,0.0,6.062838915470494,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Asia
 211,City University of London,0.0,0.0,0.7428571428571428,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Europe
 212,Kyung Hee University,0.0,0.0,1.4,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Asia
-213,Monash University,0.0,0.0,16.235317460317457,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Oceania
+213,Monash University,0.0,0.0,16.235317460317457,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Australasia
 214,University of Ulm,0.0,0.0,1.7166666666666663,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Europe
 215,New York Tech,0.0,0.0,0.7916666666666666,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,North America
 216,Beijing Institute of Technology,0.0,0.0,0.4642857142857142,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Asia
 217,CRIStAL,0.0,0.0,3.6303030303030304,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Europe
 218,Queen Mary University of London,0.0,0.0,31.74285714285714,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Europe
 219,University of Siegen,0.0,0.0,25.826923076923077,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Europe
-220,Victoria University of Wellington,0.0,0.0,5.805158730158731,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Oceania
+220,Victoria University of Wellington,0.0,0.0,5.805158730158731,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Australasia
 221,University of Warwick,0.0,0.0,4.650613275613276,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Europe
 222,Shandong University,0.0,0.0,8.305158730158729,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Asia
 223,Michigan State University,0.0,0.0,18.610389610389607,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,North America
@@ -227,14 +227,14 @@ Index,University,Artificial Intelligence & Machine Learning,Data Science & Data 
 226,University of Kansas,0.0,0.0,0.75,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,North America
 227,University of Sheffield,0.0,0.0,7.195952380952381,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Europe
 228,NWPU,0.0,0.0,21.09206349206349,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Asia
-229,University of Sydney,0.0,0.0,12.876190476190477,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Oceania
+229,University of Sydney,0.0,0.0,12.876190476190477,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Australasia
 230,HUST,0.0,0.0,1.7857142857142854,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Asia
 231,Xidian University,0.0,0.0,16.71154401154401,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Asia
 232,Temple University,0.0,0.0,3.5,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,North America
 233,Université Laval,0.0,0.0,12.074999999999998,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,North America
-234,University of Wollongong,0.0,0.0,0.5111111111111111,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Oceania
+234,University of Wollongong,0.0,0.0,0.5111111111111111,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Australasia
 235,Ben-Gurion University of the Negev,0.0,0.0,8.416666666666668,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Asia
-236,Queensland University of Technology,0.0,0.0,5.315079365079366,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Oceania
+236,Queensland University of Technology,0.0,0.0,5.315079365079366,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Australasia
 237,University of Colorado Boulder,0.0,0.0,1.1666666666666663,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,North America
 238,York University,0.0,0.0,30.928210678210675,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,North America
 239,Rensselaer Polytechnic Institute,0.0,0.0,1.472222222222222,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,North America
@@ -242,7 +242,7 @@ Index,University,Artificial Intelligence & Machine Learning,Data Science & Data 
 241,University of Crete,0.0,0.0,33.85238095238095,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Europe
 242,University of Bern,0.0,0.0,13.558333333333335,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Europe
 243,Tokyo Institute of Technology,0.0,0.0,2.183333333333333,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Asia
-244,University of Technology Sydney,0.0,0.0,4.673809523809523,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Oceania
+244,University of Technology Sydney,0.0,0.0,4.673809523809523,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Australasia
 245,Northwestern University,0.0,0.0,3.507671957671958,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,North America
 246,University of Calgary,0.0,0.0,8.288178488178488,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,North America
 247,CWI,0.0,0.0,0.6666666666666666,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Europe
@@ -292,7 +292,7 @@ Index,University,Artificial Intelligence & Machine Learning,Data Science & Data 
 291,University of Hamburg,0.0,0.0,2.276190476190476,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Europe
 292,University of Victoria,0.0,0.0,0.6666666666666666,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,North America
 293,National Cheng Kung University,0.0,0.0,2.4777777777777774,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Asia
-294,RMIT University,0.0,0.0,1.8333333333333333,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Oceania
+294,RMIT University,0.0,0.0,1.8333333333333333,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Australasia
 295,University of Texas at Dallas,0.0,0.0,6.252777777777779,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,North America
 296,University of Manitoba,0.0,0.0,2.176190476190476,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,North America
 297,CUNY,0.0,0.0,3.583333333333333,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,North America
@@ -321,7 +321,7 @@ Index,University,Artificial Intelligence & Machine Learning,Data Science & Data 
 320,Colorado State University,0.0,0.0,1.8000000000000005,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,North America
 321,University of Cape Town,0.0,0.0,0.3333333333333333,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Africa
 322,University of Missouri,0.0,0.0,1.1833333333333331,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,North America
-323,Macquarie University,0.0,0.0,6.014891395154555,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Oceania
+323,Macquarie University,0.0,0.0,6.014891395154555,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Australasia
 324,University of Southampton,0.0,0.0,2.333333333333333,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Europe
 325,University of Leipzig,0.0,0.0,0.2,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Europe
 326,Vanderbilt University,0.0,0.0,4.604004329004329,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,North America
@@ -413,7 +413,7 @@ Index,University,Artificial Intelligence & Machine Learning,Data Science & Data 
 412,Case Western Reserve University,0.0,0.0,1.0833333333333333,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,North America
 413,EURECOM,0.0,0.0,0.3333333333333332,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Europe
 414,Università della Svizzera italiana,0.0,0.0,0.1428571428571428,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Europe
-415,Massey University,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Oceania
+415,Massey University,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Australasia
 416,Washington State University,0.0,0.0,0.25,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,North America
 417,Bielefeld University,0.0,0.0,0.5,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Europe
 418,University of Georgia,0.0,0.0,1.301190476190476,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,North America
@@ -474,8 +474,8 @@ Index,University,Artificial Intelligence & Machine Learning,Data Science & Data 
 473,KMUTNB,0.0,0.0,0.3333333333333333,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Asia
 474,Maynooth University,0.0,0.0,0.25,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Europe
 475,Universidad de Chile,0.0,0.0,0.1666666666666666,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,North America
-476,University of Queensland,0.0,0.0,0.25,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Oceania
-477,University of Otago,0.0,0.0,1.25,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Oceania
+476,University of Queensland,0.0,0.0,0.25,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Australasia
+477,University of Otago,0.0,0.0,1.25,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Australasia
 478,Chalmers/GU,0.0,0.0,0.5,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Europe
 479,Middlesex University,0.0,0.0,0.2,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Europe
 480,University of Antwerp,0.0,0.0,0.2,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Europe
@@ -490,7 +490,7 @@ Index,University,Artificial Intelligence & Machine Learning,Data Science & Data 
 489,IIIT Bangalore,0.0,0.0,0.25,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Asia
 490,University of Bergen,0.0,0.0,0.25,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Europe
 491,National Institute of Technology Warangal,0.0,0.0,0.25,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Asia
-492,University of Auckland,0.0,0.0,0.1666666666666666,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Oceania
+492,University of Auckland,0.0,0.0,0.1666666666666666,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Australasia
 493,The Catholic University of Korea,0.0,0.0,0.5,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Asia
 494,Augusta University,0.0,0.0,0.3333333333333332,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,North America
 495,Northwest University,0.0,0.0,0.1428571428571428,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Asia
