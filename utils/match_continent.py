@@ -2,7 +2,7 @@ import pandas as pd
 import re, unicodedata
 from pathlib import Path
 
-UNI_PATH = Path("3cv_f.csv")
+UNI_PATH = Path("2_f.csv")
 CI_PATH = Path("../CSrankings/country-info.csv")   # institution, countryabbrv, (region)
 COUNTRIES_PATH = Path("../CSrankings/countries.csv")  # alpha_2, region, sub_region, ...
 
@@ -96,5 +96,5 @@ df.loc[df["Continent"].apply(is_unknown), "Continent"] = "North America"
 df.drop(columns=[c for c in ["__uni_norm", "__alpha2"] if c in df.columns], inplace=True)
 
 
-df.to_csv("../public/3cv_f.csv", index=False)
+df.to_csv("../public/2_f.csv", index=False)
 print("[Done] Continent filled using CSrankings polygons; fallback -> North America.")

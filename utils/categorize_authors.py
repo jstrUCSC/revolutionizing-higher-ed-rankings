@@ -567,6 +567,6 @@ def single_file_mode(faculty_folder):
 
 if __name__ == "__main__":
     faculty_folder = Path("../faculty/Scoring")
-    output_file = Path("3cv_f.csv")
+    output_file = Path("2_f.csv")
     
     main_interactive_processor(faculty_folder, output_file)
