@@ -97,4 +97,4 @@ df.drop(columns=[c for c in ["__uni_norm", "__alpha2"] if c in df.columns], inpl
 
 
 df.to_csv("../public/2_f.csv", index=False)
-print("[Done] Continent filled using CSrankings polygons; fallback -> North America.")
+print("[Done] Continent filled using CSrankings polygons.")
