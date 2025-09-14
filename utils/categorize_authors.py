@@ -9,7 +9,7 @@ from datetime import datetime
 
 CONFERENCE_CATEGORIES = {
     'AAAI': 'Artificial Intelligence & Machine Learning', 'IJCAI': 'Artificial Intelligence & Machine Learning',
-    'NeurIPS': 'Artificial Intelligence & Machine Learning', 'ICML': 'Artificial Intelligence & Machine Learning',
+    'NeurIPS': 'Machine Learning', 'ICML': 'Machine Learning', 'ICLR': 'Machine Learning', 
     'KDD': 'Data Science & Data Mining', 'ICDM': 'Data Science & Data Mining', 'SDM': 'Data Science & Data Mining',
     'CIKM': 'Data Science & Data Mining', 'WWW': 'Data Science & Data Mining',
     'CVPR': 'Computer Vision & Image Processing', 'ICCV': 'Computer Vision & Image Processing',
@@ -312,6 +312,7 @@ def update_university_rankings(faculty_df, temp_rankings=None):
         'Index',
         'University', 
         'Artificial Intelligence & Machine Learning',
+        'Machine Learning',
         'Data Science & Data Mining',
         'Computer Vision & Image Processing', 
         'Natural Language Processing',
@@ -472,7 +473,7 @@ def main_interactive_processor(faculty_folder, output_file):
         print(f"\nTrying...")
    
         EXPECTED_COLUMNS = [
-            'Index', 'University', 'Artificial Intelligence & Machine Learning',
+            'Index', 'University', 'Artificial Intelligence & Machine Learning', 'Machine Learning', 
             'Data Science & Data Mining', 'Computer Vision & Image Processing', 
             'Natural Language Processing', 'Systems & Networking', 'Databases',
             'Security & Privacy', 'Human Computer Interaction', 'Theoretical Computer Science',
@@ -543,7 +544,7 @@ def single_file_mode(faculty_folder):
             rankings = update_university_rankings(faculty_df)
             
             EXPECTED_COLUMNS = [
-                'Index', 'University', 'Artificial Intelligence & Machine Learning',
+                'Index', 'University', 'Artificial Intelligence & Machine Learning', 'Machine Learning', 
                 'Data Science & Data Mining', 'Computer Vision & Image Processing', 
                 'Natural Language Processing', 'Systems & Networking', 'Databases',
                 'Security & Privacy', 'Human Computer Interaction', 'Theoretical Computer Science',
