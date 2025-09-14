@@ -3,7 +3,7 @@ let categories = [];
 let currentPage = 1;
 const rowsPerPage = 25; // Set the number of rows per page
 let selectedRegion = 'all'; // Default to 'all' regions
-let lastFiltered = []; // 页面总分数
+let lastFiltered = []; 
 
 const ACTIVE_FIELDS = [
     "Machine Learning",
