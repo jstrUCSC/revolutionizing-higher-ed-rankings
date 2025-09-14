@@ -1,8 +1,8 @@
 # AI Rankings
 
 **By:**  
-- Lianghui Wang: LLM / Frontend    
-- Karl Mellinger: LLM / Graph Algorithm 
+- Lianghui Wang: LLM / Frontend / Backend
+- Karl Mellinger: LLM
 - Baorong Luo: Frontend 
 - Jack Herbst: Frontend  
 - Andrew Ketola: Backend
