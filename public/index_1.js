@@ -4,6 +4,7 @@ let currentPage = 1;
 const rowsPerPage = 25; // Set the number of rows per page
 let selectedRegion = 'all'; // Default to 'all' regions
 let lastFiltered = []; 
+let selectedCountry = 'all';
 
 const ACTIVE_FIELDS = [
     "Machine Learning",
@@ -38,6 +39,7 @@ async function initialize() {
 
     displayFilters();       // Fields
     setupRegionFilter();    // Set up the region filter
+    setupCountryFilter();   // Country filter
     displayRankings();
 }
 
@@ -47,7 +49,8 @@ function displayFilters() {
     tableBody.innerHTML = ''; // Clear existing rows
 
     // Filter categories to exclude "Continent" and any non-research fields
-    const filteredCategories = categories.filter(category => category !== 'Continent');
+    // const filteredCategories = categories.filter(category => category !== 'Continent');
+    const filteredCategories = categories.filter(category => category !== 'Continent' && category !== 'Country');
     
     filteredCategories.forEach(category => {
         // const row = tableBody.insertRow();
@@ -82,6 +85,23 @@ function setupRegionFilter() {
     regionFilter.addEventListener('change', resetPageAndDisplayRankings); // Add listener for region change
 }
 
+function setupCountryFilter() {
+    const sel = document.getElementById('countryFilter');
+    // 从数据中收集去重后的国家（忽略空/Unknown）
+    const countries = Array.from(new Set(
+        data.map(r => (r.Country || '').trim()).filter(s => s && s.toLowerCase() !== 'unknown')
+    )).sort((a, b) => a.localeCompare(b));
+
+    // 先清空，再插入 "All Countries" + 动态选项
+    sel.innerHTML = '<option value="all">All Countries</option>' +
+        countries.map(c => `<option value="${c}">${c}</option>`).join('');
+
+    sel.addEventListener('change', () => {
+        selectedCountry = sel.value;
+        resetPageAndDisplayRankings();
+    });
+}
+
 function resetPageAndDisplayRankings() {
     currentPage = 1;
     selectedRegion = document.getElementById('regionFilter').value; // Get selected region
@@ -91,30 +111,29 @@ function resetPageAndDisplayRankings() {
 
 function displayRankings() {
     const calculatedScores = [];
-    const seenUniversities = new Set(); // Set to track universities that have been added
+    const seenUniversities = new Set();
 
     data.forEach(university => {
+        if (selectedRegion !== 'all' && university.Continent) {
+            const continentMatch = university.Continent.trim().toLowerCase() === selectedRegion.toLowerCase();
+            if (!continentMatch) return;
+        }
+        if (selectedCountry !== 'all') {
+            const uniCountry = (university.Country || 'Unknown').trim();
+            if (uniCountry !== selectedCountry) return;
+        }
+
         const totalScore = categories.reduce((sum, category) => {
             const checkbox = document.getElementById(category);
-            if (checkbox?.checked) {
-                sum += getScore(university.University, category);
-            }
+            if (checkbox?.checked) sum += getScore(university.University, category);
             return sum;
         }, 0);
-
-        // Apply region filtering: Make sure to handle case where Continent is empty or invalid
-        if (selectedRegion !== 'all' && university.Continent) {
-            // Ensure case-insensitive comparison and handle missing regions
-            const continentMatch = university.Continent.trim().toLowerCase() === selectedRegion.toLowerCase();
-            if (!continentMatch) {
-                return; // Skip this university if it doesn't match the selected region
-            }
-        }
 
         if (!seenUniversities.has(university.University)) {
             calculatedScores.push({
                 University: university.University,
                 Continent: university.Continent || 'Unknown',
+                Country: university.Country || 'Unknown',
                 Score: totalScore
             });
             seenUniversities.add(university.University);
@@ -123,6 +142,7 @@ function displayRankings() {
 
     calculatedScores.sort((a, b) => b.Score - a.Score);
 
+    lastFiltered = calculatedScores;
     displayPage(currentPage, calculatedScores);
     updatePageIndicator(currentPage, Math.ceil(calculatedScores.length / rowsPerPage));
 }
@@ -156,7 +176,7 @@ function prevPage() {
 }
 
 function nextPage() {
-    const totalPages = Math.ceil(data.length / rowsPerPage);
+    const totalPages = Math.ceil((lastFiltered.length || 0) / rowsPerPage);
     if (currentPage < totalPages) {
         currentPage++;
         displayRankings();
