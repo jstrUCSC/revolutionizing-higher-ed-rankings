@@ -4,6 +4,7 @@ let currentPage = 1;
 const rowsPerPage = 25;
 let selectedRegion = 'all';
 let lastFiltered = [];
+let selectedCountry = 'all';
 
 const ACTIVE_FIELDS = [
     "Machine Learning",
@@ -36,7 +37,7 @@ async function loadCSV(filePath) {
 }
 
 async function initialize() {
-    data = await loadCSV('2_f.csv');
+    data = await loadCSV('2_f_2.csv');
 
     // Extract categories dynamically
     if (data.length > 0) {
@@ -47,7 +48,23 @@ async function initialize() {
     computeFieldStats();
     displayFilters();
     setupRegionFilter();
+    setupCountryFilter();       // add countries filter
     displayRankings();
+}
+
+function setupCountryFilter() {
+    const sel = document.getElementById('countryFilter');
+    const countries = Array.from(new Set(
+        data.map(r => (r.Country || '').trim()).filter(s => s && s.toLowerCase() !== 'unknown')
+    )).sort((a, b) => a.localeCompare(b));
+
+    sel.innerHTML = '<option value="all">All Countries</option>' +
+        countries.map(c => `<option value="${c}">${c}</option>`).join('');
+
+    sel.addEventListener('change', () => {
+        selectedCountry = sel.value;
+        resetPageAndDisplayRankings();
+    });
 }
 
 function computeFieldStats() {
@@ -176,9 +193,13 @@ function displayRankings() {
         // Apply region filtering
         if (selectedRegion !== 'all' && university.Continent) {
             const continentMatch = university.Continent.trim().toLowerCase() === selectedRegion.toLowerCase();
-            if (!continentMatch) {
-                return;
-            }
+            if (!continentMatch) return;
+        }
+        
+        // Apply contries filtering
+        if (selectedCountry !== 'all') {
+            const country = (university.Country || '').trim();
+            if (!country || country !== selectedCountry) return;
         }
 
         if (!seenUniversities.has(university.University) && totalScore > 0) {

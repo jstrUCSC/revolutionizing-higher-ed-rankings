@@ -87,12 +87,10 @@ function setupRegionFilter() {
 
 function setupCountryFilter() {
     const sel = document.getElementById('countryFilter');
-    // 从数据中收集去重后的国家（忽略空/Unknown）
     const countries = Array.from(new Set(
         data.map(r => (r.Country || '').trim()).filter(s => s && s.toLowerCase() !== 'unknown')
     )).sort((a, b) => a.localeCompare(b));
 
-    // 先清空，再插入 "All Countries" + 动态选项
     sel.innerHTML = '<option value="all">All Countries</option>' +
         countries.map(c => `<option value="${c}">${c}</option>`).join('');
 
