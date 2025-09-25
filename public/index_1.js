@@ -29,7 +29,7 @@ async function loadCSV(filePath) {
 
 async function initialize() {
     // data = await loadCSV('university_rankings.csv');
-    data = await loadCSV('2_f.csv');
+    data = await loadCSV('2_f_2.csv');
 
     // Extract categories dynamically
     if (data.length > 0) {
