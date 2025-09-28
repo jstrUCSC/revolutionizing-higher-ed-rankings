@@ -100,6 +100,7 @@ Ferenc Huszar,University of Cambridge,CVPR,Computer Vision & Image Processing,0.
 Fisher Yu 0001,ETH Zurich,CVPR,Computer Vision & Image Processing,0.0769230769230769,CVPR2022_621_fulln.csv,Yes
 Frank Hutter,University of Freiburg,CVPR,Computer Vision & Image Processing,2.0,CVPR2022_621_fulln.csv,Yes
 Frederic Sala,University of Wisconsin - Madison,CVPR,Computer Vision & Image Processing,0.25,CVPR2022_621_fulln.csv,Yes
+Fuxin Li,Oregon State University,CVPR,Computer Vision & Image Processing,0.3333333333333333,CVPR2022_621_fulln.csv,Yes
 Gady Agam,Illinois Institute of Technology,CVPR,Computer Vision & Image Processing,0.3333333333333333,CVPR2022_621_fulln.csv,Yes
 Gang Zeng,Peking University,CVPR,Computer Vision & Image Processing,0.25,CVPR2022_621_fulln.csv,Yes
 Gedas Bertasius,University of North Carolina,CVPR,Computer Vision & Image Processing,2.583333333333333,CVPR2022_621_fulln.csv,Yes
@@ -195,8 +196,7 @@ Laura Waller,Univ. of California - Berkeley,CVPR,Computer Vision & Image Process
 Laurent El Ghaoui,VinUniversity,CVPR,Computer Vision & Image Processing,0.25,CVPR2022_621_fulln.csv,Yes
 Lawrence Carin,Duke University,CVPR,Computer Vision & Image Processing,0.2,CVPR2022_621_fulln.csv,Yes
 Leonidas J. Guibas,Stanford University,CVPR,Computer Vision & Image Processing,0.5269230769230769,CVPR2022_621_fulln.csv,Yes
-Li Fei-Fei 0001,Stanford University,CVPR,Computer Vision & Image Processing,0.1666666666666666,CVPR2022_621_fulln.csv,Yes
-Fuxin Li,Oregon State University,CVPR,Computer Vision & Image Processing,0.3333333333333333,CVPR2022_621_fulln.csv,Yes
+Li Fei-Fei 0001,Stanford University,CVPR,Computer Vision & Image Processing,2.069047619047619,CVPR2022_621_fulln.csv,Yes
 Li Yi 0001,Tsinghua University,CVPR,Computer Vision & Image Processing,0.0769230769230769,CVPR2022_621_fulln.csv,Yes
 Liang Lin,Sun Yat-sen University,CVPR,Computer Vision & Image Processing,0.2,CVPR2022_621_fulln.csv,Yes
 Linchao Bao,University of Birmingham,CVPR,Computer Vision & Image Processing,0.1428571428571428,CVPR2022_621_fulln.csv,Yes
@@ -743,7 +743,7 @@ Leif Kobbelt,RWTH Aachen University,CVPR,Computer Vision & Image Processing,0.16
 Leonard McMillan,University of North Carolina,CVPR,Computer Vision & Image Processing,0.4,CVPR2023_622_fulln.csv,Yes
 Leonid Sigal,University of British Columbia,CVPR,Computer Vision & Image Processing,0.3428571428571428,CVPR2023_622_fulln.csv,Yes
 Leonidas J. Guibas,Stanford University,CVPR,Computer Vision & Image Processing,0.6816849816849817,CVPR2023_622_fulln.csv,Yes
-Li Fei-Fei 0001,Stanford University,CVPR,Computer Vision & Image Processing,0.25,CVPR2023_622_fulln.csv,Yes
+Li Fei-Fei 0001,Stanford University,CVPR,Computer Vision & Image Processing,4.0666666666666655,CVPR2023_622_fulln.csv,Yes
 Li Yi 0001,Tsinghua University,CVPR,Computer Vision & Image Processing,0.1483516483516483,CVPR2023_622_fulln.csv,Yes
 Liang Lin,Sun Yat-sen University,CVPR,Computer Vision & Image Processing,0.7,CVPR2023_622_fulln.csv,Yes
 Libin Liu 0002,Peking University,CVPR,Computer Vision & Image Processing,0.1666666666666666,CVPR2023_622_fulln.csv,Yes
@@ -1897,7 +1897,7 @@ Leo Joskowicz,Hebrew University of Jerusalem,CVPR,Computer Vision & Image Proces
 Leonid Sigal,University of British Columbia,CVPR,Computer Vision & Image Processing,0.2,CVPR2021_621_fulln.csv,Yes
 Leonidas J. Guibas,Stanford University,CVPR,Computer Vision & Image Processing,0.1428571428571428,CVPR2021_621_fulln.csv,Yes
 Leslie Pack Kaelbling,Massachusetts Institute of Technology,CVPR,Computer Vision & Image Processing,0.3333333333333333,CVPR2021_621_fulln.csv,Yes
-Li Fei-Fei 0001,Stanford University,CVPR,Computer Vision & Image Processing,0.3409090909090909,CVPR2021_621_fulln.csv,Yes
+Li Fei-Fei 0001,Stanford University,CVPR,Computer Vision & Image Processing,3.300432900432901,CVPR2021_621_fulln.csv,Yes
 Liang Lin,Sun Yat-sen University,CVPR,Computer Vision & Image Processing,0.125,CVPR2021_621_fulln.csv,Yes
 Licheng Jiao,Xidian University,CVPR,Computer Vision & Image Processing,0.1428571428571428,CVPR2021_621_fulln.csv,Yes
 Lihi Zelnik-Manor,Technion,CVPR,Computer Vision & Image Processing,0.1428571428571428,CVPR2021_621_fulln.csv,Yes
@@ -3305,7 +3305,7 @@ Frank Lindseth,NTNU,CVPR,Computer Vision & Image Processing,0.3333333333333333,C
 François Fleuret,EPFL,CVPR,Computer Vision & Image Processing,0.5,CVPR2020_618_fulln.csv,Yes
 Frederik Vercauteren,KU Leuven,CVPR,Computer Vision & Image Processing,0.5,CVPR2020_618_fulln.csv,Yes
 Friedrich Fraundorfer,Graz University of Technology,CVPR,Computer Vision & Image Processing,0.3333333333333333,CVPR2020_618_fulln.csv,Yes
-Fuxin Li,Oregon State University,CVPR,Computer Vision & Image Processing,0.6666666666666666,CVPR2020_618_fulln.csv,Yes
+Fuxin Li,Oregon State University,CVPR,Computer Vision & Image Processing,1.0,CVPR2020_618_fulln.csv,Yes
 Gabriel J. Brostow,University College London,CVPR,Computer Vision & Image Processing,0.8333333333333333,CVPR2020_618_fulln.csv,Yes
 Gabriel Taubin,Brown University,CVPR,Computer Vision & Image Processing,0.5,CVPR2020_618_fulln.csv,Yes
 Garrison W. Cottrell,Univ. of California - San Diego,CVPR,Computer Vision & Image Processing,0.3333333333333333,CVPR2020_618_fulln.csv,Yes
@@ -3444,7 +3444,7 @@ Le Song,MBZUAI,CVPR,Computer Vision & Image Processing,0.4761904761904761,CVPR20
 Leif Kobbelt,RWTH Aachen University,CVPR,Computer Vision & Image Processing,0.7,CVPR2020_618_fulln.csv,Yes
 Leonard McMillan,University of North Carolina,CVPR,Computer Vision & Image Processing,0.2,CVPR2020_618_fulln.csv,Yes
 Leonidas J. Guibas,Stanford University,CVPR,Computer Vision & Image Processing,1.0269230769230768,CVPR2020_618_fulln.csv,Yes
-Li Fei-Fei 0001,Stanford University,CVPR,Computer Vision & Image Processing,0.9333333333333332,CVPR2020_618_fulln.csv,Yes
+Li Fei-Fei 0001,Stanford University,CVPR,Computer Vision & Image Processing,4.249999999999999,CVPR2020_618_fulln.csv,Yes
 Li Yi 0001,Tsinghua University,CVPR,Computer Vision & Image Processing,0.0769230769230769,CVPR2020_618_fulln.csv,Yes
 Liang Lin,Sun Yat-sen University,CVPR,Computer Vision & Image Processing,1.6345238095238093,CVPR2020_618_fulln.csv,Yes
 Liang Zheng 0001,Australian National University,CVPR,Computer Vision & Image Processing,0.1666666666666666,CVPR2020_618_fulln.csv,Yes
@@ -4856,7 +4856,7 @@ Leila De Floriani,University of Maryland - College Park,CVPR,Computer Vision & I
 Leonard McMillan,University of North Carolina,CVPR,Computer Vision & Image Processing,0.2,CVPR2021_624_fulln.csv,Yes
 Leonid Sigal,University of British Columbia,CVPR,Computer Vision & Image Processing,0.5833333333333333,CVPR2021_624_fulln.csv,Yes
 Leonidas J. Guibas,Stanford University,CVPR,Computer Vision & Image Processing,1.837179487179487,CVPR2021_624_fulln.csv,Yes
-Li Fei-Fei 0001,Stanford University,CVPR,Computer Vision & Image Processing,0.1666666666666666,CVPR2021_624_fulln.csv,Yes
+Li Fei-Fei 0001,Stanford University,CVPR,Computer Vision & Image Processing,5.416666666666666,CVPR2021_624_fulln.csv,Yes
 Li Yi 0001,Tsinghua University,CVPR,Computer Vision & Image Processing,0.7538461538461538,CVPR2021_624_fulln.csv,Yes
 Liang Lin,Sun Yat-sen University,CVPR,Computer Vision & Image Processing,0.5,CVPR2021_624_fulln.csv,Yes
 Liang Wang 0001,Chinese Academy of Sciences,CVPR,Computer Vision & Image Processing,0.2,CVPR2021_624_fulln.csv,Yes
@@ -5507,8 +5507,8 @@ Lei Zhang 0006,The Hong Kong Polytechnic University,CVPR,Computer Vision & Image
 Leif Kobbelt,RWTH Aachen University,CVPR,Computer Vision & Image Processing,0.5333333333333333,CVPR2022_622_fulln.csv,Yes
 Leonard McMillan,University of North Carolina,CVPR,Computer Vision & Image Processing,0.4,CVPR2022_622_fulln.csv,Yes
 Leonidas J. Guibas,Stanford University,CVPR,Computer Vision & Image Processing,0.7115384615384615,CVPR2022_622_fulln.csv,Yes
-Li Fei-Fei 0001,Stanford University,CVPR,Computer Vision & Image Processing,0.25,CVPR2022_622_fulln.csv,Yes
-Li Yi 0001,Tsinghua University,CVPR,Computer Vision & Image Processing,0.4615384615384615,CVPR2022_622_fulln.csv,Yes
+Li Fei-Fei 0001,Stanford University,CVPR,Computer Vision & Image Processing,5.291666666666667,CVPR2022_622_fulln.csv,Yes
+Li Yi 0001,Tsinghua University,CVPR,Computer Vision & Image Processing,1.0615384615384615,CVPR2022_622_fulln.csv,Yes
 Liang Lin,Sun Yat-sen University,CVPR,Computer Vision & Image Processing,0.5833333333333333,CVPR2022_622_fulln.csv,Yes
 Lihi Zelnik-Manor,Technion,CVPR,Computer Vision & Image Processing,0.4,CVPR2022_622_fulln.csv,Yes
 Linchao Bao,University of Birmingham,CVPR,Computer Vision & Image Processing,0.3333333333333333,CVPR2022_622_fulln.csv,Yes
@@ -6098,6 +6098,7 @@ Frank Wood,University of British Columbia,ICCV,Computer Vision & Image Processin
 François Fleuret,EPFL,ICCV,Computer Vision & Image Processing,0.5833333333333333,ICCV2021_1012_fulln.csv,Yes
 Friedrich Fraundorfer,Graz University of Technology,ICCV,Computer Vision & Image Processing,0.2,ICCV2021_1012_fulln.csv,Yes
 Frédo Durand,Massachusetts Institute of Technology,ICCV,Computer Vision & Image Processing,0.5833333333333333,ICCV2021_1012_fulln.csv,Yes
+Fuxin Li,Oregon State University,ICCV,Computer Vision & Image Processing,0.3333333333333333,ICCV2021_1012_fulln.csv,Yes
 Gabriel Taubin,Brown University,ICCV,Computer Vision & Image Processing,0.7,ICCV2021_1012_fulln.csv,Yes
 Gagandeep Singh 0001,Univ. of Illinois at Urbana-Champaign,ICCV,Computer Vision & Image Processing,0.2,ICCV2021_1012_fulln.csv,Yes
 Gangshan Wu,Nanjing University,ICCV,Computer Vision & Image Processing,0.25,ICCV2021_1012_fulln.csv,Yes
@@ -6302,8 +6303,7 @@ Lefei Zhang,Wuhan University,ICCV,Computer Vision & Image Processing,0.166666666
 Leonard McMillan,University of North Carolina,ICCV,Computer Vision & Image Processing,0.3333333333333333,ICCV2021_1012_fulln.csv,Yes
 Leonid Sigal,University of British Columbia,ICCV,Computer Vision & Image Processing,0.7,ICCV2021_1012_fulln.csv,Yes
 Leonidas J. Guibas,Stanford University,ICCV,Computer Vision & Image Processing,1.16025641025641,ICCV2021_1012_fulln.csv,Yes
-Li Fei-Fei 0001,Stanford University,ICCV,Computer Vision & Image Processing,0.7499999999999999,ICCV2021_1012_fulln.csv,Yes
-Fuxin Li,Oregon State University,ICCV,Computer Vision & Image Processing,0.3333333333333333,ICCV2021_1012_fulln.csv,Yes
+Li Fei-Fei 0001,Stanford University,ICCV,Computer Vision & Image Processing,7.74404761904762,ICCV2021_1012_fulln.csv,Yes
 Li Yi 0001,Tsinghua University,ICCV,Computer Vision & Image Processing,0.3269230769230769,ICCV2021_1012_fulln.csv,Yes
 Liang Lin,Sun Yat-sen University,ICCV,Computer Vision & Image Processing,2.1833333333333336,ICCV2021_1012_fulln.csv,Yes
 Liangcai Gao,Peking University,ICCV,Computer Vision & Image Processing,0.125,ICCV2021_1012_fulln.csv,Yes
@@ -6964,7 +6964,7 @@ Frank Wood,University of British Columbia,ICCV,Computer Vision & Image Processin
 François Fleuret,EPFL,ICCV,Computer Vision & Image Processing,0.75,ICCV2023_1005_fulln.csv,Yes
 Frédo Durand,Massachusetts Institute of Technology,ICCV,Computer Vision & Image Processing,0.4,ICCV2023_1005_fulln.csv,Yes
 Furong Huang,University of Maryland - College Park,ICCV,Computer Vision & Image Processing,0.1111111111111111,ICCV2023_1005_fulln.csv,Yes
-Fuxin Li,Oregon State University,ICCV,Computer Vision & Image Processing,0.5333333333333333,ICCV2023_1005_fulln.csv,Yes
+Fuxin Li,Oregon State University,ICCV,Computer Vision & Image Processing,1.3333333333333333,ICCV2023_1005_fulln.csv,Yes
 Gabriel J. Brostow,University College London,ICCV,Computer Vision & Image Processing,0.25,ICCV2023_1005_fulln.csv,Yes
 Gal Chechik,Bar-Ilan University,ICCV,Computer Vision & Image Processing,0.6761904761904762,ICCV2023_1005_fulln.csv,Yes
 Ganesh Ramakrishnan,IIT Bombay,ICCV,Computer Vision & Image Processing,0.25,ICCV2023_1005_fulln.csv,Yes
@@ -7154,7 +7154,7 @@ Lawrence Carin,Duke University,ICCV,Computer Vision & Image Processing,0.2,ICCV2
 Lea Schönherr,CISPA Helmholtz Center,ICCV,Computer Vision & Image Processing,0.1666666666666666,ICCV2023_1005_fulln.csv,Yes
 Leonid Sigal,University of British Columbia,ICCV,Computer Vision & Image Processing,0.2,ICCV2023_1005_fulln.csv,Yes
 Leonidas J. Guibas,Stanford University,ICCV,Computer Vision & Image Processing,2.11978021978022,ICCV2023_1005_fulln.csv,Yes
-Li Fei-Fei 0001,Stanford University,ICCV,Computer Vision & Image Processing,0.1428571428571428,ICCV2023_1005_fulln.csv,Yes
+Li Fei-Fei 0001,Stanford University,ICCV,Computer Vision & Image Processing,4.75952380952381,ICCV2023_1005_fulln.csv,Yes
 Li Yi 0001,Tsinghua University,ICCV,Computer Vision & Image Processing,0.3269230769230769,ICCV2023_1005_fulln.csv,Yes
 Liang Lin,Sun Yat-sen University,ICCV,Computer Vision & Image Processing,0.3095238095238095,ICCV2023_1005_fulln.csv,Yes
 Lianli Gao,UESTC,ICCV,Computer Vision & Image Processing,0.125,ICCV2023_1005_fulln.csv,Yes
@@ -8862,7 +8862,7 @@ Leif Kobbelt,RWTH Aachen University,CVPR,Computer Vision & Image Processing,0.7,
 Leonard McMillan,University of North Carolina,CVPR,Computer Vision & Image Processing,0.5333333333333333,CVPR2020_617_fulln.csv,Yes
 Leonid Sigal,University of British Columbia,CVPR,Computer Vision & Image Processing,0.3666666666666667,CVPR2020_617_fulln.csv,Yes
 Leonidas J. Guibas,Stanford University,CVPR,Computer Vision & Image Processing,1.0716783216783217,CVPR2020_617_fulln.csv,Yes
-Li Fei-Fei 0001,Stanford University,CVPR,Computer Vision & Image Processing,0.9333333333333332,CVPR2020_617_fulln.csv,Yes
+Li Fei-Fei 0001,Stanford University,CVPR,Computer Vision & Image Processing,4.916666666666666,CVPR2020_617_fulln.csv,Yes
 Li Yi 0001,Tsinghua University,CVPR,Computer Vision & Image Processing,0.3216783216783216,CVPR2020_617_fulln.csv,Yes
 Liang Lin,Sun Yat-sen University,CVPR,Computer Vision & Image Processing,1.4833333333333334,CVPR2020_617_fulln.csv,Yes
 Lihi Zelnik-Manor,Technion,CVPR,Computer Vision & Image Processing,0.3333333333333333,CVPR2020_617_fulln.csv,Yes
@@ -9603,7 +9603,7 @@ Leif Kobbelt,RWTH Aachen University,CVPR,Computer Vision & Image Processing,0.33
 Leonid Sigal,University of British Columbia,CVPR,Computer Vision & Image Processing,0.6857142857142857,CVPR2024_621_fulln.csv,Yes
 Leonidas J. Guibas,Stanford University,CVPR,Computer Vision & Image Processing,0.1538461538461538,CVPR2024_621_fulln.csv,Yes
 Lerrel Pinto,New York University,CVPR,Computer Vision & Image Processing,0.2,CVPR2024_621_fulln.csv,Yes
-Li Fei-Fei 0001,Stanford University,CVPR,Computer Vision & Image Processing,0.25,CVPR2024_621_fulln.csv,Yes
+Li Fei-Fei 0001,Stanford University,CVPR,Computer Vision & Image Processing,6.900000000000002,CVPR2024_621_fulln.csv,Yes
 Li Yi 0001,Tsinghua University,CVPR,Computer Vision & Image Processing,0.1538461538461538,CVPR2024_621_fulln.csv,Yes
 Liam Paull,University of Montreal,CVPR,Computer Vision & Image Processing,0.4375,CVPR2024_621_fulln.csv,Yes
 Liang Lin,Sun Yat-sen University,CVPR,Computer Vision & Image Processing,0.45,CVPR2024_621_fulln.csv,Yes
@@ -10424,7 +10424,7 @@ Leonard McMillan,University of North Carolina,CVPR,Computer Vision & Image Proce
 Leonid Sigal,University of British Columbia,CVPR,Computer Vision & Image Processing,0.7333333333333334,CVPR2022_623_fulln.csv,Yes
 Leonidas J. Guibas,Stanford University,CVPR,Computer Vision & Image Processing,0.1538461538461538,CVPR2022_623_fulln.csv,Yes
 Lerrel Pinto,New York University,CVPR,Computer Vision & Image Processing,0.2,CVPR2022_623_fulln.csv,Yes
-Li Fei-Fei 0001,Stanford University,CVPR,Computer Vision & Image Processing,0.2833333333333333,CVPR2022_623_fulln.csv,Yes
+Li Fei-Fei 0001,Stanford University,CVPR,Computer Vision & Image Processing,3.376190476190475,CVPR2022_623_fulln.csv,Yes
 Li Yi 0001,Tsinghua University,CVPR,Computer Vision & Image Processing,0.1538461538461538,CVPR2022_623_fulln.csv,Yes
 Liang Lin,Sun Yat-sen University,CVPR,Computer Vision & Image Processing,0.5095238095238095,CVPR2022_623_fulln.csv,Yes
 Lianli Gao,UESTC,CVPR,Computer Vision & Image Processing,0.1666666666666666,CVPR2022_623_fulln.csv,Yes
@@ -11183,7 +11183,7 @@ Leandros Tassiulas,Yale University,ICCV,Computer Vision & Image Processing,0.2,I
 Leonard McMillan,University of North Carolina,ICCV,Computer Vision & Image Processing,0.2,ICCV2023_1006_fulln.csv,Yes
 Leonidas J. Guibas,Stanford University,ICCV,Computer Vision & Image Processing,0.3083333333333333,ICCV2023_1006_fulln.csv,Yes
 Lerrel Pinto,New York University,ICCV,Computer Vision & Image Processing,0.4166666666666666,ICCV2023_1006_fulln.csv,Yes
-Li Fei-Fei 0001,Stanford University,ICCV,Computer Vision & Image Processing,0.3333333333333333,ICCV2023_1006_fulln.csv,Yes
+Li Fei-Fei 0001,Stanford University,ICCV,Computer Vision & Image Processing,4.241666666666666,ICCV2023_1006_fulln.csv,Yes
 Li Xiong 0001,Emory University,ICCV,Computer Vision & Image Processing,0.0909090909090909,ICCV2023_1006_fulln.csv,Yes
 Liam Paull,University of Montreal,ICCV,Computer Vision & Image Processing,0.125,ICCV2023_1006_fulln.csv,Yes
 Liang Lin,Sun Yat-sen University,ICCV,Computer Vision & Image Processing,0.7,ICCV2023_1006_fulln.csv,Yes
@@ -12064,8 +12064,8 @@ Leonid Sigal,University of British Columbia,CVPR,Computer Vision & Image Process
 Leonidas J. Guibas,Stanford University,CVPR,Computer Vision & Image Processing,1.625274725274725,CVPR2024_620_fulln.csv,Yes
 Lerrel Pinto,New York University,CVPR,Computer Vision & Image Processing,0.5,CVPR2024_620_fulln.csv,Yes
 Leslie Pack Kaelbling,Massachusetts Institute of Technology,CVPR,Computer Vision & Image Processing,0.3333333333333333,CVPR2024_620_fulln.csv,Yes
-Li Fei-Fei 0001,Stanford University,CVPR,Computer Vision & Image Processing,0.658008658008658,CVPR2024_620_fulln.csv,Yes
-Li Yi 0001,Tsinghua University,CVPR,Computer Vision & Image Processing,0.2252747252747252,CVPR2024_620_fulln.csv,Yes
+Li Fei-Fei 0001,Stanford University,CVPR,Computer Vision & Image Processing,6.103246753246756,CVPR2024_620_fulln.csv,Yes
+Li Yi 0001,Tsinghua University,CVPR,Computer Vision & Image Processing,1.618131868131868,CVPR2024_620_fulln.csv,Yes
 Liam Paull,University of Montreal,CVPR,Computer Vision & Image Processing,0.125,CVPR2024_620_fulln.csv,Yes
 Liang Lin,Sun Yat-sen University,CVPR,Computer Vision & Image Processing,0.5928571428571429,CVPR2024_620_fulln.csv,Yes
 Lianli Gao,UESTC,CVPR,Computer Vision & Image Processing,0.5095238095238095,CVPR2024_620_fulln.csv,Yes
@@ -15317,7 +15317,7 @@ Leo Yu Zhang,Griffith University,CVPR,Computer Vision & Image Processing,0.14285
 Leonid Sigal,University of British Columbia,CVPR,Computer Vision & Image Processing,1.7095238095238094,CVPR2023_621_fulln.csv,Yes
 Leonidas J. Guibas,Stanford University,CVPR,Computer Vision & Image Processing,2.247435897435898,CVPR2023_621_fulln.csv,Yes
 Lerrel Pinto,New York University,CVPR,Computer Vision & Image Processing,0.1428571428571428,CVPR2023_621_fulln.csv,Yes
-Li Fei-Fei 0001,Stanford University,CVPR,Computer Vision & Image Processing,0.1666666666666666,CVPR2023_621_fulln.csv,Yes
+Li Fei-Fei 0001,Stanford University,CVPR,Computer Vision & Image Processing,4.155357142857143,CVPR2023_621_fulln.csv,Yes
 Li Yi 0001,Tsinghua University,CVPR,Computer Vision & Image Processing,0.2307692307692307,CVPR2023_621_fulln.csv,Yes
 Liang Lin,Sun Yat-sen University,CVPR,Computer Vision & Image Processing,0.3928571428571428,CVPR2023_621_fulln.csv,Yes
 Liang Wang 0001,Chinese Academy of Sciences,CVPR,Computer Vision & Image Processing,0.2,CVPR2023_621_fulln.csv,Yes
@@ -16353,7 +16353,7 @@ Lei Wang 0001,University of Wollongong,ICCV,Computer Vision & Image Processing,0
 Leif Kobbelt,RWTH Aachen University,ICCV,Computer Vision & Image Processing,0.3333333333333333,ICCV2021_1013_fulln.csv,Yes
 Leonid Sigal,University of British Columbia,ICCV,Computer Vision & Image Processing,1.9666666666666663,ICCV2021_1013_fulln.csv,Yes
 Leonidas J. Guibas,Stanford University,ICCV,Computer Vision & Image Processing,2.944871794871795,ICCV2021_1013_fulln.csv,Yes
-Li Fei-Fei 0001,Stanford University,ICCV,Computer Vision & Image Processing,2.776190476190476,ICCV2021_1013_fulln.csv,Yes
+Li Fei-Fei 0001,Stanford University,ICCV,Computer Vision & Image Processing,15.78095238095237,ICCV2021_1013_fulln.csv,Yes
 Li Yi 0001,Tsinghua University,ICCV,Computer Vision & Image Processing,0.7115384615384616,ICCV2021_1013_fulln.csv,Yes
 Liam Paull,University of Montreal,ICCV,Computer Vision & Image Processing,0.0333333333333333,ICCV2021_1013_fulln.csv,Yes
 Liang Lin,Sun Yat-sen University,ICCV,Computer Vision & Image Processing,1.8,ICCV2021_1013_fulln.csv,Yes
@@ -17248,9 +17248,9 @@ Leif Kobbelt,RWTH Aachen University,CVPR,Computer Vision & Image Processing,0.2,
 Leonard McMillan,University of North Carolina,CVPR,Computer Vision & Image Processing,0.4,CVPR2021_622_fulln.csv,Yes
 Leonid Sigal,University of British Columbia,CVPR,Computer Vision & Image Processing,0.25,CVPR2021_622_fulln.csv,Yes
 Leonidas J. Guibas,Stanford University,CVPR,Computer Vision & Image Processing,1.0448717948717947,CVPR2021_622_fulln.csv,Yes
-Li Fei-Fei 0001,Stanford University,CVPR,Computer Vision & Image Processing,0.4166666666666666,CVPR2021_622_fulln.csv,Yes
+Li Fei-Fei 0001,Stanford University,CVPR,Computer Vision & Image Processing,3.216666666666667,CVPR2021_622_fulln.csv,Yes
 Fuxin Li,Oregon State University,CVPR,Computer Vision & Image Processing,0.3333333333333333,CVPR2021_622_fulln.csv,Yes
-Li Yi 0001,Tsinghua University,CVPR,Computer Vision & Image Processing,0.4615384615384615,CVPR2021_622_fulln.csv,Yes
+Li Yi 0001,Tsinghua University,CVPR,Computer Vision & Image Processing,1.4615384615384617,CVPR2021_622_fulln.csv,Yes
 Liang Lin,Sun Yat-sen University,CVPR,Computer Vision & Image Processing,0.45,CVPR2021_622_fulln.csv,Yes
 Lihi Zelnik,Technion,CVPR,Computer Vision & Image Processing,0.1666666666666666,CVPR2021_622_fulln.csv,Yes
 Linchao Bao,University of Birmingham,CVPR,Computer Vision & Image Processing,0.3333333333333333,CVPR2021_622_fulln.csv,Yes
@@ -17865,7 +17865,7 @@ Leif Kobbelt,RWTH Aachen University,CVPR,Computer Vision & Image Processing,0.33
 Leonard McMillan,University of North Carolina,CVPR,Computer Vision & Image Processing,0.4,CVPR2021_623_fulln.csv,Yes
 Leonid Sigal,University of British Columbia,CVPR,Computer Vision & Image Processing,0.25,CVPR2021_623_fulln.csv,Yes
 Leonidas J. Guibas,Stanford University,CVPR,Computer Vision & Image Processing,0.4935897435897436,CVPR2021_623_fulln.csv,Yes
-Li Fei-Fei 0001,Stanford University,CVPR,Computer Vision & Image Processing,0.6666666666666666,CVPR2021_623_fulln.csv,Yes
+Li Fei-Fei 0001,Stanford University,CVPR,Computer Vision & Image Processing,8.167857142857144,CVPR2021_623_fulln.csv,Yes
 Li Xiong 0001,Emory University,CVPR,Computer Vision & Image Processing,0.0909090909090909,CVPR2021_623_fulln.csv,Yes
 Li Yi 0001,Tsinghua University,CVPR,Computer Vision & Image Processing,0.2435897435897435,CVPR2021_623_fulln.csv,Yes
 Liang Lin,Sun Yat-sen University,CVPR,Computer Vision & Image Processing,0.45,CVPR2021_623_fulln.csv,Yes
@@ -22017,6 +22017,7 @@ Frank Wood,University of British Columbia,CVPR,Computer Vision & Image Processin
 Franz Aurenhammer,Graz University of Technology,CVPR,Computer Vision & Image Processing,1.0,CVPR2024_619_fulln.csv,Yes
 Frédo Durand,Massachusetts Institute of Technology,CVPR,Computer Vision & Image Processing,0.3428571428571428,CVPR2024_619_fulln.csv,Yes
 Furong Huang,University of Maryland - College Park,CVPR,Computer Vision & Image Processing,0.4444444444444444,CVPR2024_619_fulln.csv,Yes
+Fuxin Li,Oregon State University,CVPR,Computer Vision & Image Processing,0.5,CVPR2024_619_fulln.csv,Yes
 Gabriel Taubin,Brown University,CVPR,Computer Vision & Image Processing,0.4,CVPR2024_619_fulln.csv,Yes
 Gal Chechik,Bar-Ilan University,CVPR,Computer Vision & Image Processing,2.461904761904762,CVPR2024_619_fulln.csv,Yes
 Gang Zeng,Peking University,CVPR,Computer Vision & Image Processing,0.45,CVPR2024_619_fulln.csv,Yes
@@ -22198,7 +22199,7 @@ Leida Li,Xidian University,CVPR,Computer Vision & Image Processing,0.4,CVPR2024_
 Leif Kobbelt,RWTH Aachen University,CVPR,Computer Vision & Image Processing,0.5833333333333333,CVPR2024_619_fulln.csv,Yes
 Leonid Sigal,University of British Columbia,CVPR,Computer Vision & Image Processing,1.1333333333333333,CVPR2024_619_fulln.csv,Yes
 Leonidas J. Guibas,Stanford University,CVPR,Computer Vision & Image Processing,1.1,CVPR2024_619_fulln.csv,Yes
-Fuxin Li,Oregon State University,CVPR,Computer Vision & Image Processing,0.5,CVPR2024_619_fulln.csv,Yes
+Li Fei-Fei 0001,Stanford University,CVPR,Computer Vision & Image Processing,2.726190476190476,CVPR2024_619_fulln.csv,Yes
 Li Yi 0001,Tsinghua University,CVPR,Computer Vision & Image Processing,0.25,CVPR2024_619_fulln.csv,Yes
 Liam Paull,University of Montreal,CVPR,Computer Vision & Image Processing,0.1666666666666666,CVPR2024_619_fulln.csv,Yes
 Liang Lin,Sun Yat-sen University,CVPR,Computer Vision & Image Processing,1.0833333333333333,CVPR2024_619_fulln.csv,Yes
@@ -23002,7 +23003,7 @@ Leif Kobbelt,RWTH Aachen University,CVPR,Computer Vision & Image Processing,0.33
 Leonard McMillan,University of North Carolina,CVPR,Computer Vision & Image Processing,0.2,CVPR2023_620_fulln.csv,Yes
 Leonid Sigal,University of British Columbia,CVPR,Computer Vision & Image Processing,0.7928571428571429,CVPR2023_620_fulln.csv,Yes
 Leonidas J. Guibas,Stanford University,CVPR,Computer Vision & Image Processing,1.688344988344988,CVPR2023_620_fulln.csv,Yes
-Li Fei-Fei 0001,Stanford University,CVPR,Computer Vision & Image Processing,0.3333333333333333,CVPR2023_620_fulln.csv,Yes
+Li Fei-Fei 0001,Stanford University,CVPR,Computer Vision & Image Processing,5.011446886446884,CVPR2023_620_fulln.csv,Yes
 Li Yi 0001,Tsinghua University,CVPR,Computer Vision & Image Processing,0.2307692307692307,CVPR2023_620_fulln.csv,Yes
 Liang Lin,Sun Yat-sen University,CVPR,Computer Vision & Image Processing,0.5666666666666667,CVPR2023_620_fulln.csv,Yes
 Lihi Zelnik,Technion,CVPR,Computer Vision & Image Processing,0.2,CVPR2023_620_fulln.csv,Yes
@@ -23674,7 +23675,7 @@ Frank Wang,University of Kent,ICCV,Computer Vision & Image Processing,0.15384615
 Franziska Boenisch,CISPA Helmholtz Center,ICCV,Computer Vision & Image Processing,1.0,ICCV2023_1004_fulln.csv,Yes
 François Fleuret,EPFL,ICCV,Computer Vision & Image Processing,0.25,ICCV2023_1004_fulln.csv,Yes
 Furong Huang,University of Maryland - College Park,ICCV,Computer Vision & Image Processing,0.2222222222222222,ICCV2023_1004_fulln.csv,Yes
-Fuxin Li,Oregon State University,ICCV,Computer Vision & Image Processing,0.2,ICCV2023_1004_fulln.csv,Yes
+Fuxin Li,Oregon State University,ICCV,Computer Vision & Image Processing,1.2,ICCV2023_1004_fulln.csv,Yes
 Gal Chechik,Bar-Ilan University,ICCV,Computer Vision & Image Processing,0.7777777777777777,ICCV2023_1004_fulln.csv,Yes
 Gang Zeng,Peking University,ICCV,Computer Vision & Image Processing,1.3361111111111112,ICCV2023_1004_fulln.csv,Yes
 Gaurav Sharma,University of Rochester,ICCV,Computer Vision & Image Processing,1.3333333333333333,ICCV2023_1004_fulln.csv,Yes
@@ -23848,7 +23849,7 @@ Leo Yu Zhang,Griffith University,ICCV,Computer Vision & Image Processing,0.14285
 Leonard McMillan,University of North Carolina,ICCV,Computer Vision & Image Processing,0.2,ICCV2023_1004_fulln.csv,Yes
 Leonid Sigal,University of British Columbia,ICCV,Computer Vision & Image Processing,0.5,ICCV2023_1004_fulln.csv,Yes
 Leonidas J. Guibas,Stanford University,ICCV,Computer Vision & Image Processing,0.4871794871794871,ICCV2023_1004_fulln.csv,Yes
-Li Fei-Fei 0001,Stanford University,ICCV,Computer Vision & Image Processing,0.6428571428571428,ICCV2023_1004_fulln.csv,Yes
+Li Fei-Fei 0001,Stanford University,ICCV,Computer Vision & Image Processing,8.39404761904762,ICCV2023_1004_fulln.csv,Yes
 Li Xiong 0001,Emory University,ICCV,Computer Vision & Image Processing,0.1818181818181818,ICCV2023_1004_fulln.csv,Yes
 Li Yi 0001,Tsinghua University,ICCV,Computer Vision & Image Processing,0.1538461538461538,ICCV2023_1004_fulln.csv,Yes
 Liang Lin,Sun Yat-sen University,ICCV,Computer Vision & Image Processing,1.0666666666666669,ICCV2023_1004_fulln.csv,Yes
@@ -24769,7 +24770,7 @@ Lawrence Carin,Duke University,CVPR,Computer Vision & Image Processing,0.2777777
 Le Song,MBZUAI,CVPR,Computer Vision & Image Processing,0.1666666666666666,CVPR2021_625_fulln.csv,Yes
 Leif Kobbelt,RWTH Aachen University,CVPR,Computer Vision & Image Processing,0.3333333333333333,CVPR2021_625_fulln.csv,Yes
 Leonidas J. Guibas,Stanford University,CVPR,Computer Vision & Image Processing,0.8333333333333333,CVPR2021_625_fulln.csv,Yes
-Li Fei-Fei 0001,Stanford University,CVPR,Computer Vision & Image Processing,0.0833333333333333,CVPR2021_625_fulln.csv,Yes
+Li Fei-Fei 0001,Stanford University,CVPR,Computer Vision & Image Processing,2.4166666666666665,CVPR2021_625_fulln.csv,Yes
 Liang Wang 0001,Chinese Academy of Sciences,CVPR,Computer Vision & Image Processing,0.2,CVPR2021_625_fulln.csv,Yes
 Lijia Ma,Shenzhen University,CVPR,Computer Vision & Image Processing,0.25,CVPR2021_625_fulln.csv,Yes
 Linchao Bao,University of Birmingham,CVPR,Computer Vision & Image Processing,0.4444444444444444,CVPR2021_625_fulln.csv,Yes
@@ -25215,7 +25216,7 @@ Laurent Younes,Johns Hopkins University,CVPR,Computer Vision & Image Processing,
 Lawrence Carin,Duke University,CVPR,Computer Vision & Image Processing,0.2769230769230769,CVPR2022_624_fulln.csv,Yes
 Leonid Sigal,University of British Columbia,CVPR,Computer Vision & Image Processing,0.5928571428571429,CVPR2022_624_fulln.csv,Yes
 Leonidas J. Guibas,Stanford University,CVPR,Computer Vision & Image Processing,1.3354700854700854,CVPR2022_624_fulln.csv,Yes
-Li Fei-Fei 0001,Stanford University,CVPR,Computer Vision & Image Processing,0.3333333333333333,CVPR2022_624_fulln.csv,Yes
+Li Fei-Fei 0001,Stanford University,CVPR,Computer Vision & Image Processing,5.194047619047619,CVPR2022_624_fulln.csv,Yes
 Li Yi 0001,Tsinghua University,CVPR,Computer Vision & Image Processing,0.3076923076923077,CVPR2022_624_fulln.csv,Yes
 Liang Lin,Sun Yat-sen University,CVPR,Computer Vision & Image Processing,0.9166666666666666,CVPR2022_624_fulln.csv,Yes
 Lianli Gao,UESTC,CVPR,Computer Vision & Image Processing,0.25,CVPR2022_624_fulln.csv,Yes
