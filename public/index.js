@@ -170,17 +170,41 @@ function getNormalizedScore(univ, field) {
 
 function getFacultyForUniversity(universityName, selectedCategories) {
     // Filter faculty data for this university and selected categories
-    return facultyData.filter(faculty => {
+    const filteredFaculty = facultyData.filter(faculty => {
         const matchesUniversity = faculty.University === universityName;
         const matchesCategory = selectedCategories.length === 0 || 
                                 selectedCategories.includes(faculty.Category);
         return matchesUniversity && matchesCategory;
-    }).sort((a, b) => {
-        // Sort by score descending
-        const scoreA = parseFloat(a.Score) || 0;
-        const scoreB = parseFloat(b.Score) || 0;
-        return scoreB - scoreA;
     });
+
+    // Group by faculty name and sum scores
+    const facultyMap = new Map();
+    
+    filteredFaculty.forEach(faculty => {
+        const name = faculty['Faculty Name'] || 'Unknown';
+        const score = parseFloat(faculty.Score) || 0;
+        const category = faculty.Category || 'Unknown';
+        
+        if (!facultyMap.has(name)) {
+            facultyMap.set(name, {
+                name: name,
+                categories: [],
+                totalScore: 0
+            });
+        }
+        
+        const facultyInfo = facultyMap.get(name);
+        facultyInfo.totalScore += score;
+        if (!facultyInfo.categories.includes(category)) {
+            facultyInfo.categories.push(category);
+        }
+    });
+    
+    // Convert to array and sort by total score
+    const mergedFaculty = Array.from(facultyMap.values())
+        .sort((a, b) => b.totalScore - a.totalScore);
+    
+    return mergedFaculty;
 }
 
 function toggleUniversityDropdown(universityName, rowElement) {
@@ -206,16 +230,19 @@ function toggleUniversityDropdown(universityName, rowElement) {
         
         if (facultyList.length > 0) {
             facultyHTML += '<table class="faculty-table">';
-            facultyHTML += '<thead><tr><th>Faculty Name</th><th>Field</th><th>Contribution Score</th></tr></thead>';
+            
+            // Adjust header based on number of selected categories
+            const fieldHeader = selectedCategories.length === 1 ? 'Field' : 'Fields';
+            facultyHTML += `<thead><tr><th>Faculty Name</th><th>${fieldHeader}</th><th>Total Contribution</th></tr></thead>`;
             facultyHTML += '<tbody>';
             
             facultyList.forEach(faculty => {
-                const score = parseFloat(faculty.Score) || 0;
+                const fieldsDisplay = faculty.categories.join(', ');
                 facultyHTML += `
                     <tr>
-                        <td>${faculty['Faculty Name'] || 'Unknown'}</td>
-                        <td>${faculty.Category || 'Unknown'}</td>
-                        <td>${score.toFixed(4)}</td>
+                        <td>${faculty.name}</td>
+                        <td>${fieldsDisplay}</td>
+                        <td>${faculty.totalScore.toFixed(4)}</td>
                     </tr>
                 `;
             });
