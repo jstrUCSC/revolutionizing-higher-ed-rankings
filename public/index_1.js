@@ -1,15 +1,24 @@
 let data = [];
 let categories = [];
 let currentPage = 1;
-const rowsPerPage = 25; // Set the number of rows per page
-let selectedRegion = 'all'; // Default to 'all' regions
-let lastFiltered = []; 
+const rowsPerPage = 25;
+let selectedRegion = 'all';
+let lastFiltered = [];
 let selectedCountry = 'all';
 
 const ACTIVE_FIELDS = [
     "Machine Learning",
     "Computer Vision & Image Processing",
-  ];
+];
+
+const DISPLAY_LABELS = {
+    'Machine Learning': 'Machine Learning',
+    'Computer Vision & Image Processing': 'Computer Vision & Image Processing',
+};
+
+const EPS = 1e-9;
+const NORMALIZE = 'unit-variance';
+let fieldStats = {};
 
 async function loadCSV(filePath) {
     const response = await fetch(filePath);
@@ -28,7 +37,6 @@ async function loadCSV(filePath) {
 }
 
 async function initialize() {
-    // data = await loadCSV('university_rankings.csv');
     data = await loadCSV('2_f_2.csv');
 
     // Extract categories dynamically
@@ -37,52 +45,11 @@ async function initialize() {
         categories = columns.slice(2); // Assume categories start at index 2
     }
 
-    displayFilters();       // Fields
-    setupRegionFilter();    // Set up the region filter
-    setupCountryFilter();   // Country filter
+    computeFieldStats();
+    displayFilters();
+    setupRegionFilter();
+    setupCountryFilter();       // add countries filter
     displayRankings();
-}
-
-function displayFilters() {
-    const table = document.getElementById('filterTable');
-    const tableBody = table.querySelector('tbody');
-    tableBody.innerHTML = ''; // Clear existing rows
-
-    // Filter categories to exclude "Continent" and any non-research fields
-    // const filteredCategories = categories.filter(category => category !== 'Continent');
-    const filteredCategories = categories.filter(category => category !== 'Continent' && category !== 'Country');
-    
-    filteredCategories.forEach(category => {
-        // const row = tableBody.insertRow();
-        const isActive = ACTIVE_FIELDS.includes(category);
-
-        const row = tableBody.insertRow();
-        row.innerHTML = `
-            <td>
-                ${category}${isActive ? '': '<span class="coming">(coming soon)</span>'}
-            </td>
-            <td>
-                <label class="switch">
-                    <input id="${category}" type="checkbox" ${isActive ? 'checked' : 'disabled'} onclick="resetPageAndDisplayRankings()">
-                    <span class="slider round"></span>
-                </label>
-            </td>`;
-    });
-
-    updateToggleAllButtonLabel();
-
-}
-
-function updateToggleAllButtonLabel() {
-    const boxes = document.querySelectorAll('#filterTable input[type="checkbox"]:not([disabled])');
-    const allChecked = Array.from(boxes).every(b => b.checked);
-    const btn = document.getElementById('toggleAll');
-    if (btn) btn.textContent = allChecked ? 'Deselect All' : 'Select All';
-}
-
-function setupRegionFilter() {
-    const regionFilter = document.getElementById('regionFilter');
-    regionFilter.addEventListener('change', resetPageAndDisplayRankings); // Add listener for region change
 }
 
 function setupCountryFilter() {
@@ -100,11 +67,101 @@ function setupCountryFilter() {
     });
 }
 
+function computeFieldStats() {
+    fieldStats = {};
+    const cols = ACTIVE_FIELDS;
+    cols.forEach(cat => {
+        const vals = data.map(r => parseFloat(r[cat])).filter(v => !isNaN(v) && v > 0);
+        const n = vals.length;
+        const mean = n ? vals.reduce((a,b)=>a+b,0)/n : 0;
+        const varSample = n>1 ? vals.reduce((a,b)=>a+(b-mean)*(b-mean),0)/(n-1) : 0;
+        const std = Math.sqrt(varSample);
+        fieldStats[cat] = { mean, std };
+    });
+}
+
+function displayFilters() {
+    const table = document.getElementById('filterTable');
+    const tableBody = table.querySelector('tbody');
+    tableBody.innerHTML = '';
+
+    // Add active fields with checkboxes
+    ACTIVE_FIELDS.forEach(category => {
+        const label = DISPLAY_LABELS[category] || category;
+        const safeId = toId(category);
+        const row = tableBody.insertRow();
+        row.innerHTML = `
+            <td>${label}</td>
+            <td>
+                <label class="switch">
+                    <input
+                        id="${safeId}"
+                        class="field-checkbox"
+                        type="checkbox"
+                        data-field="${category}"
+                        checked
+                        onclick="resetPageAndDisplayRankings()"
+                    >
+                    <span class="slider round"></span>
+                </label>
+            </td>`;
+    });
+
+    // Add coming soon row
+    const comingRow = tableBody.insertRow();
+    comingRow.innerHTML = `
+        <td>Coming Soon</td>
+        <td>
+            <label class="switch">
+                <input type="checkbox" disabled>
+                <span class="slider round"></span>
+            </label>
+        </td>`;
+
+    updateToggleAllButtonLabel();
+}
+
+function toId(name) {
+    return 'field-' + name.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+}
+
+function updateToggleAllButtonLabel() {
+    const boxes = document.querySelectorAll('.field-checkbox');
+    const allChecked = Array.from(boxes).every(b => b.checked);
+    const btn = document.getElementById('toggleAll');
+    if (btn) btn.textContent = allChecked ? 'Deselect All' : 'Select All';
+}
+
+function setupRegionFilter() {
+    const regionFilter = document.getElementById('regionFilter');
+    regionFilter.addEventListener('change', resetPageAndDisplayRankings);
+}
+
 function resetPageAndDisplayRankings() {
     currentPage = 1;
-    selectedRegion = document.getElementById('regionFilter').value; // Get selected region
+    selectedRegion = document.getElementById('regionFilter').value;
     updateToggleAllButtonLabel();
     displayRankings();
+}
+
+function getSelectedCategories() {
+    return [...document.querySelectorAll('.field-checkbox:checked')]
+           .map(el => el.dataset.field);
+}
+
+function getRawScore(univ, field) {
+    const row = data.find(e => e.University === univ);
+    if (!row) return 0;
+    const s = parseFloat(row[field]);
+    return isNaN(s) ? 0 : s;
+}
+
+function getNormalizedScore(univ, field) {
+    const s = getRawScore(univ, field);
+    if (!(s > 0)) return 0;
+    const stats = fieldStats[field] || { std: 1 };
+    const std = stats.std > EPS ? stats.std : 1;
+    return s / std;
 }
 
 function displayRankings() {
@@ -112,26 +169,43 @@ function displayRankings() {
     const seenUniversities = new Set();
 
     data.forEach(university => {
+        const selectedCats = getSelectedCategories();
+
+        let totalScore = 0;
+        if (selectedCats.length >= 2) {
+            // Normalized harmonic mean for multiple fields
+            let denom = 0, count = 0;
+            selectedCats.forEach(cat => {
+                const x = getNormalizedScore(university.University, cat);
+                if (x > 0) { 
+                    denom += 1 / (x + EPS); 
+                    count++;
+                }
+            });
+            totalScore = count > 0 ? (count / denom) : 0;
+        } else if (selectedCats.length === 1) {
+            // Raw score for single field
+            totalScore = getRawScore(university.University, selectedCats[0]);
+        } else {
+            totalScore = 0;
+        }
+
+        // Apply region filtering
         if (selectedRegion !== 'all' && university.Continent) {
             const continentMatch = university.Continent.trim().toLowerCase() === selectedRegion.toLowerCase();
             if (!continentMatch) return;
         }
+        
+        // Apply contries filtering
         if (selectedCountry !== 'all') {
-            const uniCountry = (university.Country || 'Unknown').trim();
-            if (uniCountry !== selectedCountry) return;
+            const country = (university.Country || '').trim();
+            if (!country || country !== selectedCountry) return;
         }
 
-        const totalScore = categories.reduce((sum, category) => {
-            const checkbox = document.getElementById(category);
-            if (checkbox?.checked) sum += getScore(university.University, category);
-            return sum;
-        }, 0);
-
-        if (!seenUniversities.has(university.University)) {
+        if (!seenUniversities.has(university.University) && totalScore > 0) {
             calculatedScores.push({
                 University: university.University,
                 Continent: university.Continent || 'Unknown',
-                Country: university.Country || 'Unknown',
                 Score: totalScore
             });
             seenUniversities.add(university.University);
@@ -148,7 +222,7 @@ function displayRankings() {
 function displayPage(page, data) {
     const table = document.getElementById('rankingTable');
     const tableBody = table.querySelector('tbody');
-    tableBody.innerHTML = ''; // Clear existing rows
+    tableBody.innerHTML = '';
 
     const start = (page - 1) * rowsPerPage;
     const end = page * rowsPerPage;
@@ -169,38 +243,27 @@ function updatePageIndicator(page, totalPages) {
 function prevPage() {
     if (currentPage > 1) {
         currentPage--;
-        displayRankings();
+        displayPage(currentPage, lastFiltered);
+        updatePageIndicator(currentPage, Math.ceil(lastFiltered.length / rowsPerPage));
     }
 }
 
 function nextPage() {
-    const totalPages = Math.ceil((lastFiltered.length || 0) / rowsPerPage);
+    const totalPages = Math.ceil(lastFiltered.length / rowsPerPage);
     if (currentPage < totalPages) {
         currentPage++;
-        displayRankings();
+        displayPage(currentPage, lastFiltered);
+        updatePageIndicator(currentPage, totalPages);
     }
 }
 
-function getScore(universityName, categoryName) {
-    const row = data.find(entry => entry.University === universityName);
-    if (!row) return 0;
-
-    const score = parseFloat(row[categoryName]);
-    return isNaN(score) ? 0 : score;
-}
-
 function toggleAllCheckboxes() {
-    const checkboxes = document.querySelectorAll('#filterTable input[type="checkbox"]:not([disabled])');
-    const allChecked = Array.from(checkboxes).every(checkbox => checkbox.checked);
-
-    checkboxes.forEach(checkbox => checkbox.checked = !allChecked);
-    // document.getElementById('toggleAll').textContent = allChecked ? 'Select All' : 'Deselect All';
+    const boxes = document.querySelectorAll('.field-checkbox');
+    const allChecked = [...boxes].every(b => b.checked);
+    boxes.forEach(b => b.checked = !allChecked);
     updateToggleAllButtonLabel();
-    resetPageAndDisplayRankings(); // Re-display rankings after toggle
+    resetPageAndDisplayRankings();
 }
 
-// Initialize the application at the end of the script
+// Initialize the application
 initialize();
-
-
-

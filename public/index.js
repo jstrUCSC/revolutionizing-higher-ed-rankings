@@ -1,10 +1,12 @@
 let data = [];
+let facultyData = [];
 let categories = [];
 let currentPage = 1;
 const rowsPerPage = 25;
 let selectedRegion = 'all';
 let lastFiltered = [];
 let selectedCountry = 'all';
+let expandedRows = new Set();
 
 const ACTIVE_FIELDS = [
     "Machine Learning",
@@ -38,6 +40,7 @@ async function loadCSV(filePath) {
 
 async function initialize() {
     data = await loadCSV('2_f_2.csv');
+    facultyData = await loadCSV('faculty_score.csv');
 
     // Extract categories dynamically
     if (data.length > 0) {
@@ -48,7 +51,7 @@ async function initialize() {
     computeFieldStats();
     displayFilters();
     setupRegionFilter();
-    setupCountryFilter();       // add countries filter
+    setupCountryFilter();
     displayRankings();
 }
 
@@ -141,6 +144,7 @@ function resetPageAndDisplayRankings() {
     currentPage = 1;
     selectedRegion = document.getElementById('regionFilter').value;
     updateToggleAllButtonLabel();
+    expandedRows.clear(); // Clear expanded rows when filters change
     displayRankings();
 }
 
@@ -162,6 +166,72 @@ function getNormalizedScore(univ, field) {
     const stats = fieldStats[field] || { std: 1 };
     const std = stats.std > EPS ? stats.std : 1;
     return s / std;
+}
+
+function getFacultyForUniversity(universityName, selectedCategories) {
+    // Filter faculty data for this university and selected categories
+    return facultyData.filter(faculty => {
+        const matchesUniversity = faculty.University === universityName;
+        const matchesCategory = selectedCategories.length === 0 || 
+                                selectedCategories.includes(faculty.Category);
+        return matchesUniversity && matchesCategory;
+    }).sort((a, b) => {
+        // Sort by score descending
+        const scoreA = parseFloat(a.Score) || 0;
+        const scoreB = parseFloat(b.Score) || 0;
+        return scoreB - scoreA;
+    });
+}
+
+function toggleUniversityDropdown(universityName, rowElement) {
+    const isExpanded = expandedRows.has(universityName);
+    
+    if (isExpanded) {
+        // Collapse: Remove the details row
+        const detailsRow = rowElement.nextElementSibling;
+        if (detailsRow && detailsRow.classList.contains('faculty-details-row')) {
+            detailsRow.remove();
+        }
+        expandedRows.delete(universityName);
+        rowElement.querySelector('.expand-icon').innerHTML = '▶';
+    } else {
+        // Expand: Add the details row
+        const selectedCategories = getSelectedCategories();
+        const facultyList = getFacultyForUniversity(universityName, selectedCategories);
+        
+        const detailsRow = document.createElement('tr');
+        detailsRow.classList.add('faculty-details-row');
+        
+        let facultyHTML = '<td colspan="3"><div class="faculty-details">';
+        
+        if (facultyList.length > 0) {
+            facultyHTML += '<table class="faculty-table">';
+            facultyHTML += '<thead><tr><th>Faculty Name</th><th>Field</th><th>Contribution Score</th></tr></thead>';
+            facultyHTML += '<tbody>';
+            
+            facultyList.forEach(faculty => {
+                const score = parseFloat(faculty.Score) || 0;
+                facultyHTML += `
+                    <tr>
+                        <td>${faculty['Faculty Name'] || 'Unknown'}</td>
+                        <td>${faculty.Category || 'Unknown'}</td>
+                        <td>${score.toFixed(4)}</td>
+                    </tr>
+                `;
+            });
+            
+            facultyHTML += '</tbody></table>';
+        } else {
+            facultyHTML += '<p>No faculty data available for the selected fields.</p>';
+        }
+        
+        facultyHTML += '</div></td>';
+        detailsRow.innerHTML = facultyHTML;
+        
+        rowElement.insertAdjacentElement('afterend', detailsRow);
+        expandedRows.add(universityName);
+        rowElement.querySelector('.expand-icon').innerHTML = '▼';
+    }
 }
 
 function displayRankings() {
@@ -196,7 +266,7 @@ function displayRankings() {
             if (!continentMatch) return;
         }
         
-        // Apply contries filtering
+        // Apply countries filtering
         if (selectedCountry !== 'all') {
             const country = (university.Country || '').trim();
             if (!country || country !== selectedCountry) return;
@@ -229,10 +299,25 @@ function displayPage(page, data) {
 
     data.slice(start, end).forEach((university, index) => {
         const row = tableBody.insertRow();
-        row.innerHTML = `
+        row.classList.add('university-row');
+        
+        const universityCell = `
             <td>${start + index + 1}</td>
-            <td>${university.University}</td>
-            <td>${university.Score.toFixed(2)}</td>`;
+            <td class="university-name-cell">
+                <span class="expand-icon">▶</span>
+                <span class="university-name" onclick="toggleUniversityDropdown('${university.University.replace(/'/g, "\\'")}', this.closest('tr'))">${university.University}</span>
+            </td>
+            <td>${university.Score.toFixed(2)}</td>
+        `;
+        
+        row.innerHTML = universityCell;
+        
+        // Re-expand if this university was previously expanded
+        if (expandedRows.has(university.University)) {
+            setTimeout(() => {
+                toggleUniversityDropdown(university.University, row);
+            }, 0);
+        }
     });
 }
 

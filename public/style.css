@@ -274,3 +274,112 @@ input:checked + .slider:before {
   font-size: 16px;
   font-weight: bold;
 }
+
+/* University name cell styling */
+.university-name-cell {
+  cursor: pointer;
+  user-select: none;
+}
+
+.university-name {
+  color: #2563eb;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.university-name:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+.expand-icon {
+  display: inline-block;
+  width: 20px;
+  color: #6b7280;
+  transition: transform 0.2s;
+  margin-right: 8px;
+}
+
+/* Faculty details row styling */
+.faculty-details-row {
+  background-color: #f9fafb;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.faculty-details {
+  padding: 20px;
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Faculty table styling */
+.faculty-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.faculty-table thead {
+  background-color: #f3f4f6;
+}
+
+.faculty-table thead th {
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  color: #374151;
+  font-size: 14px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.faculty-table tbody tr {
+  border-bottom: 1px solid #f3f4f6;
+  transition: background-color 0.2s;
+}
+
+.faculty-table tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+.faculty-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.faculty-table tbody td {
+  padding: 10px 12px;
+  color: #4b5563;
+  font-size: 14px;
+}
+
+.faculty-table tbody td:last-child {
+  font-weight: 500;
+  color: #111827;
+}
+
+/* University row hover effect */
+.university-row:hover {
+  background-color: #f9fafb;
+}
+
+/* No data message styling */
+.faculty-details p {
+  color: #6b7280;
+  font-style: italic;
+  padding: 20px;
+  text-align: center;
+  margin: 0;
+}
