@@ -45,10 +45,13 @@ def extract_conference_name(filename):
         'ECCV': 'Computer Vision & Image Processing',
         'AAAI': 'Artificial Intelligence & Machine Learning',
         'IJCAI': 'Artificial Intelligence & Machine Learning',
-        'NeurIPS': 'Artificial Intelligence & Machine Learning',
-        'ICML': 'Artificial Intelligence & Machine Learning',
+        'NeurIPS': 'Machine Learning',
+        'NEURIPS': 'Machine Learning',
+        'ICML': 'Machine Learning',
+        'ICLR': 'Machine Learning',
         'ACL': 'Natural Language Processing',
-        'EMNLP': 'Natural Language Processing'
+        'EMNLP': 'Natural Language Processing',
+        'NAACL': 'Natural Language Processing'
     }
     
     for conf_name, category in conferences.items():
@@ -302,14 +305,14 @@ def main_faculty_analysis():
     
     else:
         if Path("faculty_contributions.csv").exists():
-            print("📄 Found existing faculty_contributions.csv")
+            print("Found existing faculty_contributions.csv")
             use_existing = input("Use existing report? (y/n): ").strip().lower()
             if use_existing in ['y', 'yes']:
                 contributions_df = pd.read_csv("faculty_contributions.csv")
             else:
                 contributions_df = generate_faculty_contribution_report(faculty_folder)
         else:
-            print("📄 Generating new faculty contribution report...")
+            print("Generating new faculty contribution report...")
             contributions_df = generate_faculty_contribution_report(faculty_folder)
     
     if contributions_df is None:
