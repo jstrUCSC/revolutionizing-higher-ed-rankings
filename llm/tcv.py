@@ -250,7 +250,7 @@ def extract_main_content(content: str) -> str:
     
     return main_content
 
-def summarize_content(model, tokenizer, content: str, device="cuda", max_new_tokens=300) -> str:
+def summarize_content(model, tokenizer, content: str, device="cuda", max_new_tokens=4096) -> str:
 
     system_prompt = (
         "You are a helpful assistant for academic summarization. "
@@ -259,7 +259,7 @@ def summarize_content(model, tokenizer, content: str, device="cuda", max_new_tok
     user_prompt = (
         "Please write a thorough, multi-paragraph summary covering" 
         "the main contributions, methodologies, experimental results," 
-        "and conclusions. The summary should be around 1000 words.\n\n"
+        "and conclusions. The summary should be around 2000 words.\n\n"
         f"{content}\n\n"
         "Your summary should be relatively short and must not copy the text verbatim."
     )
@@ -274,7 +274,7 @@ def summarize_content(model, tokenizer, content: str, device="cuda", max_new_tok
         add_generation_prompt=True,
         return_tensors="pt",
         truncation=True,
-        max_length=2048,
+        max_length=4096,
         padding=True
     ).to(device)
 
@@ -303,14 +303,13 @@ def select_and_rank_references(
     references: List[str], 
     device="cuda"
 ) -> List[Tuple[int, str]]:
-    max_main_content_length = 2000
+    max_main_content_length = 4096
     if len(main_content) > max_main_content_length:
         main_content = summarize_content(model, tokenizer, main_content, device=device)
         print(f"Content is too long, using summarized main content:\n{main_content[:500]}...\n")
     
     references_text = "\n".join([f"[{i+1}] {ref}" for i, ref in enumerate(references)])
     
-    # 简化prompt，减少幻觉风险
     prompt = (
         "Based on the following research paper content and references list, "
         "select the 5 most important references and rank them by importance.\n\n"
@@ -332,14 +331,14 @@ def select_and_rank_references(
         prompt, 
         return_tensors="pt", 
         truncation=True, 
-        max_length=2048, 
+        max_length=4096, 
         padding=True
     ).to(device)
     
     outputs = model.generate(
         inputs["input_ids"],
         attention_mask=inputs["attention_mask"],
-        max_new_tokens=200,  # 减少输出长度，避免幻觉
+        max_new_tokens=4096, 
         repetition_penalty=1.2,
         pad_token_id=tokenizer.pad_token_id,
         num_return_sequences=1,
@@ -350,7 +349,6 @@ def select_and_rank_references(
     response = tokenizer.decode(outputs[0], skip_special_tokens=True)
     print("LLM Raw Response:\n", response, "\n")
     
-    # 从response中提取LLM生成的部分（去掉prompt）
     prompt_in_response = prompt.split("Top 5 most important references:")[0] + "Top 5 most important references:"
     if prompt_in_response in response:
         llm_output = response.split(prompt_in_response)[-1].strip()
@@ -361,11 +359,8 @@ def select_and_rank_references(
     
     selected_refs = []
     
-    # 更严格的解析：只匹配标准格式
     list_pattern = r"(?:^|\n)\s*(\d+)\.?\s*\[(\d+)\]"
     list_matches = re.findall(list_pattern, llm_output)
-    
-    print("Extracted matches:", list_matches)
     
     for rank_str, ref_idx_str in list_matches:
         try:
@@ -417,7 +412,6 @@ def select_and_rank_references(
                 selected_refs.append((ref_idx, ref_text))
                 print(f"Added reference {ref_idx} (fallback): {ref_text[:100]}...")
     
-    # 验证最终结果
     final_refs = selected_refs[:5]
     print(f"\nFinal selected references ({len(final_refs)}):")
     for i, (ref_idx, ref_text) in enumerate(final_refs, 1):
@@ -427,8 +421,6 @@ def select_and_rank_references(
 
 
 def save_to_csv(selected_refs: List[Tuple[int, str]], output_file: str):
-    """保存选中的参考文献到CSV文件"""
-    # 确保输出目录存在
     output_dir = os.path.dirname(output_file)
     if output_dir and not os.path.exists(output_dir):
         os.makedirs(output_dir)
@@ -441,29 +433,23 @@ def save_to_csv(selected_refs: List[Tuple[int, str]], output_file: str):
             writer.writerow([rank, ref_single_line])
 
 def append_to_combined_csv(paper_name: str, selected_refs: List[Tuple[int, str]], output_file: str):
-    """将单篇论文的参考文献追加到汇总CSV文件中"""
-    # 确保输出目录存在
     output_dir = os.path.dirname(output_file)
     if output_dir and not os.path.exists(output_dir):
         os.makedirs(output_dir)
     
-    # 检查文件是否存在，如果不存在则创建并写入表头
     file_exists = os.path.exists(output_file)
     
     with open(output_file, mode="a", newline="", encoding="utf-8") as file:
         writer = csv.writer(file)
         
-        # 如果是新文件，写入表头
         if not file_exists:
             writer.writerow(["Paper_Name", "Rank", "Reference"])
         
-        # 写入该论文的所有参考文献
         for rank, (index, ref) in enumerate(selected_refs, start=1):
             ref_single_line = re.sub(r'\s+', ' ', ref).strip()
             writer.writerow([paper_name, rank, ref_single_line])
 
 def process_single_pdf(pdf_path: str, model, tokenizer, device="cuda"):
-    """处理单个PDF文件，返回参考文献结果"""
     try:
         print(f"\nProcessing: {pdf_path}")
         content = read_pdf(pdf_path)
@@ -510,7 +496,6 @@ def process_single_pdf(pdf_path: str, model, tokenizer, device="cuda"):
                     print(f"WARNING: Reference mismatch at index {index}")
                     print(f"Expected: {actual_ref[:100]}...")
                     print(f"Got: {ref[:100]}...")
-                    # 使用正确的参考文献
                     verified_refs.append((index, actual_ref))
                     ref_single_line = re.sub(r'\s+', ' ', actual_ref).strip()
                     print(f"{rank}. [Index={index}] (CORRECTED) {ref_single_line[:100]}...")
@@ -534,8 +519,8 @@ def find_cvpr_folders(downloads_path: str) -> List[str]:
 
     patterns = [
         os.path.join(downloads_path, "CVPR202*"),
-        os.path.join(downloads_path, "cvpr202*"),  # 小写
-        os.path.join(downloads_path, "*CVPR202*"), # 包含CVPR的文件夹
+        os.path.join(downloads_path, "cvpr202*"),
+        os.path.join(downloads_path, "*CVPR202*"), 
     ]
     
     all_folders = set()
@@ -544,7 +529,7 @@ def find_cvpr_folders(downloads_path: str) -> List[str]:
         all_folders.update(folders)
     
     cvpr_folders = [folder for folder in all_folders if os.path.isdir(folder)]
-    cvpr_folders.sort()  # 按名称排序
+    cvpr_folders.sort() 
     
     print(f"Found {len(cvpr_folders)} potential CVPR folders:")
     for folder in cvpr_folders:
@@ -558,8 +543,8 @@ def find_iccv_folders(downloads_path: str) -> List[str]:
     
     patterns = [
         os.path.join(downloads_path, "ICCV202*"),
-        os.path.join(downloads_path, "iccv202*"),  # 小写
-        os.path.join(downloads_path, "*ICCV202*"), # 包含CVPR的文件夹
+        os.path.join(downloads_path, "iccv202*"),
+        os.path.join(downloads_path, "*ICCV202*"),
     ]
     
     all_folders = set()
@@ -568,7 +553,7 @@ def find_iccv_folders(downloads_path: str) -> List[str]:
         all_folders.update(folders)
     
     iccv_folders = [folder for folder in all_folders if os.path.isdir(folder)]
-    iccv_folders.sort()  # 按名称排序
+    iccv_folders.sort() 
     
     print(f"Found {len(iccv_folders)} potential ICCV folders:")
     for folder in iccv_folders:
@@ -686,7 +671,7 @@ def batch_process_cvpr_papers(downloads_path: str = "Downloads", references_path
             csv_path = os.path.join(references_path, csv_file)
             try:
                 with open(csv_path, 'r', encoding='utf-8') as f:
-                    line_count = sum(1 for line in f) - 1  # 减去表头
+                    line_count = sum(1 for line in f) - 1  
                 print(f"  - {csv_file}: {line_count} references")
             except Exception as e:
                 print(f"  - {csv_file}: Error reading file ({str(e)})")
