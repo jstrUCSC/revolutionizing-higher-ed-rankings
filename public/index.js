@@ -42,7 +42,7 @@ async function loadCSV(filePath) {
 
 async function initialize() {
     data = await loadCSV('3_f_1.csv');
-    facultyData = await loadCSV('faculty_score.csv');
+    facultyData = await loadCSV('3_faculty_score.csv');
 
     // Extract categories dynamically
     if (data.length > 0) {
