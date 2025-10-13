@@ -11,11 +11,13 @@ let expandedRows = new Set();
 const ACTIVE_FIELDS = [
     "Machine Learning",
     "Computer Vision & Image Processing",
+    "Natural Language Processing",
 ];
 
 const DISPLAY_LABELS = {
     'Machine Learning': 'Machine Learning',
     'Computer Vision & Image Processing': 'Computer Vision & Image Processing',
+    'Natural Language Processing': 'Natural Language Processing',
 };
 
 const EPS = 1e-9;
