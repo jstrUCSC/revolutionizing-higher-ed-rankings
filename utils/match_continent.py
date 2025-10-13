@@ -4,10 +4,10 @@ import unicodedata
 from pathlib import Path
 from typing import Optional
 
-UNI_PATH = Path("2_f.csv")
+UNI_PATH = Path("3_f.csv")
 CI_PATH = Path("../CSrankings/country-info.csv")    # CSRankings: institution, region, countryabbrv
 COUNTRIES_PATH = Path("../CSrankings/countries.csv")       # UN: name, alpha_2, alpha_3, region, sub_region, ...
-OUT_PATH       = Path("../public/2_f_2.csv")               
+OUT_PATH       = Path("../public/3_f_1.csv")               
 
 ALLOW_US_FALLBACK = True
 US_ALPHA2 = "US"

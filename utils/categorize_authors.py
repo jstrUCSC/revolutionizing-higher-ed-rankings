@@ -88,7 +88,7 @@ def analyze_and_suggest_mappings(faculty_folder):
     suggestions = {}
     file_info = []
     
-    print(f"\n🔍 ANALYZING {len(csv_files)} CSV FILES...")
+    print(f"\nANALYZING {len(csv_files)} CSV FILES...")
     print("="*80)
     
     for i, csv_file in enumerate(csv_files, 1):
@@ -132,7 +132,7 @@ def analyze_and_suggest_mappings(faculty_folder):
 def interactive_conference_selection(file_info, saved_mappings):
     mappings = {}
     
-    print(f"\n  INTERACTIVE CONFERENCE SELECTION")
+    print(f"\nINTERACTIVE CONFERENCE SELECTION")
     print("="*80)
 
     conf_list = sorted(CONFERENCE_CATEGORIES.keys())
@@ -141,7 +141,7 @@ def interactive_conference_selection(file_info, saved_mappings):
         category = CONFERENCE_CATEGORIES[conf]
         print(f"  {i+1:2d}. {conf:<12} - {category}")
     
-    print(f"\n💡 Instructions:")
+    print(f"\nInstructions:")
     print("  - Press ENTER to accept suggestion")
     print("  - Type conference name (e.g., 'CVPR')")
     print("  - Type 'skip' to skip this file")
@@ -223,7 +223,6 @@ def normalize_columns(df):
     return df
 
 def load_csrankings_data():
-    # 加载CSrankings数据
     print("Loading CSrankings data from GitHub...")
     
     all_authors = []
@@ -568,6 +567,6 @@ def single_file_mode(faculty_folder):
 
 if __name__ == "__main__":
     faculty_folder = Path("../faculty/Scoring")
-    output_file = Path("2_f.csv")
+    output_file = Path("3_f.csv")
     
     main_interactive_processor(faculty_folder, output_file)

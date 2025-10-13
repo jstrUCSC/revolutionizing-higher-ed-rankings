@@ -3728,7 +3728,6 @@ Xinghao Ding,Xiamen University,CVPR,Computer Vision & Image Processing,0.2,CVPR2
 Xingxing Wei,Beihang University,CVPR,Computer Vision & Image Processing,0.2,CVPR2020_618_fulln.csv,Yes
 Xinxin Zuo,Concordia University,CVPR,Computer Vision & Image Processing,0.2,CVPR2020_618_fulln.csv,Yes
 Xubo Song,OHSU,CVPR,Computer Vision & Image Processing,0.5,CVPR2020_618_fulln.csv,Yes
-Xuelong Li 0001,NWPU,CVPR,Computer Vision & Image Processing,0.25,CVPR2020_618_fulln.csv,Yes
 Xun Cao,Nanjing University,CVPR,Computer Vision & Image Processing,0.2,CVPR2020_618_fulln.csv,Yes
 Yair Weiss,Hebrew University of Jerusalem,CVPR,Computer Vision & Image Processing,1.0,CVPR2020_618_fulln.csv,Yes
 Yanlin Weng,Zhejiang University,CVPR,Computer Vision & Image Processing,0.1666666666666666,CVPR2020_618_fulln.csv,Yes
@@ -5801,7 +5800,6 @@ Xiaowei He,Chinese Academy of Sciences,CVPR,Computer Vision & Image Processing,0
 Xiatian Zhu,University of Surrey,CVPR,Computer Vision & Image Processing,0.3333333333333333,CVPR2022_622_fulln.csv,Yes
 Xibin Zhao,Tsinghua University,CVPR,Computer Vision & Image Processing,0.2,CVPR2022_622_fulln.csv,Yes
 Xinghao Ding,Xiamen University,CVPR,Computer Vision & Image Processing,0.6583333333333333,CVPR2022_622_fulln.csv,Yes
-Xuelong Li 0001,NWPU,CVPR,Computer Vision & Image Processing,0.25,CVPR2022_622_fulln.csv,Yes
 Yadong Mu,Peking University,CVPR,Computer Vision & Image Processing,0.1666666666666666,CVPR2022_622_fulln.csv,Yes
 Yanjun Qi,University of Virginia,CVPR,Computer Vision & Image Processing,0.25,CVPR2022_622_fulln.csv,Yes
 Yanyong Zhang,USTC,CVPR,Computer Vision & Image Processing,0.1666666666666666,CVPR2022_622_fulln.csv,Yes
@@ -5864,6 +5862,682 @@ Zongben Xu,Xi'an Jiaotong University,CVPR,Computer Vision & Image Processing,0.1
 Zongyuan Ge,Monash University,CVPR,Computer Vision & Image Processing,0.7250000000000001,CVPR2022_622_fulln.csv,Yes
 Zoran Duric,George Mason University,CVPR,Computer Vision & Image Processing,0.5,CVPR2022_622_fulln.csv,Yes
 Zsolt Kira,Georgia Institute of Technology,CVPR,Computer Vision & Image Processing,0.8444444444444443,CVPR2022_622_fulln.csv,Yes
+Aaron C. Courville,University of Montreal,ACL,Natural Language Processing,1.4642857142857142,ACL2021_fulln.csv,Yes
+Adam Lopez,University of Edinburgh,ACL,Natural Language Processing,0.7,ACL2021_fulln.csv,Yes
+Aditi Raghunathan,Carnegie Mellon University,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Aditya Grover,Univ. of California - Los Angeles,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Ahmed Abdelali,Qatar Computing Research Institute,ACL,Natural Language Processing,0.65,ACL2021_fulln.csv,Yes
+Aijun An,York University,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Aishwarya Agrawal,University of Montreal,ACL,Natural Language Processing,0.6190476190476191,ACL2021_fulln.csv,Yes
+Aixin Sun,Nanyang Technological University,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Alan Akbik,Humboldt University of Berlin,ACL,Natural Language Processing,3.9761904761904767,ACL2021_fulln.csv,Yes
+Alan Ritter,Georgia Institute of Technology,ACL,Natural Language Processing,0.9166666666666666,ACL2021_fulln.csv,Yes
+Albert Gatt,University of Malta,ACL,Natural Language Processing,0.6761904761904762,ACL2021_fulln.csv,Yes
+Alberto Sardinha,Universidade de Lisboa,ACL,Natural Language Processing,0.1428571428571428,ACL2021_fulln.csv,Yes
+Aleksandar Bojchevski,University of Cologne,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Alessandro Flammini,Indiana University,ACL,Natural Language Processing,0.4166666666666666,ACL2021_fulln.csv,Yes
+Alessandro Moschitti,University of Trento,ACL,Natural Language Processing,2.1166666666666667,ACL2021_fulln.csv,Yes
+Alexander Binder,University of Magdeburg,ACL,Natural Language Processing,0.4242424242424242,ACL2021_fulln.csv,Yes
+Alexander Koller,Saarland University,ACL,Natural Language Processing,3.833333333333333,ACL2021_fulln.csv,Yes
+Alexandra Birch,University of Edinburgh,ACL,Natural Language Processing,2.6547619047619047,ACL2021_fulln.csv,Yes
+Alexandros Potamianos,NTUA,ACL,Natural Language Processing,1.125,ACL2021_fulln.csv,Yes
+Alham Fikri Aji,MBZUAI,ACL,Natural Language Processing,0.25,ACL2021_fulln.csv,Yes
+Alvin Cheung,Univ. of California - Berkeley,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+Ameeta Agrawal,Portland State University,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Amit K. Roy-Chowdhury,Univ. of California - Riverside,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Amy J. Ko,University of Washington,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+Ana Marasovic,University of Utah,ACL,Natural Language Processing,1.6999999999999995,ACL2021_fulln.csv,Yes
+Anders Søgaard,University of Copenhagen,ACL,Natural Language Processing,2.3833333333333333,ACL2021_fulln.csv,Yes
+Andreas Vlachos 0001,University of Cambridge,ACL,Natural Language Processing,3.7,ACL2021_fulln.csv,Yes
+Andreas van Cranenburgh,University of Groningen,ACL,Natural Language Processing,1.0,ACL2021_fulln.csv,Yes
+Andrew McCallum,University of Massachusetts Amherst,ACL,Natural Language Processing,3.6444444444444457,ACL2021_fulln.csv,Yes
+André F. T. Martins,Universidade de Lisboa,ACL,Natural Language Processing,0.8666666666666667,ACL2021_fulln.csv,Yes
+Angelika Kimmig,Cardiff University,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Anima Anandkumar,California Institute of Technology,ACL,Natural Language Processing,0.5333333333333333,ACL2021_fulln.csv,Yes
+Anna Korhonen,University of Cambridge,ACL,Natural Language Processing,2.3666666666666667,ACL2021_fulln.csv,Yes
+Anna Rogers,IT University of Copenhagen,ACL,Natural Language Processing,2.333333333333333,ACL2021_fulln.csv,Yes
+Anna Rohrbach,TU Darmstadt,ACL,Natural Language Processing,0.1,ACL2021_fulln.csv,Yes
+Anna Rumshisky,University of Massachusetts Lowell,ACL,Natural Language Processing,3.333333333333334,ACL2021_fulln.csv,Yes
+Annalu Waller,University of Dundee,ACL,Natural Language Processing,0.4,ACL2021_fulln.csv,Yes
+Anne Lauscher,University of Hamburg,ACL,Natural Language Processing,0.25,ACL2021_fulln.csv,Yes
+Anoop Sarkar,Simon Fraser University,ACL,Natural Language Processing,3.0,ACL2021_fulln.csv,Yes
+Antal van den Bosch,Radboud University,ACL,Natural Language Processing,0.25,ACL2021_fulln.csv,Yes
+Antoine Bosselut,EPFL,ACL,Natural Language Processing,2.466666666666667,ACL2021_fulln.csv,Yes
+Anton van den Hengel,University of Adelaide,ACL,Natural Language Processing,0.3111111111111111,ACL2021_fulln.csv,Yes
+Antonios Anastasopoulos,George Mason University,ACL,Natural Language Processing,2.5,ACL2021_fulln.csv,Yes
+Ari Holtzman,University of Chicago,ACL,Natural Language Processing,1.6166666666666667,ACL2021_fulln.csv,Yes
+Ari Rappoport,Hebrew University of Jerusalem,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Arjun Mukherjee,University of Houston,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Arman Cohan,Yale University,ACL,Natural Language Processing,6.045238095238096,ACL2021_fulln.csv,Yes
+Armando Solar-Lezama,Massachusetts Institute of Technology,ACL,Natural Language Processing,0.1428571428571428,ACL2021_fulln.csv,Yes
+Aruna Balasubramanian,Stony Brook University,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Arvind Narayanan,Princeton University,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+Arzoo Katiyar,Pennsylvania State University,ACL,Natural Language Processing,0.7,ACL2021_fulln.csv,Yes
+Ashton Anderson,University of Toronto,ACL,Natural Language Processing,0.25,ACL2021_fulln.csv,Yes
+Aylin Caliskan,University of Washington,ACL,Natural Language Processing,0.1428571428571428,ACL2021_fulln.csv,Yes
+Bamshad Mobasher,DePaul University,ACL,Natural Language Processing,0.25,ACL2021_fulln.csv,Yes
+Baobao Chang,Peking University,ACL,Natural Language Processing,0.7,ACL2021_fulln.csv,Yes
+Barak A. Pearlmutter,Maynooth University,ACL,Natural Language Processing,0.8333333333333333,ACL2021_fulln.csv,Yes
+Ben Carterette,University of Delaware,ACL,Natural Language Processing,0.0909090909090909,ACL2021_fulln.csv,Yes
+Benjamin Van Durme,Johns Hopkins University,ACL,Natural Language Processing,2.858008658008658,ACL2021_fulln.csv,Yes
+Bharath Hariharan,Cornell University,ACL,Natural Language Processing,0.2254901960784313,ACL2021_fulln.csv,Yes
+Bhuwan Dhingra,Duke University,ACL,Natural Language Processing,0.7023809523809523,ACL2021_fulln.csv,Yes
+Bing Liu 0001,University of Illinois at Chicago,ACL,Natural Language Processing,1.25,ACL2021_fulln.csv,Yes
+Bo Li 0005,Beihang University,ACL,Natural Language Processing,0.125,ACL2021_fulln.csv,Yes
+Bonnie J. Dorr,University of Florida,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Brendan Dolan-Gavitt,New York University,ACL,Natural Language Processing,0.7916666666666666,ACL2021_fulln.csv,Yes
+Brendan J. Frey,University of Toronto,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Brian C. Keegan,University of Colorado Boulder,ACL,Natural Language Processing,0.6000000000000001,ACL2021_fulln.csv,Yes
+Buzhou Tang,Harbin Institute of Technology,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+Byoung-Tak Zhang,Seoul National University,ACL,Natural Language Processing,0.0588235294117647,ACL2021_fulln.csv,Yes
+Byron C. Wallace,Northeastern University,ACL,Natural Language Processing,0.3428571428571428,ACL2021_fulln.csv,Yes
+Carlotta Domeniconi,George Mason University,ACL,Natural Language Processing,0.25,ACL2021_fulln.csv,Yes
+Casey Kennington,Boise State University,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Chang-Tien Lu,Virginia Tech,ACL,Natural Language Processing,0.25,ACL2021_fulln.csv,Yes
+Changqing Zhang,Tianjin University,ACL,Natural Language Processing,0.125,ACL2021_fulln.csv,Yes
+Changyou Chen,University at Buffalo,ACL,Natural Language Processing,1.4,ACL2021_fulln.csv,Yes
+ChengXiang Zhai,Univ. of Illinois at Urbana-Champaign,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+Chenglin Miao,Iowa State University,ACL,Natural Language Processing,0.1428571428571428,ACL2021_fulln.csv,Yes
+Chenhao Tan,University of Chicago,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Chenyan Xiong,Carnegie Mellon University,ACL,Natural Language Processing,0.9166666666666664,ACL2021_fulln.csv,Yes
+Chien-Ju Ho,Washington University in St. Louis,ACL,Natural Language Processing,0.25,ACL2021_fulln.csv,Yes
+Chih-Jen Lin,National Taiwan University,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Chitta Baral,Arizona State University,ACL,Natural Language Processing,1.4166666666666663,ACL2021_fulln.csv,Yes
+Cho-Jui Hsieh,Univ. of California - Los Angeles,ACL,Natural Language Processing,0.7333333333333334,ACL2021_fulln.csv,Yes
+Chris Biemann,University of Hamburg,ACL,Natural Language Processing,0.8928571428571428,ACL2021_fulln.csv,Yes
+Chris Callison-Burch,University of Pennsylvania,ACL,Natural Language Processing,2.471428571428571,ACL2021_fulln.csv,Yes
+Chris Clifton,Purdue University,ACL,Natural Language Processing,0.6666666666666666,ACL2021_fulln.csv,Yes
+Christian Bizer,University of Mannheim,ACL,Natural Language Processing,0.1428571428571428,ACL2021_fulln.csv,Yes
+Christina Lioma,University of Copenhagen,ACL,Natural Language Processing,2.178571428571429,ACL2021_fulln.csv,Yes
+Christof Monz,University of Amsterdam,ACL,Natural Language Processing,1.276190476190476,ACL2021_fulln.csv,Yes
+Christophe Gravier,Université Jean Monnet,ACL,Natural Language Processing,0.25,ACL2021_fulln.csv,Yes
+Christopher D. Manning,Stanford University,ACL,Natural Language Processing,20.64642857142857,ACL2021_fulln.csv,Yes
+Christopher Potts,Stanford University,ACL,Natural Language Processing,7.053571428571431,ACL2021_fulln.csv,Yes
+Christopher Ré,Stanford University,ACL,Natural Language Processing,0.8333333333333333,ACL2021_fulln.csv,Yes
+Chunyan Miao,Nanyang Technological University,ACL,Natural Language Processing,1.3333333333333333,ACL2021_fulln.csv,Yes
+Claire Cardie,Cornell University,ACL,Natural Language Processing,4.182983682983683,ACL2021_fulln.csv,Yes
+Claudia Hauff,TU Delft,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Colin Raffel,University of Toronto,ACL,Natural Language Processing,0.6527777777777777,ACL2021_fulln.csv,Yes
+Conghui Zhu,Harbin Institute of Technology,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+Constantin Orasan,University of Surrey,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Cornelia Caragea,University of Illinois at Chicago,ACL,Natural Language Processing,1.25,ACL2021_fulln.csv,Yes
+Cristian Danescu-Niculescu-Mizil,Cornell University,ACL,Natural Language Processing,1.5,ACL2021_fulln.csv,Yes
+Cynthia Dwork,Harvard University,ACL,Natural Language Processing,1.0,ACL2021_fulln.csv,Yes
+Dacheng Tao,Nanyang Technological University,ACL,Natural Language Processing,0.9166666666666664,ACL2021_fulln.csv,Yes
+Damiano Spina,RMIT University,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Dan Jurafsky,Stanford University,ACL,Natural Language Processing,2.676190476190476,ACL2021_fulln.csv,Yes
+Dan Klein 0001,Univ. of California - Berkeley,ACL,Natural Language Processing,0.25,ACL2021_fulln.csv,Yes
+Dan Roth,University of Pennsylvania,ACL,Natural Language Processing,4.483333333333334,ACL2021_fulln.csv,Yes
+Dani Yogatama,University of Southern California,ACL,Natural Language Processing,4.233333333333333,ACL2021_fulln.csv,Yes
+Daniel Beck,University of Melbourne,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Daniel Fried,Carnegie Mellon University,ACL,Natural Language Processing,0.6,ACL2021_fulln.csv,Yes
+Daniel Gildea,University of Rochester,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+Daniel Kang,Univ. of Illinois at Urbana-Champaign,ACL,Natural Language Processing,0.7,ACL2021_fulln.csv,Yes
+Daniel Khashabi,Johns Hopkins University,ACL,Natural Language Processing,0.3428571428571428,ACL2021_fulln.csv,Yes
+Danqi Chen 0001,Princeton University,ACL,Natural Language Processing,2.0,ACL2021_fulln.csv,Yes
+Danushka Bollegala,University of Liverpool,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Daphne Ippolito,Carnegie Mellon University,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Daqing He,University of Pittsburgh,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+David A. Forsyth,Univ. of Illinois at Urbana-Champaign,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+David Alvarez-Melis,Harvard University,ACL,Natural Language Processing,1.25,ACL2021_fulln.csv,Yes
+David Bamman,Univ. of California - Berkeley,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+David Jurgens,University of Michigan,ACL,Natural Language Processing,0.6761904761904762,ACL2021_fulln.csv,Yes
+David M. Blei,Columbia University,ACL,Natural Language Processing,2.283333333333333,ACL2021_fulln.csv,Yes
+David Martins de Matos,Universidade de Lisboa,ACL,Natural Language Processing,0.1428571428571428,ACL2021_fulln.csv,Yes
+David Miller,DePaul University,ACL,Natural Language Processing,0.325,ACL2021_fulln.csv,Yes
+David Schlangen,University of Potsdam,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Dawn Song,Univ. of California - Berkeley,ACL,Natural Language Processing,0.6,ACL2021_fulln.csv,Yes
+De-Chuan Zhan,Nanjing University,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Debora Nozza,Bocconi University,ACL,Natural Language Processing,1.1083333333333334,ACL2021_fulln.csv,Yes
+Dejing Dou,University of Oregon,ACL,Natural Language Processing,0.5833333333333333,ACL2021_fulln.csv,Yes
+Derek F. Wong,University of Macau,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Desmond Elliott,University of Copenhagen,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Deva Ramanan,Carnegie Mellon University,ACL,Natural Language Processing,0.125,ACL2021_fulln.csv,Yes
+Deyi Xiong,Tianjin University,ACL,Natural Language Processing,0.4166666666666666,ACL2021_fulln.csv,Yes
+Diana Inkpen,University of Ottawa,ACL,Natural Language Processing,1.1666666666666663,ACL2021_fulln.csv,Yes
+Dietrich Klakow,Saarland University,ACL,Natural Language Processing,0.8333333333333333,ACL2021_fulln.csv,Yes
+Dipti Misra Sharma,IIIT Hyderabad,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Dirk Hovy,Bocconi University,ACL,Natural Language Processing,2.0666666666666664,ACL2021_fulln.csv,Yes
+Diyi Yang,Stanford University,ACL,Natural Language Processing,1.0,ACL2021_fulln.csv,Yes
+Dong Nguyen,Utrecht University,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+Donghong Ji,Wuhan University,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+Dongkuan Xu,North Carolina State University,ACL,Natural Language Processing,0.1428571428571428,ACL2021_fulln.csv,Yes
+Dongxiang Zhang,UESTC,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+Doug Downey,Northwestern University,ACL,Natural Language Processing,2.576811594202898,ACL2021_fulln.csv,Yes
+Douglas W. Oard,University of Maryland - College Park,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Edith Law,University of Waterloo,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Edoardo Maria Ponti,University of Edinburgh,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Ee-Peng Lim,Singapore Management University,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Ehud Reiter,University of Aberdeen,ACL,Natural Language Processing,1.7333333333333332,ACL2021_fulln.csv,Yes
+Ekaterina Shutova,University of Amsterdam,ACL,Natural Language Processing,0.8333333333333333,ACL2021_fulln.csv,Yes
+Elena Filatova,CUNY,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Elias Bareinboim,Columbia University,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Ellie Pavlick,Brown University,ACL,Natural Language Processing,0.5151515151515151,ACL2021_fulln.csv,Yes
+Emiliano De Cristofaro,Univ. of California - Riverside,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+Emilio Ferrara,University of Southern California,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+Emine Yilmaz,University College London,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Emma Brunskill,Stanford University,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Enhong Chen,USTC,ACL,Natural Language Processing,0.2539682539682539,ACL2021_fulln.csv,Yes
+Eric Fosler-Lussier,Ohio State University,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+Eric Gilbert,University of Michigan,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Eric P. Xing,MBZUAI,ACL,Natural Language Processing,2.8587662337662336,ACL2021_fulln.csv,Yes
+Erik Cambria,Nanyang Technological University,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Eshwar Chandrasekharan,Univ. of Illinois at Urbana-Champaign,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Eunsol Choi,New York University,ACL,Natural Language Processing,2.3666666666666667,ACL2021_fulln.csv,Yes
+Fabio Crestani,Università della Svizzera italiana,ACL,Natural Language Processing,0.75,ACL2021_fulln.csv,Yes
+Fahim Dalvi,Qatar Computing Research Institute,ACL,Natural Language Processing,0.7434782608695651,ACL2021_fulln.csv,Yes
+Felix Naumann,Hasso Plattner Institute,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Fernanda B. Viégas,Harvard University,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+Filippo Menczer,Indiana University,ACL,Natural Language Processing,0.4166666666666666,ACL2021_fulln.csv,Yes
+Florian Schaub,University of Michigan,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Florian Tramèr,ETH Zurich,ACL,Natural Language Processing,0.1,ACL2021_fulln.csv,Yes
+Forrest Sheng Bao,Iowa State University,ACL,Natural Language Processing,0.1428571428571428,ACL2021_fulln.csv,Yes
+Frank Hutter,University of Freiburg,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Frank Keller,University of Edinburgh,ACL,Natural Language Processing,0.25,ACL2021_fulln.csv,Yes
+Frederic Sala,University of Wisconsin - Madison,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+Gabriel Stanovsky,Hebrew University of Jerusalem,ACL,Natural Language Processing,0.825,ACL2021_fulln.csv,Yes
+Garrison W. Cottrell,Univ. of California - San Diego,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Gary Geunbae Lee,POSTECH,ACL,Natural Language Processing,1.0,ACL2021_fulln.csv,Yes
+George Karypis,University of Minnesota,ACL,Natural Language Processing,0.1111111111111111,ACL2021_fulln.csv,Yes
+Gerard de Melo,Hasso Plattner Institute,ACL,Natural Language Processing,0.976190476190476,ACL2021_fulln.csv,Yes
+Gholamreza Anbarjafari,University of Tartu,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Gholamreza Haffari,Monash University,ACL,Natural Language Processing,1.9,ACL2021_fulln.csv,Yes
+Gianluca Stringhini,Boston University,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+Giovanni Da San Martino,University of Padova,ACL,Natural Language Processing,0.2337662337662337,ACL2021_fulln.csv,Yes
+Giuseppe Carenini,University of British Columbia,ACL,Natural Language Processing,1.0,ACL2021_fulln.csv,Yes
+Giuseppe Riccardi,University of Trento,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Gosse Bouma,University of Groningen,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Graeme Hirst,University of Toronto,ACL,Natural Language Processing,1.3333333333333333,ACL2021_fulln.csv,Yes
+Graham Neubig,Carnegie Mellon University,ACL,Natural Language Processing,5.642857142857144,ACL2021_fulln.csv,Yes
+Greg Durrett,New York University,ACL,Natural Language Processing,2.0,ACL2021_fulln.csv,Yes
+Gregory W. Wornell,Massachusetts Institute of Technology,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Grzegorz Chrupala,Tilburg University,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Guangzhong Sun,USTC,ACL,Natural Language Processing,0.1428571428571428,ACL2021_fulln.csv,Yes
+Guiguang Ding,Tsinghua University,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Gunes Acar,Radboud University,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+Gunhee Kim,Seoul National University,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Guodong Zhou,Soochow University,ACL,Natural Language Processing,0.819047619047619,ACL2021_fulln.csv,Yes
+Guy Lapalme,University of Montreal,ACL,Natural Language Processing,1.3333333333333333,ACL2021_fulln.csv,Yes
+Gábor Berend,University of Szeged,ACL,Natural Language Processing,1.0,ACL2021_fulln.csv,Yes
+Hadi Amiri,University of Massachusetts Lowell,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Hamdy Mubarak,Qatar Computing Research Institute,ACL,Natural Language Processing,1.761111111111111,ACL2021_fulln.csv,Yes
+Hamed Pirsiavash,Univ. of California - Davis,ACL,Natural Language Processing,1.25,ACL2021_fulln.csv,Yes
+Hamed Zamani,University of Massachusetts Amherst,ACL,Natural Language Processing,0.45,ACL2021_fulln.csv,Yes
+Han-Jia Ye,Nanjing University,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Hanan Aldarmaki,MBZUAI,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Hanjie Chen,Rice University,ACL,Natural Language Processing,0.6666666666666666,ACL2021_fulln.csv,Yes
+Hannaneh Hajishirzi,University of Washington,ACL,Natural Language Processing,3.6183473389355743,ACL2021_fulln.csv,Yes
+Hanwang Zhang,Nanyang Technological University,ACL,Natural Language Processing,0.3095238095238095,ACL2021_fulln.csv,Yes
+Hao Peng 0001,Beihang University,ACL,Natural Language Processing,0.125,ACL2021_fulln.csv,Yes
+Harish Karnick,IIT Kanpur,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Hassan Sajjad 0001,Dalhousie University,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+Hau-San Wong,City University of Hong Kong,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Hazem M. Hajj,American University of Beirut,ACL,Natural Language Processing,1.0,ACL2021_fulln.csv,Yes
+Heewook Lee,Arizona State University,ACL,Natural Language Processing,0.0909090909090909,ACL2021_fulln.csv,Yes
+Heiko Paulheim,University of Mannheim,ACL,Natural Language Processing,0.1428571428571428,ACL2021_fulln.csv,Yes
+Heiner Stuckenschmidt,University of Mannheim,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+Hermann Ney,RWTH Aachen University,ACL,Natural Language Processing,3.5,ACL2021_fulln.csv,Yes
+Hidetoshi Shimodaira,Kyoto University,ACL,Natural Language Processing,1.0,ACL2021_fulln.csv,Yes
+Honghui Shi,Georgia Institute of Technology,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Hongyang Gao,Iowa State University,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Hongyu Lin,Chinese Academy of Sciences,ACL,Natural Language Processing,0.3428571428571428,ACL2021_fulln.csv,Yes
+Hsin-Hsi Chen,National Taiwan University,ACL,Natural Language Processing,1.15,ACL2021_fulln.csv,Yes
+Huajun Chen,Zhejiang University,ACL,Natural Language Processing,1.076190476190476,ACL2021_fulln.csv,Yes
+Hui Liu,Beijing Institute of Technology,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Hwee Tou Ng,National University of Singapore,ACL,Natural Language Processing,0.75,ACL2021_fulln.csv,Yes
+Ido Dagan,Bar-Ilan University,ACL,Natural Language Processing,1.1916666666666664,ACL2021_fulln.csv,Yes
+Ingmar Weber,Saarland University,ACL,Natural Language Processing,1.9166666666666663,ACL2021_fulln.csv,Yes
+Ioannis Konstas,Heriot-Watt University,ACL,Natural Language Processing,0.125,ACL2021_fulln.csv,Yes
+Ion Androutsopoulos,AUEB,ACL,Natural Language Processing,0.6583333333333333,ACL2021_fulln.csv,Yes
+Irwin King,Chinese University of Hong Kong,ACL,Natural Language Processing,2.6761904761904765,ACL2021_fulln.csv,Yes
+Iryna Gurevych,TU Darmstadt,ACL,Natural Language Processing,3.0428571428571427,ACL2021_fulln.csv,Yes
+Isabelle Augenstein,University of Copenhagen,ACL,Natural Language Processing,4.411904761904762,ACL2021_fulln.csv,Yes
+Isil Dillig,University of Texas at Austin,ACL,Natural Language Processing,0.4166666666666666,ACL2021_fulln.csv,Yes
+Ivan Habernal,Ruhr-University Bochum,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Jackie Chi Kit Cheung,McGill University,ACL,Natural Language Processing,1.75,ACL2021_fulln.csv,Yes
+Jacob Andreas,Massachusetts Institute of Technology,ACL,Natural Language Processing,5.216666666666667,ACL2021_fulln.csv,Yes
+Jacob Steinhardt,Univ. of California - Berkeley,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Jaegul Choo,KAIST,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Jaewoo Kang,Korea University,ACL,Natural Language Processing,0.2857142857142857,ACL2021_fulln.csv,Yes
+Jakob Grue Simonsen,University of Copenhagen,ACL,Natural Language Processing,2.178571428571429,ACL2021_fulln.csv,Yes
+James Allan,University of Massachusetts Amherst,ACL,Natural Language Processing,1.958333333333333,ACL2021_fulln.csv,Yes
+James Hays,Georgia Institute of Technology,ACL,Natural Language Processing,0.125,ACL2021_fulln.csv,Yes
+James P. Bagrow,University of Vermont,ACL,Natural Language Processing,0.1,ACL2021_fulln.csv,Yes
+James Thorne,KAIST,ACL,Natural Language Processing,1.2833333333333332,ACL2021_fulln.csv,Yes
+James Y. Zou,Stanford University,ACL,Natural Language Processing,0.4,ACL2021_fulln.csv,Yes
+Janyce Wiebe,University of Pittsburgh,ACL,Natural Language Processing,0.926923076923077,ACL2021_fulln.csv,Yes
+Jason Eisner,Johns Hopkins University,ACL,Natural Language Processing,2.2666666666666666,ACL2021_fulln.csv,Yes
+Jason J. Corso,University of Michigan,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Jason Liu,Florida International University,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Jason Mars,University of Michigan,ACL,Natural Language Processing,0.0909090909090909,ACL2021_fulln.csv,Yes
+Jeffrey Flanigan,Univ. of California - Santa Cruz,ACL,Natural Language Processing,0.25,ACL2021_fulln.csv,Yes
+Jeffrey Heer,University of Washington,ACL,Natural Language Processing,0.5833333333333333,ACL2021_fulln.csv,Yes
+Jeffrey Mark Siskind,Purdue University,ACL,Natural Language Processing,0.8333333333333333,ACL2021_fulln.csv,Yes
+Jeremy Blackburn,Binghamton University,ACL,Natural Language Processing,0.7666666666666666,ACL2021_fulln.csv,Yes
+Jesse Davis,KU Leuven,ACL,Natural Language Processing,1.0,ACL2021_fulln.csv,Yes
+Jesse Thomason,University of Southern California,ACL,Natural Language Processing,0.1,ACL2021_fulln.csv,Yes
+Jey Han Lau,University of Melbourne,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Ji-Rong Wen,Renmin University of China,ACL,Natural Language Processing,0.125,ACL2021_fulln.csv,Yes
+Jian-Huang Lai,Sun Yat-sen University,ACL,Natural Language Processing,0.1428571428571428,ACL2021_fulln.csv,Yes
+Jianguo Xiao,Peking University,ACL,Natural Language Processing,0.4166666666666666,ACL2021_fulln.csv,Yes
+Jianxin Li 0002,Beihang University,ACL,Natural Language Processing,0.125,ACL2021_fulln.csv,Yes
+Jiatao Gu,University of Pennsylvania,ACL,Natural Language Processing,1.0434782608695652,ACL2021_fulln.csv,Yes
+Jiaxuan You,Univ. of Illinois at Urbana-Champaign,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Jiayu Zhou,University of Michigan,ACL,Natural Language Processing,0.25,ACL2021_fulln.csv,Yes
+Jimmy Ba,University of Toronto,ACL,Natural Language Processing,6.5,ACL2021_fulln.csv,Yes
+Jimmy Lin,University of Waterloo,ACL,Natural Language Processing,2.2333333333333334,ACL2021_fulln.csv,Yes
+Jinqiao Shi,BUPT,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Jinsong Su,Xiamen University,ACL,Natural Language Processing,0.3928571428571428,ACL2021_fulln.csv,Yes
+Joanna J. Bryson,University of Bath,ACL,Natural Language Processing,0.1428571428571428,ACL2021_fulln.csv,Yes
+Joerg Evermann,Memorial University of Newfoundland,ACL,Natural Language Processing,0.0833333333333333,ACL2021_fulln.csv,Yes
+Johan Bollen,Indiana University,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Johannes Bjerva,Aalborg University,ACL,Natural Language Processing,1.45,ACL2021_fulln.csv,Yes
+Jon M. Kleinberg,Cornell University,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Jonathan Berant,Tel Aviv University,ACL,Natural Language Processing,1.2361111111111112,ACL2021_fulln.csv,Yes
+Jonathan K. Kummerfeld,University of Sydney,ACL,Natural Language Processing,0.2337662337662337,ACL2021_fulln.csv,Yes
+Jong-Hyeok Lee,POSTECH,ACL,Natural Language Processing,0.1111111111111111,ACL2021_fulln.csv,Yes
+Jonghyun Choi,Seoul National University,ACL,Natural Language Processing,0.3088235294117647,ACL2021_fulln.csv,Yes
+Jordan L. Boyd-Graber,University of Maryland - College Park,ACL,Natural Language Processing,0.3666666666666667,ACL2021_fulln.csv,Yes
+Joris M. Mooij,University of Amsterdam,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+Josef van Genabith,Saarland University,ACL,Natural Language Processing,0.6666666666666666,ACL2021_fulln.csv,Yes
+Joseph A. Konstan,University of Minnesota,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+José Camacho-Collados,Cardiff University,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Joyce Y. Chai,University of Michigan,ACL,Natural Language Processing,0.6,ACL2021_fulln.csv,Yes
+Juanzi Li,Tsinghua University,ACL,Natural Language Processing,0.6595238095238095,ACL2021_fulln.csv,Yes
+Julia Hirschberg,Columbia University,ACL,Natural Language Processing,1.3333333333333333,ACL2021_fulln.csv,Yes
+Julia Hockenmaier,Univ. of Illinois at Urbana-Champaign,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Julian McAuley,Univ. of California - San Diego,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Julien Subercaze,Université Jean Monnet,ACL,Natural Language Processing,0.25,ACL2021_fulln.csv,Yes
+Junhui Li,Soochow University,ACL,Natural Language Processing,0.4166666666666666,ACL2021_fulln.csv,Yes
+Junichi Tsujii,University of Manchester,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Juntao Li,Soochow University,ACL,Natural Language Processing,0.1428571428571428,ACL2021_fulln.csv,Yes
+Junxian He,HKUST,ACL,Natural Language Processing,1.0833333333333333,ACL2021_fulln.csv,Yes
+Kai-Wei Chang,Univ. of California - Los Angeles,ACL,Natural Language Processing,2.2833333333333337,ACL2021_fulln.csv,Yes
+Kaiming He,Massachusetts Institute of Technology,ACL,Natural Language Processing,1.1,ACL2021_fulln.csv,Yes
+Kalina Bontcheva,University of Sheffield,ACL,Natural Language Processing,0.25,ACL2021_fulln.csv,Yes
+Kareem Darwish,Qatar Computing Research Institute,ACL,Natural Language Processing,1.15,ACL2021_fulln.csv,Yes
+Karen Livescu,TTI Chicago,ACL,Natural Language Processing,0.4,ACL2021_fulln.csv,Yes
+Karin Verspoor,RMIT University,ACL,Natural Language Processing,0.1538461538461538,ACL2021_fulln.csv,Yes
+Karthik Narasimhan,Princeton University,ACL,Natural Language Processing,0.0833333333333333,ACL2021_fulln.csv,Yes
+Kasturi R. Varadarajan,University of Iowa,ACL,Natural Language Processing,0.5333333333333333,ACL2021_fulln.csv,Yes
+Kathleen R. McKeown,Columbia University,ACL,Natural Language Processing,2.625,ACL2021_fulln.csv,Yes
+Kathy McKeown,Columbia University,ACL,Natural Language Processing,0.4,ACL2021_fulln.csv,Yes
+Ke Tang 0001,SUSTech,ACL,Natural Language Processing,0.6666666666666666,ACL2021_fulln.csv,Yes
+Kee-Eung Kim,KAIST,ACL,Natural Language Processing,0.25,ACL2021_fulln.csv,Yes
+Kehai Chen,Harbin Institute of Technology,ACL,Natural Language Processing,0.25,ACL2021_fulln.csv,Yes
+Kejun Zhang,Zhejiang University,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+Kenneth Joseph,University at Buffalo,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Kenny Qili Zhu,University of Texas at Arlington,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Kentaro Inui,MBZUAI,ACL,Natural Language Processing,0.7,ACL2021_fulln.csv,Yes
+Kevin Leach,Vanderbilt University,ACL,Natural Language Processing,0.0909090909090909,ACL2021_fulln.csv,Yes
+Kevyn Collins-Thompson,University of Michigan,ACL,Natural Language Processing,0.1,ACL2021_fulln.csv,Yes
+Kewei Tu,ShanghaiTech University,ACL,Natural Language Processing,0.6666666666666666,ACL2021_fulln.csv,Yes
+Kilian Q. Weinberger,Cornell University,ACL,Natural Language Processing,0.6000000000000001,ACL2021_fulln.csv,Yes
+Kimin Lee,KAIST,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Kobus Barnard,University of Arizona,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Koby Crammer,Technion,ACL,Natural Language Processing,0.25,ACL2021_fulln.csv,Yes
+Konrad Schindler,ETH Zurich,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Koushik Sen,Univ. of California - Berkeley,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Koustav Rudra,IIT Kharagpur,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+Kun Zhang 0001,MBZUAI,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+Kyumin Lee,Worcester Polytechnic Institute,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Kyunghyun Cho,New York University,ACL,Natural Language Processing,21.2404761904762,ACL2021_fulln.csv,Yes
+Larry Heck,Georgia Institute of Technology,ACL,Natural Language Processing,1.125,ACL2021_fulln.csv,Yes
+Laura Leal-Taixé,TU Munich,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Lawrence Carin,Duke University,ACL,Natural Language Processing,1.1,ACL2021_fulln.csv,Yes
+Lei Sha,Beihang University,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Lei Xie 0001,NWPU,ACL,Natural Language Processing,0.6666666666666666,ACL2021_fulln.csv,Yes
+Leon Derczynski,IT University of Copenhagen,ACL,Natural Language Processing,0.6111111111111112,ACL2021_fulln.csv,Yes
+Liang Lin,Sun Yat-sen University,ACL,Natural Language Processing,0.1428571428571428,ACL2021_fulln.csv,Yes
+Lifang He 0001,Lehigh University,ACL,Natural Language Processing,0.125,ACL2021_fulln.csv,Yes
+Lifu Huang,Univ. of California - Davis,ACL,Natural Language Processing,0.8666666666666667,ACL2021_fulln.csv,Yes
+Lili Mou,University of Alberta,ACL,Natural Language Processing,0.65,ACL2021_fulln.csv,Yes
+Lillian Lee,Cornell University,ACL,Natural Language Processing,1.5,ACL2021_fulln.csv,Yes
+Lilly Irani,Univ. of California - San Diego,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Lingjia Tang,University of Michigan,ACL,Natural Language Processing,0.0909090909090909,ACL2021_fulln.csv,Yes
+Linqi Song,City University of Hong Kong,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+Liqiang Nie,Harbin Institute of Technology,ACL,Natural Language Processing,0.5333333333333333,ACL2021_fulln.csv,Yes
+Lisa Beinborn,University of Göttingen,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Lise Getoor,Univ. of California - Santa Cruz,ACL,Natural Language Processing,0.25,ACL2021_fulln.csv,Yes
+Lizhen Qu,Monash University,ACL,Natural Language Processing,0.4,ACL2021_fulln.csv,Yes
+Lluís Màrquez,Qatar Computing Research Institute,ACL,Natural Language Processing,0.7,ACL2021_fulln.csv,Yes
+Lora Aroyo,VU Amsterdam,ACL,Natural Language Processing,0.3666666666666667,ACL2021_fulln.csv,Yes
+Loren Terveen,University of Minnesota,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Louis-Philippe Morency,Carnegie Mellon University,ACL,Natural Language Processing,1.6206349206349209,ACL2021_fulln.csv,Yes
+Lu Su,University at Buffalo,ACL,Natural Language Processing,0.1428571428571428,ACL2021_fulln.csv,Yes
+Luc De Raedt,KU Leuven,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Lucia Specia,Imperial College London,ACL,Natural Language Processing,2.433333333333333,ACL2021_fulln.csv,Yes
+Luis Espinosa Anke,Cardiff University,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Luke S. Zettlemoyer,University of Washington,ACL,Natural Language Processing,13.634867806771826,ACL2021_fulln.csv,Yes
+Lyle H. Ungar,University of Pennsylvania,ACL,Natural Language Processing,2.5,ACL2021_fulln.csv,Yes
+M. Ehsan Abbasnejad,University of Adelaide,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+M. Sohel Rahman,BUET,ACL,Natural Language Processing,0.1428571428571428,ACL2021_fulln.csv,Yes
+Maarten Sap,Carnegie Mellon University,ACL,Natural Language Processing,2.327777777777777,ACL2021_fulln.csv,Yes
+Mai ElSherief,Northeastern University,ACL,Natural Language Processing,0.1,ACL2021_fulln.csv,Yes
+Maja Pantic,Imperial College London,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Malvina Nissim,University of Groningen,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Manfred Stede,University of Potsdam,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Manos Papagelis,York University,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Marcos André Gonçalves,UFMG,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+Marcos Zampieri,George Mason University,ACL,Natural Language Processing,1.053968253968254,ACL2021_fulln.csv,Yes
+Marcus Rohrbach,TU Darmstadt,ACL,Natural Language Processing,1.2666666666666666,ACL2021_fulln.csv,Yes
+Marek Rei,Imperial College London,ACL,Natural Language Processing,0.6000000000000001,ACL2021_fulln.csv,Yes
+Maria Liakata,University of Warwick,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Maria-Florina Balcan,Carnegie Mellon University,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Marie-Francine Moens,KU Leuven,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Mark Craven,University of Wisconsin - Madison,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Mark Dras,Macquarie University,ACL,Natural Language Processing,1.0,ACL2021_fulln.csv,Yes
+Mark Dredze,Johns Hopkins University,ACL,Natural Language Processing,2.533333333333333,ACL2021_fulln.csv,Yes
+Mark Fishel,University of Tartu,ACL,Natural Language Processing,0.8095238095238095,ACL2021_fulln.csv,Yes
+Mark Hepple,University of Sheffield,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+Mark Johnson 0001,Macquarie University,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Mark O. Riedl,Georgia Institute of Technology,ACL,Natural Language Processing,0.25,ACL2021_fulln.csv,Yes
+Mark Yatskar,University of Pennsylvania,ACL,Natural Language Processing,2.2,ACL2021_fulln.csv,Yes
+Marten van Schijndel,Cornell University,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Martha Palmer,University of Colorado Boulder,ACL,Natural Language Processing,0.2666666666666666,ACL2021_fulln.csv,Yes
+Martin Jaggi,EPFL,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Martin Potthast,University of Leipzig,ACL,Natural Language Processing,0.2916666666666666,ACL2021_fulln.csv,Yes
+Martin Wattenberg,Harvard University,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+Masashi Toyoda,University of Tokyo,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Masoud Mansoury,TU Delft,ACL,Natural Language Processing,0.25,ACL2021_fulln.csv,Yes
+Massimo Poesio,Queen Mary University of London,ACL,Natural Language Processing,2.5,ACL2021_fulln.csv,Yes
+Matei Zaharia,Univ. of California - Berkeley,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Mathieu Chollet,University of Glasgow,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Matt Huenerfauth,Rochester Institute of Technology,ACL,Natural Language Processing,1.0,ACL2021_fulln.csv,Yes
+Matthew Lease,University of Texas at Austin,ACL,Natural Language Processing,0.7333333333333334,ACL2021_fulln.csv,Yes
+Matthew R. Walter,TTI Chicago,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Matthias Hagen,Friedrich Schiller University Jena,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+Mausam,IIT Delhi,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Max Welling,University of Amsterdam,ACL,Natural Language Processing,1.5,ACL2021_fulln.csv,Yes
+Md. Shad Akhtar,IIIT Delhi,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+Mehryar Mohri,New York University,ACL,Natural Language Processing,0.25,ACL2021_fulln.csv,Yes
+Meishan Zhang,Harbin Institute of Technology,ACL,Natural Language Processing,1.4166666666666663,ACL2021_fulln.csv,Yes
+Michael Carbin,Massachusetts Institute of Technology,ACL,Natural Language Processing,1.5178571428571428,ACL2021_fulln.csv,Yes
+Michael Elhadad,Ben-Gurion University of the Negev,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Michael Gleicher,University of Wisconsin - Madison,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Michael Granitzer,University of Passau,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Michael I. Jordan,Univ. of California - Berkeley,ACL,Natural Language Processing,2.0,ACL2021_fulln.csv,Yes
+Michael R. Lyu,Chinese University of Hong Kong,ACL,Natural Language Processing,1.809523809523809,ACL2021_fulln.csv,Yes
+Michael Wiegand,University of Klagenfurt,ACL,Natural Language Processing,1.1666666666666663,ACL2021_fulln.csv,Yes
+Mihai Surdeanu,University of Arizona,ACL,Natural Language Processing,0.1428571428571428,ACL2021_fulln.csv,Yes
+Milan Straka,Charles University,ACL,Natural Language Processing,1.3333333333333333,ACL2021_fulln.csv,Yes
+Min-Yen Kan,National University of Singapore,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Ming Zhang 0004,Peking University,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Mingsheng Long,Tsinghua University,ACL,Natural Language Processing,0.25,ACL2021_fulln.csv,Yes
+Minhao Cheng,Pennsylvania State University,ACL,Natural Language Processing,0.7333333333333334,ACL2021_fulln.csv,Yes
+Minjoon Seo,KAIST,ACL,Natural Language Processing,0.5588235294117647,ACL2021_fulln.csv,Yes
+Minlie Huang,Tsinghua University,ACL,Natural Language Processing,1.3333333333333337,ACL2021_fulln.csv,Yes
+Mirella Lapata,University of Edinburgh,ACL,Natural Language Processing,6.383333333333333,ACL2021_fulln.csv,Yes
+Mohamed Elhoseiny,KAUST,ACL,Natural Language Processing,0.45,ACL2021_fulln.csv,Yes
+Mohammad Aliannejadi,University of Amsterdam,ACL,Natural Language Processing,0.25,ACL2021_fulln.csv,Yes
+Mohammad Taher Pilehvar,Cardiff University,ACL,Natural Language Processing,1.0,ACL2021_fulln.csv,Yes
+Mohit Bansal,University of North Carolina,ACL,Natural Language Processing,4.333333333333334,ACL2021_fulln.csv,Yes
+Mohit Iyyer,University of Maryland - College Park,ACL,Natural Language Processing,1.2945378151260505,ACL2021_fulln.csv,Yes
+Mona T. Diab,Carnegie Mellon University,ACL,Natural Language Processing,2.825840825840826,ACL2021_fulln.csv,Yes
+Monojit Choudhury,MBZUAI,ACL,Natural Language Processing,0.3666666666666667,ACL2021_fulln.csv,Yes
+Mrinmaya Sachan,ETH Zurich,ACL,Natural Language Processing,0.1111111111111111,ACL2021_fulln.csv,Yes
+Nadir Durrani,Qatar Computing Research Institute,ACL,Natural Language Processing,0.9934782608695653,ACL2021_fulln.csv,Yes
+Najoung Kim,Boston University,ACL,Natural Language Processing,0.6818181818181819,ACL2021_fulln.csv,Yes
+Naoaki Okazaki,Tokyo Institute of Technology,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Nava Tintarev,TU Delft,ACL,Natural Language Processing,0.4,ACL2021_fulln.csv,Yes
+Nazli Goharian,Georgetown University,ACL,Natural Language Processing,0.4285714285714285,ACL2021_fulln.csv,Yes
+Ndapa Nakashole,Univ. of California - San Diego,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+Ngoc Thang Vu,University of Stuttgart,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Nianwen Xue,Brandeis University,ACL,Natural Language Processing,2.075,ACL2021_fulln.csv,Yes
+Nigel Collier,University of Cambridge,ACL,Natural Language Processing,1.5,ACL2021_fulln.csv,Yes
+Nikolaos Aletras,University of Sheffield,ACL,Natural Language Processing,0.8333333333333333,ACL2021_fulln.csv,Yes
+Niranjan Balasubramanian,Stony Brook University,ACL,Natural Language Processing,1.1666666666666663,ACL2021_fulln.csv,Yes
+Nizar Habash,NYU Abu Dhabi,ACL,Natural Language Processing,0.3409090909090909,ACL2021_fulln.csv,Yes
+Noah A. Smith,University of Washington,ACL,Natural Language Processing,6.586601307189543,ACL2021_fulln.csv,Yes
+Norman M. Sadeh,Carnegie Mellon University,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Olga Vechtomova,University of Waterloo,ACL,Natural Language Processing,0.45,ACL2021_fulln.csv,Yes
+Omer Levy,Tel Aviv University,ACL,Natural Language Processing,6.15,ACL2021_fulln.csv,Yes
+Omri Abend,Hebrew University of Jerusalem,ACL,Natural Language Processing,1.0,ACL2021_fulln.csv,Yes
+Onur Mutlu,ETH Zurich,ACL,Natural Language Processing,0.0909090909090909,ACL2021_fulln.csv,Yes
+Owen Rambow,Stony Brook University,ACL,Natural Language Processing,0.2575757575757575,ACL2021_fulln.csv,Yes
+Pankaj K. Agarwal,Duke University,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Pascal Denis,CRIStAL,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Pascal Frossard,EPFL,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Pascal Poupart,University of Waterloo,ACL,Natural Language Processing,0.1,ACL2021_fulln.csv,Yes
+Pascale Fung,HKUST,ACL,Natural Language Processing,1.75,ACL2021_fulln.csv,Yes
+Pasquale Minervini,University of Edinburgh,ACL,Natural Language Processing,0.45,ACL2021_fulln.csv,Yes
+Paul Cook,University of New Brunswick,ACL,Natural Language Processing,1.0333333333333332,ACL2021_fulln.csv,Yes
+Paul Pu Liang,Massachusetts Institute of Technology,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Pengtao Xie,Univ. of California - San Diego,ACL,Natural Language Processing,1.9575757575757573,ACL2021_fulln.csv,Yes
+Pepa Atanasova,University of Copenhagen,ACL,Natural Language Processing,2.003968253968254,ACL2021_fulln.csv,Yes
+Pete Burnap,Cardiff University,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Peter Andreae,Victoria University of Wellington,ACL,Natural Language Processing,0.25,ACL2021_fulln.csv,Yes
+Peter Brusilovsky,University of Pittsburgh,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+Peter L. Bartlett,Univ. of California - Berkeley,ACL,Natural Language Processing,0.8333333333333333,ACL2021_fulln.csv,Yes
+Peter Sheridan Dodds,University of Vermont,ACL,Natural Language Processing,0.1,ACL2021_fulln.csv,Yes
+Peter Szolovits,Massachusetts Institute of Technology,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Peter West,University of British Columbia,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+Phil Blunsom,University of Oxford,ACL,Natural Language Processing,1.4047619047619049,ACL2021_fulln.csv,Yes
+Philip S. Yu,University of Illinois at Chicago,ACL,Natural Language Processing,1.467857142857143,ACL2021_fulln.csv,Yes
+Philippe Langlais,University of Montreal,ACL,Natural Language Processing,1.3333333333333333,ACL2021_fulln.csv,Yes
+Phillip Isola,Massachusetts Institute of Technology,ACL,Natural Language Processing,0.4444444444444444,ACL2021_fulln.csv,Yes
+Pietro Liò,University of Cambridge,ACL,Natural Language Processing,0.6666666666666666,ACL2021_fulln.csv,Yes
+Pietro Perona,California Institute of Technology,ACL,Natural Language Processing,0.125,ACL2021_fulln.csv,Yes
+Piotr Indyk,Massachusetts Institute of Technology,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Preethi Jyothi,IIT Bombay,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Preslav Nakov,MBZUAI,ACL,Natural Language Processing,1.5559884559884558,ACL2021_fulln.csv,Yes
+Prithviraj Ammanabrolu,Univ. of California - San Diego,ACL,Natural Language Processing,1.25,ACL2021_fulln.csv,Yes
+Pushpak Bhattacharyya,IIT Bombay,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+Qiang Dong,UESTC,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Qiaoming Zhu,Soochow University,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+Qiaozhu Mei,University of Michigan,ACL,Natural Language Processing,0.1,ACL2021_fulln.csv,Yes
+Qin Jin,Renmin University of China,ACL,Natural Language Processing,0.4583333333333333,ACL2021_fulln.csv,Yes
+Qin Lv,University of Colorado Boulder,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+Qingcai Chen,Harbin Institute of Technology,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+Qingyao Ai,Tsinghua University,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Rachel Rudinger,University of Maryland - College Park,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Rada Mihalcea,University of Michigan,ACL,Natural Language Processing,2.8163170163170164,ACL2021_fulln.csv,Yes
+Raghavendra Selvan,University of Copenhagen,ACL,Natural Language Processing,1.0,ACL2021_fulln.csv,Yes
+Ramakanth Kavuluru,University of Kentucky,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Ranjay Krishna,University of Washington,ACL,Natural Language Processing,0.1,ACL2021_fulln.csv,Yes
+Raymond J. Mooney,University of Texas at Austin,ACL,Natural Language Processing,3.0,ACL2021_fulln.csv,Yes
+Raymond T. Ng,University of British Columbia,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Razvan C. Bunescu,UNC - Charlotte,ACL,Natural Language Processing,2.5,ACL2021_fulln.csv,Yes
+Regina Barzilay,Massachusetts Institute of Technology,ACL,Natural Language Processing,5.083333333333333,ACL2021_fulln.csv,Yes
+Rens Bod,University of Amsterdam,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Richard S. Zemel,Columbia University,ACL,Natural Language Processing,0.25,ACL2021_fulln.csv,Yes
+Richárd Farkas,University of Szeged,ACL,Natural Language Processing,0.1428571428571428,ACL2021_fulln.csv,Yes
+Rico Sennrich,University of Zurich,ACL,Natural Language Processing,4.483333333333334,ACL2021_fulln.csv,Yes
+Rifat Shahriyar,BUET,ACL,Natural Language Processing,0.1428571428571428,ACL2021_fulln.csv,Yes
+Riza Batista-Navarro,University of Manchester,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Rob Procter,University of Warwick,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Robert E. Tarjan,Princeton University,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Roberto Navigli,Sapienza University of Rome,ACL,Natural Language Processing,0.7,ACL2021_fulln.csv,Yes
+Robin Burke,University of Colorado Boulder,ACL,Natural Language Processing,0.25,ACL2021_fulln.csv,Yes
+Robin Jia,University of Southern California,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Roger Wattenhofer,ETH Zurich,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+Roger Zimmermann,National University of Singapore,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Roi Reichart,Technion,ACL,Natural Language Processing,1.0333333333333332,ACL2021_fulln.csv,Yes
+Roman Klinger,University of Bamberg,ACL,Natural Language Processing,1.0,ACL2021_fulln.csv,Yes
+Rui Zhang 0037,Pennsylvania State University,ACL,Natural Language Processing,1.0909090909090908,ACL2021_fulln.csv,Yes
+Ryan Cotterell,ETH Zurich,ACL,Natural Language Processing,0.9166666666666664,ACL2021_fulln.csv,Yes
+Ryan P. Adams,Princeton University,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Saadia Gabriel,Univ. of California - Los Angeles,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Sabine Schulte im Walde,University of Stuttgart,ACL,Natural Language Processing,0.25,ACL2021_fulln.csv,Yes
+Sadao Kurohashi,Kyoto University,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Saining Xie,New York University,ACL,Natural Language Processing,0.5666666666666667,ACL2021_fulln.csv,Yes
+Salman H. Khan 0001,MBZUAI,ACL,Natural Language Processing,0.4285714285714285,ACL2021_fulln.csv,Yes
+Samira Ebrahimi Kahou,University of Calgary,ACL,Natural Language Processing,0.1,ACL2021_fulln.csv,Yes
+Samuel Kadoury,Polytechnique Montreal,ACL,Natural Language Processing,0.25,ACL2021_fulln.csv,Yes
+Sandra Kübler,Indiana University,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Sarah Wiegreffe,University of Maryland - College Park,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Sarath Chandar,Polytechnique Montreal,ACL,Natural Language Processing,0.3095238095238095,ACL2021_fulln.csv,Yes
+Sariel Har-Peled,Univ. of Illinois at Urbana-Champaign,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Satoshi Nakamura,NAIST,ACL,Natural Language Processing,1.5333333333333332,ACL2021_fulln.csv,Yes
+Saugata Ghose,Univ. of Illinois at Urbana-Champaign,ACL,Natural Language Processing,0.0909090909090909,ACL2021_fulln.csv,Yes
+Saurabh Gupta 0001,Univ. of Illinois at Urbana-Champaign,ACL,Natural Language Processing,0.1428571428571428,ACL2021_fulln.csv,Yes
+Sean Welleck,Carnegie Mellon University,ACL,Natural Language Processing,0.4761904761904761,ACL2021_fulln.csv,Yes
+Sebastijan Dumancic,TU Delft,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Sencun Zhu,Pennsylvania State University,ACL,Natural Language Processing,0.575,ACL2021_fulln.csv,Yes
+Senzhang Wang,Central South University,ACL,Natural Language Processing,0.125,ACL2021_fulln.csv,Yes
+Serge J. Belongie,University of Copenhagen,ACL,Natural Language Processing,0.125,ACL2021_fulln.csv,Yes
+Seungjin Choi,POSTECH,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+Shady Elbassuoni,American University of Beirut,ACL,Natural Language Processing,0.1,ACL2021_fulln.csv,Yes
+Shafiq R. Joty,Nanyang Technological University,ACL,Natural Language Processing,0.375,ACL2021_fulln.csv,Yes
+Shaoping Ma,Tsinghua University,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+Sharon Goldwater,University of Edinburgh,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Shay B. Cohen,University of Edinburgh,ACL,Natural Language Processing,0.6666666666666666,ACL2021_fulln.csv,Yes
+Sheng Gao,BUPT,ACL,Natural Language Processing,0.125,ACL2021_fulln.csv,Yes
+Shiqiang Yang,Tsinghua University,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+Shiqing Ma,University of Massachusetts Amherst,ACL,Natural Language Processing,0.1428571428571428,ACL2021_fulln.csv,Yes
+Shivakant Mishra,University of Colorado Boulder,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Shiyu Chang,Univ. of California - Santa Barbara,ACL,Natural Language Processing,1.917857142857143,ACL2021_fulln.csv,Yes
+Shiyu Liang,Shanghai Jiao Tong University,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Shizhu He,Chinese Academy of Sciences,ACL,Natural Language Processing,0.9166666666666666,ACL2021_fulln.csv,Yes
+Shomir Wilson,Pennsylvania State University,ACL,Natural Language Processing,0.6333333333333333,ACL2021_fulln.csv,Yes
+Shoushan Li,Soochow University,ACL,Natural Language Processing,0.9023809523809524,ACL2021_fulln.csv,Yes
+Shrikanth Narayanan,University of Southern California,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Shuiwang Ji,Texas A&M University,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Shujian Huang,Nanjing University,ACL,Natural Language Processing,0.7595238095238095,ACL2021_fulln.csv,Yes
+Siddharth Garg,New York University,ACL,Natural Language Processing,0.7916666666666666,ACL2021_fulln.csv,Yes
+Siddhartha Banerjee,Cornell University,ACL,Natural Language Processing,0.75,ACL2021_fulln.csv,Yes
+Siegfried Handschuh,University of Passau,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Simone Paolo Ponzetto,University of Mannheim,ACL,Natural Language Processing,0.3095238095238095,ACL2021_fulln.csv,Yes
+Sinno Jialin Pan,Chinese University of Hong Kong,ACL,Natural Language Processing,0.25,ACL2021_fulln.csv,Yes
+Siqi Sun,Fudan University,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Siva Reddy,McGill University,ACL,Natural Language Processing,0.9166666666666664,ACL2021_fulln.csv,Yes
+Snigdha Chaturvedi,University of North Carolina,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Solange Oliveira Rezende,USP-ICMC,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Sophia Ananiadou,University of Manchester,ACL,Natural Language Processing,0.6666666666666666,ACL2021_fulln.csv,Yes
+Soujanya Poria,SUTD,ACL,Natural Language Processing,1.1666666666666667,ACL2021_fulln.csv,Yes
+Soumen Chakrabarti,IIT Bombay,ACL,Natural Language Processing,0.25,ACL2021_fulln.csv,Yes
+Srijan Kumar,Georgia Institute of Technology,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Stefan Lee,Oregon State University,ACL,Natural Language Processing,0.7250000000000001,ACL2021_fulln.csv,Yes
+Stefan Riezler,Heidelberg University,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Stefan Stieglitz,University of Duisburg-Essen,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Stephan Günnemann,TU Munich,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Stephan Vogel,Qatar Computing Research Institute,ACL,Natural Language Processing,1.0,ACL2021_fulln.csv,Yes
+Stephen G. Pulman,University of Oxford,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Stephen Gould,Australian National University,ACL,Natural Language Processing,4.111111111111111,ACL2021_fulln.csv,Yes
+Stephen H. Bach,Brown University,ACL,Natural Language Processing,0.6666666666666666,ACL2021_fulln.csv,Yes
+Steven Bethard,University of Arizona,ACL,Natural Language Processing,0.75,ACL2021_fulln.csv,Yes
+Steven C. H. Hoi,Singapore Management University,ACL,Natural Language Processing,0.1428571428571428,ACL2021_fulln.csv,Yes
+Steven Schockaert,Cardiff University,ACL,Natural Language Processing,1.2,ACL2021_fulln.csv,Yes
+Steven Skiena,Stony Brook University,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Stuart M. Shieber,Harvard University,ACL,Natural Language Processing,0.7333333333333334,ACL2021_fulln.csv,Yes
+Sumit Chopra,New York University,ACL,Natural Language Processing,1.45,ACL2021_fulln.csv,Yes
+Sungjin Ahn,KAIST,ACL,Natural Language Processing,0.1428571428571428,ACL2021_fulln.csv,Yes
+Supratik Mukhopadhyay,Louisiana State University,ACL,Natural Language Processing,0.25,ACL2021_fulln.csv,Yes
+Suzanne Stevenson,University of Toronto,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Swabha Swayamdipta,University of Southern California,ACL,Natural Language Processing,1.1666666666666663,ACL2021_fulln.csv,Yes
+Tajana Rosing,Univ. of California - San Diego,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Tal Linzen,New York University,ACL,Natural Language Processing,1.6666666666666663,ACL2021_fulln.csv,Yes
+Tamer Elsayed,Qatar University,ACL,Natural Language Processing,0.2337662337662337,ACL2021_fulln.csv,Yes
+Tanja Schultz,University of Bremen,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Tanushree Mitra,University of Washington,ACL,Natural Language Processing,0.6666666666666666,ACL2021_fulln.csv,Yes
+Tao Yu 0009,University of Hong Kong,ACL,Natural Language Processing,0.0909090909090909,ACL2021_fulln.csv,Yes
+Tat-Seng Chua,National University of Singapore,ACL,Natural Language Processing,2.9000000000000004,ACL2021_fulln.csv,Yes
+Tatsunori Hashimoto,Stanford University,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Taylor Berg-Kirkpatrick,Univ. of California - San Diego,ACL,Natural Language Processing,2.216666666666667,ACL2021_fulln.csv,Yes
+Tejas Gokhale,Univ. of Maryland - Baltimore County,ACL,Natural Language Processing,0.5833333333333333,ACL2021_fulln.csv,Yes
+Thamar Solorio,MBZUAI,ACL,Natural Language Processing,0.7261904761904762,ACL2021_fulln.csv,Yes
+Tharindu Ranasinghe,Lancaster University,ACL,Natural Language Processing,0.8333333333333333,ACL2021_fulln.csv,Yes
+Thomas Brox,University of Freiburg,ACL,Natural Language Processing,0.25,ACL2021_fulln.csv,Yes
+Thomas Hain,University of Sheffield,ACL,Natural Language Processing,0.1,ACL2021_fulln.csv,Yes
+Thomas Hofmann,ETH Zurich,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Thomas Lukasiewicz,TU Wien,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Tiejun Zhao,Harbin Institute of Technology,ACL,Natural Language Processing,0.3095238095238095,ACL2021_fulln.csv,Yes
+Tieyun Qian,Wuhan University,ACL,Natural Language Processing,2.0,ACL2021_fulln.csv,Yes
+Timothy Baldwin,MBZUAI,ACL,Natural Language Processing,0.5333333333333333,ACL2021_fulln.csv,Yes
+Timothy J. O'Donnell,McGill University,ACL,Natural Language Processing,0.4761904761904761,ACL2021_fulln.csv,Yes
+Timothy W. Bickmore,Northeastern University,ACL,Natural Language Processing,0.3928571428571428,ACL2021_fulln.csv,Yes
+Tommaso Caselli,University of Groningen,ACL,Natural Language Processing,0.8999999999999999,ACL2021_fulln.csv,Yes
+Tommi S. Jaakkola,Massachusetts Institute of Technology,ACL,Natural Language Processing,1.3333333333333333,ACL2021_fulln.csv,Yes
+Travis D. Breaux,Carnegie Mellon University,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Trevor Cohn,University of Melbourne,ACL,Natural Language Processing,0.95,ACL2021_fulln.csv,Yes
+Trevor Darrell,Univ. of California - Berkeley,ACL,Natural Language Processing,0.35,ACL2021_fulln.csv,Yes
+Tuo Zhao,Georgia Institute of Technology,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+Ujjwal Bhattacharya,ISI Kolkata,ACL,Natural Language Processing,0.25,ACL2021_fulln.csv,Yes
+Uri Shalit,Technion,ACL,Natural Language Processing,0.25,ACL2021_fulln.csv,Yes
+Venkatesh Saligrama,Boston University,ACL,Natural Language Processing,0.4,ACL2021_fulln.csv,Yes
+Vera Demberg,Saarland University,ACL,Natural Language Processing,1.0333333333333332,ACL2021_fulln.csv,Yes
+Vered Shwartz,University of British Columbia,ACL,Natural Language Processing,0.8666666666666667,ACL2021_fulln.csv,Yes
+Verena Rieser,Heriot-Watt University,ACL,Natural Language Processing,0.5833333333333333,ACL2021_fulln.csv,Yes
+Verónica Pérez-Rosas,Texas State University,ACL,Natural Language Processing,0.25,ACL2021_fulln.csv,Yes
+Vicente Ordonez,Rice University,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Victor Zhong,University of Waterloo,ACL,Natural Language Processing,1.2,ACL2021_fulln.csv,Yes
+Vivek Srikumar,University of Utah,ACL,Natural Language Processing,0.625,ACL2021_fulln.csv,Yes
+Vivienne Sze,Massachusetts Institute of Technology,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Von-Wun Soo,National Tsing Hua University,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Walid Magdy,University of Edinburgh,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Wangmeng Zuo,Harbin Institute of Technology,ACL,Natural Language Processing,0.4285714285714285,ACL2021_fulln.csv,Yes
+Wanxiang Che,Harbin Institute of Technology,ACL,Natural Language Processing,1.6261904761904762,ACL2021_fulln.csv,Yes
+Wayne Xin Zhao,Renmin University of China,ACL,Natural Language Processing,0.1111111111111111,ACL2021_fulln.csv,Yes
+Wei Lu 0011,SUTD,ACL,Natural Language Processing,0.25,ACL2021_fulln.csv,Yes
+Wenqiang Lei,Sichuan University,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+Wenqing Chen,Sun Yat-sen University,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Wenya Wang,Nanyang Technological University,ACL,Natural Language Processing,0.9166666666666666,ACL2021_fulln.csv,Yes
+Wessel Kraaij,Leiden University,ACL,Natural Language Processing,0.1,ACL2021_fulln.csv,Yes
+Willem H. Zuidema,University of Amsterdam,ACL,Natural Language Processing,1.0,ACL2021_fulln.csv,Yes
+William Yang Wang,Univ. of California - Santa Barbara,ACL,Natural Language Processing,4.940909090909091,ACL2021_fulln.csv,Yes
+Wojciech Samek,TU Berlin,ACL,Natural Language Processing,0.6742424242424242,ACL2021_fulln.csv,Yes
+Xiangyu Duan,Soochow University,ACL,Natural Language Processing,0.5666666666666667,ACL2021_fulln.csv,Yes
+Xianpei Han,Chinese Academy of Sciences,ACL,Natural Language Processing,0.1428571428571428,ACL2021_fulln.csv,Yes
+Xiao-Jun Zeng,University of Manchester,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Xiaodan Liang,Sun Yat-sen University,ACL,Natural Language Processing,1.7428571428571429,ACL2021_fulln.csv,Yes
+Xiaodan Zhu,Queen’s University,ACL,Natural Language Processing,2.1785714285714284,ACL2021_fulln.csv,Yes
+Xiaojun Quan,Sun Yat-sen University,ACL,Natural Language Processing,3.2357142857142858,ACL2021_fulln.csv,Yes
+Xiaokui Xiao,National University of Singapore,ACL,Natural Language Processing,0.25,ACL2021_fulln.csv,Yes
+Xiaoming Zhang,Beihang University,ACL,Natural Language Processing,0.4,ACL2021_fulln.csv,Yes
+Xiaoqing Zheng,Fudan University,ACL,Natural Language Processing,0.4,ACL2021_fulln.csv,Yes
+Xiaoying Gao,Victoria University of Wellington,ACL,Natural Language Processing,0.25,ACL2021_fulln.csv,Yes
+Xifeng Yan,Univ. of California - Santa Barbara,ACL,Natural Language Processing,0.6166666666666667,ACL2021_fulln.csv,Yes
+Xinya Du,University of Texas at Dallas,ACL,Natural Language Processing,2.1666666666666665,ACL2021_fulln.csv,Yes
+Xipeng Qiu,Fudan University,ACL,Natural Language Processing,1.1595238095238094,ACL2021_fulln.csv,Yes
+Xu Chen 0017,Renmin University of China,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Xueqi Cheng,Chinese Academy of Sciences,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+Yang Gao 0021,Royal Holloway University of London,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+Yangfeng Ji,University of Virginia,ACL,Natural Language Processing,1.4444444444444444,ACL2021_fulln.csv,Yes
+Yangqiu Song,HKUST,ACL,Natural Language Processing,0.5833333333333333,ACL2021_fulln.csv,Yes
+Yankai Lin,Renmin University of China,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Yaohui Jin,Shanghai Jiao Tong University,ACL,Natural Language Processing,0.45,ACL2021_fulln.csv,Yes
+Yaoliang Yu,University of Waterloo,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Yarin Gal,University of Oxford,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Yejin Choi 0001,Stanford University,ACL,Natural Language Processing,0.5666666666666667,ACL2021_fulln.csv,Yes
+Yezhou Yang,Arizona State University,ACL,Natural Language Processing,0.25,ACL2021_fulln.csv,Yes
+Yizhou Sun,Univ. of California - Los Angeles,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Yoav Goldberg,Bar-Ilan University,ACL,Natural Language Processing,5.2,ACL2021_fulln.csv,Yes
+Yonatan Belinkov,Technion,ACL,Natural Language Processing,7.300000000000001,ACL2021_fulln.csv,Yes
+Yonatan Bisk,Carnegie Mellon University,ACL,Natural Language Processing,3.6,ACL2021_fulln.csv,Yes
+Yongfeng Zhang,Rutgers University,ACL,Natural Language Processing,0.6761904761904762,ACL2021_fulln.csv,Yes
+Yoon Kim,Massachusetts Institute of Technology,ACL,Natural Language Processing,1.3666666666666667,ACL2021_fulln.csv,Yes
+Yoshihiko Gotoh,University of Sheffield,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Yoshua Bengio,University of Montreal,ACL,Natural Language Processing,22.77857142857144,ACL2021_fulln.csv,Yes
+Yossi Adi,Hebrew University of Jerusalem,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Youngsok Kim,Yonsei University,ACL,Natural Language Processing,0.0909090909090909,ACL2021_fulln.csv,Yes
+Yousra Aafer,University of Waterloo,ACL,Natural Language Processing,0.1428571428571428,ACL2021_fulln.csv,Yes
+Yova Kementchedjhieva,MBZUAI,ACL,Natural Language Processing,0.45,ACL2021_fulln.csv,Yes
+Yu Cheng 0001,Chinese University of Hong Kong,ACL,Natural Language Processing,0.4166666666666666,ACL2021_fulln.csv,Yes
+Yu Hong,Soochow University,ACL,Natural Language Processing,0.1666666666666666,ACL2021_fulln.csv,Yes
+Yuanyuan Feng,University of Vermont,ACL,Natural Language Processing,0.1,ACL2021_fulln.csv,Yes
+Yueting Zhuang,Zhejiang University,ACL,Natural Language Processing,0.4206349206349206,ACL2021_fulln.csv,Yes
+Yulia Tsvetkov,University of Washington,ACL,Natural Language Processing,0.3095238095238095,ACL2021_fulln.csv,Yes
+Yun-Nung Chen,National Taiwan University,ACL,Natural Language Processing,2.688095238095238,ACL2021_fulln.csv,Yes
+Yunhui Guo,University of Texas at Dallas,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Yuntian Deng,University of Waterloo,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Yusuke Miyao,University of Tokyo,ACL,Natural Language Processing,0.7,ACL2021_fulln.csv,Yes
+Yuval Pinter,Ben-Gurion University of the Negev,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Yvette Graham,Trinity College Dublin,ACL,Natural Language Processing,0.6095238095238096,ACL2021_fulln.csv,Yes
+Zachary G. Ives,University of Pennsylvania,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Zhangyang Wang,University of Texas at Austin,ACL,Natural Language Processing,0.2678571428571428,ACL2021_fulln.csv,Yes
+Zhaochun Ren,Leiden University,ACL,Natural Language Processing,0.3666666666666667,ACL2021_fulln.csv,Yes
+Zhen Li 0026,CUHK (SZ),ACL,Natural Language Processing,0.4285714285714285,ACL2021_fulln.csv,Yes
+Zhenzhong Lan,Westlake University,ACL,Natural Language Processing,0.7909090909090909,ACL2021_fulln.csv,Yes
+Zhifang Sui,Peking University,ACL,Natural Language Processing,0.3666666666666667,ACL2021_fulln.csv,Yes
+Zhipeng Xie,Fudan University,ACL,Natural Language Processing,0.1428571428571428,ACL2021_fulln.csv,Yes
+Zhirong Yang,NTNU,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Zhitao Ying,Yale University,ACL,Natural Language Processing,0.3333333333333333,ACL2021_fulln.csv,Yes
+Zhiting Hu,Univ. of California - San Diego,ACL,Natural Language Processing,1.125,ACL2021_fulln.csv,Yes
+Zhongyu Wei,Fudan University,ACL,Natural Language Processing,0.1428571428571428,ACL2021_fulln.csv,Yes
+Zhuowen Tu,Univ. of California - San Diego,ACL,Natural Language Processing,0.2,ACL2021_fulln.csv,Yes
+Ziqiang Cao,Soochow University,ACL,Natural Language Processing,1.0,ACL2021_fulln.csv,Yes
+Ziwei Liu 0002,Nanyang Technological University,ACL,Natural Language Processing,0.5,ACL2021_fulln.csv,Yes
+Zizhong Chen,Univ. of California - Riverside,ACL,Natural Language Processing,0.4583333333333333,ACL2021_fulln.csv,Yes
 Aaron C. Courville,University of Montreal,ICCV,Computer Vision & Image Processing,0.8583333333333334,ICCV2021_1012_fulln.csv,Yes
 Abe Davis,Cornell University,ICCV,Computer Vision & Image Processing,0.3333333333333333,ICCV2021_1012_fulln.csv,Yes
 Abhinav Shrivastava,University of Maryland - College Park,ICCV,Computer Vision & Image Processing,0.5833333333333333,ICCV2021_1012_fulln.csv,Yes
@@ -7558,6 +8232,631 @@ Zongming Guo,Peking University,ICCV,Computer Vision & Image Processing,0.1666666
 Zongyuan Ge,Monash University,ICCV,Computer Vision & Image Processing,0.6000000000000001,ICCV2023_1005_fulln.csv,Yes
 Zsolt Kira,Georgia Institute of Technology,ICCV,Computer Vision & Image Processing,0.5333333333333333,ICCV2023_1005_fulln.csv,Yes
 Zuzana Kukelova,Czech Technical University,ICCV,Computer Vision & Image Processing,1.0,ICCV2023_1005_fulln.csv,Yes
+Aapo Hyvärinen,University of Helsinki,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Aaron C. Courville,University of Montreal,ACL,Natural Language Processing,1.1682900432900434,ACL2022_fulln.csv,Yes
+Aaron Steven White,University of Rochester,ACL,Natural Language Processing,1.1,ACL2022_fulln.csv,Yes
+Adam Lopez,University of Edinburgh,ACL,Natural Language Processing,0.2,ACL2022_fulln.csv,Yes
+Aditya G. Parameswaran,Univ. of California - Berkeley,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Ahmed Abdelali,Qatar Computing Research Institute,ACL,Natural Language Processing,0.4,ACL2022_fulln.csv,Yes
+Aishwarya Agrawal,University of Montreal,ACL,Natural Language Processing,0.5714285714285714,ACL2022_fulln.csv,Yes
+Alan Akbik,Humboldt University of Berlin,ACL,Natural Language Processing,3.833333333333333,ACL2022_fulln.csv,Yes
+Alan Ritter,Georgia Institute of Technology,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Alane Suhr,Univ. of California - Berkeley,ACL,Natural Language Processing,0.2,ACL2022_fulln.csv,Yes
+Albert Gatt,University of Malta,ACL,Natural Language Processing,1.0833333333333333,ACL2022_fulln.csv,Yes
+Alberto Barrón-Cedeño,Qatar Computing Research Institute,ACL,Natural Language Processing,0.1111111111111111,ACL2022_fulln.csv,Yes
+Aleksandar Bojchevski,University of Cologne,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Alessandro Moschitti,University of Trento,ACL,Natural Language Processing,0.8666666666666666,ACL2022_fulln.csv,Yes
+Alessandro Roncone,University of Colorado Boulder,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Alexander G. Huth,University of Texas at Austin,ACL,Natural Language Processing,1.0,ACL2022_fulln.csv,Yes
+Alexander Koller,Saarland University,ACL,Natural Language Processing,2.333333333333333,ACL2022_fulln.csv,Yes
+Alexander Mehler,Goethe University Frankfurt,ACL,Natural Language Processing,0.2,ACL2022_fulln.csv,Yes
+Alexandr Andoni,Columbia University,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Alexandra Birch,University of Edinburgh,ACL,Natural Language Processing,4.0,ACL2022_fulln.csv,Yes
+Alham Fikri Aji,MBZUAI,ACL,Natural Language Processing,1.0,ACL2022_fulln.csv,Yes
+Alice Oh,KAIST,ACL,Natural Language Processing,1.0,ACL2022_fulln.csv,Yes
+Alistair Willis,Open University UK,ACL,Natural Language Processing,0.6666666666666666,ACL2022_fulln.csv,Yes
+Alon Orlitsky,Univ. of California - San Diego,ACL,Natural Language Processing,0.2,ACL2022_fulln.csv,Yes
+Alvin Cheung,Univ. of California - Berkeley,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Amir R. Zamir,EPFL,ACL,Natural Language Processing,0.2,ACL2022_fulln.csv,Yes
+Amos Tanay,Weizmann Institute of Science,ACL,Natural Language Processing,0.1,ACL2022_fulln.csv,Yes
+Amy S. Bruckman,Georgia Institute of Technology,ACL,Natural Language Processing,2.0,ACL2022_fulln.csv,Yes
+Ana Marasovic,University of Utah,ACL,Natural Language Processing,0.7095238095238094,ACL2022_fulln.csv,Yes
+Anders Søgaard,University of Copenhagen,ACL,Natural Language Processing,3.433333333333333,ACL2022_fulln.csv,Yes
+Andrew Gordon Wilson,New York University,ACL,Natural Language Processing,1.0,ACL2022_fulln.csv,Yes
+Andrew McCallum,University of Massachusetts Amherst,ACL,Natural Language Processing,2.7666666666666666,ACL2022_fulln.csv,Yes
+André F. T. Martins,Universidade de Lisboa,ACL,Natural Language Processing,0.8500000000000001,ACL2022_fulln.csv,Yes
+Angela Dai,TU Munich,ACL,Natural Language Processing,0.1111111111111111,ACL2022_fulln.csv,Yes
+Anil K. Jain 0001,Michigan State University,ACL,Natural Language Processing,0.1666666666666666,ACL2022_fulln.csv,Yes
+Anil K. Seth,University of Sussex,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Ann A. Copestake,University of Cambridge,ACL,Natural Language Processing,0.2,ACL2022_fulln.csv,Yes
+Anna Korhonen,University of Cambridge,ACL,Natural Language Processing,0.6428571428571428,ACL2022_fulln.csv,Yes
+Anna Rogers,IT University of Copenhagen,ACL,Natural Language Processing,0.6666666666666666,ACL2022_fulln.csv,Yes
+Anna Rohrbach,TU Darmstadt,ACL,Natural Language Processing,0.1666666666666666,ACL2022_fulln.csv,Yes
+Anna Rumshisky,University of Massachusetts Lowell,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Anne Lauscher,University of Hamburg,ACL,Natural Language Processing,1.0833333333333333,ACL2022_fulln.csv,Yes
+Anoop Sarkar,Simon Fraser University,ACL,Natural Language Processing,2.333333333333333,ACL2022_fulln.csv,Yes
+Antoine Bosselut,EPFL,ACL,Natural Language Processing,2.276190476190476,ACL2022_fulln.csv,Yes
+Anton van den Hengel,University of Adelaide,ACL,Natural Language Processing,0.2222222222222222,ACL2022_fulln.csv,Yes
+Antonios Anastasopoulos,George Mason University,ACL,Natural Language Processing,1.1666666666666663,ACL2022_fulln.csv,Yes
+António Branco,Universidade de Lisboa,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Ari Holtzman,University of Chicago,ACL,Natural Language Processing,0.9777777777777776,ACL2022_fulln.csv,Yes
+Ari Rappoport,Hebrew University of Jerusalem,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Arianna Bisazza,University of Groningen,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Arman Cohan,Yale University,ACL,Natural Language Processing,5.238095238095238,ACL2022_fulln.csv,Yes
+Aruna Balasubramanian,Stony Brook University,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Arzoo Katiyar,Pennsylvania State University,ACL,Natural Language Processing,1.2,ACL2022_fulln.csv,Yes
+Asif Ekbal,IIT Patna,ACL,Natural Language Processing,0.45,ACL2022_fulln.csv,Yes
+Asja Fischer,Ruhr-University Bochum,ACL,Natural Language Processing,0.202020202020202,ACL2022_fulln.csv,Yes
+Aykut Erdem,Koç University,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Baishakhi Ray,Columbia University,ACL,Natural Language Processing,1.0,ACL2022_fulln.csv,Yes
+Baobao Chang,Peking University,ACL,Natural Language Processing,0.1428571428571428,ACL2022_fulln.csv,Yes
+Barry Smyth,University College Dublin,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Bashar Alhafni,MBZUAI,ACL,Natural Language Processing,0.6666666666666666,ACL2022_fulln.csv,Yes
+Beihong Jin,Chinese Academy of Sciences,ACL,Natural Language Processing,0.1666666666666666,ACL2022_fulln.csv,Yes
+Benjamin Van Durme,Johns Hopkins University,ACL,Natural Language Processing,2.4,ACL2022_fulln.csv,Yes
+Bernard Ghanem,KAUST,ACL,Natural Language Processing,0.2,ACL2022_fulln.csv,Yes
+Bharath Hariharan,Cornell University,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Bhuwan Dhingra,Duke University,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Björn Ross,University of Edinburgh,ACL,Natural Language Processing,0.1666666666666666,ACL2022_fulln.csv,Yes
+Bonnie J. Dorr,University of Florida,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Brian C. Keegan,University of Colorado Boulder,ACL,Natural Language Processing,0.2,ACL2022_fulln.csv,Yes
+Byron C. Wallace,Northeastern University,ACL,Natural Language Processing,1.2595238095238095,ACL2022_fulln.csv,Yes
+Carl Vondrick,Columbia University,ACL,Natural Language Processing,0.2384615384615384,ACL2022_fulln.csv,Yes
+Carlo Baldassi,Bocconi University,ACL,Natural Language Processing,0.1111111111111111,ACL2022_fulln.csv,Yes
+Carolina Scarton,University of Sheffield,ACL,Natural Language Processing,0.7,ACL2022_fulln.csv,Yes
+Cassidy R. Sugimoto,Indiana University,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Changyou Chen,University at Buffalo,ACL,Natural Language Processing,0.4,ACL2022_fulln.csv,Yes
+Chaowei Xiao,Johns Hopkins University,ACL,Natural Language Processing,0.1666666666666666,ACL2022_fulln.csv,Yes
+Charless C. Fowlkes,Univ. of California - Irvine,ACL,Natural Language Processing,0.125,ACL2022_fulln.csv,Yes
+Chenghua Lin,University of Manchester,ACL,Natural Language Processing,0.3428571428571428,ACL2022_fulln.csv,Yes
+Chengqi Zhang,The Hong Kong Polytechnic University,ACL,Natural Language Processing,0.5333333333333333,ACL2022_fulln.csv,Yes
+Chengqing Zong,Chinese Academy of Sciences,ACL,Natural Language Processing,0.1428571428571428,ACL2022_fulln.csv,Yes
+Chenhao Tan,University of Chicago,ACL,Natural Language Processing,0.6666666666666666,ACL2022_fulln.csv,Yes
+Chenyan Xiong,Carnegie Mellon University,ACL,Natural Language Processing,0.4583333333333333,ACL2022_fulln.csv,Yes
+Chih-Jen Lin,National Taiwan University,ACL,Natural Language Processing,1.0,ACL2022_fulln.csv,Yes
+Chitta Baral,Arizona State University,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Cho-Jui Hsieh,Univ. of California - Los Angeles,ACL,Natural Language Processing,0.5333333333333333,ACL2022_fulln.csv,Yes
+Chongyang Tao,Beihang University,ACL,Natural Language Processing,0.1666666666666666,ACL2022_fulln.csv,Yes
+Chris Biemann,University of Hamburg,ACL,Natural Language Processing,0.3928571428571428,ACL2022_fulln.csv,Yes
+Chris Callison-Burch,University of Pennsylvania,ACL,Natural Language Processing,2.1051282051282048,ACL2022_fulln.csv,Yes
+Chris Clifton,Purdue University,ACL,Natural Language Processing,0.1666666666666666,ACL2022_fulln.csv,Yes
+Christian Bizer,University of Mannheim,ACL,Natural Language Processing,0.1666666666666666,ACL2022_fulln.csv,Yes
+Christina Lioma,University of Copenhagen,ACL,Natural Language Processing,1.8214285714285712,ACL2022_fulln.csv,Yes
+Christof Monz,University of Amsterdam,ACL,Natural Language Processing,1.2270354645354644,ACL2022_fulln.csv,Yes
+Christophe Gravier,Université Jean Monnet,ACL,Natural Language Processing,0.2857142857142857,ACL2022_fulln.csv,Yes
+Christopher D. Manning,Stanford University,ACL,Natural Language Processing,12.892857142857142,ACL2022_fulln.csv,Yes
+Christopher Potts,Stanford University,ACL,Natural Language Processing,5.540726817042605,ACL2022_fulln.csv,Yes
+Christopher Ré,Stanford University,ACL,Natural Language Processing,0.4166666666666666,ACL2022_fulln.csv,Yes
+Chuang Zhang,BUPT,ACL,Natural Language Processing,0.4659090909090909,ACL2022_fulln.csv,Yes
+Claire Cardie,Cornell University,ACL,Natural Language Processing,3.7,ACL2022_fulln.csv,Yes
+Colin Raffel,University of Toronto,ACL,Natural Language Processing,2.025,ACL2022_fulln.csv,Yes
+Dacheng Tao,Nanyang Technological University,ACL,Natural Language Processing,1.25,ACL2022_fulln.csv,Yes
+Dakuo Wang,Northeastern University,ACL,Natural Language Processing,0.3611111111111111,ACL2022_fulln.csv,Yes
+Dan Goldwasser,Purdue University,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Dan Jurafsky,Stanford University,ACL,Natural Language Processing,2.8,ACL2022_fulln.csv,Yes
+Dan Klein 0001,Univ. of California - Berkeley,ACL,Natural Language Processing,0.7333333333333334,ACL2022_fulln.csv,Yes
+Dan Roth,University of Pennsylvania,ACL,Natural Language Processing,4.331318681318681,ACL2022_fulln.csv,Yes
+Dani Yogatama,University of Southern California,ACL,Natural Language Processing,3.1444444444444444,ACL2022_fulln.csv,Yes
+Daniel Beck,University of Melbourne,ACL,Natural Language Processing,0.6666666666666666,ACL2022_fulln.csv,Yes
+Daniel Fried,Carnegie Mellon University,ACL,Natural Language Processing,0.3666666666666667,ACL2022_fulln.csv,Yes
+Daniel Gildea,University of Rochester,ACL,Natural Language Processing,0.2,ACL2022_fulln.csv,Yes
+Daniel Hershcovich,University of Copenhagen,ACL,Natural Language Processing,0.2361111111111111,ACL2022_fulln.csv,Yes
+Daniel Kang,Univ. of Illinois at Urbana-Champaign,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Daniel Khashabi,Johns Hopkins University,ACL,Natural Language Processing,0.6864468864468865,ACL2022_fulln.csv,Yes
+Daniel Ritchie,Brown University,ACL,Natural Language Processing,0.1111111111111111,ACL2022_fulln.csv,Yes
+Daniel Soudry,Technion,ACL,Natural Language Processing,0.2,ACL2022_fulln.csv,Yes
+Danqi Chen 0001,Princeton University,ACL,Natural Language Processing,1.1,ACL2022_fulln.csv,Yes
+Daphna Weinshall,Hebrew University of Jerusalem,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Daphne Ippolito,Carnegie Mellon University,ACL,Natural Language Processing,0.6166666666666667,ACL2022_fulln.csv,Yes
+David Alvarez-Melis,Harvard University,ACL,Natural Language Processing,1.5,ACL2022_fulln.csv,Yes
+David Bamman,Univ. of California - Berkeley,ACL,Natural Language Processing,1.1666666666666663,ACL2022_fulln.csv,Yes
+David Duvenaud,University of Toronto,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+David Lazer,Northeastern University,ACL,Natural Language Processing,0.2,ACL2022_fulln.csv,Yes
+David M. Mimno,Cornell University,ACL,Natural Language Processing,1.0,ACL2022_fulln.csv,Yes
+David Yarowsky,Johns Hopkins University,ACL,Natural Language Processing,0.5344988344988345,ACL2022_fulln.csv,Yes
+Dawn Song,Univ. of California - Berkeley,ACL,Natural Language Processing,1.0333333333333332,ACL2022_fulln.csv,Yes
+Debora Nozza,Bocconi University,ACL,Natural Language Processing,0.2361111111111111,ACL2022_fulln.csv,Yes
+Deepti Ghadiyaram,Boston University,ACL,Natural Language Processing,0.125,ACL2022_fulln.csv,Yes
+Deniz Yuret,Koç University,ACL,Natural Language Processing,0.1666666666666666,ACL2022_fulln.csv,Yes
+Derek F. Wong,University of Macau,ACL,Natural Language Processing,0.3095238095238095,ACL2022_fulln.csv,Yes
+Derek Hoiem,Univ. of Illinois at Urbana-Champaign,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Desmond Elliott,University of Copenhagen,ACL,Natural Language Processing,1.2833333333333332,ACL2022_fulln.csv,Yes
+Dezhong Peng,Sichuan University,ACL,Natural Language Processing,0.1666666666666666,ACL2022_fulln.csv,Yes
+Diana Inkpen,University of Ottawa,ACL,Natural Language Processing,0.3666666666666667,ACL2022_fulln.csv,Yes
+Dietrich Klakow,Saarland University,ACL,Natural Language Processing,0.8666666666666667,ACL2022_fulln.csv,Yes
+Dirk Hovy,Bocconi University,ACL,Natural Language Processing,2.083333333333333,ACL2022_fulln.csv,Yes
+Dit-Yan Yeung,HKUST,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Diyi Yang,Stanford University,ACL,Natural Language Processing,3.366666666666667,ACL2022_fulln.csv,Yes
+Djellel Eddine Difallah,NYU Abu Dhabi,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Dmitry P. Vetrov,HSE University,ACL,Natural Language Processing,0.5833333333333333,ACL2022_fulln.csv,Yes
+Dong Nguyen,Utrecht University,ACL,Natural Language Processing,0.3666666666666667,ACL2022_fulln.csv,Yes
+Dongkuan Xu,North Carolina State University,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Dongwon Lee 0001,Pennsylvania State University,ACL,Natural Language Processing,0.1666666666666666,ACL2022_fulln.csv,Yes
+Doug Downey,Northwestern University,ACL,Natural Language Processing,0.964113181504486,ACL2022_fulln.csv,Yes
+Edwin D. Simpson,University of Bristol,ACL,Natural Language Processing,0.1111111111111111,ACL2022_fulln.csv,Yes
+Ehud Reiter,University of Aberdeen,ACL,Natural Language Processing,0.1666666666666666,ACL2022_fulln.csv,Yes
+Ekaterina Artemova,HSE University,ACL,Natural Language Processing,0.2,ACL2022_fulln.csv,Yes
+Ekaterina Kochmar,MBZUAI,ACL,Natural Language Processing,1.0,ACL2022_fulln.csv,Yes
+Ekaterina Shutova,University of Amsterdam,ACL,Natural Language Processing,0.45,ACL2022_fulln.csv,Yes
+Ekaterina Vylomova,University of Melbourne,ACL,Natural Language Processing,0.1678321678321678,ACL2022_fulln.csv,Yes
+Elena Simperl,King's College London,ACL,Natural Language Processing,0.2857142857142857,ACL2022_fulln.csv,Yes
+Ellie Pavlick,Brown University,ACL,Natural Language Processing,0.5333333333333333,ACL2022_fulln.csv,Yes
+Elliot Creager,University of Waterloo,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Emily Mower,University of Michigan,ACL,Natural Language Processing,0.1111111111111111,ACL2022_fulln.csv,Yes
+Emily Prud'hommeaux,Boston College,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Emine Yilmaz,University College London,ACL,Natural Language Processing,0.2,ACL2022_fulln.csv,Yes
+Emma Brunskill,Stanford University,ACL,Natural Language Processing,0.6,ACL2022_fulln.csv,Yes
+Emmanuel Keuleers,Tilburg University,ACL,Natural Language Processing,0.5833333333333333,ACL2022_fulln.csv,Yes
+Enhong Chen,USTC,ACL,Natural Language Processing,0.6583333333333333,ACL2022_fulln.csv,Yes
+Eran Yahav,Technion,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Eric Nyberg,Carnegie Mellon University,ACL,Natural Language Processing,0.4761904761904761,ACL2022_fulln.csv,Yes
+Eric P. Xing,MBZUAI,ACL,Natural Language Processing,0.2,ACL2022_fulln.csv,Yes
+Erik Cambria,Nanyang Technological University,ACL,Natural Language Processing,0.9333333333333332,ACL2022_fulln.csv,Yes
+Erkut Erdem,Hacettepe University,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Ernest Davis,New York University,ACL,Natural Language Processing,0.6666666666666666,ACL2022_fulln.csv,Yes
+Eunsol Choi,New York University,ACL,Natural Language Processing,1.6678571428571427,ACL2022_fulln.csv,Yes
+Evaggelia Pitoura,University of Ioannina,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Fahim Dalvi,Qatar Computing Research Institute,ACL,Natural Language Processing,0.3,ACL2022_fulln.csv,Yes
+Fausto Giunchiglia,University of Trento,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Fei Wang 0001,Cornell University,ACL,Natural Language Processing,0.1666666666666666,ACL2022_fulln.csv,Yes
+Fernando Alva-Manchego,Cardiff University,ACL,Natural Language Processing,0.7,ACL2022_fulln.csv,Yes
+Florian Matthes,TU Munich,ACL,Natural Language Processing,0.1666666666666666,ACL2022_fulln.csv,Yes
+Florian Tramèr,ETH Zurich,ACL,Natural Language Processing,0.5291666666666667,ACL2022_fulln.csv,Yes
+Foster J. Provost,New York University,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Francis Ferraro,Univ. of Maryland - Baltimore County,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Frank Hutter,University of Freiburg,ACL,Natural Language Processing,1.0,ACL2022_fulln.csv,Yes
+Frank Keller,University of Edinburgh,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Frank Rudzicz,Dalhousie University,ACL,Natural Language Processing,1.0,ACL2022_fulln.csv,Yes
+Frederic Sala,University of Wisconsin - Madison,ACL,Natural Language Processing,0.1666666666666666,ACL2022_fulln.csv,Yes
+Frédérique Laforest,Université Jean Monnet,ACL,Natural Language Processing,0.2857142857142857,ACL2022_fulln.csv,Yes
+Gabriel Stanovsky,Hebrew University of Jerusalem,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Georg Groh,TU Munich,ACL,Natural Language Processing,0.2,ACL2022_fulln.csv,Yes
+Georgia Gkioxari,California Institute of Technology,ACL,Natural Language Processing,0.4166666666666666,ACL2022_fulln.csv,Yes
+Gerard de Melo,Hasso Plattner Institute,ACL,Natural Language Processing,0.0416666666666666,ACL2022_fulln.csv,Yes
+Gertjan van Noord,University of Groningen,ACL,Natural Language Processing,1.0833333333333333,ACL2022_fulln.csv,Yes
+Gholamreza Haffari,Monash University,ACL,Natural Language Processing,1.5333333333333332,ACL2022_fulln.csv,Yes
+Giovanni Da San Martino,University of Padova,ACL,Natural Language Processing,0.1111111111111111,ACL2022_fulln.csv,Yes
+Giuseppe Carenini,University of British Columbia,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Giuseppe Riccardi,University of Trento,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Goran Glavas,University of Würzburg,ACL,Natural Language Processing,0.75,ACL2022_fulln.csv,Yes
+Gosse Bouma,University of Groningen,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Graeme Hirst,University of Toronto,ACL,Natural Language Processing,2.083333333333333,ACL2022_fulln.csv,Yes
+Graham Neubig,Carnegie Mellon University,ACL,Natural Language Processing,3.6833333333333336,ACL2022_fulln.csv,Yes
+Greg Durrett,New York University,ACL,Natural Language Processing,3.333333333333333,ACL2022_fulln.csv,Yes
+Grzegorz Kondrak,University of Alberta,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Guiguang Ding,Tsinghua University,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Gunhee Kim,Seoul National University,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Hal Daumé III,University of Maryland - College Park,ACL,Natural Language Processing,1.7833333333333332,ACL2022_fulln.csv,Yes
+Hamdy Mubarak,Qatar Computing Research Institute,ACL,Natural Language Processing,0.4,ACL2022_fulln.csv,Yes
+Hamed Zamani,University of Massachusetts Amherst,ACL,Natural Language Processing,0.1111111111111111,ACL2022_fulln.csv,Yes
+Hamish Cunningham,University of Sheffield,ACL,Natural Language Processing,0.1428571428571428,ACL2022_fulln.csv,Yes
+Hanan Aldarmaki,MBZUAI,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Hannaneh Hajishirzi,University of Washington,ACL,Natural Language Processing,4.16541514041514,ACL2022_fulln.csv,Yes
+Hans-Peter Kriegel,LMU Munich,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Hanwang Zhang,Nanyang Technological University,ACL,Natural Language Processing,0.7,ACL2022_fulln.csv,Yes
+Haoyue Shi 0001,University of Waterloo,ACL,Natural Language Processing,0.0416666666666666,ACL2022_fulln.csv,Yes
+Hazem M. Hajj,American University of Beirut,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Helen Yannakoudakis,King's College London,ACL,Natural Language Processing,0.5833333333333333,ACL2022_fulln.csv,Yes
+Hendrik Blockeel,KU Leuven,ACL,Natural Language Processing,0.2,ACL2022_fulln.csv,Yes
+Herke van Hoof,University of Amsterdam,ACL,Natural Language Processing,0.4,ACL2022_fulln.csv,Yes
+Hermann Ney,RWTH Aachen University,ACL,Natural Language Processing,1.4909090909090907,ACL2022_fulln.csv,Yes
+Hinrich Schütze,LMU Munich,ACL,Natural Language Processing,1.9166666666666663,ACL2022_fulln.csv,Yes
+Hongdong Li,Australian National University,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Hongteng Xu,Renmin University of China,ACL,Natural Language Processing,0.1428571428571428,ACL2022_fulln.csv,Yes
+Hongxia Yang,The Hong Kong Polytechnic University,ACL,Natural Language Processing,0.1666666666666666,ACL2022_fulln.csv,Yes
+Hongyu Lin,Chinese Academy of Sciences,ACL,Natural Language Processing,0.825,ACL2022_fulln.csv,Yes
+Hongyuan Zha,CUHK (SZ),ACL,Natural Language Processing,0.1428571428571428,ACL2022_fulln.csv,Yes
+Hongzhi Zhang,Harbin Institute of Technology,ACL,Natural Language Processing,0.1666666666666666,ACL2022_fulln.csv,Yes
+Huajun Chen,Zhejiang University,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Hui Liu,Beijing Institute of Technology,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Hung Viet Pham,York University,ACL,Natural Language Processing,0.1666666666666666,ACL2022_fulln.csv,Yes
+Hwee Tou Ng,National University of Singapore,ACL,Natural Language Processing,1.5833333333333333,ACL2022_fulln.csv,Yes
+Ido Dagan,Bar-Ilan University,ACL,Natural Language Processing,3.3928571428571432,ACL2022_fulln.csv,Yes
+Ingmar Weber,Saarland University,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Ioannis Konstas,Heriot-Watt University,ACL,Natural Language Processing,0.8500000000000001,ACL2022_fulln.csv,Yes
+Ion Androutsopoulos,AUEB,ACL,Natural Language Processing,1.65,ACL2022_fulln.csv,Yes
+Irena Koprinska,University of Sydney,ACL,Natural Language Processing,0.4,ACL2022_fulln.csv,Yes
+Irfan A. Essa,Georgia Institute of Technology,ACL,Natural Language Processing,0.1,ACL2022_fulln.csv,Yes
+Irwin King,Chinese University of Hong Kong,ACL,Natural Language Processing,0.8928571428571428,ACL2022_fulln.csv,Yes
+Iryna Gurevych,TU Darmstadt,ACL,Natural Language Processing,5.203968253968254,ACL2022_fulln.csv,Yes
+Isabelle Augenstein,University of Copenhagen,ACL,Natural Language Processing,2.9047619047619047,ACL2022_fulln.csv,Yes
+Ivan Habernal,Ruhr-University Bochum,ACL,Natural Language Processing,1.0,ACL2022_fulln.csv,Yes
+Jackie Chi Kit Cheung,McGill University,ACL,Natural Language Processing,1.65,ACL2022_fulln.csv,Yes
+Jacob Andreas,Massachusetts Institute of Technology,ACL,Natural Language Processing,11.1,ACL2022_fulln.csv,Yes
+Jacob Goldberger,Bar-Ilan University,ACL,Natural Language Processing,0.9166666666666664,ACL2022_fulln.csv,Yes
+Jakob Grue Simonsen,University of Copenhagen,ACL,Natural Language Processing,1.8214285714285712,ACL2022_fulln.csv,Yes
+James H. Martin,University of Colorado Boulder,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+James T. Kwok,HKUST,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+James Thorne,KAIST,ACL,Natural Language Processing,1.425,ACL2022_fulln.csv,Yes
+Jan Chorowski,University of Wroclaw,ACL,Natural Language Processing,0.2,ACL2022_fulln.csv,Yes
+Jan Ramon,CRIStAL,ACL,Natural Language Processing,0.2,ACL2022_fulln.csv,Yes
+Janyce Wiebe,University of Pittsburgh,ACL,Natural Language Processing,0.85,ACL2022_fulln.csv,Yes
+Jason Eisner,Johns Hopkins University,ACL,Natural Language Processing,1.4344988344988343,ACL2022_fulln.csv,Yes
+Jason S. Chang,National Tsing Hua University,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Jay-Yoon Lee,Seoul National University,ACL,Natural Language Processing,0.3666666666666667,ACL2022_fulln.csv,Yes
+Jeffrey Heer,University of Washington,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Jennifer T. Chayes,Univ. of California - Berkeley,ACL,Natural Language Processing,0.2222222222222222,ACL2022_fulln.csv,Yes
+Jens Lehmann 0001,University of Bonn,ACL,Natural Language Processing,0.1666666666666666,ACL2022_fulln.csv,Yes
+Jeremy Blackburn,Binghamton University,ACL,Natural Language Processing,0.2,ACL2022_fulln.csv,Yes
+Jesse Davis,KU Leuven,ACL,Natural Language Processing,1.0,ACL2022_fulln.csv,Yes
+Jian-Yun Nie,University of Montreal,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Jianguo Xiao,Peking University,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Jianxin Liao,BUPT,ACL,Natural Language Processing,1.0,ACL2022_fulln.csv,Yes
+Jiatao Gu,University of Pennsylvania,ACL,Natural Language Processing,0.3,ACL2022_fulln.csv,Yes
+Jiayu Zhou,University of Michigan,ACL,Natural Language Processing,0.1666666666666666,ACL2022_fulln.csv,Yes
+Jimmy Ba,University of Toronto,ACL,Natural Language Processing,1.625,ACL2022_fulln.csv,Yes
+Jimmy Lin,University of Waterloo,ACL,Natural Language Processing,2.582575757575758,ACL2022_fulln.csv,Yes
+JinYeong Bak,Sungkyunkwan University,ACL,Natural Language Processing,1.25,ACL2022_fulln.csv,Yes
+Jinho D. Choi,Emory University,ACL,Natural Language Processing,2.0416666666666665,ACL2022_fulln.csv,Yes
+Jinsong Su,Xiamen University,ACL,Natural Language Processing,0.1428571428571428,ACL2022_fulln.csv,Yes
+Jinxi Zhao,Nanjing University,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Jitendra Malik,Univ. of California - Berkeley,ACL,Natural Language Processing,1.2,ACL2022_fulln.csv,Yes
+John P. Lalor,University of Notre Dame,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+John Vines,University of Edinburgh,ACL,Natural Language Processing,0.1111111111111111,ACL2022_fulln.csv,Yes
+Jonathan Berant,Tel Aviv University,ACL,Natural Language Processing,4.288034188034188,ACL2022_fulln.csv,Yes
+Jonathan K. Kummerfeld,University of Sydney,ACL,Natural Language Processing,0.1428571428571428,ACL2022_fulln.csv,Yes
+Jonathon S. Hare,University of Southampton,ACL,Natural Language Processing,0.2857142857142857,ACL2022_fulln.csv,Yes
+Jordan L. Boyd-Graber,University of Maryland - College Park,ACL,Natural Language Processing,1.383333333333333,ACL2022_fulln.csv,Yes
+Jordi Torres,Polytechnic University of Catalonia,ACL,Natural Language Processing,0.125,ACL2022_fulln.csv,Yes
+José Camacho-Collados,Cardiff University,ACL,Natural Language Processing,2.458333333333333,ACL2022_fulln.csv,Yes
+Joyce Chai,University of Michigan,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+João Ricardo Silva,Universidade de Lisboa,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Juanzi Li,Tsinghua University,ACL,Natural Language Processing,0.6111111111111112,ACL2022_fulln.csv,Yes
+Julia Hockenmaier,Univ. of Illinois at Urbana-Champaign,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Jun-Yan Zhu,Carnegie Mellon University,ACL,Natural Language Processing,0.1666666666666666,ACL2022_fulln.csv,Yes
+Junchi Yan,Shanghai Jiao Tong University,ACL,Natural Language Processing,0.1666666666666666,ACL2022_fulln.csv,Yes
+Junichi Tsujii,University of Manchester,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Junichi Yamagishi,National Institute of Informatics,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Juntao Li,Soochow University,ACL,Natural Language Processing,0.2857142857142857,ACL2022_fulln.csv,Yes
+Junting Chen,CUHK (SZ),ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Kai Shu,Emory University,ACL,Natural Language Processing,0.6000000000000001,ACL2022_fulln.csv,Yes
+Kai-Wei Chang,Univ. of California - Los Angeles,ACL,Natural Language Processing,4.066666666666666,ACL2022_fulln.csv,Yes
+Kaiming He,Massachusetts Institute of Technology,ACL,Natural Language Processing,1.65,ACL2022_fulln.csv,Yes
+Kalina Bontcheva,University of Sheffield,ACL,Natural Language Processing,0.6428571428571428,ACL2022_fulln.csv,Yes
+Kareem Darwish,Qatar Computing Research Institute,ACL,Natural Language Processing,0.4,ACL2022_fulln.csv,Yes
+Karen Livescu,TTI Chicago,ACL,Natural Language Processing,0.3666666666666667,ACL2022_fulln.csv,Yes
+Karthik Narasimhan,Princeton University,ACL,Natural Language Processing,0.1666666666666666,ACL2022_fulln.csv,Yes
+Katharina Kann,University of Colorado Boulder,ACL,Natural Language Processing,1.5213675213675213,ACL2022_fulln.csv,Yes
+Kathleen F. McCoy,University of Delaware,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Kathleen R. McKeown,Columbia University,ACL,Natural Language Processing,1.845238095238095,ACL2022_fulln.csv,Yes
+Kathy McKeown,Columbia University,ACL,Natural Language Processing,0.2,ACL2022_fulln.csv,Yes
+Kehai Chen,Harbin Institute of Technology,ACL,Natural Language Processing,0.1428571428571428,ACL2022_fulln.csv,Yes
+Kejun Zhang,Zhejiang University,ACL,Natural Language Processing,0.5595238095238095,ACL2022_fulln.csv,Yes
+Kentaro Inui,MBZUAI,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Kewei Tu,ShanghaiTech University,ACL,Natural Language Processing,0.2857142857142857,ACL2022_fulln.csv,Yes
+Kianté Brantley,Harvard University,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Kilian Q. Weinberger,Cornell University,ACL,Natural Language Processing,1.5,ACL2022_fulln.csv,Yes
+Kishore Prahallad,IIIT Hyderabad,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Kobbi Nissim,Georgetown University,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Koby Crammer,Technion,ACL,Natural Language Processing,0.1666666666666666,ACL2022_fulln.csv,Yes
+Korin Richmond,University of Edinburgh,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Koushik Sen,Univ. of California - Berkeley,ACL,Natural Language Processing,0.2,ACL2022_fulln.csv,Yes
+Laks V. S. Lakshmanan,University of British Columbia,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Lars Ruthotto,Emory University,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Laurence Rodrigues do Amaral,UFU,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Lawrence Carin,Duke University,ACL,Natural Language Processing,0.5333333333333333,ACL2022_fulln.csv,Yes
+Le Song,MBZUAI,ACL,Natural Language Processing,1.1111111111111112,ACL2022_fulln.csv,Yes
+Leonidas J. Guibas,Stanford University,ACL,Natural Language Processing,0.4,ACL2022_fulln.csv,Yes
+Li Zhang 0039,Drexel University,ACL,Natural Language Processing,0.1428571428571428,ACL2022_fulln.csv,Yes
+Lianhui Qin,Univ. of California - San Diego,ACL,Natural Language Processing,0.1666666666666666,ACL2022_fulln.csv,Yes
+Lifu Huang,Univ. of California - Davis,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Lili Mou,University of Alberta,ACL,Natural Language Processing,0.7,ACL2022_fulln.csv,Yes
+Lillian Lee,Cornell University,ACL,Natural Language Processing,1.7,ACL2022_fulln.csv,Yes
+Ling Feng,Tsinghua University,ACL,Natural Language Processing,0.4761904761904761,ACL2022_fulln.csv,Yes
+Linli Xu,USTC,ACL,Natural Language Processing,0.7,ACL2022_fulln.csv,Yes
+Linyi Yang,SUSTech,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Lisa Bylinina,University of Groningen,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Lluís Màrquez,Qatar Computing Research Institute,ACL,Natural Language Processing,0.5277777777777778,ACL2022_fulln.csv,Yes
+Lora Aroyo,VU Amsterdam,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Lorenzo Baraldi,University of Modena and Reggio Emilia,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Louis-Philippe Morency,Carnegie Mellon University,ACL,Natural Language Processing,1.059523809523809,ACL2022_fulln.csv,Yes
+Lucia Specia,Imperial College London,ACL,Natural Language Processing,3.3196581196581194,ACL2022_fulln.csv,Yes
+Luciana Benotti,Universidad Nacional de Córdoba,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Ludwig Schmidt,University of Washington,ACL,Natural Language Processing,0.125,ACL2022_fulln.csv,Yes
+Luis Espinosa Anke,Cardiff University,ACL,Natural Language Processing,1.125,ACL2022_fulln.csv,Yes
+Luke S. Zettlemoyer,University of Washington,ACL,Natural Language Processing,15.763888888888882,ACL2022_fulln.csv,Yes
+Maarten Sap,Carnegie Mellon University,ACL,Natural Language Processing,2.492857142857143,ACL2022_fulln.csv,Yes
+Maarten de Rijke,University of Amsterdam,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Makarand Tapaswi,IIIT Hyderabad,ACL,Natural Language Processing,0.1666666666666666,ACL2022_fulln.csv,Yes
+Malihe Alikhani,Northeastern University,ACL,Natural Language Processing,0.2,ACL2022_fulln.csv,Yes
+Man Lan,East China Normal University,ACL,Natural Language Processing,0.8666666666666667,ACL2022_fulln.csv,Yes
+Manfred Pinkal,Saarland University,ACL,Natural Language Processing,0.2,ACL2022_fulln.csv,Yes
+Manling Li,Northwestern University,ACL,Natural Language Processing,0.3241758241758241,ACL2022_fulln.csv,Yes
+Manos Papagelis,York University,ACL,Natural Language Processing,2.333333333333333,ACL2022_fulln.csv,Yes
+Marcella Cornia,University of Modena and Reggio Emilia,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Marco Masseroli,Politecnico di Milano,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Marcos Zampieri,George Mason University,ACL,Natural Language Processing,0.1534090909090909,ACL2022_fulln.csv,Yes
+Marcus Rohrbach,TU Darmstadt,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Maria Antoniak,University of Colorado Boulder,ACL,Natural Language Processing,1.0,ACL2022_fulln.csv,Yes
+Maria Liakata,University of Warwick,ACL,Natural Language Processing,0.1666666666666666,ACL2022_fulln.csv,Yes
+Marine Carpuat,University of Maryland - College Park,ACL,Natural Language Processing,1.8333333333333333,ACL2022_fulln.csv,Yes
+Mario Fritz,CISPA Helmholtz Center,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Mario Marchand,Université Laval,ACL,Natural Language Processing,0.2159090909090909,ACL2022_fulln.csv,Yes
+Mark Dredze,Johns Hopkins University,ACL,Natural Language Processing,1.5,ACL2022_fulln.csv,Yes
+Mark Fishel,University of Tartu,ACL,Natural Language Processing,0.6448773448773448,ACL2022_fulln.csv,Yes
+Mark Johnson 0001,Macquarie University,ACL,Natural Language Processing,0.5074404761904762,ACL2022_fulln.csv,Yes
+Mark Steedman,University of Edinburgh,ACL,Natural Language Processing,1.1428571428571428,ACL2022_fulln.csv,Yes
+Mark Yatskar,University of Pennsylvania,ACL,Natural Language Processing,1.1083333333333334,ACL2022_fulln.csv,Yes
+Markus Krötzsch,TU Dresden,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Marten van Schijndel,Cornell University,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Martha Palmer,University of Colorado Boulder,ACL,Natural Language Processing,2.44957264957265,ACL2022_fulln.csv,Yes
+Martin Andrews,University of Oxford,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Martin J. Wainwright,Massachusetts Institute of Technology,ACL,Natural Language Processing,1.0,ACL2022_fulln.csv,Yes
+Martin Jaggi,EPFL,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Martin Potthast,University of Leipzig,ACL,Natural Language Processing,1.2333333333333334,ACL2022_fulln.csv,Yes
+Martin Wattenberg,Harvard University,ACL,Natural Language Processing,0.1666666666666666,ACL2022_fulln.csv,Yes
+Mary Lou Soffa,University of Virginia,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Massimiliano Pontil,University College London,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Massimo Poesio,Queen Mary University of London,ACL,Natural Language Processing,1.9166666666666663,ACL2022_fulln.csv,Yes
+Matt Huenerfauth,Rochester Institute of Technology,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Matthias Hagen,Friedrich Schiller University Jena,ACL,Natural Language Processing,0.7833333333333332,ACL2022_fulln.csv,Yes
+Mausam,IIT Delhi,ACL,Natural Language Processing,3.95,ACL2022_fulln.csv,Yes
+Max Welling,University of Amsterdam,ACL,Natural Language Processing,1.1666666666666663,ACL2022_fulln.csv,Yes
+Md. Shad Akhtar,IIIT Delhi,ACL,Natural Language Processing,0.2,ACL2022_fulln.csv,Yes
+Michael Carbin,Massachusetts Institute of Technology,ACL,Natural Language Processing,1.8333333333333333,ACL2022_fulln.csv,Yes
+Michael Elhadad,Ben-Gurion University of the Negev,ACL,Natural Language Processing,2.333333333333333,ACL2022_fulln.csv,Yes
+Michael I. Jordan,Univ. of California - Berkeley,ACL,Natural Language Processing,1.2,ACL2022_fulln.csv,Yes
+Michael J. Paul,University of Colorado Boulder,ACL,Natural Language Processing,0.2,ACL2022_fulln.csv,Yes
+Michael R. Lyu,Chinese University of Hong Kong,ACL,Natural Language Processing,0.6428571428571428,ACL2022_fulln.csv,Yes
+Michael Wiegand,University of Klagenfurt,ACL,Natural Language Processing,0.8666666666666667,ACL2022_fulln.csv,Yes
+Mihai Surdeanu,University of Arizona,ACL,Natural Language Processing,0.1666666666666666,ACL2022_fulln.csv,Yes
+Milan Straka,Charles University,ACL,Natural Language Processing,0.8333333333333333,ACL2022_fulln.csv,Yes
+Min Zhang 0005,Harbin Institute of Technology,ACL,Natural Language Processing,0.0909090909090909,ACL2022_fulln.csv,Yes
+Min-Yen Kan,National University of Singapore,ACL,Natural Language Processing,0.4166666666666666,ACL2022_fulln.csv,Yes
+Mingli Song,Zhejiang University,ACL,Natural Language Processing,0.2,ACL2022_fulln.csv,Yes
+Mingyan Liu,University of Michigan,ACL,Natural Language Processing,0.1666666666666666,ACL2022_fulln.csv,Yes
+Minhao Cheng,Pennsylvania State University,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Minjoon Seo,KAIST,ACL,Natural Language Processing,0.1111111111111111,ACL2022_fulln.csv,Yes
+Minlie Huang,Tsinghua University,ACL,Natural Language Processing,1.7777777777777777,ACL2022_fulln.csv,Yes
+Mirella Lapata,University of Edinburgh,ACL,Natural Language Processing,10.866666666666667,ACL2022_fulln.csv,Yes
+Mohammad Saleh,Qatar University,ACL,Natural Language Processing,0.5357142857142857,ACL2022_fulln.csv,Yes
+Mohammed J. Zaki,Rensselaer Polytechnic Institute,ACL,Natural Language Processing,0.6666666666666666,ACL2022_fulln.csv,Yes
+Mohan Sridharan,University of Edinburgh,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Mohit Bansal,University of North Carolina,ACL,Natural Language Processing,2.919298245614036,ACL2022_fulln.csv,Yes
+Mohit Iyyer,University of Maryland - College Park,ACL,Natural Language Processing,3.191666666666667,ACL2022_fulln.csv,Yes
+Mona T. Diab,Carnegie Mellon University,ACL,Natural Language Processing,2.0583333333333336,ACL2022_fulln.csv,Yes
+Monojit Choudhury,MBZUAI,ACL,Natural Language Processing,0.2,ACL2022_fulln.csv,Yes
+Munmun De Choudhury,Georgia Institute of Technology,ACL,Natural Language Processing,0.2,ACL2022_fulln.csv,Yes
+Nadir Durrani,Qatar Computing Research Institute,ACL,Natural Language Processing,0.3,ACL2022_fulln.csv,Yes
+Nafise Sadat Moosavi,University of Sheffield,ACL,Natural Language Processing,0.0416666666666666,ACL2022_fulln.csv,Yes
+Najoung Kim,Boston University,ACL,Natural Language Processing,1.0,ACL2022_fulln.csv,Yes
+Naoaki Okazaki,Tokyo Institute of Technology,ACL,Natural Language Processing,0.75,ACL2022_fulln.csv,Yes
+Natalie Parde,University of Illinois at Chicago,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Nazli Goharian,Georgetown University,ACL,Natural Language Processing,0.4285714285714285,ACL2022_fulln.csv,Yes
+Nazli Ikizler-Cinbis,Hacettepe University,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Niko Sünderhauf,Queensland University of Technology,ACL,Natural Language Processing,0.2222222222222222,ACL2022_fulln.csv,Yes
+Nikolaos Aletras,University of Sheffield,ACL,Natural Language Processing,1.5611111111111111,ACL2022_fulln.csv,Yes
+Niranjan Balasubramanian,Stony Brook University,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Nitesh V. Chawla,University of Notre Dame,ACL,Natural Language Processing,0.45,ACL2022_fulln.csv,Yes
+Nizar Habash,NYU Abu Dhabi,ACL,Natural Language Processing,0.9166666666666664,ACL2022_fulln.csv,Yes
+Noah A. Smith,University of Washington,ACL,Natural Language Processing,4.822557997557999,ACL2022_fulln.csv,Yes
+Nojun Kwak,Seoul National University,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Norman M. Sadeh,Carnegie Mellon University,ACL,Natural Language Processing,0.4,ACL2022_fulln.csv,Yes
+Olga Vechtomova,University of Waterloo,ACL,Natural Language Processing,0.7,ACL2022_fulln.csv,Yes
+Omer Levy,Tel Aviv University,ACL,Natural Language Processing,8.516666666666664,ACL2022_fulln.csv,Yes
+Omri Abend,Hebrew University of Jerusalem,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Oren Glickman,Bar-Ilan University,ACL,Natural Language Processing,1.3333333333333333,ACL2022_fulln.csv,Yes
+Pang Wei Koh,University of Washington,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Pascal Frossard,EPFL,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Pascal Germain,Université Laval,ACL,Natural Language Processing,0.2159090909090909,ACL2022_fulln.csv,Yes
+Pascal Poupart,University of Waterloo,ACL,Natural Language Processing,0.75,ACL2022_fulln.csv,Yes
+Pascale Fung,HKUST,ACL,Natural Language Processing,1.3666666666666667,ACL2022_fulln.csv,Yes
+Pasquale Minervini,University of Edinburgh,ACL,Natural Language Processing,0.875,ACL2022_fulln.csv,Yes
+Paul Cook,University of New Brunswick,ACL,Natural Language Processing,0.45,ACL2022_fulln.csv,Yes
+Paul Piwek,Open University UK,ACL,Natural Language Processing,0.6666666666666666,ACL2022_fulln.csv,Yes
+Pawan Goyal,IIT Kharagpur,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Pengjie Ren,Shandong University,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Pengtao Xie,Univ. of California - San Diego,ACL,Natural Language Processing,1.1714285714285717,ACL2022_fulln.csv,Yes
+Pepa Atanasova,University of Copenhagen,ACL,Natural Language Processing,1.6944444444444444,ACL2022_fulln.csv,Yes
+Phil Blunsom,University of Oxford,ACL,Natural Language Processing,1.0595238095238095,ACL2022_fulln.csv,Yes
+Philip S. Yu,University of Illinois at Chicago,ACL,Natural Language Processing,0.3428571428571428,ACL2022_fulln.csv,Yes
+Philipp Koehn,Johns Hopkins University,ACL,Natural Language Processing,2.907877721693512,ACL2022_fulln.csv,Yes
+Philippe Cudré-Mauroux,University of Fribourg,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Phillip Isola,Massachusetts Institute of Technology,ACL,Natural Language Processing,0.1111111111111111,ACL2022_fulln.csv,Yes
+Pieter Abbeel,Univ. of California - Berkeley,ACL,Natural Language Processing,1.3666666666666667,ACL2022_fulln.csv,Yes
+Pietro Liò,University of Cambridge,ACL,Natural Language Processing,0.8333333333333333,ACL2022_fulln.csv,Yes
+Pietro Perona,California Institute of Technology,ACL,Natural Language Processing,0.125,ACL2022_fulln.csv,Yes
+Piotr Indyk,Massachusetts Institute of Technology,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Prakash Panangaden,McGill University,ACL,Natural Language Processing,0.2,ACL2022_fulln.csv,Yes
+Pramod Viswanath,Princeton University,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Preslav Nakov,MBZUAI,ACL,Natural Language Processing,0.6444444444444444,ACL2022_fulln.csv,Yes
+Prithviraj Ammanabrolu,Univ. of California - San Diego,ACL,Natural Language Processing,0.7,ACL2022_fulln.csv,Yes
+Pushpak Bhattacharyya,IIT Bombay,ACL,Natural Language Processing,0.45,ACL2022_fulln.csv,Yes
+Qingyao Ai,Tsinghua University,ACL,Natural Language Processing,0.1111111111111111,ACL2022_fulln.csv,Yes
+R. Stuart Geiger,Univ. of California - San Diego,ACL,Natural Language Processing,0.1428571428571428,ACL2022_fulln.csv,Yes
+Rada Mihalcea,University of Michigan,ACL,Natural Language Processing,0.9833333333333334,ACL2022_fulln.csv,Yes
+Raffaella Bernardi,University of Trento,ACL,Natural Language Processing,0.9166666666666666,ACL2022_fulln.csv,Yes
+Rainer Gemulla,University of Mannheim,ACL,Natural Language Processing,0.65,ACL2022_fulln.csv,Yes
+Rainer Stiefelhagen,Karlsruhe Institute of Technology,ACL,Natural Language Processing,0.1666666666666666,ACL2022_fulln.csv,Yes
+Ran El-Yaniv,Technion,ACL,Natural Language Processing,0.5333333333333333,ACL2022_fulln.csv,Yes
+Raymond J. Mooney,University of Texas at Austin,ACL,Natural Language Processing,0.75,ACL2022_fulln.csv,Yes
+Raymond T. Ng,University of British Columbia,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Regina Barzilay,Massachusetts Institute of Technology,ACL,Natural Language Processing,2.25,ACL2022_fulln.csv,Yes
+Reut Tsarfaty,Bar-Ilan University,ACL,Natural Language Processing,0.4269230769230769,ACL2022_fulln.csv,Yes
+Reza Shokri,National University of Singapore,ACL,Natural Language Processing,0.2,ACL2022_fulln.csv,Yes
+Richard S. Zemel,Columbia University,ACL,Natural Language Processing,0.5833333333333333,ACL2022_fulln.csv,Yes
+Rico Sennrich,University of Zurich,ACL,Natural Language Processing,5.9,ACL2022_fulln.csv,Yes
+Rita Cucchiara,University of Modena and Reggio Emilia,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Riza Batista-Navarro,University of Manchester,ACL,Natural Language Processing,0.8333333333333333,ACL2022_fulln.csv,Yes
+Rob Procter,University of Warwick,ACL,Natural Language Processing,0.1666666666666666,ACL2022_fulln.csv,Yes
+Rob van der Goot,IT University of Copenhagen,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Robert E. Mercer,Western University,ACL,Natural Language Processing,1.0,ACL2022_fulln.csv,Yes
+Roberto Navigli,Sapienza University of Rome,ACL,Natural Language Processing,2.283333333333333,ACL2022_fulln.csv,Yes
+Robin Jia,University of Southern California,ACL,Natural Language Processing,1.1359649122807016,ACL2022_fulln.csv,Yes
+Roger B. Grosse,University of Toronto,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Roger Zimmermann,National University of Singapore,ACL,Natural Language Processing,0.5333333333333333,ACL2022_fulln.csv,Yes
+Roi Reichart,Technion,ACL,Natural Language Processing,0.5833333333333333,ACL2022_fulln.csv,Yes
+Roman Klinger,University of Bamberg,ACL,Natural Language Processing,0.8333333333333333,ACL2022_fulln.csv,Yes
+Roy Ka-Wei Lee,SUTD,ACL,Natural Language Processing,0.3928571428571428,ACL2022_fulln.csv,Yes
+Rui Zhang 0037,Pennsylvania State University,ACL,Natural Language Processing,0.1428571428571428,ACL2022_fulln.csv,Yes
+Ruihai Dong,University College Dublin,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Ryan Cotterell,ETH Zurich,ACL,Natural Language Processing,1.5844988344988342,ACL2022_fulln.csv,Yes
+Saadia Gabriel,Univ. of California - Los Angeles,ACL,Natural Language Processing,1.0333333333333332,ACL2022_fulln.csv,Yes
+Samet Oymak,University of Michigan,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Samuel Carton,University of New Hampshire,ACL,Natural Language Processing,0.6666666666666666,ACL2022_fulln.csv,Yes
+Sandra Kübler,Indiana University,ACL,Natural Language Processing,0.0909090909090909,ACL2022_fulln.csv,Yes
+Sang-goo Lee,Seoul National University,ACL,Natural Language Processing,0.8666666666666667,ACL2022_fulln.csv,Yes
+Sanguthevar Rajasekaran,University of Connecticut,ACL,Natural Language Processing,1.0,ACL2022_fulln.csv,Yes
+Santiago Ontañón,Drexel University,ACL,Natural Language Processing,0.7666666666666667,ACL2022_fulln.csv,Yes
+Sarah Wiegreffe,University of Maryland - College Park,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Se-Young Yun,KAIST,ACL,Natural Language Processing,0.2,ACL2022_fulln.csv,Yes
+Sean Welleck,Carnegie Mellon University,ACL,Natural Language Processing,0.5595238095238095,ACL2022_fulln.csv,Yes
+Sergey Levine,Univ. of California - Berkeley,ACL,Natural Language Processing,1.5333333333333332,ACL2022_fulln.csv,Yes
+Seung-won Hwang,Seoul National University,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Shafiq R. Joty,Nanyang Technological University,ACL,Natural Language Processing,0.125,ACL2022_fulln.csv,Yes
+Shai Ben-David,University of Waterloo,ACL,Natural Language Processing,0.1666666666666666,ACL2022_fulln.csv,Yes
+Shanfeng Zhu,Fudan University,ACL,Natural Language Processing,0.1666666666666666,ACL2022_fulln.csv,Yes
+Shanping Li,Zhejiang University,ACL,Natural Language Processing,0.1666666666666666,ACL2022_fulln.csv,Yes
+Shaogang Gong,Queen Mary University of London,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Sharon Goldwater,University of Edinburgh,ACL,Natural Language Processing,0.7833333333333333,ACL2022_fulln.csv,Yes
+Shashank Srivastava,University of North Carolina,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Shay B. Cohen,University of Edinburgh,ACL,Natural Language Processing,0.8095238095238095,ACL2022_fulln.csv,Yes
+Shay Moran,Technion,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Shie Mannor,Technion,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Shih-Fu Chang,Columbia University,ACL,Natural Language Processing,0.3813186813186813,ACL2022_fulln.csv,Yes
+Shimon Whiteson,University of Oxford,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Shinsuke Mori,Kyoto University,ACL,Natural Language Processing,0.3111111111111111,ACL2022_fulln.csv,Yes
+Shiqing Ma,University of Massachusetts Amherst,ACL,Natural Language Processing,0.2053571428571428,ACL2022_fulln.csv,Yes
+Shivakant Mishra,University of Colorado Boulder,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Shiyu Chang,Univ. of California - Santa Barbara,ACL,Natural Language Processing,0.3611111111111111,ACL2022_fulln.csv,Yes
+Shomir Wilson,Pennsylvania State University,ACL,Natural Language Processing,0.2,ACL2022_fulln.csv,Yes
+Shrikanth Narayanan,University of Southern California,ACL,Natural Language Processing,0.1111111111111111,ACL2022_fulln.csv,Yes
+Shujian Huang,Nanjing University,ACL,Natural Language Processing,0.6166666666666667,ACL2022_fulln.csv,Yes
+Shuly Wintner,University of Haifa,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Shuyan Zhou,Duke University,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Siddhartha Banerjee,Cornell University,ACL,Natural Language Processing,1.0833333333333333,ACL2022_fulln.csv,Yes
+Sidi Lu,College of William and Mary,ACL,Natural Language Processing,0.1428571428571428,ACL2022_fulln.csv,Yes
+Siliang Tang,Zhejiang University,ACL,Natural Language Processing,0.5095238095238095,ACL2022_fulln.csv,Yes
+Simon King,University of Edinburgh,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Simon Lacoste-Julien,University of Montreal,ACL,Natural Language Processing,0.0909090909090909,ACL2022_fulln.csv,Yes
+Simone Paolo Ponzetto,University of Mannheim,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Siqi Sun,Fudan University,ACL,Natural Language Processing,0.5138888888888888,ACL2022_fulln.csv,Yes
+Siva Reddy,McGill University,ACL,Natural Language Processing,1.2095238095238094,ACL2022_fulln.csv,Yes
+Snigdha Chaturvedi,University of North Carolina,ACL,Natural Language Processing,0.5333333333333333,ACL2022_fulln.csv,Yes
+Song-Chun Zhu,Peking University,ACL,Natural Language Processing,0.4,ACL2022_fulln.csv,Yes
+Sophia Ananiadou,University of Manchester,ACL,Natural Language Processing,1.8333333333333333,ACL2022_fulln.csv,Yes
+Soujanya Poria,SUTD,ACL,Natural Language Processing,1.4666666666666668,ACL2022_fulln.csv,Yes
+Soumen Chakrabarti,IIT Bombay,ACL,Natural Language Processing,1.3166666666666664,ACL2022_fulln.csv,Yes
+Stan Szpakowicz,University of Ottawa,ACL,Natural Language Processing,0.1666666666666666,ACL2022_fulln.csv,Yes
+Stefan Langer,LMU Munich,ACL,Natural Language Processing,0.0416666666666666,ACL2022_fulln.csv,Yes
+Stefan Lee,Oregon State University,ACL,Natural Language Processing,0.6,ACL2022_fulln.csv,Yes
+Stephan Günnemann,TU Munich,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Stephen G. Pulman,University of Oxford,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Stephen Gould,Australian National University,ACL,Natural Language Processing,1.6820436507936507,ACL2022_fulln.csv,Yes
+Steven Bedrick,OHSU,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Steven Bethard,University of Arizona,ACL,Natural Language Processing,1.6166666666666665,ACL2022_fulln.csv,Yes
+Steven C. H. Hoi,Singapore Management University,ACL,Natural Language Processing,0.3928571428571428,ACL2022_fulln.csv,Yes
+Stuart M. Shieber,Harvard University,ACL,Natural Language Processing,1.1333333333333333,ACL2022_fulln.csv,Yes
+Su-In Lee,University of Washington,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Subhransu Maji,University of Massachusetts Amherst,ACL,Natural Language Processing,0.125,ACL2022_fulln.csv,Yes
+Sujian Li,Peking University,ACL,Natural Language Processing,0.6607142857142856,ACL2022_fulln.csv,Yes
+Sumit Chopra,New York University,ACL,Natural Language Processing,0.9166666666666666,ACL2022_fulln.csv,Yes
+Sunita Sarawagi,IIT Bombay,ACL,Natural Language Processing,0.65,ACL2022_fulln.csv,Yes
+Suzanne Stevenson,University of Toronto,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Swabha Swayamdipta,University of Southern California,ACL,Natural Language Processing,0.8785714285714286,ACL2022_fulln.csv,Yes
+Sören Auer,University of Hannover,ACL,Natural Language Processing,0.1666666666666666,ACL2022_fulln.csv,Yes
+Takenobu Tokunaga,Tokyo Institute of Technology,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Tal August,Univ. of Illinois at Urbana-Champaign,ACL,Natural Language Processing,0.1666666666666666,ACL2022_fulln.csv,Yes
+Tal Linzen,New York University,ACL,Natural Language Processing,2.0,ACL2022_fulln.csv,Yes
+Tat-Seng Chua,National University of Singapore,ACL,Natural Language Processing,1.7333333333333334,ACL2022_fulln.csv,Yes
+Tatsunori B. Hashimoto,Stanford University,ACL,Natural Language Processing,0.75,ACL2022_fulln.csv,Yes
+Taylor Berg-Kirkpatrick,Univ. of California - San Diego,ACL,Natural Language Processing,1.6666666666666663,ACL2022_fulln.csv,Yes
+Ted Briscoe,MBZUAI,ACL,Natural Language Processing,2.5,ACL2022_fulln.csv,Yes
+Thamar Solorio,MBZUAI,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Thomas Hofmann,ETH Zurich,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Thomas L. Griffiths 0001,Princeton University,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Thomas Lukasiewicz,TU Wien,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Théo Mary,Ecole Normale Superieure de Lyon,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Tiejun Zhao,Harbin Institute of Technology,ACL,Natural Language Processing,1.1428571428571428,ACL2022_fulln.csv,Yes
+Tien N. Nguyen,University of Texas at Dallas,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Tieyun Qian,Wuhan University,ACL,Natural Language Processing,1.0,ACL2022_fulln.csv,Yes
+Tim Finin,Univ. of Maryland - Baltimore County,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Timothy Baldwin,MBZUAI,ACL,Natural Language Processing,0.2,ACL2022_fulln.csv,Yes
+Timothy J. O'Donnell,McGill University,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Timothy M. Hospedales,University of Edinburgh,ACL,Natural Language Processing,1.6666666666666663,ACL2022_fulln.csv,Yes
+Toby Jia-Jun Li,University of Notre Dame,ACL,Natural Language Processing,0.1111111111111111,ACL2022_fulln.csv,Yes
+Tom Hope,Hebrew University of Jerusalem,ACL,Natural Language Processing,0.1666666666666666,ACL2022_fulln.csv,Yes
+Tomer Koren,Tel Aviv University,ACL,Natural Language Processing,0.2,ACL2022_fulln.csv,Yes
+Tommaso Caselli,University of Groningen,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Tommi S. Jaakkola,Massachusetts Institute of Technology,ACL,Natural Language Processing,1.75,ACL2022_fulln.csv,Yes
+Trevor Darrell,Univ. of California - Berkeley,ACL,Natural Language Processing,0.6166666666666667,ACL2022_fulln.csv,Yes
+Tsung-Hui Chang,CUHK (SZ),ACL,Natural Language Processing,0.5833333333333333,ACL2022_fulln.csv,Yes
+Tu Vu,Virginia Tech,ACL,Natural Language Processing,0.2,ACL2022_fulln.csv,Yes
+Tuo Zhao,Georgia Institute of Technology,ACL,Natural Language Processing,0.3666666666666667,ACL2022_fulln.csv,Yes
+Uri Stemmer,Tel Aviv University,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Vagelis Hristidis,Univ. of California - Riverside,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Venkatesh Saligrama,Boston University,ACL,Natural Language Processing,0.2,ACL2022_fulln.csv,Yes
+Vera Demberg,Saarland University,ACL,Natural Language Processing,1.0333333333333332,ACL2022_fulln.csv,Yes
+Vered Shwartz,University of British Columbia,ACL,Natural Language Processing,0.6666666666666666,ACL2022_fulln.csv,Yes
+Verena Rieser,Heriot-Watt University,ACL,Natural Language Processing,1.2,ACL2022_fulln.csv,Yes
+Victor Zhong,University of Waterloo,ACL,Natural Language Processing,0.5833333333333333,ACL2022_fulln.csv,Yes
+Vincent J. Hellendoorn,Carnegie Mellon University,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Vivek Gupta 0001,Arizona State University,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Vivek Srikumar,University of Utah,ACL,Natural Language Processing,0.8333333333333333,ACL2022_fulln.csv,Yes
+Walid Magdy,University of Edinburgh,ACL,Natural Language Processing,1.0,ACL2022_fulln.csv,Yes
+Wanxiang Che,Harbin Institute of Technology,ACL,Natural Language Processing,1.892099567099567,ACL2022_fulln.csv,Yes
+Wayne Xin Zhao,Renmin University of China,ACL,Natural Language Processing,0.125,ACL2022_fulln.csv,Yes
+Wee Sun Lee,National University of Singapore,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Weiran Xu,BUPT,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Wenhu Chen,University of Waterloo,ACL,Natural Language Processing,0.7666666666666666,ACL2022_fulln.csv,Yes
+Wenliang Chen,Soochow University,ACL,Natural Language Processing,0.5333333333333333,ACL2022_fulln.csv,Yes
+Wenqiang Lei,Sichuan University,ACL,Natural Language Processing,0.1666666666666666,ACL2022_fulln.csv,Yes
+Willem H. Zuidema,University of Amsterdam,ACL,Natural Language Processing,1.8333333333333333,ACL2022_fulln.csv,Yes
+William Waites,University of Strathclyde,ACL,Natural Language Processing,0.0526315789473684,ACL2022_fulln.csv,Yes
+William Yang Wang,Univ. of California - Santa Barbara,ACL,Natural Language Processing,1.4,ACL2022_fulln.csv,Yes
+Xiangyu Duan,Soochow University,ACL,Natural Language Processing,0.125,ACL2022_fulln.csv,Yes
+Xianpei Han,Chinese Academy of Sciences,ACL,Natural Language Processing,0.875,ACL2022_fulln.csv,Yes
+Xiao-Ming Wu 0003,The Hong Kong Polytechnic University,ACL,Natural Language Processing,0.1428571428571428,ACL2022_fulln.csv,Yes
+Xiaodan Liang,Sun Yat-sen University,ACL,Natural Language Processing,1.3666666666666667,ACL2022_fulln.csv,Yes
+Xiaodan Zhu,Queen’s University,ACL,Natural Language Processing,1.6999999999999995,ACL2022_fulln.csv,Yes
+Xiaodan Zhu 0001,Queen’s University,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Xiaojun Quan,Sun Yat-sen University,ACL,Natural Language Processing,3.2,ACL2022_fulln.csv,Yes
+Xiatian Zhu,University of Surrey,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Xifeng Yan,Univ. of California - Santa Barbara,ACL,Natural Language Processing,0.2,ACL2022_fulln.csv,Yes
+Xipeng Qiu,Fudan University,ACL,Natural Language Processing,2.2928571428571427,ACL2022_fulln.csv,Yes
+Xiuying Chen,MBZUAI,ACL,Natural Language Processing,0.5095238095238095,ACL2022_fulln.csv,Yes
+Xuanhua Shi,HUST,ACL,Natural Language Processing,0.2,ACL2022_fulln.csv,Yes
+Xuebo Liu 0002,Harbin Institute of Technology,ACL,Natural Language Processing,0.3095238095238095,ACL2022_fulln.csv,Yes
+Xueqi Cheng,Chinese Academy of Sciences,ACL,Natural Language Processing,0.7456349206349207,ACL2022_fulln.csv,Yes
+Yang Gao 0021,Royal Holloway University of London,ACL,Natural Language Processing,0.1666666666666666,ACL2022_fulln.csv,Yes
+Yang Liu 0005,Tsinghua University,ACL,Natural Language Processing,0.3666666666666667,ACL2022_fulln.csv,Yes
+Yangming Li,Rochester Institute of Technology,ACL,Natural Language Processing,0.1497326203208556,ACL2022_fulln.csv,Yes
+Yanjun Qi,University of Virginia,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Yankai Lin,Renmin University of China,ACL,Natural Language Processing,0.7928571428571429,ACL2022_fulln.csv,Yes
+Yanmin Qian,Shanghai Jiao Tong University,ACL,Natural Language Processing,0.0588235294117647,ACL2022_fulln.csv,Yes
+Yaoliang Yu,University of Waterloo,ACL,Natural Language Processing,0.2,ACL2022_fulln.csv,Yes
+Yarin Gal,University of Oxford,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Yejin Choi 0001,Stanford University,ACL,Natural Language Processing,0.3428571428571428,ACL2022_fulln.csv,Yes
+Yiming Yang,Carnegie Mellon University,ACL,Natural Language Processing,1.4023809523809525,ACL2022_fulln.csv,Yes
+Yishay Mansour,Tel Aviv University,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Yizhou Sun,Univ. of California - Los Angeles,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Yoav Goldberg,Bar-Ilan University,ACL,Natural Language Processing,6.641666666666666,ACL2022_fulln.csv,Yes
+Yonatan Belinkov,Technion,ACL,Natural Language Processing,4.6000000000000005,ACL2022_fulln.csv,Yes
+Yonatan Bisk,Carnegie Mellon University,ACL,Natural Language Processing,2.325,ACL2022_fulln.csv,Yes
+Yongfeng Zhang,Rutgers University,ACL,Natural Language Processing,0.8095238095238094,ACL2022_fulln.csv,Yes
+Yoon Kim,Massachusetts Institute of Technology,ACL,Natural Language Processing,1.45,ACL2022_fulln.csv,Yes
+Yoshua Bengio,University of Montreal,ACL,Natural Language Processing,13.4754329004329,ACL2022_fulln.csv,Yes
+Yu Cheng 0001,Chinese University of Hong Kong,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Yue Zhang 0004,Westlake University,ACL,Natural Language Processing,0.2083333333333333,ACL2022_fulln.csv,Yes
+Yueting Zhuang,Zhejiang University,ACL,Natural Language Processing,0.3095238095238095,ACL2022_fulln.csv,Yes
+Yulia Tsvetkov,University of Washington,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Yun-Nung Chen,National Taiwan University,ACL,Natural Language Processing,2.142857142857143,ACL2022_fulln.csv,Yes
+Yunhai Tong,Peking University,ACL,Natural Language Processing,0.1428571428571428,ACL2022_fulln.csv,Yes
+Yusuke Miyao,University of Tokyo,ACL,Natural Language Processing,0.1111111111111111,ACL2022_fulln.csv,Yes
+Yuval Pinter,Ben-Gurion University of the Negev,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Yvette Graham,Trinity College Dublin,ACL,Natural Language Processing,0.7670995670995671,ACL2022_fulln.csv,Yes
+Zachary G. Ives,University of Pennsylvania,ACL,Natural Language Processing,0.1666666666666666,ACL2022_fulln.csv,Yes
+Zeynep Akata,TU Munich,ACL,Natural Language Processing,0.25,ACL2022_fulln.csv,Yes
+Zhangyang Wang,University of Texas at Austin,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Zhaochun Ren,Leiden University,ACL,Natural Language Processing,0.1666666666666666,ACL2022_fulln.csv,Yes
+Zhe Zhao 0001,Univ. of California - Davis,ACL,Natural Language Processing,0.1428571428571428,ACL2022_fulln.csv,Yes
+Zhenzhong Lan,Westlake University,ACL,Natural Language Processing,0.3333333333333333,ACL2022_fulln.csv,Yes
+Zhiting Hu,Univ. of California - San Diego,ACL,Natural Language Processing,0.5333333333333333,ACL2022_fulln.csv,Yes
+Zhiyi Ma,Peking University,ACL,Natural Language Processing,0.1526315789473684,ACL2022_fulln.csv,Yes
+Zhongyu Wei,Fudan University,ACL,Natural Language Processing,0.2361111111111111,ACL2022_fulln.csv,Yes
+Zhouhan Lin,Shanghai Jiao Tong University,ACL,Natural Language Processing,0.5,ACL2022_fulln.csv,Yes
+Ziqiang Cao,Soochow University,ACL,Natural Language Processing,1.0178571428571428,ACL2022_fulln.csv,Yes
+Çaglar Gülçehre,EPFL,ACL,Natural Language Processing,0.1428571428571428,ACL2022_fulln.csv,Yes
 Aapo Hyvärinen,University of Helsinki,NEURIPS,Machine Learning,1.75,NeurIPS2023_fulln.csv,Yes
 Aaron C. Courville,University of Montreal,NEURIPS,Machine Learning,0.4,NeurIPS2023_fulln.csv,Yes
 Aaron D. Ames,California Institute of Technology,NEURIPS,Machine Learning,0.4166666666666666,NeurIPS2023_fulln.csv,Yes
@@ -9333,6 +10632,7 @@ Daniel M. Roy 0001,University of Toronto,CVPR,Computer Vision & Image Processing
 Daniel Ritchie,Brown University,CVPR,Computer Vision & Image Processing,0.2,CVPR2024_621_fulln.csv,Yes
 Daniel Soudry,Technion,CVPR,Computer Vision & Image Processing,0.2,CVPR2024_621_fulln.csv,Yes
 Daniela Rus,Massachusetts Institute of Technology,CVPR,Computer Vision & Image Processing,0.25,CVPR2024_621_fulln.csv,Yes
+Danna Gurari,University of Colorado Boulder,CVPR,Computer Vision & Image Processing,0.5,CVPR2024_621_fulln.csv,Yes
 Darren Cosker,University of Bath,CVPR,Computer Vision & Image Processing,0.7,CVPR2024_621_fulln.csv,Yes
 David A. Forsyth,Univ. of Illinois at Urbana-Champaign,CVPR,Computer Vision & Image Processing,0.25,CVPR2024_621_fulln.csv,Yes
 David A. Wagner 0001,Univ. of California - Berkeley,CVPR,Computer Vision & Image Processing,0.5,CVPR2024_621_fulln.csv,Yes
@@ -11778,6 +13078,7 @@ Daniel Soudry,Technion,CVPR,Computer Vision & Image Processing,0.583333333333333
 Daniel Weiskopf,University of Stuttgart,CVPR,Computer Vision & Image Processing,0.3333333333333333,CVPR2024_620_fulln.csv,Yes
 Daniela Rus,Massachusetts Institute of Technology,CVPR,Computer Vision & Image Processing,1.0,CVPR2024_620_fulln.csv,Yes
 Danish Pruthi,IISc Bangalore,CVPR,Computer Vision & Image Processing,0.3333333333333333,CVPR2024_620_fulln.csv,Yes
+Danna Gurari,University of Colorado Boulder,CVPR,Computer Vision & Image Processing,0.5,CVPR2024_620_fulln.csv,Yes
 Daphne Ippolito,Carnegie Mellon University,CVPR,Computer Vision & Image Processing,0.202020202020202,CVPR2024_620_fulln.csv,Yes
 David Alvarez-Melis,Harvard University,CVPR,Computer Vision & Image Processing,0.5,CVPR2024_620_fulln.csv,Yes
 David Barber,University College London,CVPR,Computer Vision & Image Processing,0.3333333333333333,CVPR2024_620_fulln.csv,Yes
@@ -12953,6 +14254,7 @@ Daniel S. Brown,University of Utah,NEURIPS,Machine Learning,0.25,NeurIPS2022_ful
 Daniel Soudry,Technion,NEURIPS,Machine Learning,3.2666666666666666,NeurIPS2022_fulln.csv,Yes
 Daniel de Oliveira 0001,UFF,NEURIPS,Machine Learning,0.1666666666666666,NeurIPS2022_fulln.csv,Yes
 Daniela Rus,Massachusetts Institute of Technology,NEURIPS,Machine Learning,1.042857142857143,NeurIPS2022_fulln.csv,Yes
+Danna Gurari,University of Colorado Boulder,NEURIPS,Machine Learning,0.3333333333333333,NeurIPS2022_fulln.csv,Yes
 Danny Raz,Technion,NEURIPS,Machine Learning,0.3333333333333333,NeurIPS2022_fulln.csv,Yes
 Danyang Zhuo,Duke University,NEURIPS,Machine Learning,0.1428571428571428,NeurIPS2022_fulln.csv,Yes
 Dapeng Oliver Wu,City University of Hong Kong,NEURIPS,Machine Learning,0.1428571428571428,NeurIPS2022_fulln.csv,Yes
@@ -15043,6 +16345,7 @@ Daniel Rueckert,Imperial College London,CVPR,Computer Vision & Image Processing,
 Daniel Soudry,Technion,CVPR,Computer Vision & Image Processing,0.25,CVPR2023_621_fulln.csv,Yes
 Daniela Rus,Massachusetts Institute of Technology,CVPR,Computer Vision & Image Processing,0.1428571428571428,CVPR2023_621_fulln.csv,Yes
 Danish Pruthi,IISc Bangalore,CVPR,Computer Vision & Image Processing,0.2,CVPR2023_621_fulln.csv,Yes
+Danna Gurari,University of Colorado Boulder,CVPR,Computer Vision & Image Processing,0.4583333333333333,CVPR2023_621_fulln.csv,Yes
 Darren Cosker,University of Bath,CVPR,Computer Vision & Image Processing,0.2,CVPR2023_621_fulln.csv,Yes
 David Alvarez-Melis,Harvard University,CVPR,Computer Vision & Image Processing,1.0,CVPR2023_621_fulln.csv,Yes
 David Bau,Northeastern University,CVPR,Computer Vision & Image Processing,1.2785714285714285,CVPR2023_621_fulln.csv,Yes
@@ -18740,7 +20043,7 @@ Henry Gouk,University of Edinburgh,NEURIPS,Machine Learning,0.25,NeurIPS2020_ful
 Herbert Edelsbrunner,IST Austria,NEURIPS,Machine Learning,0.8333333333333333,NeurIPS2020_fulln.csv,Yes
 Hiroshi Nakagawa,University of Tokyo,NEURIPS,Machine Learning,0.3333333333333333,NeurIPS2020_fulln.csv,Yes
 Holden Lee,Johns Hopkins University,NEURIPS,Machine Learning,0.125,NeurIPS2020_fulln.csv,Yes
-Holger Dell,Goethe University Frankfurt,NEURIPS,Machine Learning,0.25,NeurIPS2020_fulln.csv,Yes
+Holger Dell,IT University of Copenhagen,NEURIPS,Machine Learning,0.25,NeurIPS2020_fulln.csv,Yes
 Hong Cheng 0001,Chinese University of Hong Kong,NEURIPS,Machine Learning,0.3333333333333333,NeurIPS2020_fulln.csv,Yes
 Hongbin Pei,Xi'an Jiaotong University,NEURIPS,Machine Learning,0.25,NeurIPS2020_fulln.csv,Yes
 Hongbin Zha,Peking University,NEURIPS,Machine Learning,0.3428571428571428,NeurIPS2020_fulln.csv,Yes
@@ -20914,6 +22217,7 @@ Marek Grzes,University of Kent,NEURIPS,Machine Learning,0.3333333333333333,NeurI
 Marek Petrik,University of New Hampshire,NEURIPS,Machine Learning,0.3333333333333333,NeurIPS2021_fulln.csv,Yes
 Margarita Osadchy,University of Haifa,NEURIPS,Machine Learning,0.2,NeurIPS2021_fulln.csv,Yes
 Margrit Gelautz,TU Wien,NEURIPS,Machine Learning,0.2,NeurIPS2021_fulln.csv,Yes
+Maria Antoniak,University of Colorado Boulder,NEURIPS,Machine Learning,0.5,NeurIPS2021_fulln.csv,Yes
 Maria-Florina Balcan,Carnegie Mellon University,NEURIPS,Machine Learning,6.25,NeurIPS2021_fulln.csv,Yes
 Mario Fritz,CISPA Helmholtz Center,NEURIPS,Machine Learning,1.2499999999999998,NeurIPS2021_fulln.csv,Yes
 Mario Marchand,Université Laval,NEURIPS,Machine Learning,0.75,NeurIPS2021_fulln.csv,Yes
@@ -24632,6 +25936,309 @@ Zhitao Ying,Yale University,ICML,Machine Learning,0.3333333333333333,ICML2023_fu
 Zhiyuan Li 0005,TTI Chicago,ICML,Machine Learning,0.3666666666666667,ICML2023_fulln.csv,Yes
 Zhun Deng,University of North Carolina,ICML,Machine Learning,0.1428571428571428,ICML2023_fulln.csv,Yes
 Çaglar Gülçehre,EPFL,ICML,Machine Learning,0.4166666666666666,ICML2023_fulln.csv,Yes
+Aaron C. Courville,University of Montreal,ICML,Machine Learning,0.5717948717948718,ICML2022_fulln.csv,Yes
+Abhinav Verma 0001,Pennsylvania State University,ICML,Machine Learning,0.25,ICML2022_fulln.csv,Yes
+Abhishek Gupta 0004,University of Washington,ICML,Machine Learning,0.3,ICML2022_fulln.csv,Yes
+Achim J. Lilienthal,TU Munich,ICML,Machine Learning,0.1666666666666666,ICML2022_fulln.csv,Yes
+Adriano L. I. Oliveira,UFPE,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Ahmed El Alaoui,Cornell University,ICML,Machine Learning,0.5,ICML2022_fulln.csv,Yes
+Alexander Rakhlin,Massachusetts Institute of Technology,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Alexandr Andoni,Columbia University,ICML,Machine Learning,0.1428571428571428,ICML2022_fulln.csv,Yes
+Alexandros G. Dimakis,University of Texas at Austin,ICML,Machine Learning,0.5,ICML2022_fulln.csv,Yes
+Alexei A. Efros,Univ. of California - Berkeley,ICML,Machine Learning,0.1666666666666666,ICML2022_fulln.csv,Yes
+Alham Fikri Aji,MBZUAI,ICML,Machine Learning,1.5,ICML2022_fulln.csv,Yes
+Alán Aspuru-Guzik,University of Toronto,ICML,Machine Learning,0.1428571428571428,ICML2022_fulln.csv,Yes
+Ameet Talwalkar,Carnegie Mellon University,ICML,Machine Learning,0.5833333333333333,ICML2022_fulln.csv,Yes
+Amin Karbasi,Yale University,ICML,Machine Learning,0.25,ICML2022_fulln.csv,Yes
+Amit Daniely,Hebrew University of Jerusalem,ICML,Machine Learning,1.0,ICML2022_fulln.csv,Yes
+Amos J. Storkey,University of Edinburgh,ICML,Machine Learning,0.75,ICML2022_fulln.csv,Yes
+Ana Marasovic,University of Utah,ICML,Machine Learning,0.1428571428571428,ICML2022_fulln.csv,Yes
+Anand Louis,IISc Bangalore,ICML,Machine Learning,0.25,ICML2022_fulln.csv,Yes
+Andreas Bulling,University of Stuttgart,ICML,Machine Learning,0.25,ICML2022_fulln.csv,Yes
+Andrew B. Kahng,Univ. of California - San Diego,ICML,Machine Learning,0.2,ICML2022_fulln.csv,Yes
+Andrew J. Davison,Imperial College London,ICML,Machine Learning,0.125,ICML2022_fulln.csv,Yes
+Anil K. Jain 0001,Michigan State University,ICML,Machine Learning,1.0,ICML2022_fulln.csv,Yes
+Anna V. Kononova,Leiden University,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Anshumali Shrivastava,Rice University,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Arman Cohan,Yale University,ICML,Machine Learning,1.0,ICML2022_fulln.csv,Yes
+Arnab Bhattacharyya 0001,National University of Singapore,ICML,Machine Learning,0.2,ICML2022_fulln.csv,Yes
+Asja Fischer,Ruhr-University Bochum,ICML,Machine Learning,0.0384615384615384,ICML2022_fulln.csv,Yes
+Avishek Ghosh,IIT Bombay,ICML,Machine Learning,0.25,ICML2022_fulln.csv,Yes
+Avrim Blum,TTI Chicago,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Balaraman Ravindran,IIT Madras,ICML,Machine Learning,0.1666666666666666,ICML2022_fulln.csv,Yes
+Benjamin Recht,Univ. of California - Berkeley,ICML,Machine Learning,0.5294117647058824,ICML2022_fulln.csv,Yes
+Bhaskar Krishnamachari,University of Southern California,ICML,Machine Learning,0.5,ICML2022_fulln.csv,Yes
+Bjoern M. Eskofier,University of Erlangen–Nuremberg,ICML,Machine Learning,0.0454545454545454,ICML2022_fulln.csv,Yes
+Bo Han 0003,Hong Kong Baptist University,ICML,Machine Learning,0.2857142857142857,ICML2022_fulln.csv,Yes
+Carlo Baldassi,Bocconi University,ICML,Machine Learning,0.1428571428571428,ICML2022_fulln.csv,Yes
+Carlo Lucibello,Bocconi University,ICML,Machine Learning,0.1428571428571428,ICML2022_fulln.csv,Yes
+Cas Cremers,CISPA Helmholtz Center,ICML,Machine Learning,0.225,ICML2022_fulln.csv,Yes
+Ce Zhang 0001,University of Chicago,ICML,Machine Learning,0.2,ICML2022_fulln.csv,Yes
+Changliu Liu,Carnegie Mellon University,ICML,Machine Learning,0.6666666666666666,ICML2022_fulln.csv,Yes
+Charless C. Fowlkes,Univ. of California - Irvine,ICML,Machine Learning,0.125,ICML2022_fulln.csv,Yes
+Chris Donahue,Carnegie Mellon University,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Christian Bizer,University of Mannheim,ICML,Machine Learning,0.1666666666666666,ICML2022_fulln.csv,Yes
+Christopher Amato,Northeastern University,ICML,Machine Learning,0.5,ICML2022_fulln.csv,Yes
+Christopher D. Manning,Stanford University,ICML,Machine Learning,0.25,ICML2022_fulln.csv,Yes
+Claire J. Tomlin,Univ. of California - Berkeley,ICML,Machine Learning,0.2,ICML2022_fulln.csv,Yes
+Clara I. Sánchez,Radboud University,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Claudia Linnhoff-Popien,LMU Munich,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Cleber Zanchettin,UFPE,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Clément L. Canonne,University of Sydney,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Colin Raffel,University of Toronto,ICML,Machine Learning,0.1,ICML2022_fulln.csv,Yes
+Constantinos Daskalakis,Massachusetts Institute of Technology,ICML,Machine Learning,0.5833333333333333,ICML2022_fulln.csv,Yes
+Csaba Szepesvári,University of Alberta,ICML,Machine Learning,0.2,ICML2022_fulln.csv,Yes
+Cynthia Dwork,Harvard University,ICML,Machine Learning,0.25,ICML2022_fulln.csv,Yes
+Cyrus Shahabi,University of Southern California,ICML,Machine Learning,0.5,ICML2022_fulln.csv,Yes
+Dan Klein 0001,Univ. of California - Berkeley,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Dan Stowell,Queen Mary University of London,ICML,Machine Learning,0.25,ICML2022_fulln.csv,Yes
+Daniel J. Hsu,Columbia University,ICML,Machine Learning,0.6666666666666666,ICML2022_fulln.csv,Yes
+Daniel M. Roy 0001,University of Toronto,ICML,Machine Learning,0.4166666666666666,ICML2022_fulln.csv,Yes
+Daniel S. Brown,University of Utah,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Daniel Soudry,Technion,ICML,Machine Learning,0.2,ICML2022_fulln.csv,Yes
+David A. Basin,ETH Zurich,ICML,Machine Learning,0.225,ICML2022_fulln.csv,Yes
+David A. Wagner 0001,Univ. of California - Berkeley,ICML,Machine Learning,0.7435897435897436,ICML2022_fulln.csv,Yes
+David Alvarez-Melis,Harvard University,ICML,Machine Learning,1.0,ICML2022_fulln.csv,Yes
+David Duvenaud,University of Toronto,ICML,Machine Learning,0.3928571428571428,ICML2022_fulln.csv,Yes
+David J. Fleet,University of Toronto,ICML,Machine Learning,0.25,ICML2022_fulln.csv,Yes
+David M. Blei,Columbia University,ICML,Machine Learning,0.032258064516129,ICML2022_fulln.csv,Yes
+David P. Woodruff,Carnegie Mellon University,ICML,Machine Learning,0.3928571428571428,ICML2022_fulln.csv,Yes
+Dawn Song,Univ. of California - Berkeley,ICML,Machine Learning,0.2,ICML2022_fulln.csv,Yes
+Deepak Pathak,Carnegie Mellon University,ICML,Machine Learning,0.1666666666666666,ICML2022_fulln.csv,Yes
+Dominik L. Michels,KAUST,ICML,Machine Learning,1.3333333333333333,ICML2022_fulln.csv,Yes
+Don Towsley,University of Massachusetts Amherst,ICML,Machine Learning,0.5,ICML2022_fulln.csv,Yes
+Doug Downey,Northwestern University,ICML,Machine Learning,0.1428571428571428,ICML2022_fulln.csv,Yes
+Elad Hazan,Princeton University,ICML,Machine Learning,0.5,ICML2022_fulln.csv,Yes
+Elias Bareinboim,Columbia University,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Emmanuel Abbe,EPFL,ICML,Machine Learning,0.5,ICML2022_fulln.csv,Yes
+Eric P. Xing,MBZUAI,ICML,Machine Learning,0.1666666666666666,ICML2022_fulln.csv,Yes
+Eugene Belilovsky,Concordia University,ICML,Machine Learning,0.0714285714285714,ICML2022_fulln.csv,Yes
+Eylon Yogev,Bar-Ilan University,ICML,Machine Learning,0.25,ICML2022_fulln.csv,Yes
+Fahad Panolan,IIT Hyderabad,ICML,Machine Learning,0.25,ICML2022_fulln.csv,Yes
+Fedor V. Fomin,University of Bergen,ICML,Machine Learning,0.25,ICML2022_fulln.csv,Yes
+Fernanda B. Viégas,Harvard University,ICML,Machine Learning,0.0833333333333333,ICML2022_fulln.csv,Yes
+Fernando A. Kuipers,TU Delft,ICML,Machine Learning,0.0714285714285714,ICML2022_fulln.csv,Yes
+Francis Bach,Ecole Normale Superieure,ICML,Machine Learning,0.5,ICML2022_fulln.csv,Yes
+Francis R. Bach,Ecole Normale Superieure,ICML,Machine Learning,1.1666666666666663,ICML2022_fulln.csv,Yes
+Frans A. Oliehoek,TU Delft,ICML,Machine Learning,0.5,ICML2022_fulln.csv,Yes
+Frederick Eberhardt,California Institute of Technology,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Gabriel Ghinita,University of Massachusetts Boston,ICML,Machine Learning,0.5,ICML2022_fulln.csv,Yes
+Gaurav S. Sukhatme,University of Southern California,ICML,Machine Learning,0.5,ICML2022_fulln.csv,Yes
+Gautam Kamath 0001,New York University,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Geoffrey J. Gordon,Carnegie Mellon University,ICML,Machine Learning,0.125,ICML2022_fulln.csv,Yes
+George Iosifidis,TU Delft,ICML,Machine Learning,0.0714285714285714,ICML2022_fulln.csv,Yes
+Glen Berseth,University of Montreal,ICML,Machine Learning,0.2,ICML2022_fulln.csv,Yes
+Graham Cormode,University of Warwick,ICML,Machine Learning,0.5,ICML2022_fulln.csv,Yes
+Graham W. Taylor,University of Guelph,ICML,Machine Learning,0.5,ICML2022_fulln.csv,Yes
+Grant Van Horn,University of Massachusetts Amherst,ICML,Machine Learning,0.6666666666666666,ICML2022_fulln.csv,Yes
+Guy N. Rothblum,Weizmann Institute of Science,ICML,Machine Learning,0.25,ICML2022_fulln.csv,Yes
+Haipeng Luo,University of Southern California,ICML,Machine Learning,0.25,ICML2022_fulln.csv,Yes
+Han Zhao 0002,Univ. of Illinois at Urbana-Champaign,ICML,Machine Learning,0.125,ICML2022_fulln.csv,Yes
+Hans Gellersen,Lancaster University,ICML,Machine Learning,0.25,ICML2022_fulln.csv,Yes
+Hans-Peter Kriegel,LMU Munich,ICML,Machine Learning,0.75,ICML2022_fulln.csv,Yes
+Hao Peng 0001,Beihang University,ICML,Machine Learning,0.25,ICML2022_fulln.csv,Yes
+Hao Su 0001,Univ. of California - San Diego,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Hilbert J. Kappen,Radboud University,ICML,Machine Learning,0.1428571428571428,ICML2022_fulln.csv,Yes
+Iain Murray 0001,University of Edinburgh,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Ilya Shpitser,Johns Hopkins University,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Jacob Andreas,Massachusetts Institute of Technology,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+James T. Kwok,HKUST,ICML,Machine Learning,0.2857142857142857,ICML2022_fulln.csv,Yes
+Jamie A. Ward,Goldsmiths University of London,ICML,Machine Learning,0.25,ICML2022_fulln.csv,Yes
+Jason D. Lee,Princeton University,ICML,Machine Learning,0.5,ICML2022_fulln.csv,Yes
+Jeff Clune,University of British Columbia,ICML,Machine Learning,0.1666666666666666,ICML2022_fulln.csv,Yes
+Jens Lehmann 0001,University of Bonn,ICML,Machine Learning,0.1666666666666666,ICML2022_fulln.csv,Yes
+Jialin Liu 0003,University of Central Florida,ICML,Machine Learning,0.1428571428571428,ICML2022_fulln.csv,Yes
+Jianxin Li 0002,Beihang University,ICML,Machine Learning,0.25,ICML2022_fulln.csv,Yes
+Jimmy Ba,University of Toronto,ICML,Machine Learning,0.25,ICML2022_fulln.csv,Yes
+Joachim M. Buhmann,ETH Zurich,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Joan Bruna,New York University,ICML,Machine Learning,0.45,ICML2022_fulln.csv,Yes
+John C. Duchi,Stanford University,ICML,Machine Learning,1.5,ICML2022_fulln.csv,Yes
+John C. S. Lui,Chinese University of Hong Kong,ICML,Machine Learning,0.75,ICML2022_fulln.csv,Yes
+Jonathan Scarlett,National University of Singapore,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Jorge Novo,University of A Coruña,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Joseph Y. Halpern,Cornell University,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+José Miguel Hernández-Lobato,University of Cambridge,ICML,Machine Learning,0.2,ICML2022_fulln.csv,Yes
+João Paulo Costeira,Universidade de Lisboa,ICML,Machine Learning,0.125,ICML2022_fulln.csv,Yes
+Julian J. McAuley,Univ. of California - San Diego,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Julian Togelius,New York University,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Jörg Sander 0001,University of Alberta,ICML,Machine Learning,0.25,ICML2022_fulln.csv,Yes
+Kai-Wei Chang,Univ. of California - Los Angeles,ICML,Machine Learning,0.0833333333333333,ICML2022_fulln.csv,Yes
+Kaiming He,Massachusetts Institute of Technology,ICML,Machine Learning,0.375,ICML2022_fulln.csv,Yes
+Kannan Ramchandran,Univ. of California - Berkeley,ICML,Machine Learning,0.25,ICML2022_fulln.csv,Yes
+Karthik Narasimhan,Princeton University,ICML,Machine Learning,0.25,ICML2022_fulln.csv,Yes
+Kasturi R. Varadarajan,University of Iowa,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Kavita Bala,Cornell University,ICML,Machine Learning,0.25,ICML2022_fulln.csv,Yes
+Ke Tang 0001,SUSTech,ICML,Machine Learning,0.0454545454545454,ICML2022_fulln.csv,Yes
+Kevin G. Jamieson,University of Washington,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Kevin Jamieson 0001,University of Washington,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Kevin W. Bowyer,University of Notre Dame,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+KyungHyun Cho,New York University,ICML,Machine Learning,0.0344827586206896,ICML2022_fulln.csv,Yes
+Kyunghyun Cho,New York University,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Laks V. S. Lakshmanan,University of British Columbia,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Layne T. Watson,Virginia Tech,ICML,Machine Learning,0.5,ICML2022_fulln.csv,Yes
+Le Song,MBZUAI,ICML,Machine Learning,0.25,ICML2022_fulln.csv,Yes
+Leonidas J. Guibas,Stanford University,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Lifang He 0001,Lehigh University,ICML,Machine Learning,0.25,ICML2022_fulln.csv,Yes
+Luc Van Gool,ETH Zurich,ICML,Machine Learning,0.2,ICML2022_fulln.csv,Yes
+Luca Saglietti,Bocconi University,ICML,Machine Learning,0.1428571428571428,ICML2022_fulln.csv,Yes
+Lucia Specia,Imperial College London,ICML,Machine Learning,0.2,ICML2022_fulln.csv,Yes
+M. Hadi Amini,Florida International University,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Maciej A. Mazurowski,Duke University,ICML,Machine Learning,1.0,ICML2022_fulln.csv,Yes
+Mani B. Srivastava,Univ. of California - Los Angeles,ICML,Machine Learning,0.0833333333333333,ICML2022_fulln.csv,Yes
+Maria-Florina Balcan,Carnegie Mellon University,ICML,Machine Learning,0.6666666666666666,ICML2022_fulln.csv,Yes
+Mark Bun,Boston University,ICML,Machine Learning,0.25,ICML2022_fulln.csv,Yes
+Mark van der Wilk,Imperial College London,ICML,Machine Learning,0.6666666666666666,ICML2022_fulln.csv,Yes
+Markus Gross 0001,ETH Zurich,ICML,Machine Learning,0.25,ICML2022_fulln.csv,Yes
+Martin J. Wainwright,Massachusetts Institute of Technology,ICML,Machine Learning,1.5588235294117645,ICML2022_fulln.csv,Yes
+Martin Wattenberg,Harvard University,ICML,Machine Learning,0.0833333333333333,ICML2022_fulln.csv,Yes
+Masashi Sugiyama,University of Tokyo,ICML,Machine Learning,0.2857142857142857,ICML2022_fulln.csv,Yes
+Matteo Sesia,University of Southern California,ICML,Machine Learning,0.2,ICML2022_fulln.csv,Yes
+Matthew C. Gombolay,Georgia Institute of Technology,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Matthew E. Taylor,University of Alberta,ICML,Machine Learning,0.25,ICML2022_fulln.csv,Yes
+Matthias Bethge,University of Tübingen,ICML,Machine Learning,0.0454545454545454,ICML2022_fulln.csv,Yes
+Matus Telgarsky,New York University,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Mauricio A. Álvarez,University of Manchester,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Max Welling,University of Amsterdam,ICML,Machine Learning,0.25,ICML2022_fulln.csv,Yes
+Mayank Vatsa,IIT Jodhpur,ICML,Machine Learning,0.2,ICML2022_fulln.csv,Yes
+Mehryar Mohri,New York University,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Michael Bowling,University of Alberta,ICML,Machine Learning,0.25,ICML2022_fulln.csv,Yes
+Michael Carbin,Massachusetts Institute of Technology,ICML,Machine Learning,0.25,ICML2022_fulln.csv,Yes
+Michael I. Jordan,Univ. of California - Berkeley,ICML,Machine Learning,0.5588235294117647,ICML2022_fulln.csv,Yes
+Michael Kapralov,EPFL,ICML,Machine Learning,0.1428571428571428,ICML2022_fulln.csv,Yes
+Michael L. Littman,Brown University,ICML,Machine Learning,0.6428571428571428,ICML2022_fulln.csv,Yes
+Michael M. Bronstein,Imperial College London,ICML,Machine Learning,0.5928571428571429,ICML2022_fulln.csv,Yes
+Michael M. Zavlanos,Duke University,ICML,Machine Learning,0.25,ICML2022_fulln.csv,Yes
+Michael Moeller 0001,University of Siegen,ICML,Machine Learning,0.1428571428571428,ICML2022_fulln.csv,Yes
+Mihaela van der Schaar,University of Cambridge,ICML,Machine Learning,0.25,ICML2022_fulln.csv,Yes
+Mikhail Belkin,Univ. of California - San Diego,ICML,Machine Learning,0.25,ICML2022_fulln.csv,Yes
+Mikhail Khodak,University of Wisconsin - Madison,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Milos Hauskrecht,University of Pittsburgh,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Mitesh M. Khapra,IIT Madras,ICML,Machine Learning,0.1666666666666666,ICML2022_fulln.csv,Yes
+Mohammad Hajiesmaili,University of Massachusetts Amherst,ICML,Machine Learning,0.5,ICML2022_fulln.csv,Yes
+Mona T. Diab,Carnegie Mellon University,ICML,Machine Learning,0.2,ICML2022_fulln.csv,Yes
+Moshe Babaioff,Hebrew University of Jerusalem,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Muriel Médard,Massachusetts Institute of Technology,ICML,Machine Learning,0.2857142857142857,ICML2022_fulln.csv,Yes
+My T. Thai,University of Florida,ICML,Machine Learning,0.5,ICML2022_fulln.csv,Yes
+N. Variyam Vinodchandran,University of Nebraska,ICML,Machine Learning,0.2,ICML2022_fulln.csv,Yes
+Nalini K. Ratha,University at Buffalo,ICML,Machine Learning,0.2,ICML2022_fulln.csv,Yes
+Nancy M. Amato,Univ. of Illinois at Urbana-Champaign,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Nati Srebro,TTI Chicago,ICML,Machine Learning,0.0294117647058823,ICML2022_fulln.csv,Yes
+Neil D. Lawrence,University of Cambridge,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Nicholas D. Lane,University of Cambridge,ICML,Machine Learning,0.1666666666666666,ICML2022_fulln.csv,Yes
+Nicolas Boumal,EPFL,ICML,Machine Learning,1.0,ICML2022_fulln.csv,Yes
+Nicolas Loizou,Johns Hopkins University,ICML,Machine Learning,0.1666666666666666,ICML2022_fulln.csv,Yes
+Nicolas Papernot,University of Toronto,ICML,Machine Learning,0.3111111111111111,ICML2022_fulln.csv,Yes
+Nina Sumiko Tomita Hirata,USP,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Noah A. Smith,University of Washington,ICML,Machine Learning,0.4761904761904761,ICML2022_fulln.csv,Yes
+Nuno Vasconcelos,Univ. of California - San Diego,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Ohad Shamir,Weizmann Institute of Science,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Omri Ben-Eliezer,Technion,ICML,Machine Learning,0.25,ICML2022_fulln.csv,Yes
+Oren Weimann,University of Haifa,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Pankaj K. Agarwal,Duke University,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Paul Fischer,DTU,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Paul G. Constantine,University of Colorado Boulder,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Paul Pu Liang,Massachusetts Institute of Technology,ICML,Machine Learning,0.125,ICML2022_fulln.csv,Yes
+Pawel Gawrychowski,University of Wroclaw,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Peng Cui 0001,Tsinghua University,ICML,Machine Learning,0.25,ICML2022_fulln.csv,Yes
+Peter L. Bartlett,Univ. of California - Berkeley,ICML,Machine Learning,1.95,ICML2022_fulln.csv,Yes
+Peter Richtárik,KAUST,ICML,Machine Learning,0.1666666666666666,ICML2022_fulln.csv,Yes
+Peter Stone 0001,University of Texas at Austin,ICML,Machine Learning,0.5,ICML2022_fulln.csv,Yes
+Philip S. Yu,University of Illinois at Chicago,ICML,Machine Learning,0.25,ICML2022_fulln.csv,Yes
+Pierre Vandergheynst,EPFL,ICML,Machine Learning,0.2,ICML2022_fulln.csv,Yes
+Pierre-Luc Bacon,University of Montreal,ICML,Machine Learning,0.125,ICML2022_fulln.csv,Yes
+Pieter Abbeel,Univ. of California - Berkeley,ICML,Machine Learning,0.1,ICML2022_fulln.csv,Yes
+Pietro Liò,University of Cambridge,ICML,Machine Learning,0.1428571428571428,ICML2022_fulln.csv,Yes
+Pietro Perona,California Institute of Technology,ICML,Machine Learning,1.125,ICML2022_fulln.csv,Yes
+Pradeep Ravikumar,Carnegie Mellon University,ICML,Machine Learning,0.25,ICML2022_fulln.csv,Yes
+Qing Li 0001,The Hong Kong Polytechnic University,ICML,Machine Learning,0.0454545454545454,ICML2022_fulln.csv,Yes
+Radu Timofte,University of Würzburg,ICML,Machine Learning,0.45,ICML2022_fulln.csv,Yes
+Raman Arora,Johns Hopkins University,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Rasmus Pagh,University of Copenhagen,ICML,Machine Learning,0.1428571428571428,ICML2022_fulln.csv,Yes
+Raul Astudillo,MBZUAI,ICML,Machine Learning,0.5,ICML2022_fulln.csv,Yes
+Raymond T. Ng,University of British Columbia,ICML,Machine Learning,0.25,ICML2022_fulln.csv,Yes
+Ricardo B. C. Prudêncio,UFPE,ICML,Machine Learning,0.0333333333333333,ICML2022_fulln.csv,Yes
+Riccardo Zecchina,Bocconi University,ICML,Machine Learning,0.1428571428571428,ICML2022_fulln.csv,Yes
+Richa Singh 0001,IIT Jodhpur,ICML,Machine Learning,0.2,ICML2022_fulln.csv,Yes
+Richard G. Baraniuk,Rice University,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Richard S. Sutton,University of Alberta,ICML,Machine Learning,0.75,ICML2022_fulln.csv,Yes
+Robert Kleinberg,Cornell University,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Ron O. Dror,Stanford University,ICML,Machine Learning,0.2,ICML2022_fulln.csv,Yes
+Ruosong Wang,Peking University,ICML,Machine Learning,0.5,ICML2022_fulln.csv,Yes
+Ryan P. Adams,Princeton University,ICML,Machine Learning,0.3428571428571428,ICML2022_fulln.csv,Yes
+Ryan Prescott Adams,Princeton University,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Sahand N. Negahban,Yale University,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Sanghack Lee,Seoul National University,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Sanjeev Arora,Princeton University,ICML,Machine Learning,0.5,ICML2022_fulln.csv,Yes
+Sanjit A. Seshia,Univ. of California - Berkeley,ICML,Machine Learning,0.25,ICML2022_fulln.csv,Yes
+Santosh S. Vempala,Georgia Institute of Technology,ICML,Machine Learning,0.5,ICML2022_fulln.csv,Yes
+Sara Beery,Massachusetts Institute of Technology,ICML,Machine Learning,0.6666666666666666,ICML2022_fulln.csv,Yes
+Sariel Har-Peled,Univ. of Illinois at Urbana-Champaign,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Scott Niekum,University of Massachusetts Amherst,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Sebastian U. Stich,CISPA Helmholtz Center,ICML,Machine Learning,0.5,ICML2022_fulln.csv,Yes
+Sehoon Ha,Georgia Institute of Technology,ICML,Machine Learning,0.1,ICML2022_fulln.csv,Yes
+Sergey Levine,Univ. of California - Berkeley,ICML,Machine Learning,0.7583333333333333,ICML2022_fulln.csv,Yes
+Shai Ben-David,University of Waterloo,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Shai Shalev-Shwartz,Hebrew University of Jerusalem,ICML,Machine Learning,0.6666666666666666,ICML2022_fulln.csv,Yes
+Sham M. Kakade,Harvard University,ICML,Machine Learning,0.5,ICML2022_fulln.csv,Yes
+Shang-Wei Lin 0001,Nanyang Technological University,ICML,Machine Learning,0.1666666666666666,ICML2022_fulln.csv,Yes
+Shanghang Zhang,Peking University,ICML,Machine Learning,0.125,ICML2022_fulln.csv,Yes
+Simon Lacoste-Julien,University of Montreal,ICML,Machine Learning,0.2051282051282051,ICML2022_fulln.csv,Yes
+Simon S. Du,University of Washington,ICML,Machine Learning,0.5,ICML2022_fulln.csv,Yes
+Soon-Jo Chung,California Institute of Technology,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Stanley Bak,Stony Brook University,ICML,Machine Learning,0.6666666666666666,ICML2022_fulln.csv,Yes
+Stefan Bauer,TU Munich,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Stephen Bates,Massachusetts Institute of Technology,ICML,Machine Learning,0.2,ICML2022_fulln.csv,Yes
+Su-In Lee,University of Washington,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Subhransu Maji,University of Massachusetts Amherst,ICML,Machine Learning,0.125,ICML2022_fulln.csv,Yes
+Sutanu Gayen,IIT Kanpur,ICML,Machine Learning,0.2,ICML2022_fulln.csv,Yes
+Swabha Swayamdipta,University of Southern California,ICML,Machine Learning,0.1428571428571428,ICML2022_fulln.csv,Yes
+Swarat Chaudhuri,University of Texas at Austin,ICML,Machine Learning,0.25,ICML2022_fulln.csv,Yes
+Sören Auer,University of Hannover,ICML,Machine Learning,0.1666666666666666,ICML2022_fulln.csv,Yes
+T.-H. Hubert Chan,University of Hong Kong,ICML,Machine Learning,0.75,ICML2022_fulln.csv,Yes
+Taghi M. Khoshgoftaar,Florida Atlantic University,ICML,Machine Learning,0.5,ICML2022_fulln.csv,Yes
+Tatsunori B. Hashimoto,Stanford University,ICML,Machine Learning,0.25,ICML2022_fulln.csv,Yes
+Taylor Berg-Kirkpatrick,Univ. of California - San Diego,ICML,Machine Learning,16.233333333333334,ICML2022_fulln.csv,Yes
+Taylor T. Johnson,Vanderbilt University,ICML,Machine Learning,0.6666666666666666,ICML2022_fulln.csv,Yes
+Teresa Bernarda Ludermir,UFPE,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Thomas Bäck,Leiden University,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Tianlong Chen 0001,University of North Carolina,ICML,Machine Learning,0.1428571428571428,ICML2022_fulln.csv,Yes
+Tianqi Chen 0001,Carnegie Mellon University,ICML,Machine Learning,0.5,ICML2022_fulln.csv,Yes
+Toby P. Breckon,Durham University,ICML,Machine Learning,0.5,ICML2022_fulln.csv,Yes
+Tom Goldstein,University of Maryland - College Park,ICML,Machine Learning,0.1428571428571428,ICML2022_fulln.csv,Yes
+Tommi S. Jaakkola,Massachusetts Institute of Technology,ICML,Machine Learning,1.0,ICML2022_fulln.csv,Yes
+Tongliang Liu,University of Sydney,ICML,Machine Learning,0.2857142857142857,ICML2022_fulln.csv,Yes
+Trevor Darrell,Univ. of California - Berkeley,ICML,Machine Learning,0.1666666666666666,ICML2022_fulln.csv,Yes
+Tuan M. V. Le,New Mexico State University,ICML,Machine Learning,0.5,ICML2022_fulln.csv,Yes
+Tuomas Sandholm,Carnegie Mellon University,ICML,Machine Learning,0.5,ICML2022_fulln.csv,Yes
+Tülay Adali,Univ. of Maryland - Baltimore County,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Varun Kanade,University of Oxford,ICML,Machine Learning,0.2,ICML2022_fulln.csv,Yes
+Vince D. Calhoun,Georgia State University,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Virginia Smith,Carnegie Mellon University,ICML,Machine Learning,0.25,ICML2022_fulln.csv,Yes
+Vladimir Kolmogorov,IST Austria,ICML,Machine Learning,0.5,ICML2022_fulln.csv,Yes
+Wei Hu 0014,University of Michigan,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Wenbin Zhang 0002,Florida International University,ICML,Machine Learning,0.2,ICML2022_fulln.csv,Yes
+Wenqi Fan,The Hong Kong Polytechnic University,ICML,Machine Learning,0.0454545454545454,ICML2022_fulln.csv,Yes
+Willem H. Zuidema,University of Amsterdam,ICML,Machine Learning,0.5,ICML2022_fulln.csv,Yes
+Wuyang Chen 0001,Simon Fraser University,ICML,Machine Learning,0.1428571428571428,ICML2022_fulln.csv,Yes
+Xiaokui Xiao,National University of Singapore,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Yan Zheng 0002,Tianjin University,ICML,Machine Learning,0.1666666666666666,ICML2022_fulln.csv,Yes
+Yang Liu 0003,Nanyang Technological University,ICML,Machine Learning,0.1666666666666666,ICML2022_fulln.csv,Yes
+Yevgeny Seldin,University of Copenhagen,ICML,Machine Learning,0.2,ICML2022_fulln.csv,Yes
+Yin Tat Lee,University of Washington,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Yisong Yue,California Institute of Technology,ICML,Machine Learning,0.5,ICML2022_fulln.csv,Yes
+Yonatan Belinkov,Technion,ICML,Machine Learning,0.5,ICML2022_fulln.csv,Yes
+Yonatan Bisk,Carnegie Mellon University,ICML,Machine Learning,0.5,ICML2022_fulln.csv,Yes
+Yoshua Bengio,University of Montreal,ICML,Machine Learning,0.9896109637488948,ICML2022_fulln.csv,Yes
+Yossi Arjevani,Hebrew University of Jerusalem,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Yuguang Wang 0001,Shanghai Jiao Tong University,ICML,Machine Learning,0.1428571428571428,ICML2022_fulln.csv,Yes
+Yuheng Bu,Univ. of California - Santa Barbara,ICML,Machine Learning,0.3333333333333333,ICML2022_fulln.csv,Yes
+Yuri Boykov,University of Waterloo,ICML,Machine Learning,0.5,ICML2022_fulln.csv,Yes
+Zachary G. Ives,University of Pennsylvania,ICML,Machine Learning,0.1666666666666666,ICML2022_fulln.csv,Yes
+Zhangyang Wang,University of Texas at Austin,ICML,Machine Learning,0.1428571428571428,ICML2022_fulln.csv,Yes
+Zhe Zhao 0001,Univ. of California - Davis,ICML,Machine Learning,0.25,ICML2022_fulln.csv,Yes
+Zhihao Gavin Tang,SUFE,ICML,Machine Learning,0.25,ICML2022_fulln.csv,Yes
+Zhiyuan Li 0005,TTI Chicago,ICML,Machine Learning,0.5,ICML2022_fulln.csv,Yes
+Çaglar Gülçehre,EPFL,ICML,Machine Learning,0.0344827586206896,ICML2022_fulln.csv,Yes
 Aaron C. Courville,University of Montreal,CVPR,Computer Vision & Image Processing,0.2,CVPR2021_625_fulln.csv,Yes
 Achuta Kadambi,Univ. of California - Los Angeles,CVPR,Computer Vision & Image Processing,0.1111111111111111,CVPR2021_625_fulln.csv,Yes
 Adam Finkelstein,Princeton University,CVPR,Computer Vision & Image Processing,1.25,CVPR2021_625_fulln.csv,Yes
