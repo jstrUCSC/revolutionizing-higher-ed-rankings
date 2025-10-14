@@ -52,6 +52,7 @@ async function initialize() {
     setupRegionFilter();
     setupCountryFilter();
     setupFieldFilter();
+    generateFieldCheckboxes();
     displayRankings();
 }
 

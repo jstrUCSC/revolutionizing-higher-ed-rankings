@@ -1,19 +1,23 @@
 let data = [];
+let facultyData = [];
 let categories = [];
 let currentPage = 1;
 const rowsPerPage = 25;
 let selectedRegion = 'all';
 let lastFiltered = [];
 let selectedCountry = 'all';
+let expandedRows = new Set();
 
 const ACTIVE_FIELDS = [
     "Machine Learning",
     "Computer Vision & Image Processing",
+    "Natural Language Processing",
 ];
 
 const DISPLAY_LABELS = {
     'Machine Learning': 'Machine Learning',
     'Computer Vision & Image Processing': 'Computer Vision & Image Processing',
+    'Natural Language Processing': 'Natural Language Processing',
 };
 
 const EPS = 1e-9;
@@ -37,7 +41,8 @@ async function loadCSV(filePath) {
 }
 
 async function initialize() {
-    data = await loadCSV('2_f_2.csv');
+    data = await loadCSV('3_f_1.csv');
+    facultyData = await loadCSV('3_faculty_score.csv');
 
     // Extract categories dynamically
     if (data.length > 0) {
@@ -48,7 +53,7 @@ async function initialize() {
     computeFieldStats();
     displayFilters();
     setupRegionFilter();
-    setupCountryFilter();       // add countries filter
+    setupCountryFilter();
     displayRankings();
 }
 
@@ -141,6 +146,7 @@ function resetPageAndDisplayRankings() {
     currentPage = 1;
     selectedRegion = document.getElementById('regionFilter').value;
     updateToggleAllButtonLabel();
+    expandedRows.clear(); // Clear expanded rows when filters change
     displayRankings();
 }
 
@@ -162,6 +168,99 @@ function getNormalizedScore(univ, field) {
     const stats = fieldStats[field] || { std: 1 };
     const std = stats.std > EPS ? stats.std : 1;
     return s / std;
+}
+
+function getFacultyForUniversity(universityName, selectedCategories) {
+    // Filter faculty data for this university and selected categories
+    const filteredFaculty = facultyData.filter(faculty => {
+        const matchesUniversity = faculty.University === universityName;
+        const matchesCategory = selectedCategories.length === 0 || 
+                                selectedCategories.includes(faculty.Category);
+        return matchesUniversity && matchesCategory;
+    });
+
+    // Group by faculty name and sum scores
+    const facultyMap = new Map();
+    
+    filteredFaculty.forEach(faculty => {
+        const name = faculty['Faculty Name'] || 'Unknown';
+        const score = parseFloat(faculty.Score) || 0;
+        const category = faculty.Category || 'Unknown';
+        
+        if (!facultyMap.has(name)) {
+            facultyMap.set(name, {
+                name: name,
+                categories: [],
+                totalScore: 0
+            });
+        }
+        
+        const facultyInfo = facultyMap.get(name);
+        facultyInfo.totalScore += score;
+        if (!facultyInfo.categories.includes(category)) {
+            facultyInfo.categories.push(category);
+        }
+    });
+    
+    // Convert to array and sort by total score
+    const mergedFaculty = Array.from(facultyMap.values())
+        .sort((a, b) => b.totalScore - a.totalScore);
+    
+    return mergedFaculty;
+}
+
+function toggleUniversityDropdown(universityName, rowElement) {
+    const isExpanded = expandedRows.has(universityName);
+    
+    if (isExpanded) {
+        // Collapse: Remove the details row
+        const detailsRow = rowElement.nextElementSibling;
+        if (detailsRow && detailsRow.classList.contains('faculty-details-row')) {
+            detailsRow.remove();
+        }
+        expandedRows.delete(universityName);
+        rowElement.querySelector('.expand-icon').innerHTML = '▶';
+    } else {
+        // Expand: Add the details row
+        const selectedCategories = getSelectedCategories();
+        const facultyList = getFacultyForUniversity(universityName, selectedCategories);
+        
+        const detailsRow = document.createElement('tr');
+        detailsRow.classList.add('faculty-details-row');
+        
+        let facultyHTML = '<td colspan="3"><div class="faculty-details">';
+        
+        if (facultyList.length > 0) {
+            facultyHTML += '<table class="faculty-table">';
+            
+            // Adjust header based on number of selected categories
+            const fieldHeader = selectedCategories.length === 1 ? 'Field' : 'Fields';
+            facultyHTML += `<thead><tr><th>Faculty Name</th><th>${fieldHeader}</th><th>Total Contribution</th></tr></thead>`;
+            facultyHTML += '<tbody>';
+            
+            facultyList.forEach(faculty => {
+                const fieldsDisplay = faculty.categories.join(', ');
+                facultyHTML += `
+                    <tr>
+                        <td>${faculty.name}</td>
+                        <td>${fieldsDisplay}</td>
+                        <td>${faculty.totalScore.toFixed(4)}</td>
+                    </tr>
+                `;
+            });
+            
+            facultyHTML += '</tbody></table>';
+        } else {
+            facultyHTML += '<p>No faculty data available for the selected fields.</p>';
+        }
+        
+        facultyHTML += '</div></td>';
+        detailsRow.innerHTML = facultyHTML;
+        
+        rowElement.insertAdjacentElement('afterend', detailsRow);
+        expandedRows.add(universityName);
+        rowElement.querySelector('.expand-icon').innerHTML = '▼';
+    }
 }
 
 function displayRankings() {
@@ -196,7 +295,7 @@ function displayRankings() {
             if (!continentMatch) return;
         }
         
-        // Apply contries filtering
+        // Apply countries filtering
         if (selectedCountry !== 'all') {
             const country = (university.Country || '').trim();
             if (!country || country !== selectedCountry) return;
@@ -229,10 +328,25 @@ function displayPage(page, data) {
 
     data.slice(start, end).forEach((university, index) => {
         const row = tableBody.insertRow();
-        row.innerHTML = `
+        row.classList.add('university-row');
+        
+        const universityCell = `
             <td>${start + index + 1}</td>
-            <td>${university.University}</td>
-            <td>${university.Score.toFixed(2)}</td>`;
+            <td class="university-name-cell">
+                <span class="expand-icon">▶</span>
+                <span class="university-name" onclick="toggleUniversityDropdown('${university.University.replace(/'/g, "\\'")}', this.closest('tr'))">${university.University}</span>
+            </td>
+            <td>${university.Score.toFixed(2)}</td>
+        `;
+        
+        row.innerHTML = universityCell;
+        
+        // Re-expand if this university was previously expanded
+        if (expandedRows.has(university.University)) {
+            setTimeout(() => {
+                toggleUniversityDropdown(university.University, row);
+            }, 0);
+        }
     });
 }
 

@@ -1,0 +1,410 @@
+/* Main header styling */
+.main-header {
+  background-color: #fbcda4; /* Light orange */
+  text-align: center;
+  padding: 14px;
+  border-bottom: 2px solid #FFA07A; /* Salmon border */
+}
+
+.main-header h1 {
+  margin: 0;
+  font-size: 2.5em;
+/*   color: #2196F3 */
+}
+
+.main-header p {
+  margin: 0;
+  font-size: 1.2em;
+  color: #333;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+header h1, header h2, header h3 {
+  margin: 8px 0;
+}
+
+header h4{
+  margin: 8px 0;
+  font-size: 16px; 
+}
+
+header h3 a {
+  color: #2196F3;
+  text-decoration: none;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.filter-container {
+  background-color: #eeeeee;
+  padding: 20px;
+  margin-right: 20px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.align-left{
+  text-align: left;
+  margin-left: 10px;
+}
+
+.field-container {
+  display: flex;
+  align-items: center; /* v */
+  justify-content: space-between; /* h */
+  margin-bottom: 10px;
+}
+
+
+.button-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.toggle-button {
+  background-color: #fa6c34; 
+  border: none; 
+  color: white; 
+  padding: 10px 20px; 
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block;
+  font-size: 16px; 
+  margin: 10px 2px; 
+  cursor: pointer; 
+  border-radius: 4px; 
+  transition-duration: 0.4s; 
+}
+
+.toggle-button:hover {
+  background-color: white;
+  color: #FFA07A;
+  border: 2px solid #FFA07A; 
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0px 0;
+  font-size: 18px;
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 12px;
+}
+
+th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+tr:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+tr:hover {
+  background-color: #e0e0e0;
+}
+
+.table-container {
+  flex-grow: 1;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(14px);
+}
+
+
+
+/* Region filter dropdown */
+.filter-select {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  font-size: 1em;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Fixed upload button */
+/* .pdf-upload-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #fa6c34;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 36px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  transition-duration: 0.4s; 
+}
+
+.pdf-upload-button:hover {
+  background-color: #fa6c34;
+  background-color: white;
+  color: #FFA07A;    
+  border: 2px solid #FFA07A; 
+
+} */
+
+/* Modal styling */
+/* .pdf-upload-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+} */
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+}
+
+.divider {
+  height: 1px;
+  background-color: #ae8d80;
+  margin: 15px 0;
+  border: none;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination-container button {
+  margin: 0 10px;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#pageIndicator {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* University name cell styling */
+.university-name-cell {
+  cursor: pointer;
+  user-select: none;
+}
+
+.university-name {
+  color: #2563eb;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.university-name:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+.expand-icon {
+  display: inline-block;
+  width: 20px;
+  color: #6b7280;
+  transition: transform 0.2s;
+  margin-right: 8px;
+}
+
+.university-name-cell {
+  cursor: pointer;
+  user-select: none;
+}
+
+.university-name {
+  color: #111827;  /* Default black color */
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.university-name:hover {
+  color: #2563eb;  /* Blue on hover */
+  text-decoration: underline;
+}
+
+.expand-icon {
+  display: inline-block;
+  width: 20px;
+  color: #6b7280;
+  transition: transform 0.2s;
+  margin-right: 8px;
+}
+
+.faculty-details-row {
+  background-color: #f9fafb;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.faculty-details {
+  padding: 20px;
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Faculty table styling */
+.faculty-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.faculty-table thead {
+  background-color: #f3f4f6;
+}
+
+.faculty-table thead th {
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  color: #374151;
+  font-size: 14px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.faculty-table thead th:last-child {
+  min-width: 140px;  /* Ensure enough space for "Total Contribution" */
+}
+
+.faculty-table tbody tr {
+  border-bottom: 1px solid #f3f4f6;
+  transition: background-color 0.2s;
+}
+
+.faculty-table tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+.faculty-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.faculty-table tbody td {
+  padding: 10px 12px;
+  color: #4b5563;
+  font-size: 14px;
+}
+
+.faculty-table tbody td:last-child {
+  font-weight: 500;
+  color: #111827;
+}
+
+.university-row:hover {
+  background-color: #f9fafb;
+}
+
+.faculty-details p {
+  color: #6b7280;
+  font-style: italic;
+  padding: 20px;
+  text-align: center;
+  margin: 0;
+}

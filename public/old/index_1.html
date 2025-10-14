@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+	<script src="index.js" charset="utf-8" defer></script>
+    <title>Your Website</title>
+</head>
+<body>
+    <header class="main-header">
+        <h1>Research Impact Rankings</h1>
+        <!-- <h4><a href="https://github.com/Lianghui818/revolutionizing-higher-ed-rankings">GitHub Repository</a></h3> -->
+        <h4>Rankings are measured through impact that the school's publications have made to the field of computer science. Each impactful publication gets assigned one point. The one point gets divided and assigned to universities according to the authors affiliations.</h3>
+    </header>
+    <main >
+            <div class="content">
+                <div class="filter-container">
+                    <h3 class="align-left">
+                        ○ Filter by Area
+                    </h3>
+                    <select id="regionFilter" class="filter-select">
+                        <option value="all">All Regions</option>
+                        <option value="Africa">Africa</option>
+                        <option value="Asia">Asia</option>
+                        <option value="Australasia">Australasia</option>
+                        <option value="Europe">Europe</option>
+                        <option value="North America">North America</option>
+                        <option value="South America">South America</option>
+                    </select>
+
+                    <h3 class="align-left">
+                        ○ Filter by Country
+                    </h3>
+                    <select id="countryFilter" class="filter-select">
+                    <option value="all">All Countries</option>
+                    </select>
+
+                    <div class="divider"></div>
+
+                    <div class="field-container">
+                    <h3 class="align-left">
+                        ○ Filter by Field
+                    </h3>
+                    <font face="Arial" size="0.1">
+                        
+                        <div class="button-container">
+                            <button id="toggleAll" class="toggle-button" onclick="toggleAllCheckboxes()">Select All</button>
+                        </div>
+                    </div>
+                        <table id="filterTable">
+                            <thead>
+                                <!-- <tr>
+                                    <th style="text-align: center"> Filter by Field</th>
+                                    <th style="width:15%"> </th>
+                                </tr> -->
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </font>
+                </div>
+                
+
+                <div class="table-container">
+                <table id="rankingTable">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Institution</th>
+                            <th>Publication Score</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+            </table>
+            <div class="pagination-container">
+                <button id="prevPage" onclick="prevPage()">Previous</button>
+                <span id="pageIndicator"></span>
+                <button id="nextPage" onclick="nextPage()">Next</button>
+            </div>
+        </div>         
+</main>
+
+</body>
+</html>
+
