@@ -524,6 +524,24 @@ function resetPageAndDisplayRankings() {
     displayRankings();
 }
 
+function generateFieldCheckboxes() {
+    const container = document.getElementById('fieldCheckboxContainer');
+    container.innerHTML = '';
+    
+    ACTIVE_FIELDS.forEach(field => {
+        const displayLabel = DISPLAY_LABELS[field] || field;
+        const checkboxItem = document.createElement('label');
+        checkboxItem.className = 'field-checkbox-item';
+        
+        checkboxItem.innerHTML = `
+            <input type="checkbox" class="field-checkbox" data-field="${field}" checked>
+            <span class="checkbox-label">${displayLabel}</span>
+        `;
+        
+        container.appendChild(checkboxItem);
+    });
+}
+
 function getSelectedCategories() {
     return [...document.querySelectorAll('.field-checkbox:checked')]
            .map(el => el.dataset.field);
@@ -779,7 +797,7 @@ function getFlagClass(continent) {
         'Asia': 'flag-cn',
         'Africa': 'flag-default',
         'Australasia': 'flag-au',
-        'southamerica': 'flag-default'
+        'South America': 'flag-default'
     };
     return flagMap[continent] || 'flag-default';
 }
@@ -817,11 +835,13 @@ function getTopFields(universityName, chartData, globalMaxScore) {
 }
 
 function getFieldDisplayName(field) {
-    const displayNames = {
-        'Machine Learning': 'Machine Learning',
-        'Computer Vision & Image Processing': 'Computer Vision'
-    };
-    return displayNames[field] || field;
+    // const displayNames = {
+    //     'Machine Learning': 'Machine Learning',
+    //     'Computer Vision & Image Processing': 'Computer Vision',
+    //     'Natural Language Processing': 'Natural Language Processing'
+    // };
+    // return displayNames[field] || field;
+    return DISPLAY_LABELS[field] || field;
 }
 
 function generateChartIcon(universityName) {
