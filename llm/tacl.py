@@ -294,7 +294,7 @@ def extract_references_layout_and_main(pdf_path: str) -> Tuple[str, List[str]]:
                     heading_x = sum(w["x0"] for w in heading) / len(heading)
                     ref_right_column = heading_x > mid_x
                     break
-            txt_parts = []
+
             for i, page in enumerate(pdf.pages):
                 if ref_page_idx is None or i < ref_page_idx:
                     words = page.extract_words(x_tolerance=1, y_tolerance=1, use_text_flow=False, extra_attrs=["size"])
@@ -308,20 +308,20 @@ def extract_references_layout_and_main(pdf_path: str) -> Tuple[str, List[str]]:
                 page = pdf.pages[i]
                 words = page.extract_words(x_tolerance=1, y_tolerance=1, use_text_flow=False, extra_attrs=["size"])
                 cols = split_two_columns(words, page.width)
-                lines = []
+
                 if i == ref_page_idx and ref_heading_bottom is not None:
                     left, right = cols
-                    if ref_right_column:
-                        main_parts = add_words_to_body(left, main_parts)
-                        words_above_ref = [w for w in right if w["top"] < ref_heading_bottom]
-                        words_below_ref = [w for w in right if w["top"] >= ref_heading_bottom + 1]
-                        refs_lines.extend(lines_from_words(words_below_ref))
-                    else:
-                        words_above_ref = [w for w in left if w["top"] < ref_heading_bottom]
-                        words_below_ref = [w for w in left if w["top"] >= ref_heading_bottom + 1]
-                        refs_lines.extend(lines_from_words(words_below_ref))
-                        refs_lines.extend(lines_from_words(right))
+                    ref_col, other_col = (right, left) if ref_right_column else (left, right)
+
+                    words_above_ref = [w for w in ref_col if w["top"] < ref_heading_bottom]
+                    words_below_ref = [w for w in ref_col if w["top"] >= ref_heading_bottom + 1]
+
                     main_parts = add_words_to_body(words_above_ref, main_parts)
+                    refs_lines.extend(lines_from_words(words_below_ref))
+                    if not ref_right_column:
+                        refs_lines.extend(lines_from_words(other_col))
+                    else:
+                        main_parts = add_words_to_body(other_col, main_parts)
 
                 if i > ref_page_idx:
                     for col_words in cols:
