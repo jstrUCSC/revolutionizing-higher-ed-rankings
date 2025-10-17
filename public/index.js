@@ -48,11 +48,13 @@ async function initialize() {
         categories = columns.slice(2); // Assume categories start at index 2
     }
 
+    generateFieldCheckboxes();
+
+    setupFieldFilter();
+
     computeFieldStats();
     setupRegionFilter();
     setupCountryFilter();
-    setupFieldFilter();
-    generateFieldCheckboxes();
     displayRankings();
 }
 
@@ -86,14 +88,14 @@ function computeFieldStats() {
 
 function setupFieldFilter() {
     // Add event listeners to all field checkboxes
-    const checkboxes = document.querySelectorAll('.field-checkbox');
-    checkboxes.forEach(checkbox => {
-        checkbox.addEventListener('change', () => {
-            updateToggleAllFieldsButton();
-            resetPageAndDisplayRankings();
-        });
-    });
-    updateToggleAllFieldsButton();
+    container.addEventListener('change', (e) => {
+        if (e.target && e.target.classList.contains('field-checkbox')) {
+          updateToggleAllFieldsButton();
+          resetPageAndDisplayRankings(); 
+        }
+      });
+
+      updateToggleAllFieldsButton();
 }
 
 function toggleAllFields() {
@@ -148,12 +150,11 @@ function generateFieldCheckboxes() {
         const displayLabel = DISPLAY_LABELS[field] || field;
         const checkboxItem = document.createElement('label');
         checkboxItem.className = 'field-checkbox-item';
-        
         checkboxItem.innerHTML = `
-            <input type="checkbox" class="field-checkbox" data-field="${field}" checked>
-            <span class="checkbox-label">${displayLabel}</span>
+        <input type="checkbox" class="field-checkbox" data-field="${field}" checked>
+        <span class="checkbox-label">${displayLabel}</span>
         `;
-        
+
         container.appendChild(checkboxItem);
     });
 }
